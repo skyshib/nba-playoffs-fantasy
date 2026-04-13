@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><title>Lineup Simulator</title>
+<style>
+*{box-sizing:border-box}
+body{background:#0a1628;color:#f1f5f9;font-family:'Inter',system-ui,sans-serif;padding:1rem;margin:0}
+h1{color:#f97316;margin:0 0 .5rem;font-size:1.4rem}
+.subtitle{color:#64748b;font-size:.75rem;margin-bottom:1rem}
+a{color:#3b82f6}
+
+.layout{display:flex;gap:1.5rem;flex-wrap:wrap}
+.lineup-panel{flex:1;min-width:420px;max-width:600px}
+.results-panel{flex:1;min-width:400px}
+
+.slot{display:flex;align-items:center;gap:.5rem;padding:.4rem .6rem;margin-bottom:2px;border-radius:4px;background:#121f36;border:1px solid #1e3a5f;transition:all .15s}
+.slot:hover{border-color:#3b82f6}
+.slot.drag-over{border-color:#f97316;background:rgba(249,115,22,.1)}
+.seed-num{font-weight:900;color:#64748b;width:28px;text-align:center;font-size:.85rem}
+.player-select{flex:1;background:#0a1628;border:1px solid #1e3a5f;color:#f1f5f9;padding:.35rem .4rem;border-radius:4px;font-size:.75rem;font-family:inherit;cursor:pointer}
+.player-select:focus{outline:none;border-color:#3b82f6}
+.player-select option{background:#0a1628;color:#f1f5f9}
+.ppg-badge{font-size:.65rem;color:#22c55e;font-weight:700;width:40px;text-align:right}
+
+.captain-row{display:flex;align-items:center;gap:.4rem;margin-top:.15rem}
+.cap-label{font-size:.6rem;text-transform:uppercase;width:28px;text-align:center}
+.cap-label.sc{color:#f97316;font-weight:700}
+.cap-label.pm{color:#a78bfa;font-weight:700}
+.cap-radio{accent-color:#f97316}
+.cap-radio.pm{accent-color:#a78bfa}
+
+.btn{padding:.6rem 1.5rem;border:none;border-radius:6px;font-weight:700;cursor:pointer;font-size:.85rem;font-family:inherit;transition:all .15s}
+.btn-sim{background:#f97316;color:#000;margin-top:.8rem}
+.btn-sim:hover{background:#fb923c}
+.btn-sim:disabled{background:#64748b;cursor:wait}
+.btn-reset{background:#1e3a5f;color:#f1f5f9;margin-top:.8rem;margin-left:.5rem}
+.btn-reset:hover{background:#2d4a6f}
+
+.results-box{background:#121f36;border:1px solid #1e3a5f;border-radius:8px;padding:1rem;margin-top:.5rem}
+.result-stat{display:inline-block;background:#0a1628;border:1px solid #1e3a5f;border-radius:8px;padding:.6rem 1rem;text-align:center;margin:.3rem}
+.rv{font-size:1.6rem;font-weight:900}.rv.o{color:#f97316}.rv.g{color:#22c55e}.rv.b{color:#3b82f6}
+.rl{font-size:.6rem;color:#64748b;text-transform:uppercase;margin-top:.15rem}
+
+.progress-bar{width:100%;height:6px;background:#1e3a5f;border-radius:3px;margin:.5rem 0;overflow:hidden}
+.progress-fill{height:100%;background:#f97316;border-radius:3px;transition:width .3s}
+
+.rank-dist{margin-top:.8rem}
+.rank-bar-row{display:flex;align-items:center;gap:.4rem;margin:.15rem 0;font-size:.7rem}
+.rank-label{width:30px;text-align:right;color:#94a3b8}
+.rank-bar-bg{flex:1;height:14px;background:#0a1628;border-radius:3px;overflow:hidden}
+.rank-bar{height:100%;border-radius:3px;transition:width .5s}
+.rank-pct{width:55px;font-weight:700;font-size:.65rem}
+
+.chart-container{margin:.8rem 0;position:relative}
+.chart-label{font-size:.6rem;color:#64748b;text-transform:uppercase;margin-bottom:.3rem;font-weight:700}
+canvas{border-radius:6px;background:#0a1628;border:1px solid #1e3a5f;width:100%;display:block}
+
+.comparison{margin-top:1rem;font-size:.7rem}
+.comp-row{display:flex;justify-content:space-between;padding:.2rem 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.comp-name{color:#94a3b8}.comp-score{font-weight:700}
+.comp-you{color:#f97316;font-weight:900}
+
+.status{font-size:.7rem;color:#64748b;margin-top:.5rem}
+
+.pool-toggle{color:#3b82f6;font-size:.75rem;cursor:pointer;margin-top:1rem;user-select:none}
+.pool-toggle:hover{text-decoration:underline}
+.pool-section{max-height:0;overflow:hidden;transition:max-height .3s}
+.pool-section.open{max-height:3000px;overflow-y:auto}
+.pool-grid{display:flex;flex-wrap:wrap;gap:.3rem;padding:.5rem 0}
+.pool-chip{background:#1e3a5f;border:1px solid #2d4a6f;border-radius:4px;padding:.2rem .5rem;font-size:.65rem;cursor:grab;user-select:none;white-space:nowrap}
+.pool-chip:hover{background:#2d4a6f;border-color:#3b82f6}
+.pool-chip .chip-ppg{color:#22c55e;font-weight:700;margin-left:.3rem}
+.pool-chip .chip-seed{color:#64748b;margin-right:.2rem}
+</style>
+</head><body>
+<h1>Lineup Simulator</h1>
+<div class="subtitle">Build a lineup and simulate expected returns against all 27 opponents. Drag players from the pool or use dropdowns. <a href="index.html">Back to dashboard</a></div>
+
+<div class="layout">
+<div class="lineup-panel">
+<div id="slots"></div>
+<div>
+<button class="btn btn-sim" id="simBtn" onclick="runSim()">Simulate (20,000 sims)</button>
+<button class="btn btn-reset" id="optBtn" onclick="resetToOptimal()">Load Best EV</button>
+<button class="btn btn-reset" onclick="resetToMaxPts()">Load Max Pts</button>
+</div>
+
+<div class="pool-toggle" onclick="togglePool()">Show/hide player pool for drag & drop</div>
+<div class="pool-section" id="poolSection">
+<div id="poolChips"></div>
+</div>
+</div>
+
+<div class="results-panel">
+<div class="results-box" id="resultsBox">
+<div style="color:#64748b;font-size:.8rem">Click "Simulate" to see expected returns for your lineup.</div>
+</div>
+</div>
+</div>
+
+<script src="simdata.js"></script>
+<script>
+// === DATA ===
+const PAYOUTS = {1:500,2:300,3:250,4:150,5:100,6:50};
+// Read baseline from optimizer's saved state, fallback to 165
+let BASELINE_EV = 165;
+try {
+    const saved = JSON.parse(localStorage.getItem('optimizer_state_v1') || '{}');
+    if (saved.bestEV) BASELINE_EV = saved.bestEV;
+} catch(e) {}
+
+// Load best EV lineup from optimizer's saved state
+let OPTIMAL_EV = ["cameron-boozer","milan-momcilovic","graham-ike","darius-acuff-jr","nick-boyd","aj-dybantsa","malik-reneau","bruce-thornton","bennett-stirtz","mark-mitchell","dailyn-swain","tavari-johnson","cruz-davis","tj-power","alex-wilkins","dontae-horne"];
+let OPTIMAL_SC = 5, OPTIMAL_PM = 10;
+try {
+    const saved = JSON.parse(localStorage.getItem('optimizer_state_v1') || '{}');
+    if (saved.bestSlugs) OPTIMAL_EV = saved.bestSlugs;
+    if (saved.bestSc != null) OPTIMAL_SC = saved.bestSc;
+    if (saved.bestPm != null) OPTIMAL_PM = saved.bestPm;
+} catch(e) {}
+const OPTIMAL_PTS = ["cameron-boozer","milan-momcilovic","graham-ike","darius-acuff-jr","nick-boyd","aj-dybantsa","malik-reneau","bruce-thornton","bennett-stirtz","mark-mitchell","dailyn-swain","tavari-johnson","dominique-daniels-jr","tj-power","alex-wilkins","dontae-horne"];
+let scorerSeed = OPTIMAL_SC;
+let playmakerSeed = OPTIMAL_PM;
+
+// === BUILD UI ===
+function buildSlots() {
+    const container = document.getElementById('slots');
+    let html = '';
+    for (let seed = 1; seed <= 16; seed++) {
+        const players = POOL_BY_SEED[seed] || [];
+        const canScorer = seed >= 5 && seed <= 10;
+        const canPlaymaker = seed >= 11 && seed <= 16;
+        html += `<div class="slot" id="slot-${seed}" ondragover="dragOver(event,${seed})" ondragleave="dragLeave(event,${seed})" ondrop="dropPlayer(event,${seed})">
+            <div class="seed-num">${seed}</div>
+            <select class="player-select" id="sel-${seed}" onchange="updatePPG(${seed})">
+                ${players.map((p,i) => `<option value="${i}">${p.name} (${p.team})</option>`).join('')}
+            </select>
+            <div class="ppg-badge" id="ppg-${seed}">${players[0]?.ppg || 0}</div>`;
+        if (canScorer || canPlaymaker) {
+            html += `<div class="captain-row">`;
+            if (canScorer) html += `<label style="display:flex;align-items:center;gap:2px;cursor:pointer"><input type="radio" name="scorer" class="cap-radio" value="${seed}" ${seed-1===scorerSeed?'checked':''} onchange="scorerSeed=${seed}-1"><span class="cap-label sc">SC</span></label>`;
+            if (canPlaymaker) html += `<label style="display:flex;align-items:center;gap:2px;cursor:pointer"><input type="radio" name="playmaker" class="cap-radio pm" value="${seed}" ${seed-1===playmakerSeed?'checked':''} onchange="playmakerSeed=${seed}-1"><span class="cap-label pm">PM</span></label>`;
+            html += `</div>`;
+        }
+        html += `</div>`;
+    }
+    container.innerHTML = html;
+}
+
+function updatePPG(seed) {
+    const sel = document.getElementById(`sel-${seed}`);
+    const players = POOL_BY_SEED[seed] || [];
+    const p = players[parseInt(sel.value)];
+    document.getElementById(`ppg-${seed}`).textContent = p ? p.ppg.toFixed(1) : '0';
+}
+
+function setLineup(slugs, sc, pm) {
+    for (let seed = 1; seed <= 16; seed++) {
+        const players = POOL_BY_SEED[seed] || [];
+        const target = slugs[seed-1];
+        const idx = players.findIndex(p => p.slug === target);
+        document.getElementById(`sel-${seed}`).value = idx >= 0 ? idx : 0;
+        updatePPG(seed);
+    }
+    scorerSeed = sc; playmakerSeed = pm;
+    const scRadio = document.querySelector(`input[name="scorer"][value="${sc+1}"]`);
+    const pmRadio = document.querySelector(`input[name="playmaker"][value="${pm+1}"]`);
+    if (scRadio) scRadio.checked = true;
+    if (pmRadio) pmRadio.checked = true;
+}
+
+function resetToOptimal() { setLineup(OPTIMAL_EV, OPTIMAL_SC, OPTIMAL_PM); }
+function resetToMaxPts() { setLineup(OPTIMAL_PTS, OPTIMAL_SC, OPTIMAL_PM); }
+
+// === DRAG & DROP ===
+function buildPoolChips() {
+    let html = '';
+    for (let seed = 1; seed <= 16; seed++) {
+        const players = POOL_BY_SEED[seed] || [];
+        html += `<div style="width:100%;font-size:.65rem;color:#64748b;margin-top:.5rem;font-weight:700">Seed ${seed}</div><div class="pool-grid">`;
+        for (let i = 0; i < players.length; i++) {
+            const p = players[i];
+            html += `<div class="pool-chip" draggable="true" ondragstart="dragStart(event,${seed},${i})" title="${p.team} | ${p.ppg} PPG / ${p.rpg} RPG / ${p.apg} APG">
+                <span class="chip-seed">S${seed}</span>${p.name}<span class="chip-ppg">${p.ppg}</span></div>`;
+        }
+        html += `</div>`;
+    }
+    document.getElementById('poolChips').innerHTML = html;
+}
+
+let dragData = null;
+function dragStart(e, seed, idx) { dragData = {seed, idx}; e.dataTransfer.effectAllowed = 'copy'; }
+function dragOver(e, seed) { e.preventDefault(); if (dragData && dragData.seed === seed) document.getElementById(`slot-${seed}`).classList.add('drag-over'); }
+function dragLeave(e, seed) { document.getElementById(`slot-${seed}`).classList.remove('drag-over'); }
+function dropPlayer(e, seed) {
+    e.preventDefault();
+    document.getElementById(`slot-${seed}`).classList.remove('drag-over');
+    if (dragData && dragData.seed === seed) { document.getElementById(`sel-${seed}`).value = dragData.idx; updatePPG(seed); }
+    dragData = null;
+}
+function togglePool() { document.getElementById('poolSection').classList.toggle('open'); }
+
+// === SIMULATION ENGINE ===
+function wp(a, b) { return a === b ? 0.5 : 1 / (1 + Math.pow(10, -(b - a) * 0.08)); }
+
+function gauss(rng) {
+    let u, v, s;
+    do { u = rng() * 2 - 1; v = rng() * 2 - 1; s = u*u + v*v; } while (s >= 1 || s === 0);
+    return u * Math.sqrt(-2 * Math.log(s) / s);
+}
+
+function mulberry32(a) {
+    return function() {
+        a |= 0; a = a + 0x6D2B79F5 | 0;
+        var t = Math.imul(a ^ a >>> 15, 1 | a);
+        t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    }
+}
+
+function getTeam() {
+    const team = [];
+    for (let seed = 1; seed <= 16; seed++) {
+        const sel = document.getElementById(`sel-${seed}`);
+        const players = POOL_BY_SEED[seed] || [];
+        team.push(players[parseInt(sel.value)]);
+    }
+    return team;
+}
+
+// === CHART DRAWING ===
+function drawChart(canvas, evHistory, baselineEV) {
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width, H = canvas.height;
+    const pad = {top:20, right:15, bottom:25, left:50};
+    const cw = W - pad.left - pad.right, ch = H - pad.top - pad.bottom;
+
+    ctx.clearRect(0, 0, W, H);
+
+    if (evHistory.length < 2) return;
+
+    // Auto-scale Y axis around the data
+    const allVals = [...evHistory, baselineEV];
+    let yMin = Math.min(...allVals) - 15;
+    let yMax = Math.max(...allVals) + 15;
+    yMin = Math.max(0, yMin);
+
+    const xScale = cw / (evHistory.length - 1);
+    const yScale = ch / (yMax - yMin);
+
+    // Grid lines
+    ctx.strokeStyle = '#1e3a5f';
+    ctx.lineWidth = 1;
+    const yStep = Math.ceil((yMax - yMin) / 5 / 10) * 10;
+    ctx.font = '10px monospace';
+    ctx.fillStyle = '#64748b';
+    ctx.textAlign = 'right';
+    for (let y = Math.ceil(yMin / yStep) * yStep; y <= yMax; y += yStep) {
+        const py = pad.top + ch - (y - yMin) * yScale;
+        ctx.beginPath(); ctx.moveTo(pad.left, py); ctx.lineTo(W - pad.right, py); ctx.stroke();
+        ctx.fillText('$' + y.toFixed(0), pad.left - 5, py + 3);
+    }
+
+    // X axis labels
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#475569';
+    const xLabelCount = 5;
+    for (let i = 0; i <= xLabelCount; i++) {
+        const idx = Math.round(i / xLabelCount * (evHistory.length - 1));
+        const px = pad.left + idx * xScale;
+        const simNum = (idx + 1) * 100; // Each point = 100 sims batch
+        ctx.fillText(simNum >= 1000 ? (simNum/1000).toFixed(1)+'K' : simNum, px, H - 5);
+    }
+
+    // Baseline reference line
+    const baseY = pad.top + ch - (baselineEV - yMin) * yScale;
+    ctx.strokeStyle = '#f9731666';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([6, 4]);
+    ctx.beginPath(); ctx.moveTo(pad.left, baseY); ctx.lineTo(W - pad.right, baseY); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = '#f97316';
+    ctx.textAlign = 'left';
+    ctx.font = '9px monospace';
+    ctx.fillText('Optimal $' + baselineEV.toFixed(1), pad.left + 3, baseY - 5);
+
+    // EV line
+    const lastEV = evHistory[evHistory.length - 1];
+    const beating = lastEV > baselineEV;
+    ctx.strokeStyle = beating ? '#22c55e' : '#3b82f6';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    for (let i = 0; i < evHistory.length; i++) {
+        const px = pad.left + i * xScale;
+        const py = pad.top + ch - (evHistory[i] - yMin) * yScale;
+        if (i === 0) ctx.moveTo(px, py); else ctx.lineTo(px, py);
+    }
+    ctx.stroke();
+
+    // Current value dot + label
+    const lastX = pad.left + (evHistory.length - 1) * xScale;
+    const lastY = pad.top + ch - (lastEV - yMin) * yScale;
+    ctx.fillStyle = beating ? '#22c55e' : '#3b82f6';
+    ctx.beginPath(); ctx.arc(lastX, lastY, 4, 0, Math.PI * 2); ctx.fill();
+    ctx.font = 'bold 11px monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText('$' + lastEV.toFixed(1), lastX - 8, lastY - 8);
+
+    // "BEATING OPTIMAL" glow if above baseline
+    if (beating) {
+        ctx.fillStyle = '#22c55e';
+        ctx.font = 'bold 11px monospace';
+        ctx.textAlign = 'right';
+        ctx.fillText('ABOVE OPTIMAL', W - pad.right, pad.top + 12);
+    }
+}
+
+// === RUN SIM (BATCHED WITH LIVE UPDATES) ===
+let simRunning = false;
+
+function runSim() {
+    if (simRunning) return;
+    simRunning = true;
+    const btn = document.getElementById('simBtn');
+    btn.disabled = true; btn.textContent = 'Simulating...';
+
+    const team = getTeam();
+    const sc = scorerSeed;
+    const pm = playmakerSeed;
+    const N = 20000;
+    const BATCH = 100;
+
+    // Set up results area with chart
+    document.getElementById('resultsBox').innerHTML = `
+        <div style="display:flex;flex-wrap:wrap;gap:.3rem">
+            <div class="result-stat"><div class="rv o" id="liveEV">--</div><div class="rl">Expected Payout</div></div>
+            <div class="result-stat"><div class="rv g" id="livePts">--</div><div class="rl">Expected Points</div></div>
+            <div class="result-stat"><div class="rv b" id="liveRank">--</div><div class="rl">Avg Rank</div></div>
+        </div>
+        <div class="progress-bar"><div class="progress-fill" id="liveProg" style="width:0%"></div></div>
+        <div class="status" id="liveStatus">Starting...</div>
+        <div class="chart-container">
+            <div class="chart-label">Cumulative Mean EV (converging)</div>
+            <canvas id="evChart" width="700" height="250"></canvas>
+        </div>
+        <div class="rank-dist" id="liveRankDist"></div>
+        <div class="comparison" id="liveComp"></div>
+    `;
+
+    const rng = mulberry32(Date.now());
+    let totalEV = 0, totalPts = 0, completed = 0;
+    const rankCounts = new Array(30).fill(0);
+    const oppScores = new Array(OPPONENTS.length).fill(0);
+    const evHistory = [];
+
+    function doBatch() {
+        const n = Math.min(BATCH, N - completed);
+        for (let sim = 0; sim < n; sim++) {
+            const tg = {}, rf = {};
+            for (const [reg, paired] of Object.entries(BRACKET)) {
+                const rw = [];
+                for (const [g1, g2] of paired) {
+                    const [t0,s0,t1,s1] = g1;
+                    const w1 = rng() < wp(s0,s1) ? [t0,s0] : [t1,s1];
+                    tg[t0]=(tg[t0]||0)+1; tg[t1]=(tg[t1]||0)+1;
+                    const [t2,s2,t3,s3] = g2;
+                    const w2 = rng() < wp(s2,s3) ? [t2,s2] : [t3,s3];
+                    tg[t2]=(tg[t2]||0)+1; tg[t3]=(tg[t3]||0)+1;
+                    const r = rng() < wp(w1[1],w2[1]) ? w1 : w2;
+                    tg[w1[0]]=(tg[w1[0]]||0)+1; tg[w2[0]]=(tg[w2[0]]||0)+1; rw.push(r);
+                }
+                if (rw.length >= 4) {
+                    let a=rw[0],b=rw[1],w1=rng()<wp(a[1],b[1])?a:b;
+                    tg[a[0]]=(tg[a[0]]||0)+1;tg[b[0]]=(tg[b[0]]||0)+1;
+                    let c=rw[2],d=rw[3],w2=rng()<wp(c[1],d[1])?c:d;
+                    tg[c[0]]=(tg[c[0]]||0)+1;tg[d[0]]=(tg[d[0]]||0)+1;
+                    const e8=rng()<wp(w1[1],w2[1])?w1:w2;
+                    tg[w1[0]]=(tg[w1[0]]||0)+1;tg[w2[0]]=(tg[w2[0]]||0)+1;rf[reg]=e8;
+                }
+            }
+            const fs = [];
+            for (const [r1,r2] of [["West","South"],["East","Midwest"]]) {
+                const a=rf[r1],b=rf[r2];
+                if(a&&b){const w=rng()<wp(a[1],b[1])?a:b;tg[a[0]]=(tg[a[0]]||0)+1;tg[b[0]]=(tg[b[0]]||0)+1;fs.push(w);}
+            }
+            if(fs.length===2){tg[fs[0][0]]=(tg[fs[0][0]]||0)+1;tg[fs[1][0]]=(tg[fs[1][0]]||0)+1;}
+
+            const pc = {};
+            function gs(slug,ppg,rpg,apg,espn){
+                if(!pc[slug]){
+                    const ng=tg[espn]||0;let pts=0,reb=0,ast=0;
+                    for(let g=0;g<ng;g++){
+                        pts+=Math.max(0,Math.trunc(ppg+gauss(rng)*ppg*0.4));
+                        reb+=Math.max(0,Math.trunc(rpg+gauss(rng)*rpg*0.5));
+                        ast+=Math.max(0,Math.trunc(apg+gauss(rng)*apg*0.5));
+                    }
+                    pc[slug]=[pts,reb,ast];
+                }
+                return pc[slug];
+            }
+
+            let my = 0;
+            for (let i = 0; i < 16; i++) {
+                const p = team[i];
+                const [pts,reb,ast] = gs(p.slug, p.ppg, p.rpg, p.apg, p.espn);
+                if (i === sc) my += pts * 1.5;
+                else if (i === pm) my += pts + reb + ast;
+                else my += pts;
+            }
+            totalPts += my;
+
+            const allS = [[my, -1]];
+            for (let oi = 0; oi < OPPONENTS.length; oi++) {
+                let s = 0;
+                for (let pi = 0; pi < OPPONENTS[oi].players.length; pi++) {
+                    const p = OPPONENTS[oi].players[pi];
+                    const slug = p.slug || `opp-${oi}-${pi}`;
+                    const [pts,reb,ast] = gs(slug, p.ppg, p.rpg, p.apg, p.espn);
+                    if (p.captain === 'scorer') s += pts * 1.5;
+                    else if (p.captain === 'playmaker') s += pts + reb + ast;
+                    else s += pts;
+                }
+                allS.push([s, oi]);
+                oppScores[oi] += s;
+            }
+            allS.sort((a,b) => b[0] - a[0]);
+            for (let ri = 0; ri < allS.length; ri++) {
+                if (allS[ri][1] === -1) {
+                    rankCounts[ri+1]++;
+                    if (ri+1 <= 6) totalEV += PAYOUTS[ri+1];
+                    break;
+                }
+            }
+        }
+        completed += n;
+
+        // Update live stats
+        const ev = totalEV / completed;
+        const avgPts = totalPts / completed;
+        const avgRank = rankCounts.reduce((s,c,i) => s + c*i, 0) / completed;
+        evHistory.push(ev);
+
+        document.getElementById('liveEV').textContent = '$' + ev.toFixed(1);
+        document.getElementById('livePts').textContent = avgPts.toFixed(0) + ' pts';
+        document.getElementById('liveRank').textContent = '#' + avgRank.toFixed(1);
+        document.getElementById('liveProg').style.width = (completed/N*100) + '%';
+        document.getElementById('liveStatus').textContent =
+            `${completed.toLocaleString()} / ${N.toLocaleString()} sims | EV: $${ev.toFixed(2)} | ${ev > BASELINE_EV ? 'ABOVE' : 'below'} optimal ($${BASELINE_EV})`;
+
+        // Draw chart
+        drawChart(document.getElementById('evChart'), evHistory, BASELINE_EV);
+
+        // Rank distribution
+        const colors = ['','#fbbf24','#94a3b8','#cd7f32','#3b82f6','#22c55e','#a78bfa','#475569'];
+        const maxPct = Math.max(...rankCounts.slice(1,8).map(c=>c/completed));
+        let dh = '<div style="font-size:.7rem;color:#94a3b8;margin-bottom:.3rem;font-weight:700">Finish Distribution</div>';
+        for (let r = 1; r <= 7; r++) {
+            const label = r <= 6 ? `${r}${['','st','nd','rd','th','th','th'][r]}` : '7+';
+            const count = r === 7 ? rankCounts.slice(7).reduce((a,b)=>a+b,0) : rankCounts[r];
+            const pctVal = (count/completed*100);
+            const barW = maxPct > 0 ? (count/completed)/maxPct*100 : 0;
+            const payout = PAYOUTS[r] || 0;
+            dh += `<div class="rank-bar-row"><div class="rank-label">${label}</div><div class="rank-bar-bg"><div class="rank-bar" style="width:${barW}%;background:${colors[r]||'#475569'}"></div></div><div class="rank-pct" style="color:${r<=6?'#22c55e':'#64748b'}">${pctVal.toFixed(1)}%${payout?' ($'+payout+')':''}</div></div>`;
+        }
+        document.getElementById('liveRankDist').innerHTML = dh;
+
+        if (completed >= N) {
+            // Final: opponent comparison
+            const oppAvgs = OPPONENTS.map((o,i) => ({name:o.name, avg:oppScores[i]/N}));
+            oppAvgs.push({name:'YOUR LINEUP', avg:avgPts, you:true});
+            oppAvgs.sort((a,b) => b.avg - a.avg);
+            let ch = '<div style="font-weight:700;color:#94a3b8;margin-bottom:.3rem">Avg Scores vs Field</div>';
+            for (const o of oppAvgs.slice(0, 12)) {
+                ch += `<div class="comp-row ${o.you?'comp-you':''}"><span class="comp-name">${o.name}</span><span class="comp-score">${o.avg.toFixed(0)}</span></div>`;
+            }
+            document.getElementById('liveComp').innerHTML = ch;
+            document.getElementById('liveStatus').textContent =
+                `Done: ${N.toLocaleString()} sims | Final EV: $${ev.toFixed(2)} | Baseline: $${BASELINE_EV}`;
+            btn.disabled = false; btn.textContent = 'Simulate (20,000 sims)';
+            simRunning = false;
+        } else {
+            setTimeout(doBatch, 0);
+        }
+    }
+    setTimeout(doBatch, 50);
+}
+
+// === INIT ===
+buildSlots();
+buildPoolChips();
+setLineup(OPTIMAL_EV, OPTIMAL_SC, OPTIMAL_PM);
+</script>
+</body></html>
