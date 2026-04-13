@@ -1,0 +1,618 @@
+{
+  "aaron-gordon": {
+    "espn_id": "3064290",
+    "name": "Aaron Gordon"
+  },
+  "aaron-nesmith": {
+    "espn_id": "4396909",
+    "name": "Aaron Nesmith"
+  },
+  "aaron-wiggins": {
+    "espn_id": "4397183",
+    "name": "Aaron Wiggins"
+  },
+  "aj-green": {
+    "espn_id": "4397475",
+    "name": "AJ Green"
+  },
+  "al-horford": {
+    "espn_id": "3213",
+    "name": "Al Horford"
+  },
+  "alex-caruso": {
+    "espn_id": "2991350",
+    "name": "Alex Caruso"
+  },
+  "amen-thompson": {
+    "espn_id": "4684740",
+    "name": "Amen Thompson"
+  },
+  "andre-drummond": {
+    "espn_id": "6585",
+    "name": "Andre Drummond"
+  },
+  "andrew-nembhard": {
+    "espn_id": "4395712",
+    "name": "Andrew Nembhard"
+  },
+  "andrew-wiggins": {
+    "espn_id": "3059319",
+    "name": "Andrew Wiggins"
+  },
+  "anthony-davis": {
+    "espn_id": "6583",
+    "name": "Anthony Davis"
+  },
+  "ausar-thompson": {
+    "espn_id": "4684742",
+    "name": "Ausar Thompson"
+  },
+  "austin-reaves": {
+    "espn_id": "4066457",
+    "name": "Austin Reaves"
+  },
+  "ayo-dosunmu": {
+    "espn_id": "4397002",
+    "name": "Ayo Dosunmu"
+  },
+  "bobby-portis": {
+    "espn_id": "3064482",
+    "name": "Bobby Portis"
+  },
+  "bogdan-bogdanovic": {
+    "espn_id": "3037789",
+    "name": "Bogdan Bogdanovic"
+  },
+  "bones-hyland": {
+    "espn_id": "4592492",
+    "name": "Bones Hyland"
+  },
+  "bradley-beal": {
+    "espn_id": "6580",
+    "name": "Bradley Beal"
+  },
+  "brandin-podziemski": {
+    "espn_id": "4709138",
+    "name": "Brandin Podziemski"
+  },
+  "brandon-clarke": {
+    "espn_id": "3906665",
+    "name": "Brandon Clarke"
+  },
+  "brook-lopez": {
+    "espn_id": "3448",
+    "name": "Brook Lopez"
+  },
+  "bruce-brown": {
+    "espn_id": "4065670",
+    "name": "Bruce Brown"
+  },
+  "buddy-hield": {
+    "espn_id": "2990984",
+    "name": "Buddy Hield"
+  },
+  "caris-levert": {
+    "espn_id": "2991043",
+    "name": "Caris LeVert"
+  },
+  "cason-wallace": {
+    "espn_id": "4683692",
+    "name": "Cason Wallace"
+  },
+  "chet-holmgren": {
+    "espn_id": "4433255",
+    "name": "Chet Holmgren"
+  },
+  "christian-braun": {
+    "espn_id": "4431767",
+    "name": "Christian Braun"
+  },
+  "dalton-knecht": {
+    "espn_id": "4897943",
+    "name": "Dalton Knecht"
+  },
+  "damian-lillard": {
+    "espn_id": "6606",
+    "name": "Damian Lillard"
+  },
+  "dangelo-russell": {
+    "espn_id": "3136776",
+    "name": "D'Angelo Russell"
+  },
+  "daniel-gafford": {
+    "espn_id": "4278049",
+    "name": "Daniel Gafford"
+  },
+  "darius-garland": {
+    "espn_id": "4396907",
+    "name": "Darius Garland"
+  },
+  "davion-mitchell": {
+    "espn_id": "4278053",
+    "name": "Davion Mitchell"
+  },
+  "deandre-ayton": {
+    "espn_id": "4278129",
+    "name": "Deandre Ayton"
+  },
+  "deanthony-melton": {
+    "espn_id": "4066436",
+    "name": "De'Anthony Melton"
+  },
+  "dennis-schroder": {
+    "espn_id": "3032979",
+    "name": "Dennis Schroder"
+  },
+  "dereck-lively-ii": {
+    "espn_id": "4683688",
+    "name": "Dereck Lively II"
+  },
+  "derrick-jones-jr": {
+    "espn_id": "3936099",
+    "name": "Derrick Jones Jr."
+  },
+  "derrick-white": {
+    "espn_id": "3078576",
+    "name": "Derrick White"
+  },
+  "desmond-bane": {
+    "espn_id": "4066320",
+    "name": "Desmond Bane"
+  },
+  "devin-booker": {
+    "espn_id": "3136193",
+    "name": "Devin Booker"
+  },
+  "donovan-mitchell": {
+    "espn_id": "3908809",
+    "name": "Donovan Mitchell"
+  },
+  "donte-divincenzo": {
+    "espn_id": "3934673",
+    "name": "Donte DiVincenzo"
+  },
+  "dorian-finney-smith": {
+    "espn_id": "2578185",
+    "name": "Dorian Finney-Smith"
+  },
+  "draymond-green": {
+    "espn_id": "6589",
+    "name": "Draymond Green"
+  },
+  "duncan-robinson": {
+    "espn_id": "3157465",
+    "name": "Duncan Robinson"
+  },
+  "dwight-powell": {
+    "espn_id": "2531367",
+    "name": "Dwight Powell"
+  },
+  "evan-mobley": {
+    "espn_id": "4432158",
+    "name": "Evan Mobley"
+  },
+  "gabe-vincent": {
+    "espn_id": "3137259",
+    "name": "Gabe Vincent"
+  },
+  "gary-payton-ii": {
+    "espn_id": "3134903",
+    "name": "Gary Payton II"
+  },
+  "giannis-antetokounmpo": {
+    "espn_id": "3032977",
+    "name": "Giannis Antetokounmpo"
+  },
+  "grant-williams": {
+    "espn_id": "4066218",
+    "name": "Grant Williams"
+  },
+  "grayson-allen": {
+    "espn_id": "3135045",
+    "name": "Grayson Allen"
+  },
+  "haywood-highsmith": {
+    "espn_id": "4291678",
+    "name": "Haywood Highsmith"
+  },
+  "herbert-jones": {
+    "espn_id": "4277813",
+    "name": "Herbert Jones"
+  },
+  "isaac-okoro": {
+    "espn_id": "4432822",
+    "name": "Isaac Okoro"
+  },
+  "isaiah-stewart": {
+    "espn_id": "4432810",
+    "name": "Isaiah Stewart"
+  },
+  "ivica-zubac": {
+    "espn_id": "4017837",
+    "name": "Ivica Zubac"
+  },
+  "ja-morant": {
+    "espn_id": "4279888",
+    "name": "Ja Morant"
+  },
+  "jaden-mcdaniels": {
+    "espn_id": "4431671",
+    "name": "Jaden McDaniels"
+  },
+  "jalen-duren": {
+    "espn_id": "4433621",
+    "name": "Jalen Duren"
+  },
+  "jalen-suggs": {
+    "espn_id": "4432165",
+    "name": "Jalen Suggs"
+  },
+  "jalen-williams": {
+    "espn_id": "4593803",
+    "name": "Jalen Williams"
+  },
+  "jamal-murray": {
+    "espn_id": "3936299",
+    "name": "Jamal Murray"
+  },
+  "james-harden": {
+    "espn_id": "3992",
+    "name": "James Harden"
+  },
+  "jarace-walker": {
+    "espn_id": "5106060",
+    "name": "Jarace Walker"
+  },
+  "jaren-jackson-jr": {
+    "espn_id": "4277961",
+    "name": "Jaren Jackson Jr."
+  },
+  "javonte-green": {
+    "espn_id": "2596112",
+    "name": "Javonte Green"
+  },
+  "jaxson-hayes": {
+    "espn_id": "4397077",
+    "name": "Jaxson Hayes"
+  },
+  "jaylen-brown": {
+    "espn_id": "3917376",
+    "name": "Jaylen Brown"
+  },
+  "jayson-tatum": {
+    "espn_id": "4065648",
+    "name": "Jayson Tatum"
+  },
+  "jeff-green": {
+    "espn_id": "3209",
+    "name": "Jeff Green"
+  },
+  "jimmy-butler": {
+    "espn_id": "6430",
+    "name": "Jimmy Butler"
+  },
+  "jimmy-butler-iii": {
+    "espn_id": "6430",
+    "name": "Jimmy Butler III"
+  },
+  "john-konchar": {
+    "espn_id": "3134932",
+    "name": "John Konchar"
+  },
+  "jordan-clarkson": {
+    "espn_id": "2528426",
+    "name": "Jordan Clarkson"
+  },
+  "jordan-poole": {
+    "espn_id": "4277956",
+    "name": "Jordan Poole"
+  },
+  "jose-alvarado": {
+    "espn_id": "4277869",
+    "name": "Jose Alvarado"
+  },
+  "josh-hart": {
+    "espn_id": "3062679",
+    "name": "Josh Hart"
+  },
+  "josh-okogie": {
+    "espn_id": "4065663",
+    "name": "Josh Okogie"
+  },
+  "jrue-holiday": {
+    "espn_id": "3995",
+    "name": "Jrue Holiday"
+  },
+  "julius-randle": {
+    "espn_id": "3064514",
+    "name": "Julius Randle"
+  },
+  "jusuf-nurkic": {
+    "espn_id": "3102530",
+    "name": "Jusuf Nurkic"
+  },
+  "karl-anthony-towns": {
+    "espn_id": "3136195",
+    "name": "Karl-Anthony Towns"
+  },
+  "kawhi-leonard": {
+    "espn_id": "6450",
+    "name": "Kawhi Leonard"
+  },
+  "kelly-oubre-jr": {
+    "espn_id": "3133603",
+    "name": "Kelly Oubre Jr."
+  },
+  "kevin-durant": {
+    "espn_id": "3202",
+    "name": "Kevin Durant"
+  },
+  "kevin-huerter": {
+    "espn_id": "4066372",
+    "name": "Kevin Huerter"
+  },
+  "kevin-love": {
+    "espn_id": "3449",
+    "name": "Kevin Love"
+  },
+  "kevin-porter-jr": {
+    "espn_id": "4397140",
+    "name": "Kevin Porter Jr."
+  },
+  "kevon-looney": {
+    "espn_id": "3155535",
+    "name": "Kevon Looney"
+  },
+  "khris-middleton": {
+    "espn_id": "6609",
+    "name": "Khris Middleton"
+  },
+  "klay-thompson": {
+    "espn_id": "6475",
+    "name": "Klay Thompson"
+  },
+  "kris-dunn": {
+    "espn_id": "2991139",
+    "name": "Kris Dunn"
+  },
+  "kristaps-porzingis": {
+    "espn_id": "3102531",
+    "name": "Kristaps Porzingis"
+  },
+  "kyle-anderson": {
+    "espn_id": "2993874",
+    "name": "Kyle Anderson"
+  },
+  "kyle-lowry": {
+    "espn_id": "3012",
+    "name": "Kyle Lowry"
+  },
+  "kyrie-irving": {
+    "espn_id": "6442",
+    "name": "Kyrie Irving"
+  },
+  "larry-nance-jr": {
+    "espn_id": "2580365",
+    "name": "Larry Nance Jr."
+  },
+  "lebron-james": {
+    "espn_id": "1966",
+    "name": "LeBron James"
+  },
+  "luka-doncic": {
+    "espn_id": "3945274",
+    "name": "Luka Doncic"
+  },
+  "luke-kennard": {
+    "espn_id": "3913174",
+    "name": "Luke Kennard"
+  },
+  "malik-monk": {
+    "espn_id": "4066262",
+    "name": "Malik Monk"
+  },
+  "marcus-sasser": {
+    "espn_id": "4432107",
+    "name": "Marcus Sasser"
+  },
+  "marcus-smart": {
+    "espn_id": "2990992",
+    "name": "Marcus Smart"
+  },
+  "max-strus": {
+    "espn_id": "4065778",
+    "name": "Max Strus"
+  },
+  "maxi-kleber": {
+    "espn_id": "2960236",
+    "name": "Maxi Kleber"
+  },
+  "michael-porter-jr": {
+    "espn_id": "4278104",
+    "name": "Michael Porter Jr"
+  },
+  "mikal-bridges": {
+    "espn_id": "3147657",
+    "name": "Mikal Bridges"
+  },
+  "mike-conley": {
+    "espn_id": "3195",
+    "name": "Mike Conley"
+  },
+  "miles-mcbride": {
+    "espn_id": "4431823",
+    "name": "Miles McBride"
+  },
+  "mitchell-robinson": {
+    "espn_id": "4351852",
+    "name": "Mitchell Robinson"
+  },
+  "moses-moody": {
+    "espn_id": "4432171",
+    "name": "Moses Moody"
+  },
+  "myles-turner": {
+    "espn_id": "3133628",
+    "name": "Myles Turner"
+  },
+  "naz-reid": {
+    "espn_id": "4396971",
+    "name": "Naz Reid"
+  },
+  "nic-claxton": {
+    "espn_id": "4278067",
+    "name": "Nic Claxton"
+  },
+  "nickeil-alexander-walker": {
+    "espn_id": "4278039",
+    "name": "Nickeil Alexander-Walker"
+  },
+  "nikola-jokic": {
+    "espn_id": "3112335",
+    "name": "Nikola Jokic"
+  },
+  "nikola-jovic": {
+    "espn_id": "4997528",
+    "name": "Nikola Jovic"
+  },
+  "norman-powell": {
+    "espn_id": "2595516",
+    "name": "Norman Powell"
+  },
+  "obi-toppin": {
+    "espn_id": "4278355",
+    "name": "Obi Toppin"
+  },
+  "og-anunoby": {
+    "espn_id": "3934719",
+    "name": "OG Anunoby"
+  },
+  "onyeka-okongwu": {
+    "espn_id": "4431680",
+    "name": "Onyeka Okongwu"
+  },
+  "p-j-washington": {
+    "espn_id": "4278078",
+    "name": "P.J. Washington"
+  },
+  "paolo-banchero": {
+    "espn_id": "4432573",
+    "name": "Paolo Banchero"
+  },
+  "pat-connaughton": {
+    "espn_id": "2578239",
+    "name": "Pat Connaughton"
+  },
+  "paul-reed": {
+    "espn_id": "4278562",
+    "name": "Paul Reed"
+  },
+  "payton-pritchard": {
+    "espn_id": "4066354",
+    "name": "Payton Pritchard"
+  },
+  "peyton-watson": {
+    "espn_id": "4576087",
+    "name": "Peyton Watson"
+  },
+  "precious-achiuwa": {
+    "espn_id": "4431679",
+    "name": "Precious Achiuwa"
+  },
+  "quentin-grimes": {
+    "espn_id": "4397014",
+    "name": "Quentin Grimes"
+  },
+  "rob-dillingham": {
+    "espn_id": "4684275",
+    "name": "Rob Dillingham"
+  },
+  "royce-oneale": {
+    "espn_id": "2583632",
+    "name": "Royce O'Neale"
+  },
+  "rudy-gobert": {
+    "espn_id": "3032976",
+    "name": "Rudy Gobert"
+  },
+  "rui-hachimura": {
+    "espn_id": "4066648",
+    "name": "Rui Hachimura***"
+  },
+  "russell-westbrook": {
+    "espn_id": "3468",
+    "name": "Russell Westbrook"
+  },
+  "ryan-rollins": {
+    "espn_id": "4591725",
+    "name": "Ryan Rollins"
+  },
+  "scotty-pippen-jr": {
+    "espn_id": "4431785",
+    "name": "Scotty Pippen Jr."
+  },
+  "seth-curry": {
+    "espn_id": "2326307",
+    "name": "Seth Curry"
+  },
+  "shai-gilgeous-alexander": {
+    "espn_id": "4278073",
+    "name": "Shai Gilgeous-Alexander"
+  },
+  "simone-fontecchio": {
+    "espn_id": "3899664",
+    "name": "Simone Fontecchio"
+  },
+  "stephen-curry": {
+    "espn_id": "3975",
+    "name": "Stephen Curry"
+  },
+  "t-j-mcconnell": {
+    "espn_id": "2530530",
+    "name": "T.J. McConnell"
+  },
+  "taurean-prince": {
+    "espn_id": "2990962",
+    "name": "Taurean Prince"
+  },
+  "terance-mann": {
+    "espn_id": "3907823",
+    "name": "Terance Mann"
+  },
+  "thomas-bryant": {
+    "espn_id": "3934723",
+    "name": "Thomas Bryant"
+  },
+  "tim-hardaway-jr": {
+    "espn_id": "2528210",
+    "name": "Tim Hardaway Jr."
+  },
+  "tobias-harris": {
+    "espn_id": "6440",
+    "name": "Tobias Harris"
+  },
+  "ty-jerome": {
+    "espn_id": "4065733",
+    "name": "Ty Jerome"
+  },
+  "tyrese-maxey": {
+    "espn_id": "4431678",
+    "name": "Tyrese Maxey"
+  },
+  "tyus-jones": {
+    "espn_id": "3135046",
+    "name": "Tyus Jones"
+  },
+  "wendell-carter-jr": {
+    "espn_id": "4277847",
+    "name": "Wendell Carter Jr."
+  },
+  "zach-lavine": {
+    "espn_id": "3064440",
+    "name": "Zach Lavine"
+  },
+  "ziaire-williams": {
+    "espn_id": "4433137",
+    "name": "Ziaire Williams"
+  }
+}

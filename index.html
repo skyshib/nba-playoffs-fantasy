@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NBA Playoffs Fantasy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <span class="logo-icon">🏀</span>
+        <h1>NBA Playoffs Fantasy</h1>
+      </div>
+      <div class="controls">
+        <a class="view-toggle" href="rules.html" title="Rules &amp; payouts">Rules</a>
+        <button id="enter-picks-btn" class="view-toggle primary" title="Build a roster">Enter Picks</button>
+        <button id="view-toggle" class="view-toggle" title="Toggle compact view">Compact</button>
+        <select id="year-select" aria-label="Select year"></select>
+        <span id="update-indicator" class="update-indicator">Loading...</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="live-games-container"></div>
+    <div id="scoreboard-container">
+      <table id="scoreboard">
+        <thead>
+          <tr>
+            <th class="col-rank">#</th>
+            <th class="col-name">Name</th>
+            <th class="col-total">Total</th>
+            <th class="col-diff" title="Sum of (avg PPG − cost) across all picks">+/-</th>
+            <th class="col-remaining">Alive</th>
+            <th class="col-ppgrem" title="Sum of remaining picks' cost × seed multiplier">PPG Rem</th>
+            <th class="col-seeds" colspan="8">Seeds 1–8</th>
+          </tr>
+        </thead>
+        <tbody id="scoreboard-body"></tbody>
+      </table>
+    </div>
+
+    <div id="player-detail" class="detail-panel hidden">
+      <button id="close-detail" class="close-btn" aria-label="Close">&times;</button>
+      <h2 id="detail-name"></h2>
+      <div id="detail-content"></div>
+    </div>
+
+    <!-- Picks Modal -->
+    <div id="picks-modal" class="bug-modal hidden">
+      <div class="bug-modal-content picks-modal-content">
+        <button id="picks-close" class="close-btn">&times;</button>
+        <h2>Build your roster</h2>
+        <div id="picks-ui"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>NBA data via ESPN. Auto-refreshes every 1 min during games.</p>
+  </footer>
+
+  <script src="js/espn.js?v=1"></script>
+  <script src="js/scoreboard.js?v=1"></script>
+  <script src="js/picks_ui.js?v=1"></script>
+  <script src="js/app.js?v=1"></script>
+</body>
+</html>

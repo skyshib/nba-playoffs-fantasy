@@ -1,0 +1,1118 @@
+{
+  "year": 2022,
+  "entrants": [
+    {
+      "name": "Carter Kranz",
+      "picks": {
+        "1": {
+          "player_id": "devin-booker",
+          "name": "Devin Booker",
+          "seed": 1,
+          "cost": 26.8
+        },
+        "2": {
+          "player_id": "jaylen-brown",
+          "name": "Jaylen Brown",
+          "seed": 2,
+          "cost": 23.6
+        },
+        "3": {
+          "player_id": "khris-middleton",
+          "name": "Khris Middleton",
+          "seed": 3,
+          "cost": 20.1
+        },
+        "4": {
+          "player_id": "davis-bertans",
+          "name": "Davis Bertans",
+          "seed": 4,
+          "cost": 5.3
+        },
+        "5": {
+          "player_id": "mike-conley",
+          "name": "Mike Conley",
+          "seed": 5,
+          "cost": 13.7
+        },
+        "6": {
+          "player_id": "alex-caruso",
+          "name": "Alex Caruso",
+          "seed": 6,
+          "cost": 7.4
+        },
+        "7": {
+          "player_id": "naz-reid",
+          "name": "Naz Reid",
+          "seed": 7,
+          "cost": 8.3
+        },
+        "8": {
+          "player_id": "delon-wright",
+          "name": "Delon Wright",
+          "seed": 8,
+          "cost": 4.4
+        }
+      }
+    },
+    {
+      "name": "Kyle Heck",
+      "picks": {
+        "1": {
+          "player_id": "mikal-bridges",
+          "name": "Mikal Bridges",
+          "seed": 1,
+          "cost": 14.2
+        },
+        "2": {
+          "player_id": "payton-pritchard",
+          "name": "Payton Pritchard",
+          "seed": 2,
+          "cost": 6.2
+        },
+        "3": {
+          "player_id": "giannis-antetokounmpo",
+          "name": "Giannis Antetokounmpo",
+          "seed": 3,
+          "cost": 29.9
+        },
+        "4": {
+          "player_id": "tyrese-maxey",
+          "name": "Tyrese Maxey",
+          "seed": 4,
+          "cost": 17.5
+        },
+        "5": {
+          "player_id": "jordan-clarkson",
+          "name": "Jordan Clarkson",
+          "seed": 5,
+          "cost": 16.0
+        },
+        "6": {
+          "player_id": "monte-morris",
+          "name": "Monte Morris",
+          "seed": 6,
+          "cost": 12.6
+        },
+        "7": {
+          "player_id": "patrick-beverley",
+          "name": "Patrick Beverley",
+          "seed": 7,
+          "cost": 9.2
+        },
+        "8": {
+          "player_id": "delon-wright",
+          "name": "Delon Wright",
+          "seed": 8,
+          "cost": 4.4
+        }
+      }
+    },
+    {
+      "name": "Clark Marshall",
+      "picks": {
+        "1": {
+          "player_id": "chris-paul",
+          "name": "Chris Paul",
+          "seed": 1,
+          "cost": 14.7
+        },
+        "2": {
+          "player_id": "brandon-clarke",
+          "name": "Brandon Clarke",
+          "seed": 2,
+          "cost": 10.4
+        },
+        "3": {
+          "player_id": "khris-middleton",
+          "name": "Khris Middleton",
+          "seed": 3,
+          "cost": 20.1
+        },
+        "4": {
+          "player_id": "spencer-dinwiddie",
+          "name": "Spencer Dinwiddie",
+          "seed": 4,
+          "cost": 15.8
+        },
+        "5": {
+          "player_id": "og-anunoby",
+          "name": "OG Anunoby",
+          "seed": 5,
+          "cost": 17.1
+        },
+        "6": {
+          "player_id": "demarcus-cousins",
+          "name": "Demarcus Cousins",
+          "seed": 6,
+          "cost": 8.9
+        },
+        "7": {
+          "player_id": "andre-drummond",
+          "name": "Andre Drummond",
+          "seed": 7,
+          "cost": 11.4
+        },
+        "8": {
+          "player_id": "danilo-gallinari",
+          "name": "Danilo Gallinari",
+          "seed": 8,
+          "cost": 11.5
+        }
+      }
+    },
+    {
+      "name": "Vik",
+      "picks": {
+        "1": {
+          "player_id": "chris-paul",
+          "name": "Chris Paul",
+          "seed": 1,
+          "cost": 14.7
+        },
+        "2": {
+          "player_id": "ja-morant",
+          "name": "Ja Morant",
+          "seed": 2,
+          "cost": 27.4
+        },
+        "3": {
+          "player_id": "khris-middleton",
+          "name": "Khris Middleton",
+          "seed": 3,
+          "cost": 20.1
+        },
+        "4": {
+          "player_id": "georges-niang",
+          "name": "Georges Niang",
+          "seed": 4,
+          "cost": 9.2
+        },
+        "5": {
+          "player_id": "hassan-whiteside",
+          "name": "Hassan Whiteside",
+          "seed": 5,
+          "cost": 8.2
+        },
+        "6": {
+          "player_id": "jeff-green",
+          "name": "Jeff Green",
+          "seed": 6,
+          "cost": 10.3
+        },
+        "7": {
+          "player_id": "seth-curry",
+          "name": "Seth Curry",
+          "seed": 7,
+          "cost": 14.9
+        },
+        "8": {
+          "player_id": "delon-wright",
+          "name": "Delon Wright",
+          "seed": 8,
+          "cost": 4.4
+        }
+      }
+    },
+    {
+      "name": "Zach Zimmerman",
+      "picks": {
+        "1": {
+          "player_id": "devin-booker",
+          "name": "Devin Booker",
+          "seed": 1,
+          "cost": 26.8
+        },
+        "2": {
+          "player_id": "ziaire-williams",
+          "name": "Ziaire Williams",
+          "seed": 2,
+          "cost": 8.1
+        },
+        "3": {
+          "player_id": "giannis-antetokounmpo",
+          "name": "Giannis Antetokounmpo",
+          "seed": 3,
+          "cost": 29.9
+        },
+        "4": {
+          "player_id": "danny-green",
+          "name": "Danny Green",
+          "seed": 4,
+          "cost": 5.9
+        },
+        "5": {
+          "player_id": "rudy-gay",
+          "name": "Rudy Gay",
+          "seed": 5,
+          "cost": 8.1
+        },
+        "6": {
+          "player_id": "bones-hyland",
+          "name": "Bones Hyland",
+          "seed": 6,
+          "cost": 10.1
+        },
+        "7": {
+          "player_id": "seth-curry",
+          "name": "Seth Curry",
+          "seed": 7,
+          "cost": 14.9
+        },
+        "8": {
+          "player_id": "jose-alvarado",
+          "name": "Jose Alvarado",
+          "seed": 8,
+          "cost": 6.1
+        }
+      }
+    },
+    {
+      "name": "Luke Gasque",
+      "picks": {
+        "1": {
+          "player_id": "deandre-ayton",
+          "name": "Deandre Ayton",
+          "seed": 1,
+          "cost": 17.2
+        },
+        "2": {
+          "player_id": "deanthony-melton",
+          "name": "De'Anthony Melton",
+          "seed": 2,
+          "cost": 10.8
+        },
+        "3": {
+          "player_id": "stephen-curry",
+          "name": "Stephen Curry",
+          "seed": 3,
+          "cost": 25.5
+        },
+        "4": {
+          "player_id": "james-harden",
+          "name": "James Harden",
+          "seed": 4,
+          "cost": 21.0
+        },
+        "5": {
+          "player_id": "royce-oneale",
+          "name": "Royce O'Neale",
+          "seed": 5,
+          "cost": 7.4
+        },
+        "6": {
+          "player_id": "ayo-dosunmu",
+          "name": "Ayo Dosunmu",
+          "seed": 6,
+          "cost": 8.8
+        },
+        "7": {
+          "player_id": "seth-curry",
+          "name": "Seth Curry",
+          "seed": 7,
+          "cost": 14.9
+        },
+        "8": {
+          "player_id": "delon-wright",
+          "name": "Delon Wright",
+          "seed": 8,
+          "cost": 4.4
+        }
+      }
+    },
+    {
+      "name": "Carter Kounovsky",
+      "picks": {
+        "1": {
+          "player_id": "chris-paul",
+          "name": "Chris Paul",
+          "seed": 1,
+          "cost": 14.7
+        },
+        "2": {
+          "player_id": "al-horford",
+          "name": "Al Horford",
+          "seed": 2,
+          "cost": 10.2
+        },
+        "3": {
+          "player_id": "giannis-antetokounmpo",
+          "name": "Giannis Antetokounmpo",
+          "seed": 3,
+          "cost": 29.9
+        },
+        "4": {
+          "player_id": "james-harden",
+          "name": "James Harden",
+          "seed": 4,
+          "cost": 21.0
+        },
+        "5": {
+          "player_id": "royce-oneale",
+          "name": "Royce O'Neale",
+          "seed": 5,
+          "cost": 7.4
+        },
+        "6": {
+          "player_id": "ayo-dosunmu",
+          "name": "Ayo Dosunmu",
+          "seed": 6,
+          "cost": 8.8
+        },
+        "7": {
+          "player_id": "andre-drummond",
+          "name": "Andre Drummond",
+          "seed": 7,
+          "cost": 11.4
+        },
+        "8": {
+          "player_id": "jose-alvarado",
+          "name": "Jose Alvarado",
+          "seed": 8,
+          "cost": 6.1
+        }
+      }
+    },
+    {
+      "name": "Dale's Pale Male",
+      "picks": {
+        "1": {
+          "player_id": "deandre-ayton",
+          "name": "Deandre Ayton",
+          "seed": 1,
+          "cost": 17.2
+        },
+        "2": {
+          "player_id": "derrick-white",
+          "name": "Derrick White",
+          "seed": 2,
+          "cost": 11.0
+        },
+        "3": {
+          "player_id": "klay-thompson",
+          "name": "Klay Thompson",
+          "seed": 3,
+          "cost": 20.4
+        },
+        "4": {
+          "player_id": "maxi-kleber",
+          "name": "Maxi Kleber",
+          "seed": 4,
+          "cost": 7.0
+        },
+        "5": {
+          "player_id": "mike-conley",
+          "name": "Mike Conley",
+          "seed": 5,
+          "cost": 13.7
+        },
+        "6": {
+          "player_id": "bones-hyland",
+          "name": "Bones Hyland",
+          "seed": 6,
+          "cost": 10.1
+        },
+        "7": {
+          "player_id": "seth-curry",
+          "name": "Seth Curry",
+          "seed": 7,
+          "cost": 14.9
+        },
+        "8": {
+          "player_id": "bogdan-bogdanovic",
+          "name": "Bogdan Bogdanovic",
+          "seed": 8,
+          "cost": 15.1
+        }
+      }
+    },
+    {
+      "name": "Cory Eavenson",
+      "picks": {
+        "1": {
+          "player_id": "devin-booker",
+          "name": "Devin Booker",
+          "seed": 1,
+          "cost": 26.8
+        },
+        "2": {
+          "player_id": "ziaire-williams",
+          "name": "Ziaire Williams",
+          "seed": 2,
+          "cost": 8.1
+        },
+        "3": {
+          "player_id": "khris-middleton",
+          "name": "Khris Middleton",
+          "seed": 3,
+          "cost": 20.1
+        },
+        "4": {
+          "player_id": "tyrese-maxey",
+          "name": "Tyrese Maxey",
+          "seed": 4,
+          "cost": 17.5
+        },
+        "5": {
+          "player_id": "mike-conley",
+          "name": "Mike Conley",
+          "seed": 5,
+          "cost": 13.7
+        },
+        "6": {
+          "player_id": "bones-hyland",
+          "name": "Bones Hyland",
+          "seed": 6,
+          "cost": 10.1
+        },
+        "7": {
+          "player_id": "bruce-brown",
+          "name": "Bruce Brown",
+          "seed": 7,
+          "cost": 8.8
+        },
+        "8": {
+          "player_id": "delon-wright",
+          "name": "Delon Wright",
+          "seed": 8,
+          "cost": 4.4
+        }
+      }
+    },
+    {
+      "name": "Gabri Erspamer",
+      "picks": {
+        "1": {
+          "player_id": "deandre-ayton",
+          "name": "Deandre Ayton",
+          "seed": 1,
+          "cost": 17.2
+        },
+        "2": {
+          "player_id": "brandon-clarke",
+          "name": "Brandon Clarke",
+          "seed": 2,
+          "cost": 10.4
+        },
+        "3": {
+          "player_id": "jrue-holiday",
+          "name": "Jrue Holiday",
+          "seed": 3,
+          "cost": 18.6
+        },
+        "4": {
+          "player_id": "davis-bertans",
+          "name": "Davis Bertans",
+          "seed": 4,
+          "cost": 5.3
+        },
+        "5": {
+          "player_id": "rudy-gobert",
+          "name": "Rudy Gobert",
+          "seed": 5,
+          "cost": 15.6
+        },
+        "6": {
+          "player_id": "nikola-jokic",
+          "name": "Nikola Jokic",
+          "seed": 6,
+          "cost": 27.1
+        },
+        "7": {
+          "player_id": "jaylen-nowell",
+          "name": "Jaylen Nowell",
+          "seed": 7,
+          "cost": 8.5
+        },
+        "8": {
+          "player_id": "larry-nance-jr",
+          "name": "Larry Nance Jr.",
+          "seed": 8,
+          "cost": 7.3
+        }
+      }
+    },
+    {
+      "name": "Ian",
+      "picks": {
+        "1": {
+          "player_id": "deandre-ayton",
+          "name": "Deandre Ayton",
+          "seed": 1,
+          "cost": 17.2
+        },
+        "2": {
+          "player_id": "jaylen-brown",
+          "name": "Jaylen Brown",
+          "seed": 2,
+          "cost": 23.6
+        },
+        "3": {
+          "player_id": "jordan-poole",
+          "name": "Jordan Poole",
+          "seed": 3,
+          "cost": 18.5
+        },
+        "4": {
+          "player_id": "georges-niang",
+          "name": "Georges Niang",
+          "seed": 4,
+          "cost": 9.2
+        },
+        "5": {
+          "player_id": "jordan-clarkson",
+          "name": "Jordan Clarkson",
+          "seed": 5,
+          "cost": 16.0
+        },
+        "6": {
+          "player_id": "ayo-dosunmu",
+          "name": "Ayo Dosunmu",
+          "seed": 6,
+          "cost": 8.8
+        },
+        "7": {
+          "player_id": "patrick-beverley",
+          "name": "Patrick Beverley",
+          "seed": 7,
+          "cost": 9.2
+        },
+        "8": {
+          "player_id": "larry-nance-jr",
+          "name": "Larry Nance Jr.",
+          "seed": 8,
+          "cost": 7.3
+        }
+      }
+    },
+    {
+      "name": "Chris Rossi",
+      "picks": {
+        "1": {
+          "player_id": "deandre-ayton",
+          "name": "Deandre Ayton",
+          "seed": 1,
+          "cost": 17.2
+        },
+        "2": {
+          "player_id": "marcus-smart",
+          "name": "Marcus Smart",
+          "seed": 2,
+          "cost": 12.1
+        },
+        "3": {
+          "player_id": "khris-middleton",
+          "name": "Khris Middleton",
+          "seed": 3,
+          "cost": 20.1
+        },
+        "4": {
+          "player_id": "tobias-harris",
+          "name": "Tobias Harris",
+          "seed": 4,
+          "cost": 17.2
+        },
+        "5": {
+          "player_id": "mike-conley",
+          "name": "Mike Conley",
+          "seed": 5,
+          "cost": 13.7
+        },
+        "6": {
+          "player_id": "monte-morris",
+          "name": "Monte Morris",
+          "seed": 6,
+          "cost": 12.6
+        },
+        "7": {
+          "player_id": "bruce-brown",
+          "name": "Bruce Brown",
+          "seed": 7,
+          "cost": 8.8
+        },
+        "8": {
+          "player_id": "onyeka-okongwu",
+          "name": "Onyeka Okongwu",
+          "seed": 8,
+          "cost": 8.2
+        }
+      }
+    },
+    {
+      "name": "Skylar",
+      "picks": {
+        "1": {
+          "player_id": "devin-booker",
+          "name": "Devin Booker",
+          "seed": 1,
+          "cost": 26.8
+        },
+        "2": {
+          "player_id": "daniel-theis",
+          "name": "Daniel Theis",
+          "seed": 2,
+          "cost": 7.9
+        },
+        "3": {
+          "player_id": "giannis-antetokounmpo",
+          "name": "Giannis Antetokounmpo",
+          "seed": 3,
+          "cost": 29.9
+        },
+        "4": {
+          "player_id": "danny-green",
+          "name": "Danny Green",
+          "seed": 4,
+          "cost": 5.9
+        },
+        "5": {
+          "player_id": "royce-oneale",
+          "name": "Royce O'Neale",
+          "seed": 5,
+          "cost": 7.4
+        },
+        "6": {
+          "player_id": "demarcus-cousins",
+          "name": "Demarcus Cousins",
+          "seed": 6,
+          "cost": 8.9
+        },
+        "7": {
+          "player_id": "seth-curry",
+          "name": "Seth Curry",
+          "seed": 7,
+          "cost": 14.9
+        },
+        "8": {
+          "player_id": "onyeka-okongwu",
+          "name": "Onyeka Okongwu",
+          "seed": 8,
+          "cost": 8.2
+        }
+      }
+    },
+    {
+      "name": "Ryan McMahon",
+      "picks": {
+        "1": {
+          "player_id": "devin-booker",
+          "name": "Devin Booker",
+          "seed": 1,
+          "cost": 26.8
+        },
+        "2": {
+          "player_id": "jaren-jackson-jr",
+          "name": "Jaren Jackson Jr.",
+          "seed": 2,
+          "cost": 16.3
+        },
+        "3": {
+          "player_id": "giannis-antetokounmpo",
+          "name": "Giannis Antetokounmpo",
+          "seed": 3,
+          "cost": 29.9
+        },
+        "4": {
+          "player_id": "furkan-korkmaz",
+          "name": "Furkan Korkmaz",
+          "seed": 4,
+          "cost": 7.6
+        },
+        "5": {
+          "player_id": "precious-achiuwa",
+          "name": "Precious Achiuwa",
+          "seed": 5,
+          "cost": 9.1
+        },
+        "6": {
+          "player_id": "javonte-green",
+          "name": "Javonte Green",
+          "seed": 6,
+          "cost": 7.2
+        },
+        "7": {
+          "player_id": "nic-claxton",
+          "name": "Nic Claxton",
+          "seed": 7,
+          "cost": 8.6
+        },
+        "8": {
+          "player_id": "delon-wright",
+          "name": "Delon Wright",
+          "seed": 8,
+          "cost": 4.4
+        }
+      }
+    },
+    {
+      "name": "Erik Schlick",
+      "picks": {
+        "1": {
+          "player_id": "jimmy-butler",
+          "name": "Jimmy Butler",
+          "seed": 1,
+          "cost": 21.4
+        },
+        "2": {
+          "player_id": "ja-morant",
+          "name": "Ja Morant",
+          "seed": 2,
+          "cost": 27.4
+        },
+        "3": {
+          "player_id": "klay-thompson",
+          "name": "Klay Thompson",
+          "seed": 3,
+          "cost": 20.4
+        },
+        "4": {
+          "player_id": "danny-green",
+          "name": "Danny Green",
+          "seed": 4,
+          "cost": 5.9
+        },
+        "5": {
+          "player_id": "rudy-gay",
+          "name": "Rudy Gay",
+          "seed": 5,
+          "cost": 8.1
+        },
+        "6": {
+          "player_id": "monte-morris",
+          "name": "Monte Morris",
+          "seed": 6,
+          "cost": 12.6
+        },
+        "7": {
+          "player_id": "bruce-brown",
+          "name": "Bruce Brown",
+          "seed": 7,
+          "cost": 8.8
+        },
+        "8": {
+          "player_id": "delon-wright",
+          "name": "Delon Wright",
+          "seed": 8,
+          "cost": 4.4
+        }
+      }
+    },
+    {
+      "name": "Kyle bradley",
+      "picks": {
+        "1": {
+          "player_id": "jimmy-butler",
+          "name": "Jimmy Butler",
+          "seed": 1,
+          "cost": 21.4
+        },
+        "2": {
+          "player_id": "marcus-smart",
+          "name": "Marcus Smart",
+          "seed": 2,
+          "cost": 12.1
+        },
+        "3": {
+          "player_id": "jordan-poole",
+          "name": "Jordan Poole",
+          "seed": 3,
+          "cost": 18.5
+        },
+        "4": {
+          "player_id": "spencer-dinwiddie",
+          "name": "Spencer Dinwiddie",
+          "seed": 4,
+          "cost": 15.8
+        },
+        "5": {
+          "player_id": "jordan-clarkson",
+          "name": "Jordan Clarkson",
+          "seed": 5,
+          "cost": 16.0
+        },
+        "6": {
+          "player_id": "alex-caruso",
+          "name": "Alex Caruso",
+          "seed": 6,
+          "cost": 7.4
+        },
+        "7": {
+          "player_id": "patrick-beverley",
+          "name": "Patrick Beverley",
+          "seed": 7,
+          "cost": 9.2
+        },
+        "8": {
+          "player_id": "herbert-jones",
+          "name": "Herbert Jones",
+          "seed": 8,
+          "cost": 9.5
+        }
+      }
+    },
+    {
+      "name": "Christopher Holmquist",
+      "picks": {
+        "1": {
+          "player_id": "devin-booker",
+          "name": "Devin Booker",
+          "seed": 1,
+          "cost": 26.8
+        },
+        "2": {
+          "player_id": "desmond-bane",
+          "name": "Desmond Bane",
+          "seed": 2,
+          "cost": 18.2
+        },
+        "3": {
+          "player_id": "giannis-antetokounmpo",
+          "name": "Giannis Antetokounmpo",
+          "seed": 3,
+          "cost": 29.9
+        },
+        "4": {
+          "player_id": "maxi-kleber",
+          "name": "Maxi Kleber",
+          "seed": 4,
+          "cost": 7.0
+        },
+        "5": {
+          "player_id": "thaddeus-young",
+          "name": "Thaddeus Young",
+          "seed": 5,
+          "cost": 6.3
+        },
+        "6": {
+          "player_id": "bryn-forbes",
+          "name": "Bryn Forbes",
+          "seed": 6,
+          "cost": 8.6
+        },
+        "7": {
+          "player_id": "bruce-brown",
+          "name": "Bruce Brown",
+          "seed": 7,
+          "cost": 8.8
+        },
+        "8": {
+          "player_id": "delon-wright",
+          "name": "Delon Wright",
+          "seed": 8,
+          "cost": 4.4
+        }
+      }
+    },
+    {
+      "name": "Cory Vest",
+      "picks": {
+        "1": {
+          "player_id": "chris-paul",
+          "name": "Chris Paul",
+          "seed": 1,
+          "cost": 14.7
+        },
+        "2": {
+          "player_id": "daniel-theis",
+          "name": "Daniel Theis",
+          "seed": 2,
+          "cost": 7.9
+        },
+        "3": {
+          "player_id": "giannis-antetokounmpo",
+          "name": "Giannis Antetokounmpo",
+          "seed": 3,
+          "cost": 29.9
+        },
+        "4": {
+          "player_id": "tyrese-maxey",
+          "name": "Tyrese Maxey",
+          "seed": 4,
+          "cost": 17.5
+        },
+        "5": {
+          "player_id": "hassan-whiteside",
+          "name": "Hassan Whiteside",
+          "seed": 5,
+          "cost": 8.2
+        },
+        "6": {
+          "player_id": "bones-hyland",
+          "name": "Bones Hyland",
+          "seed": 6,
+          "cost": 10.1
+        },
+        "7": {
+          "player_id": "bruce-brown",
+          "name": "Bruce Brown",
+          "seed": 7,
+          "cost": 8.8
+        },
+        "8": {
+          "player_id": "kevin-huerter",
+          "name": "Kevin Huerter",
+          "seed": 8,
+          "cost": 12.1
+        }
+      }
+    },
+    {
+      "name": "Isaiah carr",
+      "picks": {
+        "1": {
+          "player_id": "jimmy-butler",
+          "name": "Jimmy Butler",
+          "seed": 1,
+          "cost": 21.4
+        },
+        "2": {
+          "player_id": "al-horford",
+          "name": "Al Horford",
+          "seed": 2,
+          "cost": 10.2
+        },
+        "3": {
+          "player_id": "klay-thompson",
+          "name": "Klay Thompson",
+          "seed": 3,
+          "cost": 20.4
+        },
+        "4": {
+          "player_id": "dwight-powell",
+          "name": "Dwight Powell",
+          "seed": 4,
+          "cost": 8.7
+        },
+        "5": {
+          "player_id": "hassan-whiteside",
+          "name": "Hassan Whiteside",
+          "seed": 5,
+          "cost": 8.2
+        },
+        "6": {
+          "player_id": "zach-lavine",
+          "name": "Zach Lavine",
+          "seed": 6,
+          "cost": 24.4
+        },
+        "7": {
+          "player_id": "patrick-beverley",
+          "name": "Patrick Beverley",
+          "seed": 7,
+          "cost": 9.2
+        },
+        "8": {
+          "player_id": "larry-nance-jr",
+          "name": "Larry Nance Jr.",
+          "seed": 8,
+          "cost": 7.3
+        }
+      }
+    },
+    {
+      "name": "Vinny Bonta",
+      "picks": {
+        "1": {
+          "player_id": "mikal-bridges",
+          "name": "Mikal Bridges",
+          "seed": 1,
+          "cost": 14.2
+        },
+        "2": {
+          "player_id": "jaren-jackson-jr",
+          "name": "Jaren Jackson Jr.",
+          "seed": 2,
+          "cost": 16.3
+        },
+        "3": {
+          "player_id": "giannis-antetokounmpo",
+          "name": "Giannis Antetokounmpo",
+          "seed": 3,
+          "cost": 29.9
+        },
+        "4": {
+          "player_id": "georges-niang",
+          "name": "Georges Niang",
+          "seed": 4,
+          "cost": 9.2
+        },
+        "5": {
+          "player_id": "mike-conley",
+          "name": "Mike Conley",
+          "seed": 5,
+          "cost": 13.7
+        },
+        "6": {
+          "player_id": "jeff-green",
+          "name": "Jeff Green",
+          "seed": 6,
+          "cost": 10.3
+        },
+        "7": {
+          "player_id": "bruce-brown",
+          "name": "Bruce Brown",
+          "seed": 7,
+          "cost": 8.8
+        },
+        "8": {
+          "player_id": "larry-nance-jr",
+          "name": "Larry Nance Jr.",
+          "seed": 8,
+          "cost": 7.3
+        }
+      }
+    },
+    {
+      "name": "Chris Bradley",
+      "picks": {
+        "1": {
+          "player_id": "devin-booker",
+          "name": "Devin Booker",
+          "seed": 1,
+          "cost": 26.8
+        },
+        "2": {
+          "player_id": "tyus-jones",
+          "name": "Tyus Jones",
+          "seed": 2,
+          "cost": 8.7
+        },
+        "3": {
+          "player_id": "giannis-antetokounmpo",
+          "name": "Giannis Antetokounmpo",
+          "seed": 3,
+          "cost": 29.9
+        },
+        "4": {
+          "player_id": "danny-green",
+          "name": "Danny Green",
+          "seed": 4,
+          "cost": 5.9
+        },
+        "5": {
+          "player_id": "mike-conley",
+          "name": "Mike Conley",
+          "seed": 5,
+          "cost": 13.7
+        },
+        "6": {
+          "player_id": "bones-hyland",
+          "name": "Bones Hyland",
+          "seed": 6,
+          "cost": 10.1
+        },
+        "7": {
+          "player_id": "bruce-brown",
+          "name": "Bruce Brown",
+          "seed": 7,
+          "cost": 8.8
+        },
+        "8": {
+          "player_id": "jose-alvarado",
+          "name": "Jose Alvarado",
+          "seed": 8,
+          "cost": 6.1
+        }
+      }
+    }
+  ]
+}

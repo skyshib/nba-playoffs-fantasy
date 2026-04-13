@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rules — NBA Playoffs Fantasy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    .rules-main { max-width: 900px; margin: 1.5rem auto; padding: 0 1.25rem; }
+    .rules-main h2 {
+      font-size: 1.15rem; text-transform: uppercase; letter-spacing: .05em;
+      color: var(--accent-red); border-bottom: 2px solid var(--border);
+      padding-bottom: .4rem; margin: 2rem 0 .75rem;
+    }
+    .rules-main h3 { font-size: .95rem; margin-top: 1rem; color: var(--text-primary); }
+    .rules-main p, .rules-main li { line-height: 1.55; color: var(--text-secondary); font-size: .9rem; }
+    .rules-main ul, .rules-main ol { padding-left: 1.3rem; margin-bottom: .75rem; }
+    .rules-main code {
+      background: var(--bg-primary); padding: 1px 5px; border-radius: 3px;
+      font-size: .85em; color: var(--accent-gold);
+    }
+    .formula {
+      background: var(--bg-secondary); border: 1px solid var(--border);
+      border-left: 3px solid var(--accent-red);
+      padding: .75rem 1rem; margin: .5rem 0;
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: .85rem; color: var(--text-primary);
+      white-space: pre-wrap;
+    }
+    .example {
+      background: var(--bg-row-alt); border-radius: var(--radius);
+      padding: .75rem 1rem; margin: .5rem 0;
+      font-size: .85rem; color: var(--text-primary);
+    }
+    .example strong { color: var(--accent-gold); }
+
+    .payout-calc {
+      background: var(--bg-secondary); border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem; margin: 1rem 0;
+    }
+    .payout-calc .inputs {
+      display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem;
+    }
+    .payout-calc label {
+      display: flex; flex-direction: column; gap: .2rem;
+      font-size: .8rem; color: var(--text-secondary);
+    }
+    .payout-calc input {
+      background: var(--bg-primary); color: var(--text-primary);
+      border: 1px solid var(--border); border-radius: 4px;
+      padding: .4rem .6rem; font-size: 1rem; width: 8rem;
+      font-family: inherit;
+    }
+    .payout-calc .pot {
+      font-size: 1rem; color: var(--accent-gold); font-weight: 700;
+      margin-bottom: .6rem;
+    }
+    .payout-table {
+      width: 100%; border-collapse: collapse; font-size: .9rem;
+    }
+    .payout-table th {
+      text-align: left; color: var(--text-muted);
+      font-size: .7rem; text-transform: uppercase; letter-spacing: .05em;
+      padding: .4rem .6rem; border-bottom: 1px solid var(--border);
+    }
+    .payout-table td {
+      padding: .4rem .6rem; border-bottom: 1px solid var(--border);
+      font-variant-numeric: tabular-nums;
+    }
+    .payout-table td.place { font-weight: 700; color: var(--text-primary); width: 5rem; }
+    .payout-table td.amt { font-weight: 700; color: var(--accent-gold); }
+    .tier-table { width: 100%; border-collapse: collapse; font-size: .8rem; margin-top: .5rem; }
+    .tier-table th, .tier-table td {
+      padding: .35rem .5rem; text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .tier-table th { font-size: .65rem; text-transform: uppercase; color: var(--text-muted); }
+    .tier-table td { color: var(--text-secondary); }
+    .tier-table .active {
+      background: var(--bg-row-alt);
+      color: var(--text-primary);
+    }
+    .nav-link {
+      display: inline-block; margin-left: 1rem;
+      font-size: .85rem; color: var(--text-primary);
+      text-decoration: none;
+    }
+    .nav-link:hover { color: var(--accent-gold); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <span class="logo-icon">🏀</span>
+        <h1>NBA Playoffs Fantasy — Rules</h1>
+      </div>
+      <div class="controls">
+        <a class="view-toggle" href="index.html">← Scoreboard</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="rules-main">
+    <h2>Objective</h2>
+    <p>Draft eight NBA players — one for each playoff seed (1–8) — and accumulate the most points across the full postseason. Most total points at the end of the NBA Finals wins.</p>
+
+    <h2>Roster Selection</h2>
+    <ul>
+      <li>Each entrant picks <strong>8 players, one per seed 1–8</strong>. A seed-slot pick may come from either the Eastern or Western Conference playoff team at that seed.</li>
+      <li>Different entrants may pick the same player.</li>
+      <li>Only players on the 16 teams that qualify for the playoffs post-play-in are eligible. Play-in rounds don't count.</li>
+      <li>Submit a roster via the "Enter Picks" button on the scoreboard.</li>
+    </ul>
+
+    <h2>Budget &amp; Player Cost</h2>
+    <ul>
+      <li>This season (<span id="cfg-season"></span>), your budget is <strong id="cfg-budget">—</strong>.</li>
+      <li>Each player's cost is their regular-season points per game.</li>
+      <li>Low-scoring players have a minimum cost of <strong id="cfg-floor">—</strong> — anyone below that counts as the minimum.</li>
+      <li>Your 8 picks must fit within the budget.</li>
+    </ul>
+
+    <h2>Scoring</h2>
+    <h3>Per round</h3>
+    <p>A player's score in a round is the <strong>average of their top-4 games</strong> that round (top-4 PPG). Four rounds total: Round 1, Conference Semifinals, Conference Finals, NBA Finals.</p>
+    <div class="formula">round_score = average(top-4 games by points) × seed_multiplier</div>
+    <p>If a player plays fewer than 4 games in a round, the average is over however many they played.</p>
+
+    <h3>Seed multiplier</h3>
+    <p>Each seed-slot has a multiplier equal to <code>1 + seed/10</code>. Higher seeds score bigger.</p>
+    <div class="formula">seed multiplier: 1-seed = 1.1×, 2-seed = 1.2×, … 8-seed = 1.8×</div>
+    <p><em>Historical note</em>: the seed multiplier only applies from 2025 onward. 2022–2024 scoring used raw round PPGs (no multiplier).</p>
+
+    <div class="example">
+      <strong>Example</strong>: Andrew Nembhard is a 4-seed. He scores 10 points in a game → that game counts as 10 × 1.4 = 14 toward his round average.
+    </div>
+    <div class="example">
+      <strong>Worked example</strong>: Shai Gilgeous-Alexander (1-seed) goes for 33, 34, 18, 25, 31, 32, 35 in a 7-game series. Top-4 average = (33 + 34 + 32 + 35) / 4 = <strong>33.5 PPG</strong>. That round's contribution: 33.5 × 1.1 = <strong>36.85 points</strong>.
+    </div>
+
+    <h3>Entrant total</h3>
+    <div class="formula">entrant_total = Σ round_score across all 4 rounds, summed over all 8 picks</div>
+
+    <h2>Scoreboard Columns</h2>
+    <ul>
+      <li><strong>Total</strong>: your cumulative fantasy points.</li>
+      <li><strong>+/-</strong>: how much each pick is out-performing its cost. Per pick, <code>(actual average PPG) − cost</code>; summed across your 8 picks. Green = exceeding cost, red = underperforming.</li>
+      <li><strong>Alive</strong>: picks still in the playoffs, out of 8.</li>
+      <li><strong>PPG Rem</strong>: expected remaining upside. <code>Σ cost × multiplier</code> across alive picks — roughly how many points you'd earn next round if everyone ran at their season PPG.</li>
+      <li><strong>Seed cells</strong>: each cell shows the seed · multiplier, player headshot, name, and current fantasy total. Hover for per-game stats.</li>
+    </ul>
+
+    <h2>Payouts</h2>
+    <p>Pot = entrants × buy-in. The default structure scales by league size. Enter your own numbers below:</p>
+
+    <div class="payout-calc">
+      <div class="inputs">
+        <label>Buy-in ($)<input id="buyin" type="number" min="0" step="1" value="50"></label>
+        <label>Entrants<input id="entrants" type="number" min="1" step="1" value="27"></label>
+      </div>
+      <div class="pot" id="pot-display">Pot: $0 · Paying 0 places</div>
+      <table class="payout-table">
+        <thead><tr><th>Place</th><th>Share</th><th>Payout</th></tr></thead>
+        <tbody id="payout-body"></tbody>
+      </table>
+    </div>
+
+    <h3>Tier reference</h3>
+    <p>The default split by league size (summing to 100%):</p>
+    <table class="tier-table" id="tier-table">
+      <thead><tr><th>Entrants</th><th>Places paid</th><th>Split (% of pot)</th><th>Organizer cut</th></tr></thead>
+      <tbody></tbody>
+    </table>
+
+    <p style="margin-top: 2rem; color: var(--text-muted); font-size: .8rem;">
+      Commissioner has discretion to round payouts to convenient dollar amounts (e.g., nearest $0.50), as long as the pot balances to the total buy-in.
+    </p>
+  </main>
+
+  <footer>
+    <p><a class="nav-link" href="index.html">← Back to scoreboard</a></p>
+  </footer>
+
+  <script>
+    // Tiered payout structure
+    // Each tier: { min entrants, places, shares[] summing to 1.0, orgCut }
+    // shares[] are pre-cut percentages of the pot (placement winners only).
+    // orgCut is taken off the top before paying out.
+    const TIERS = [
+      { min: 16, places: 5, shares: [0.50, 0.25, 0.13, 0.07, 0.05], orgCut: 0.00 },
+      { min: 30, places: 6, shares: [0.45, 0.23, 0.13, 0.09, 0.06, 0.04], orgCut: 0.05 },
+      { min: 50, places: 7, shares: [0.42, 0.22, 0.13, 0.09, 0.07, 0.05, 0.02], orgCut: 0.05 },
+    ];
+
+    function tierFor(n) {
+      let t = TIERS[0];
+      for (const x of TIERS) if (n >= x.min) t = x;
+      return t;
+    }
+
+    function render() {
+      const buyin = parseFloat(document.getElementById('buyin').value) || 0;
+      const N = Math.max(1, parseInt(document.getElementById('entrants').value) || 0);
+      const pot = buyin * N;
+      const tier = tierFor(N);
+      const orgAmt = pot * tier.orgCut;
+      const winnerPool = pot - orgAmt;
+
+      const cutTxt = tier.orgCut > 0 ? ` · ${(tier.orgCut * 100).toFixed(0)}% organizer cut` : '';
+      document.getElementById('pot-display').textContent =
+        `Pot: $${pot.toFixed(2)} · Paying top ${tier.places} (${N} entrants)${cutTxt}`;
+
+      const tbody = document.getElementById('payout-body');
+      tbody.innerHTML = '';
+      tier.shares.forEach((sh, i) => {
+        const tr = document.createElement('tr');
+        const amt = winnerPool * sh;
+        tr.innerHTML = `<td class="place">${i + 1}${['st','nd','rd','th','th','th','th'][i]}</td>`
+          + `<td>${(sh * 100 * (1 - tier.orgCut)).toFixed(1)}%</td>`
+          + `<td class="amt">$${amt.toFixed(2)}</td>`;
+        tbody.appendChild(tr);
+      });
+      if (tier.orgCut > 0) {
+        const tr = document.createElement('tr');
+        tr.style.color = 'var(--text-muted)';
+        tr.innerHTML = `<td class="place">Organizer</td>`
+          + `<td>${(tier.orgCut * 100).toFixed(0)}%</td>`
+          + `<td class="amt" style="color:var(--text-muted)">$${orgAmt.toFixed(2)}</td>`;
+        tbody.appendChild(tr);
+      }
+
+      // Render tier table, highlight active
+      const ttb = document.querySelector('#tier-table tbody');
+      ttb.innerHTML = '';
+      for (let i = 0; i < TIERS.length; i++) {
+        const t = TIERS[i];
+        const nextMin = TIERS[i+1]?.min;
+        const range = nextMin ? `${t.min}–${nextMin - 1}` : `${t.min}+`;
+        const pct = t.shares.map(s => (s * 100 * (1 - t.orgCut)).toFixed(1)).join(' / ');
+        const cut = t.orgCut > 0 ? `${(t.orgCut * 100).toFixed(0)}%` : '—';
+        const tr = document.createElement('tr');
+        if (t === tier) tr.className = 'active';
+        tr.innerHTML = `<td>${range}</td><td>${t.places}</td><td>${pct}</td><td>${cut}</td>`;
+        ttb.appendChild(tr);
+      }
+    }
+
+    // Load config for display
+    (async () => {
+      try {
+        const cfg = await fetch('data/config.json?t=' + Date.now()).then(r => r.json());
+        document.getElementById('cfg-season').textContent = cfg.year;
+        document.getElementById('cfg-budget').textContent = cfg.budget?.toFixed(2) || '—';
+        document.getElementById('cfg-floor').textContent = cfg.budget ? (cfg.budget / 16).toFixed(2) : '—';
+      } catch (e) {}
+    })();
+
+    document.getElementById('buyin').addEventListener('input', render);
+    document.getElementById('entrants').addEventListener('input', render);
+    render();
+  </script>
+</body>
+</html>

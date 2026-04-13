@@ -1,0 +1,6876 @@
+{
+  "year": 2023,
+  "rounds": [
+    "R1",
+    "CSF",
+    "CF",
+    "Finals"
+  ],
+  "round_labels": {
+    "R1": "Round 1",
+    "CSF": "Conference Semis",
+    "CF": "Conference Finals",
+    "Finals": "Finals"
+  },
+  "players": {
+    "brook-lopez": {
+      "name": "Brook Lopez",
+      "seed": 1,
+      "cost": 15.9,
+      "eliminated": true,
+      "total_raw": 22.25,
+      "round_ppg": {
+        "R1": 22.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 10.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401540754"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 25.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541171"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 6.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541179"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 36.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541187"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 18.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541240"
+        }
+      ],
+      "team": "Milwaukee Bucks"
+    },
+    "khris-middleton": {
+      "name": "Khris Middleton",
+      "seed": 1,
+      "cost": 15.1,
+      "eliminated": true,
+      "total_raw": 26.25,
+      "round_ppg": {
+        "R1": 26.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 33.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401540754"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 16.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541171"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 23.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541179"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 14.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541187"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 33.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541240"
+        }
+      ],
+      "team": "Milwaukee Bucks"
+    },
+    "jrue-holiday": {
+      "name": "Jrue Holiday",
+      "seed": 1,
+      "cost": 19.3,
+      "eliminated": true,
+      "total_raw": 18.75,
+      "round_ppg": {
+        "R1": 18.75
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 16.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401540754"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 24.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541171"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 19.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541179"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 14.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541187"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 16.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541240"
+        }
+      ],
+      "team": "Milwaukee Bucks"
+    },
+    "jamal-murray": {
+      "name": "Jamal Murray",
+      "seed": 1,
+      "cost": 20.0,
+      "eliminated": false,
+      "total_raw": 115.25,
+      "round_ppg": {
+        "R1": 29.5,
+        "CSF": 30.0,
+        "CF": 32.5,
+        "Finals": 23.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 24.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401540755"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 40.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401541167"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 18.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401541175"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 19.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401541183"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 35.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401541196"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 34.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544334"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 10.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544335"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 32.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544336"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 28.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544337"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 19.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544338"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 26.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544339"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 31.0,
+          "team": "Denver Nuggets",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401547679"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 37.0,
+          "team": "Denver Nuggets",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401547682"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 37.0,
+          "team": "Denver Nuggets",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401547683"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 25.0,
+          "team": "Denver Nuggets",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401547684"
+        },
+        {
+          "round": "Finals",
+          "game_num": 1,
+          "pts": 26.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544846"
+        },
+        {
+          "round": "Finals",
+          "game_num": 2,
+          "pts": 18.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544847"
+        },
+        {
+          "round": "Finals",
+          "game_num": 3,
+          "pts": 34.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544848"
+        },
+        {
+          "round": "Finals",
+          "game_num": 4,
+          "pts": 15.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544849"
+        },
+        {
+          "round": "Finals",
+          "game_num": 5,
+          "pts": 14.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544850"
+        }
+      ],
+      "team": "Denver Nuggets"
+    },
+    "bruce-brown": {
+      "name": "Bruce Brown",
+      "seed": 1,
+      "cost": 11.5,
+      "eliminated": false,
+      "total_raw": 53.75,
+      "round_ppg": {
+        "R1": 12.75,
+        "CSF": 15.75,
+        "CF": 12.25,
+        "Finals": 13.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 14.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401540755"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 6.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401541167"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 12.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401541175"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 11.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401541183"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 14.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401541196"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 14.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544334"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 9.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544335"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 11.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544336"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 5.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544337"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 25.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544338"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 13.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544339"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 16.0,
+          "team": "Denver Nuggets",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401547679"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 12.0,
+          "team": "Denver Nuggets",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401547682"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 15.0,
+          "team": "Denver Nuggets",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401547683"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 6.0,
+          "team": "Denver Nuggets",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401547684"
+        },
+        {
+          "round": "Finals",
+          "game_num": 1,
+          "pts": 10.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544846"
+        },
+        {
+          "round": "Finals",
+          "game_num": 2,
+          "pts": 11.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544847"
+        },
+        {
+          "round": "Finals",
+          "game_num": 3,
+          "pts": 5.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544848"
+        },
+        {
+          "round": "Finals",
+          "game_num": 4,
+          "pts": 21.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544849"
+        },
+        {
+          "round": "Finals",
+          "game_num": 5,
+          "pts": 10.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544850"
+        }
+      ],
+      "team": "Denver Nuggets"
+    },
+    "giannis-antetokounmpo": {
+      "name": "Giannis Antetokounmpo",
+      "seed": 1,
+      "cost": 31.1,
+      "eliminated": true,
+      "total_raw": 17.5,
+      "round_ppg": {
+        "R1": 17.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 6.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401540754"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541171"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541179"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 26.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541187"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 38.0,
+          "team": "Milwaukee Bucks",
+          "opponent": "Miami Heat",
+          "game_id": "401541240"
+        }
+      ],
+      "team": "Milwaukee Bucks"
+    },
+    "nikola-jokic": {
+      "name": "Nikola Jokic",
+      "seed": 1,
+      "cost": 24.5,
+      "eliminated": false,
+      "total_raw": 127.5,
+      "round_ppg": {
+        "R1": 29.5,
+        "CSF": 38.25,
+        "CF": 27.75,
+        "Finals": 32.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 13.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401540755"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 27.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401541167"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 20.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401541175"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 43.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401541183"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 28.0,
+          "team": "Denver Nuggets",
+          "opponent": "Minnesota Timberwolves",
+          "game_id": "401541196"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 24.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544334"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 39.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544335"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 28.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544336"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 53.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544337"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 29.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544338"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 32.0,
+          "team": "Denver Nuggets",
+          "opponent": "Phoenix Suns",
+          "game_id": "401544339"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 34.0,
+          "team": "Denver Nuggets",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401547679"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 23.0,
+          "team": "Denver Nuggets",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401547682"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 24.0,
+          "team": "Denver Nuggets",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401547683"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 30.0,
+          "team": "Denver Nuggets",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401547684"
+        },
+        {
+          "round": "Finals",
+          "game_num": 1,
+          "pts": 27.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544846"
+        },
+        {
+          "round": "Finals",
+          "game_num": 2,
+          "pts": 41.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544847"
+        },
+        {
+          "round": "Finals",
+          "game_num": 3,
+          "pts": 32.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544848"
+        },
+        {
+          "round": "Finals",
+          "game_num": 4,
+          "pts": 23.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544849"
+        },
+        {
+          "round": "Finals",
+          "game_num": 5,
+          "pts": 28.0,
+          "team": "Denver Nuggets",
+          "opponent": "Miami Heat",
+          "game_id": "401544850"
+        }
+      ],
+      "team": "Denver Nuggets"
+    },
+    "jayson-tatum": {
+      "name": "Jayson Tatum",
+      "seed": 2,
+      "cost": 30.1,
+      "eliminated": true,
+      "total_raw": 100.0,
+      "round_ppg": {
+        "R1": 29.75,
+        "CSF": 38.25,
+        "CF": 32.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 25.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401540751"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 29.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541172"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 29.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541180"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 31.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541188"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 19.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541243"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 30.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541244"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 39.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545111"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 7.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545112"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 27.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545113"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 24.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545114"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 36.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545115"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 19.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545116"
+        },
+        {
+          "round": "CSF",
+          "game_num": 7,
+          "pts": 51.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545117"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 30.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547671"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 34.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547672"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 14.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547673"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 33.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547674"
+        },
+        {
+          "round": "CF",
+          "game_num": 5,
+          "pts": 21.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547675"
+        },
+        {
+          "round": "CF",
+          "game_num": 6,
+          "pts": 31.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547676"
+        },
+        {
+          "round": "CF",
+          "game_num": 7,
+          "pts": 14.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547678"
+        }
+      ],
+      "team": "Boston Celtics"
+    },
+    "jaylen-brown": {
+      "name": "Jaylen Brown",
+      "seed": 2,
+      "cost": 26.6,
+      "eliminated": true,
+      "total_raw": 78.0,
+      "round_ppg": {
+        "R1": 31.75,
+        "CSF": 24.25,
+        "CF": 22.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 29.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401540751"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 18.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541172"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 15.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541180"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 31.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541188"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 35.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541243"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 32.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541244"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 23.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545111"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 25.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545112"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 23.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545113"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 23.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545114"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 24.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545115"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 17.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545116"
+        },
+        {
+          "round": "CSF",
+          "game_num": 7,
+          "pts": 25.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545117"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 22.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547671"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 16.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547672"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 12.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547673"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 17.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547674"
+        },
+        {
+          "round": "CF",
+          "game_num": 5,
+          "pts": 21.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547675"
+        },
+        {
+          "round": "CF",
+          "game_num": 6,
+          "pts": 26.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547676"
+        },
+        {
+          "round": "CF",
+          "game_num": 7,
+          "pts": 19.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547678"
+        }
+      ],
+      "team": "Boston Celtics"
+    },
+    "malcolm-brogdon": {
+      "name": "Malcolm Brogdon",
+      "seed": 2,
+      "cost": 14.9,
+      "eliminated": true,
+      "total_raw": 44.25,
+      "round_ppg": {
+        "R1": 15.5,
+        "CSF": 19.5,
+        "CF": 9.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 5.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401540751"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 13.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541172"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 17.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541180"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 14.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541188"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 14.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541243"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 17.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541244"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 20.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545111"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 23.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545112"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 15.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545113"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 19.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545114"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 7.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545115"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 16.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545116"
+        },
+        {
+          "round": "CSF",
+          "game_num": 7,
+          "pts": 12.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545117"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 19.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547671"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 13.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547672"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547673"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 2.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547674"
+        },
+        {
+          "round": "CF",
+          "game_num": 5,
+          "pts": 3.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547675"
+        },
+        {
+          "round": "CF",
+          "game_num": 6,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547676"
+        },
+        {
+          "round": "CF",
+          "game_num": 7,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547678"
+        }
+      ],
+      "team": "Boston Celtics"
+    },
+    "marcus-smart": {
+      "name": "Marcus Smart",
+      "seed": 2,
+      "cost": 11.5,
+      "eliminated": true,
+      "total_raw": 55.0,
+      "round_ppg": {
+        "R1": 19.75,
+        "CSF": 18.25,
+        "CF": 17.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 11.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401540751"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 14.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541172"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 24.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541180"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 19.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541188"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 10.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541243"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 22.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541244"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 12.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545111"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 15.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545112"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 15.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545113"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 21.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545114"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 14.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545115"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 22.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545116"
+        },
+        {
+          "round": "CSF",
+          "game_num": 7,
+          "pts": 7.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545117"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 13.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547671"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 7.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547672"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 8.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547673"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 11.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547674"
+        },
+        {
+          "round": "CF",
+          "game_num": 5,
+          "pts": 23.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547675"
+        },
+        {
+          "round": "CF",
+          "game_num": 6,
+          "pts": 21.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547676"
+        },
+        {
+          "round": "CF",
+          "game_num": 7,
+          "pts": 9.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547678"
+        }
+      ],
+      "team": "Boston Celtics"
+    },
+    "derrick-white": {
+      "name": "Derrick White",
+      "seed": 2,
+      "cost": 12.4,
+      "eliminated": true,
+      "total_raw": 51.0,
+      "round_ppg": {
+        "R1": 21.5,
+        "CSF": 12.25,
+        "CF": 17.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 24.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401540751"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 26.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541172"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 11.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541180"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 18.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541188"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 18.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541243"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 7.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541244"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 4.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545111"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 15.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545112"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 13.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545113"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 12.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545114"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 7.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545115"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 9.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545116"
+        },
+        {
+          "round": "CSF",
+          "game_num": 7,
+          "pts": 3.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545117"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 11.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547671"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 11.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547672"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 9.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547673"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 16.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547674"
+        },
+        {
+          "round": "CF",
+          "game_num": 5,
+          "pts": 24.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547675"
+        },
+        {
+          "round": "CF",
+          "game_num": 6,
+          "pts": 11.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547676"
+        },
+        {
+          "round": "CF",
+          "game_num": 7,
+          "pts": 18.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547678"
+        }
+      ],
+      "team": "Boston Celtics"
+    },
+    "grant-williams": {
+      "name": "Grant Williams",
+      "seed": 2,
+      "cost": 8.1,
+      "eliminated": true,
+      "total_raw": 18.0,
+      "round_ppg": {
+        "R1": 4.25,
+        "CSF": 3.5,
+        "CF": 10.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401540751"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541172"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 14.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541180"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541188"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541243"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 3.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541244"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545111"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 12.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545112"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545113"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 2.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545114"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545115"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545116"
+        },
+        {
+          "round": "CSF",
+          "game_num": 7,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545117"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547671"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 9.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547672"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 12.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547673"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 14.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547674"
+        },
+        {
+          "round": "CF",
+          "game_num": 5,
+          "pts": 6.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547675"
+        },
+        {
+          "round": "CF",
+          "game_num": 6,
+          "pts": 1.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547676"
+        },
+        {
+          "round": "CF",
+          "game_num": 7,
+          "pts": 3.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547678"
+        }
+      ],
+      "team": "Boston Celtics"
+    },
+    "al-horford": {
+      "name": "Al Horford",
+      "seed": 2,
+      "cost": 9.8,
+      "eliminated": true,
+      "total_raw": 27.75,
+      "round_ppg": {
+        "R1": 8.0,
+        "CSF": 11.0,
+        "CF": 8.75
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 6.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401540751"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 8.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541172"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 8.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541180"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541188"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 3.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541243"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 10.0,
+          "team": "Boston Celtics",
+          "opponent": "Atlanta Hawks",
+          "game_id": "401541244"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 11.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545111"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 5.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545112"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 17.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545113"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 10.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545114"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545115"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 2.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545116"
+        },
+        {
+          "round": "CSF",
+          "game_num": 7,
+          "pts": 6.0,
+          "team": "Boston Celtics",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401545117"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 7.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547671"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 2.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547672"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 8.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547673"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 12.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547674"
+        },
+        {
+          "round": "CF",
+          "game_num": 5,
+          "pts": 6.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547675"
+        },
+        {
+          "round": "CF",
+          "game_num": 6,
+          "pts": 4.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547676"
+        },
+        {
+          "round": "CF",
+          "game_num": 7,
+          "pts": 8.0,
+          "team": "Boston Celtics",
+          "opponent": "Miami Heat",
+          "game_id": "401547678"
+        }
+      ],
+      "team": "Boston Celtics"
+    },
+    "jalen-mcdaniels": {
+      "name": "Jalen McDaniels",
+      "seed": 3,
+      "cost": 6.7,
+      "eliminated": true,
+      "total_raw": 4.75,
+      "round_ppg": {
+        "R1": 3.25,
+        "CSF": 1.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 5.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401540750"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541173"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 4.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541181"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 4.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541189"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545111"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 3.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545112"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 3.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545113"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545114"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545115"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 0.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545116"
+        },
+        {
+          "round": "CSF",
+          "game_num": 7,
+          "pts": 0.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545117"
+        }
+      ],
+      "team": "Philadelphia 76ers"
+    },
+    "pj-tucker": {
+      "name": "PJ Tucker",
+      "seed": 3,
+      "cost": 3.5,
+      "eliminated": true,
+      "total_raw": 11.5,
+      "round_ppg": {
+        "R1": 3.0,
+        "CSF": 8.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 6.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401540750"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541173"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 3.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541181"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 3.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541189"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545111"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 5.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545112"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 9.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545113"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 6.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545114"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 3.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545115"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 8.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545116"
+        },
+        {
+          "round": "CSF",
+          "game_num": 7,
+          "pts": 11.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545117"
+        }
+      ],
+      "team": "Philadelphia 76ers"
+    },
+    "james-harden": {
+      "name": "James Harden",
+      "seed": 3,
+      "cost": 21.0,
+      "eliminated": true,
+      "total_raw": 47.25,
+      "round_ppg": {
+        "R1": 17.25,
+        "CSF": 30.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 23.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401540750"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 8.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541173"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 21.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541181"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 17.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541189"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 45.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545111"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 12.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545112"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 16.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545113"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 42.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545114"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 17.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545115"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 13.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545116"
+        },
+        {
+          "round": "CSF",
+          "game_num": 7,
+          "pts": 9.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545117"
+        }
+      ],
+      "team": "Philadelphia 76ers"
+    },
+    "domantis-sabonis": {
+      "name": "Domantis Sabonis",
+      "seed": 3,
+      "cost": 19.1,
+      "eliminated": true,
+      "total_raw": 20.5,
+      "round_ppg": {
+        "R1": 20.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 12.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401540753"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 24.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401541169"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 15.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401541177"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 14.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401541185"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 21.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401541234"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 11.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401541235"
+        },
+        {
+          "round": "R1",
+          "game_num": 7,
+          "pts": 22.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401541236"
+        }
+      ],
+      "team": "Sacramento Kings"
+    },
+    "georges-niang": {
+      "name": "Georges Niang",
+      "seed": 3,
+      "cost": 8.2,
+      "eliminated": true,
+      "total_raw": 11.25,
+      "round_ppg": {
+        "R1": 4.25,
+        "CSF": 7.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 8.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401540750"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541173"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 5.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541181"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 4.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541189"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 3.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545111"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 3.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545112"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 10.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545113"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 9.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545114"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545115"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 6.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545116"
+        },
+        {
+          "round": "CSF",
+          "game_num": 7,
+          "pts": 0.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545117"
+        }
+      ],
+      "team": "Philadelphia 76ers"
+    },
+    "tobias-harris": {
+      "name": "Tobias Harris",
+      "seed": 3,
+      "cost": 14.7,
+      "eliminated": true,
+      "total_raw": 37.5,
+      "round_ppg": {
+        "R1": 20.25,
+        "CSF": 17.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 21.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401540750"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 20.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541173"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 15.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541181"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 25.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541189"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 18.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545111"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 16.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545112"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 7.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545113"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 9.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545114"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 16.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545115"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 2.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545116"
+        },
+        {
+          "round": "CSF",
+          "game_num": 7,
+          "pts": 19.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545117"
+        }
+      ],
+      "team": "Philadelphia 76ers"
+    },
+    "deanthony-melton": {
+      "name": "De'Anthony Melton",
+      "seed": 3,
+      "cost": 10.1,
+      "eliminated": true,
+      "total_raw": 21.25,
+      "round_ppg": {
+        "R1": 10.75,
+        "CSF": 10.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 6.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401540750"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 9.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541173"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 13.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541181"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 15.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Brooklyn Nets",
+          "game_id": "401541189"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 17.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545111"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 2.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545112"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 14.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545113"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545114"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 4.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545115"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 0.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545116"
+        },
+        {
+          "round": "CSF",
+          "game_num": 7,
+          "pts": 7.0,
+          "team": "Philadelphia 76ers",
+          "opponent": "Boston Celtics",
+          "game_id": "401545117"
+        }
+      ],
+      "team": "Philadelphia 76ers"
+    },
+    "malik-monk": {
+      "name": "Malik Monk",
+      "seed": 3,
+      "cost": 13.5,
+      "eliminated": true,
+      "total_raw": 23.0,
+      "round_ppg": {
+        "R1": 23.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 32.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401540753"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 18.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401541169"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 4.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401541177"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 16.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401541185"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 21.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401541234"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 21.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401541235"
+        },
+        {
+          "round": "R1",
+          "game_num": 7,
+          "pts": 14.0,
+          "team": "Sacramento Kings",
+          "opponent": "Golden State Warriors",
+          "game_id": "401541236"
+        }
+      ],
+      "team": "Sacramento Kings"
+    },
+    "kevin-durant": {
+      "name": "Kevin Durant",
+      "seed": 4,
+      "cost": 26.0,
+      "eliminated": true,
+      "total_raw": 61.75,
+      "round_ppg": {
+        "R1": 29.25,
+        "CSF": 32.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 27.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401540757"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 25.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541170"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 28.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541178"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 31.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541186"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 31.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541237"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 29.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544334"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 24.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544335"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 39.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544336"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 36.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544337"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 26.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544338"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 23.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544339"
+        }
+      ],
+      "team": "Phoenix Suns"
+    },
+    "josh-okogie": {
+      "name": "Josh Okogie",
+      "seed": 4,
+      "cost": 7.3,
+      "eliminated": true,
+      "total_raw": 10.0,
+      "round_ppg": {
+        "R1": 7.5,
+        "CSF": 2.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401540757"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 7.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541170"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 6.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541178"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 6.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541186"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 11.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541237"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 2.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544334"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 2.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544335"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 2.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544336"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 4.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544337"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 1.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544338"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544339"
+        }
+      ],
+      "team": "Phoenix Suns"
+    },
+    "evan-mobley": {
+      "name": "Evan Mobley",
+      "seed": 4,
+      "cost": 16.2,
+      "eliminated": true,
+      "total_raw": 10.75,
+      "round_ppg": {
+        "R1": 10.75
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 8.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401540752"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 13.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541174"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 10.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541182"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 12.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541190"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 6.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541249"
+        }
+      ],
+      "team": "Cleveland Cavaliers"
+    },
+    "chris-paul": {
+      "name": "Chris Paul",
+      "seed": 4,
+      "cost": 13.9,
+      "eliminated": true,
+      "total_raw": 20.0,
+      "round_ppg": {
+        "R1": 15.25,
+        "CSF": 4.75
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 7.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401540757"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 16.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541170"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 11.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541178"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 19.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541186"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 15.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541237"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 11.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544334"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 8.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544335"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544336"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544337"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544338"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544339"
+        }
+      ],
+      "team": "Phoenix Suns"
+    },
+    "cameron-payne": {
+      "name": "Cameron Payne",
+      "seed": 4,
+      "cost": 10.3,
+      "eliminated": true,
+      "total_raw": 12.5,
+      "round_ppg": {
+        "R1": 0.0,
+        "CSF": 12.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401540757"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541170"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541178"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541186"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541237"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 5.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544334"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 2.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544335"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 7.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544336"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 5.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544337"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 7.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544338"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 31.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544339"
+        }
+      ],
+      "team": "Phoenix Suns"
+    },
+    "terrence-ross": {
+      "name": "Terrence Ross",
+      "seed": 4,
+      "cost": 9.0,
+      "eliminated": true,
+      "total_raw": 5.5,
+      "round_ppg": {
+        "R1": 0.0,
+        "CSF": 5.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401540757"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541170"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541178"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541186"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541237"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544334"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544335"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 5.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544336"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 8.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544337"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 9.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544338"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 0.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544339"
+        }
+      ],
+      "team": "Phoenix Suns"
+    },
+    "cedi-osman": {
+      "name": "Cedi Osman",
+      "seed": 4,
+      "cost": 8.7,
+      "eliminated": true,
+      "total_raw": 7.5,
+      "round_ppg": {
+        "R1": 7.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 9.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401540752"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 5.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541174"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541182"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 10.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541190"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 6.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541249"
+        }
+      ],
+      "team": "Cleveland Cavaliers"
+    },
+    "devin-booker": {
+      "name": "Devin Booker",
+      "seed": 4,
+      "cost": 27.8,
+      "eliminated": true,
+      "total_raw": 76.25,
+      "round_ppg": {
+        "R1": 40.0,
+        "CSF": 36.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 26.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401540757"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 38.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541170"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 45.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541178"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 30.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541186"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 47.0,
+          "team": "Phoenix Suns",
+          "opponent": "LA Clippers",
+          "game_id": "401541237"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 27.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544334"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 35.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544335"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 46.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544336"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 36.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544337"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 28.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544338"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 12.0,
+          "team": "Phoenix Suns",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544339"
+        }
+      ],
+      "team": "Phoenix Suns"
+    },
+    "isaac-okoro": {
+      "name": "Isaac Okoro",
+      "seed": 4,
+      "cost": 6.4,
+      "eliminated": true,
+      "total_raw": 8.0,
+      "round_ppg": {
+        "R1": 8.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 6.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401540752"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541174"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 7.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541182"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 9.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541190"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 10.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541249"
+        }
+      ],
+      "team": "Cleveland Cavaliers"
+    },
+    "caris-levert": {
+      "name": "Caris LeVert",
+      "seed": 4,
+      "cost": 12.1,
+      "eliminated": true,
+      "total_raw": 18.0,
+      "round_ppg": {
+        "R1": 18.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 3.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401540752"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 24.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541174"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 17.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541182"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 14.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541190"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 17.0,
+          "team": "Cleveland Cavaliers",
+          "opponent": "New York Knicks",
+          "game_id": "401541249"
+        }
+      ],
+      "team": "Cleveland Cavaliers"
+    },
+    "obi-toppin": {
+      "name": "Obi Toppin",
+      "seed": 5,
+      "cost": 7.4,
+      "eliminated": true,
+      "total_raw": 17.5,
+      "round_ppg": {
+        "R1": 9.0,
+        "CSF": 8.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 9.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401540752"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 7.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541174"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 8.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541182"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 5.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541190"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 12.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541249"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 18.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544973"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544974"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 5.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544975"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 4.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544976"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 2.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544977"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 7.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544978"
+        }
+      ],
+      "team": "New York Knicks"
+    },
+    "eric-gordon": {
+      "name": "Eric Gordon",
+      "seed": 5,
+      "cost": 11.0,
+      "eliminated": true,
+      "total_raw": 12.0,
+      "round_ppg": {
+        "R1": 12.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 19.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401540757"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 12.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541170"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 7.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541178"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 10.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541186"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 3.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541237"
+        }
+      ],
+      "team": "LA Clippers"
+    },
+    "terrence-mann": {
+      "name": "Terrence Mann",
+      "seed": 5,
+      "cost": 8.8,
+      "eliminated": true,
+      "total_raw": 10.75,
+      "round_ppg": {
+        "R1": 10.75
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 10.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401540757"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 10.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541170"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 10.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541178"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 13.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541186"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 10.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541237"
+        }
+      ],
+      "team": "LA Clippers"
+    },
+    "josh-hart": {
+      "name": "Josh Hart",
+      "seed": 5,
+      "cost": 10.2,
+      "eliminated": true,
+      "total_raw": 26.0,
+      "round_ppg": {
+        "R1": 13.5,
+        "CSF": 12.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 17.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401540752"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 5.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541174"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 13.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541182"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 19.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541190"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 4.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541249"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 10.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544973"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 14.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544974"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 15.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544975"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 4.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544976"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 2.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544977"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 11.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544978"
+        }
+      ],
+      "team": "New York Knicks"
+    },
+    "quentin-grimes": {
+      "name": "Quentin Grimes",
+      "seed": 5,
+      "cost": 11.3,
+      "eliminated": true,
+      "total_raw": 11.5,
+      "round_ppg": {
+        "R1": 2.75,
+        "CSF": 8.75
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 5.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401540752"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 4.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541174"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 2.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541182"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541190"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541249"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 4.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544973"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 3.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544974"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 14.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544975"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 9.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544976"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 8.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544977"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 3.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544978"
+        }
+      ],
+      "team": "New York Knicks"
+    },
+    "ivica-zubac": {
+      "name": "Ivica Zubac",
+      "seed": 5,
+      "cost": 10.8,
+      "eliminated": true,
+      "total_raw": 10.5,
+      "round_ppg": {
+        "R1": 10.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 12.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401540757"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 8.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541170"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 6.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541178"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 4.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541186"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 16.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541237"
+        }
+      ],
+      "team": "LA Clippers"
+    },
+    "mitchell-robinson": {
+      "name": "Mitchell Robinson",
+      "seed": 5,
+      "cost": 7.4,
+      "eliminated": true,
+      "total_raw": 16.25,
+      "round_ppg": {
+        "R1": 9.5,
+        "CSF": 6.75
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 6.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401540752"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 2.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541174"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 7.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541182"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 12.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541190"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 13.0,
+          "team": "New York Knicks",
+          "opponent": "Cleveland Cavaliers",
+          "game_id": "401541249"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 7.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544973"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 6.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544974"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 2.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544975"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 6.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544976"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 8.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544977"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 2.0,
+          "team": "New York Knicks",
+          "opponent": "Miami Heat",
+          "game_id": "401544978"
+        }
+      ],
+      "team": "New York Knicks"
+    },
+    "russell-westbrook": {
+      "name": "Russell Westbrook",
+      "seed": 5,
+      "cost": 15.8,
+      "eliminated": true,
+      "total_raw": 27.25,
+      "round_ppg": {
+        "R1": 27.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 9.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401540757"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 28.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541170"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 30.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541178"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 37.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541186"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 14.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541237"
+        }
+      ],
+      "team": "LA Clippers"
+    },
+    "marcus-morris-sr": {
+      "name": "Marcus Morris Sr.",
+      "seed": 5,
+      "cost": 11.2,
+      "eliminated": true,
+      "total_raw": 6.5,
+      "round_ppg": {
+        "R1": 6.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401540757"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541170"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 5.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541178"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 9.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541186"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 12.0,
+          "team": "LA Clippers",
+          "opponent": "Phoenix Suns",
+          "game_id": "401541237"
+        }
+      ],
+      "team": "LA Clippers"
+    },
+    "jonathon-kuminga": {
+      "name": "Jonathon Kuminga",
+      "seed": 6,
+      "cost": 9.9,
+      "eliminated": true,
+      "total_raw": 8.5,
+      "round_ppg": {
+        "R1": 3.5,
+        "CSF": 5.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 8.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401540753"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541169"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 6.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541177"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541185"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541234"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 0.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541235"
+        },
+        {
+          "round": "R1",
+          "game_num": 7,
+          "pts": 0.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541236"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 3.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 10.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 5.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 2.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545236"
+        }
+      ],
+      "team": "Golden State Warriors"
+    },
+    "klay-thompson": {
+      "name": "Klay Thompson",
+      "seed": 6,
+      "cost": 21.9,
+      "eliminated": true,
+      "total_raw": 43.5,
+      "round_ppg": {
+        "R1": 23.5,
+        "CSF": 20.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 21.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401540753"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 21.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541169"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 13.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541177"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 26.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541185"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 25.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541234"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 22.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541235"
+        },
+        {
+          "round": "R1",
+          "game_num": 7,
+          "pts": 16.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541236"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 25.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 30.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 15.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 9.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 10.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 8.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545236"
+        }
+      ],
+      "team": "Golden State Warriors"
+    },
+    "jordan-poole": {
+      "name": "Jordan Poole",
+      "seed": 6,
+      "cost": 20.4,
+      "eliminated": true,
+      "total_raw": 27.5,
+      "round_ppg": {
+        "R1": 16.25,
+        "CSF": 11.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 17.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401540753"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 4.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541169"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 16.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541177"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 22.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541185"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 10.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541234"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 7.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541235"
+        },
+        {
+          "round": "R1",
+          "game_num": 7,
+          "pts": 8.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541236"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 21.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 6.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 5.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 11.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 7.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545236"
+        }
+      ],
+      "team": "Golden State Warriors"
+    },
+    "joe-harris": {
+      "name": "Joe Harris",
+      "seed": 6,
+      "cost": 7.6,
+      "eliminated": true,
+      "total_raw": 1.75,
+      "round_ppg": {
+        "R1": 1.75
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 3.0,
+          "team": "Brooklyn Nets",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401540750"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Brooklyn Nets",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401541173"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Brooklyn Nets",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401541181"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 4.0,
+          "team": "Brooklyn Nets",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401541189"
+        }
+      ],
+      "team": "Brooklyn Nets"
+    },
+    "andrew-wiggins": {
+      "name": "Andrew Wiggins",
+      "seed": 6,
+      "cost": 17.1,
+      "eliminated": true,
+      "total_raw": 38.25,
+      "round_ppg": {
+        "R1": 20.0,
+        "CSF": 18.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 17.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401540753"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 22.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541169"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 20.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541177"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 18.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541185"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 20.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541234"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 13.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541235"
+        },
+        {
+          "round": "R1",
+          "game_num": 7,
+          "pts": 17.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541236"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 15.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 11.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 16.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 17.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 25.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 6.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545236"
+        }
+      ],
+      "team": "Golden State Warriors"
+    },
+    "donte-divincenzo": {
+      "name": "Donte Divincenzo",
+      "seed": 6,
+      "cost": 9.4,
+      "eliminated": true,
+      "total_raw": 16.5,
+      "round_ppg": {
+        "R1": 6.75,
+        "CSF": 9.75
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 10.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401540753"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541169"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 6.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541177"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 3.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541185"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 2.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541234"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 8.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541235"
+        },
+        {
+          "round": "R1",
+          "game_num": 7,
+          "pts": 3.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541236"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 8.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 5.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 10.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 16.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545236"
+        }
+      ],
+      "team": "Golden State Warriors"
+    },
+    "stephen-curry": {
+      "name": "Stephen Curry",
+      "seed": 6,
+      "cost": 29.4,
+      "eliminated": true,
+      "total_raw": 66.5,
+      "round_ppg": {
+        "R1": 37.25,
+        "CSF": 29.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 30.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401540753"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 28.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541169"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 36.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541177"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 32.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541185"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 31.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541234"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 29.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541235"
+        },
+        {
+          "round": "R1",
+          "game_num": 7,
+          "pts": 50.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541236"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 27.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 20.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 23.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 31.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 27.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 32.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545236"
+        }
+      ],
+      "team": "Golden State Warriors"
+    },
+    "draymond-green": {
+      "name": "Draymond Green",
+      "seed": 6,
+      "cost": 8.5,
+      "eliminated": true,
+      "total_raw": 24.25,
+      "round_ppg": {
+        "R1": 12.25,
+        "CSF": 12.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 4.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401540753"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 8.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541169"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541177"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 12.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541185"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 21.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541234"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 4.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541235"
+        },
+        {
+          "round": "R1",
+          "game_num": 7,
+          "pts": 8.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541236"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 6.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 11.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 2.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 8.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 20.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 9.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545236"
+        }
+      ],
+      "team": "Golden State Warriors"
+    },
+    "kevon-looney": {
+      "name": "Kevon Looney",
+      "seed": 6,
+      "cost": 7.0,
+      "eliminated": true,
+      "total_raw": 15.75,
+      "round_ppg": {
+        "R1": 8.5,
+        "CSF": 7.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 8.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401540753"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 6.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541169"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 4.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541177"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 8.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541185"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 4.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541234"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 7.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541235"
+        },
+        {
+          "round": "R1",
+          "game_num": 7,
+          "pts": 11.0,
+          "team": "Golden State Warriors",
+          "opponent": "Sacramento Kings",
+          "game_id": "401541236"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 10.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 6.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 3.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 4.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 4.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 9.0,
+          "team": "Golden State Warriors",
+          "opponent": "Los Angeles Lakers",
+          "game_id": "401545236"
+        }
+      ],
+      "team": "Golden State Warriors"
+    },
+    "seth-curry": {
+      "name": "Seth Curry",
+      "seed": 6,
+      "cost": 9.2,
+      "eliminated": true,
+      "total_raw": 6.25,
+      "round_ppg": {
+        "R1": 6.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 10.0,
+          "team": "Brooklyn Nets",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401540750"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 9.0,
+          "team": "Brooklyn Nets",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401541173"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Brooklyn Nets",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401541181"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 6.0,
+          "team": "Brooklyn Nets",
+          "opponent": "Philadelphia 76ers",
+          "game_id": "401541189"
+        }
+      ],
+      "team": "Brooklyn Nets"
+    },
+    "dennis-schroder": {
+      "name": "Dennis Schroder",
+      "seed": 7,
+      "cost": 12.6,
+      "eliminated": true,
+      "total_raw": 27.75,
+      "round_ppg": {
+        "R1": 7.0,
+        "CSF": 13.75,
+        "CF": 7.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 7.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401540756"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541168"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 7.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541176"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 12.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541184"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541231"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 2.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 19.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 4.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 12.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 10.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 14.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 3.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545236"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 6.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547679"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 4.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547682"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 5.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547683"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 13.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547684"
+        }
+      ],
+      "team": "Los Angeles Lakers"
+    },
+    "jared-vanderbilt": {
+      "name": "Jared Vanderbilt",
+      "seed": 7,
+      "cost": 7.2,
+      "eliminated": true,
+      "total_raw": 15.75,
+      "round_ppg": {
+        "R1": 9.75,
+        "CSF": 4.5,
+        "CF": 1.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 4.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401540756"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 8.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541168"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541176"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 15.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541184"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 7.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541231"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 9.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 8.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 6.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 2.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 2.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 2.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545236"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547679"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 4.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547682"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 2.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547683"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547684"
+        }
+      ],
+      "team": "Los Angeles Lakers"
+    },
+    "austin-reaves": {
+      "name": "Austin Reaves",
+      "seed": 7,
+      "cost": 13.0,
+      "eliminated": true,
+      "total_raw": 57.5,
+      "round_ppg": {
+        "R1": 19.0,
+        "CSF": 17.25,
+        "CF": 21.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 23.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401540756"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 12.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541168"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 13.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541176"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 23.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541184"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 17.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541231"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 11.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 10.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 7.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 10.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 21.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 15.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 23.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545236"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 23.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547679"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 22.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547682"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 23.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547683"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 17.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547684"
+        }
+      ],
+      "team": "Los Angeles Lakers"
+    },
+    "rui-hachimura": {
+      "name": "Rui Hachimura",
+      "seed": 7,
+      "cost": 9.6,
+      "eliminated": true,
+      "total_raw": 44.0,
+      "round_ppg": {
+        "R1": 18.5,
+        "CSF": 10.25,
+        "CF": 15.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 29.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401540756"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 20.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541168"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 16.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541176"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 7.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541184"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 9.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541231"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 6.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 6.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 21.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 5.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 2.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 4.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 9.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545236"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 17.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547679"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 21.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547682"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 13.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547683"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 10.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547684"
+        }
+      ],
+      "team": "Los Angeles Lakers"
+    },
+    "dangelo-russell": {
+      "name": "D'Angelo Russell",
+      "seed": 7,
+      "cost": 17.4,
+      "eliminated": true,
+      "total_raw": 45.75,
+      "round_ppg": {
+        "R1": 21.0,
+        "CSF": 18.5,
+        "CF": 6.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 19.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401540756"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 5.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541168"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 17.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541176"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 17.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541184"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 11.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541231"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 31.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 19.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 10.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 21.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 4.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 15.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 19.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545236"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 8.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547679"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 10.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547682"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 3.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547683"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 4.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547684"
+        }
+      ],
+      "team": "Los Angeles Lakers"
+    },
+    "anthony-davis": {
+      "name": "Anthony Davis",
+      "seed": 7,
+      "cost": 25.9,
+      "eliminated": true,
+      "total_raw": 77.0,
+      "round_ppg": {
+        "R1": 25.0,
+        "CSF": 25.25,
+        "CF": 26.75
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 22.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401540756"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 13.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541168"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 31.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541176"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 12.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541184"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 31.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541231"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 16.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 30.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 11.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 25.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 23.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 23.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 17.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545236"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 40.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547679"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 18.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547682"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 28.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547683"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 21.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547684"
+        }
+      ],
+      "team": "Los Angeles Lakers"
+    },
+    "malik-beasley": {
+      "name": "Malik Beasley",
+      "seed": 7,
+      "cost": 11.1,
+      "eliminated": true,
+      "total_raw": 9.0,
+      "round_ppg": {
+        "R1": 6.25,
+        "CSF": 2.75,
+        "CF": 0.0
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401540756"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 7.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541168"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541176"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 3.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541184"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 6.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541231"
+        },
+        {
+          "round": "R1",
+          "game_num": 6,
+          "pts": 9.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Memphis Grizzlies",
+          "game_id": "401541232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545231"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 5.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545232"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545233"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545234"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 3.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545235"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 3.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Golden State Warriors",
+          "game_id": "401545236"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547679"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547682"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547683"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Los Angeles Lakers",
+          "opponent": "Denver Nuggets",
+          "game_id": "401547684"
+        }
+      ],
+      "team": "Los Angeles Lakers"
+    },
+    "nickeil-alexander-walker": {
+      "name": "Nickeil Alexander-Walker",
+      "seed": 8,
+      "cost": 5.9,
+      "eliminated": true,
+      "total_raw": 9.25,
+      "round_ppg": {
+        "R1": 9.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 7.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401540755"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 5.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401541167"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 8.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401541175"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 8.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401541183"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 14.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401541196"
+        }
+      ],
+      "team": "Minnesota Timberwolves"
+    },
+    "kyle-anderson": {
+      "name": "Kyle Anderson",
+      "seed": 8,
+      "cost": 9.4,
+      "eliminated": true,
+      "total_raw": 8.5,
+      "round_ppg": {
+        "R1": 8.5
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 11.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401540755"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 10.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401541167"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 2.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401541175"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 11.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401541183"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401541196"
+        }
+      ],
+      "team": "Minnesota Timberwolves"
+    },
+    "max-strus": {
+      "name": "Max Strus",
+      "seed": 8,
+      "cost": 11.5,
+      "eliminated": false,
+      "total_raw": 43.25,
+      "round_ppg": {
+        "R1": 8.0,
+        "CSF": 16.5,
+        "CF": 11.5,
+        "Finals": 7.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 8.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401540754"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 4.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401541171"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 12.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401541179"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401541187"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 8.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401541240"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 8.0,
+          "team": "Miami Heat",
+          "opponent": "New York Knicks",
+          "game_id": "401544973"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 17.0,
+          "team": "Miami Heat",
+          "opponent": "New York Knicks",
+          "game_id": "401544974"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 19.0,
+          "team": "Miami Heat",
+          "opponent": "New York Knicks",
+          "game_id": "401544975"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 16.0,
+          "team": "Miami Heat",
+          "opponent": "New York Knicks",
+          "game_id": "401544976"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 14.0,
+          "team": "Miami Heat",
+          "opponent": "New York Knicks",
+          "game_id": "401544977"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 14.0,
+          "team": "Miami Heat",
+          "opponent": "New York Knicks",
+          "game_id": "401544978"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 15.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547671"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 11.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547672"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 10.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547673"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 9.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547674"
+        },
+        {
+          "round": "CF",
+          "game_num": 5,
+          "pts": 3.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547675"
+        },
+        {
+          "round": "CF",
+          "game_num": 6,
+          "pts": 10.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547676"
+        },
+        {
+          "round": "CF",
+          "game_num": 7,
+          "pts": 8.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547678"
+        },
+        {
+          "round": "Finals",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Miami Heat",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544846"
+        },
+        {
+          "round": "Finals",
+          "game_num": 2,
+          "pts": 14.0,
+          "team": "Miami Heat",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544847"
+        },
+        {
+          "round": "Finals",
+          "game_num": 3,
+          "pts": 3.0,
+          "team": "Miami Heat",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544848"
+        },
+        {
+          "round": "Finals",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Miami Heat",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544849"
+        },
+        {
+          "round": "Finals",
+          "game_num": 5,
+          "pts": 12.0,
+          "team": "Miami Heat",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544850"
+        }
+      ],
+      "team": "Miami Heat"
+    },
+    "victor-oladipo": {
+      "name": "Victor Oladipo",
+      "seed": 8,
+      "cost": 10.7,
+      "eliminated": true,
+      "total_raw": 5.75,
+      "round_ppg": {
+        "R1": 5.75
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401540754"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 15.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401541171"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 8.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401541179"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 0.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401541187"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 0.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401541240"
+        }
+      ],
+      "team": "Miami Heat"
+    },
+    "kyle-lowry": {
+      "name": "Kyle Lowry",
+      "seed": 8,
+      "cost": 11.2,
+      "eliminated": false,
+      "total_raw": 43.5,
+      "round_ppg": {
+        "R1": 9.0,
+        "CSF": 14.0,
+        "CF": 9.25,
+        "Finals": 11.25
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 2.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401540754"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 5.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401541171"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 15.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401541179"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 6.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401541187"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 10.0,
+          "team": "Miami Heat",
+          "opponent": "Milwaukee Bucks",
+          "game_id": "401541240"
+        },
+        {
+          "round": "CSF",
+          "game_num": 1,
+          "pts": 18.0,
+          "team": "Miami Heat",
+          "opponent": "New York Knicks",
+          "game_id": "401544973"
+        },
+        {
+          "round": "CSF",
+          "game_num": 2,
+          "pts": 6.0,
+          "team": "Miami Heat",
+          "opponent": "New York Knicks",
+          "game_id": "401544974"
+        },
+        {
+          "round": "CSF",
+          "game_num": 3,
+          "pts": 14.0,
+          "team": "Miami Heat",
+          "opponent": "New York Knicks",
+          "game_id": "401544975"
+        },
+        {
+          "round": "CSF",
+          "game_num": 4,
+          "pts": 15.0,
+          "team": "Miami Heat",
+          "opponent": "New York Knicks",
+          "game_id": "401544976"
+        },
+        {
+          "round": "CSF",
+          "game_num": 5,
+          "pts": 9.0,
+          "team": "Miami Heat",
+          "opponent": "New York Knicks",
+          "game_id": "401544977"
+        },
+        {
+          "round": "CSF",
+          "game_num": 6,
+          "pts": 4.0,
+          "team": "Miami Heat",
+          "opponent": "New York Knicks",
+          "game_id": "401544978"
+        },
+        {
+          "round": "CF",
+          "game_num": 1,
+          "pts": 15.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547671"
+        },
+        {
+          "round": "CF",
+          "game_num": 2,
+          "pts": 0.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547672"
+        },
+        {
+          "round": "CF",
+          "game_num": 3,
+          "pts": 7.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547673"
+        },
+        {
+          "round": "CF",
+          "game_num": 4,
+          "pts": 5.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547674"
+        },
+        {
+          "round": "CF",
+          "game_num": 5,
+          "pts": 5.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547675"
+        },
+        {
+          "round": "CF",
+          "game_num": 6,
+          "pts": 8.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547676"
+        },
+        {
+          "round": "CF",
+          "game_num": 7,
+          "pts": 7.0,
+          "team": "Miami Heat",
+          "opponent": "Boston Celtics",
+          "game_id": "401547678"
+        },
+        {
+          "round": "Finals",
+          "game_num": 1,
+          "pts": 11.0,
+          "team": "Miami Heat",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544846"
+        },
+        {
+          "round": "Finals",
+          "game_num": 2,
+          "pts": 9.0,
+          "team": "Miami Heat",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544847"
+        },
+        {
+          "round": "Finals",
+          "game_num": 3,
+          "pts": 9.0,
+          "team": "Miami Heat",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544848"
+        },
+        {
+          "round": "Finals",
+          "game_num": 4,
+          "pts": 13.0,
+          "team": "Miami Heat",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544849"
+        },
+        {
+          "round": "Finals",
+          "game_num": 5,
+          "pts": 12.0,
+          "team": "Miami Heat",
+          "opponent": "Denver Nuggets",
+          "game_id": "401544850"
+        }
+      ],
+      "team": "Miami Heat"
+    },
+    "taurean-prince": {
+      "name": "Taurean Prince",
+      "seed": 8,
+      "cost": 9.1,
+      "eliminated": true,
+      "total_raw": 9.75,
+      "round_ppg": {
+        "R1": 9.75
+      },
+      "games": [
+        {
+          "round": "R1",
+          "game_num": 1,
+          "pts": 0.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401540755"
+        },
+        {
+          "round": "R1",
+          "game_num": 2,
+          "pts": 12.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401541167"
+        },
+        {
+          "round": "R1",
+          "game_num": 3,
+          "pts": 8.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401541175"
+        },
+        {
+          "round": "R1",
+          "game_num": 4,
+          "pts": 6.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401541183"
+        },
+        {
+          "round": "R1",
+          "game_num": 5,
+          "pts": 13.0,
+          "team": "Minnesota Timberwolves",
+          "opponent": "Denver Nuggets",
+          "game_id": "401541196"
+        }
+      ],
+      "team": "Minnesota Timberwolves"
+    }
+  }
+}

@@ -1,0 +1,1733 @@
+{
+  "year": 2024,
+  "rows": [
+    {
+      "name": "McKenna Hayes",
+      "total": 339.75,
+      "place": 1,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jayson Tatum",
+          "player_id": "jayson-tatum",
+          "cost": 26.9,
+          "pts": 106.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Mike Conley",
+          "player_id": "mike-conley",
+          "cost": 11.4,
+          "pts": 38.5,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Isaac Okoro",
+          "player_id": "isaac-okoro",
+          "cost": 9.4,
+          "pts": 15.0,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "P.J. Washington",
+          "player_id": "p-j-washington",
+          "cost": 11.7,
+          "pts": 60.25,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Andrew Nembhard",
+          "player_id": "andrew-nembhard",
+          "cost": 9.2,
+          "pts": 52.75,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Kelly Oubre Jr.",
+          "player_id": "kelly-oubre-jr",
+          "cost": 15.4,
+          "pts": 16.25,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Kevin Love",
+          "player_id": "kevin-love",
+          "cost": 8.8,
+          "pts": 2.25,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Michael Moe",
+      "total": 336.25,
+      "place": 2,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jayson Tatum",
+          "player_id": "jayson-tatum",
+          "cost": 26.9,
+          "pts": 106.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Nikola Jokic",
+          "player_id": "nikola-jokic",
+          "cost": 26.4,
+          "pts": 64.5,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Nickeil Alexander-Walker",
+          "player_id": "nickeil-alexander-walker",
+          "cost": 8.0,
+          "pts": 27.25,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Georges Niang",
+          "player_id": "georges-niang",
+          "cost": 9.4,
+          "pts": 7.0,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "P.J. Washington",
+          "player_id": "p-j-washington",
+          "cost": 11.7,
+          "pts": 60.25,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Andrew Nembhard",
+          "player_id": "andrew-nembhard",
+          "cost": 9.2,
+          "pts": 52.75,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Kelly Oubre Jr.",
+          "player_id": "kelly-oubre-jr",
+          "cost": 15.4,
+          "pts": 16.25,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Christopher Holmquist",
+      "total": 327.25,
+      "place": 3,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jayson Tatum",
+          "player_id": "jayson-tatum",
+          "cost": 26.9,
+          "pts": 106.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Naz Reid",
+          "player_id": "naz-reid",
+          "cost": 13.5,
+          "pts": 37.0,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Terance Mann",
+          "player_id": "terance-mann",
+          "cost": 8.8,
+          "pts": 12.25,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "P.J. Washington",
+          "player_id": "p-j-washington",
+          "cost": 11.7,
+          "pts": 60.25,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Myles Turner",
+          "player_id": "myles-turner",
+          "cost": 17.1,
+          "pts": 59.0,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Paul Reed",
+          "player_id": "paul-reed",
+          "cost": 7.3,
+          "pts": 2.25,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Gabri Erspamer",
+      "total": 326.0,
+      "place": 4,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jaylen Brown",
+          "player_id": "jaylen-brown",
+          "cost": 23.0,
+          "pts": 104.0,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Nikola Jokic",
+          "player_id": "nikola-jokic",
+          "cost": 26.4,
+          "pts": 64.5,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Jaden McDaniels",
+          "player_id": "jaden-mcdaniels",
+          "cost": 10.5,
+          "pts": 44.75,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Terance Mann",
+          "player_id": "terance-mann",
+          "cost": 8.8,
+          "pts": 12.25,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Daniel Gafford",
+          "player_id": "daniel-gafford",
+          "cost": 11.0,
+          "pts": 41.5,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Obi Toppin",
+          "player_id": "obi-toppin",
+          "cost": 10.3,
+          "pts": 40.5,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Kelly Oubre Jr.",
+          "player_id": "kelly-oubre-jr",
+          "cost": 15.4,
+          "pts": 16.25,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Kevin Love",
+          "player_id": "kevin-love",
+          "cost": 8.8,
+          "pts": 2.25,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Mitchell Steiner",
+      "total": 308.0,
+      "place": 5,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jaylen Brown",
+          "player_id": "jaylen-brown",
+          "cost": 23.0,
+          "pts": 104.0,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Nickeil Alexander-Walker",
+          "player_id": "nickeil-alexander-walker",
+          "cost": 8.0,
+          "pts": 27.25,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Isaac Okoro",
+          "player_id": "isaac-okoro",
+          "cost": 9.4,
+          "pts": 15.0,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Kyrie Irving",
+          "player_id": "kyrie-irving",
+          "cost": 25.6,
+          "pts": 101.5,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Eric Gordon",
+          "player_id": "eric-gordon",
+          "cost": 11.0,
+          "pts": 8.0,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Paul Reed",
+          "player_id": "paul-reed",
+          "cost": 7.3,
+          "pts": 2.25,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Carson Stickler",
+      "total": 305.25,
+      "place": 6,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Derrick White",
+          "player_id": "derrick-white",
+          "cost": 15.2,
+          "pts": 73.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Aaron Gordon",
+          "player_id": "aaron-gordon",
+          "cost": 13.9,
+          "pts": 35.0,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Mike Conley",
+          "player_id": "mike-conley",
+          "cost": 11.4,
+          "pts": 38.5,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Max Strus",
+          "player_id": "max-strus",
+          "cost": 12.2,
+          "pts": 22.75,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Luka Doncic",
+          "player_id": "luka-doncic",
+          "cost": 33.9,
+          "pts": 123.25,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Royce O'Neale",
+          "player_id": "royce-oneale",
+          "cost": 7.7,
+          "pts": 5.0,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Buddy Hield",
+          "player_id": "buddy-hield",
+          "cost": 12.1,
+          "pts": 5.5,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Kyle Bradley",
+      "total": 304.0,
+      "place": 7,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jaylen Brown",
+          "player_id": "jaylen-brown",
+          "cost": 23.0,
+          "pts": 104.0,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Nikola Jokic",
+          "player_id": "nikola-jokic",
+          "cost": 26.4,
+          "pts": 64.5,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Bobby Portis",
+          "player_id": "bobby-portis",
+          "cost": 13.8,
+          "pts": 20.25,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Max Strus",
+          "player_id": "max-strus",
+          "cost": 12.2,
+          "pts": 22.75,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Daniel Gafford",
+          "player_id": "daniel-gafford",
+          "cost": 11.0,
+          "pts": 41.5,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "T.J. McConnell",
+          "player_id": "t-j-mcconnell",
+          "cost": 10.2,
+          "pts": 41.0,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Taurean Prince",
+          "player_id": "taurean-prince",
+          "cost": 8.9,
+          "pts": 8.25,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Zach Hayes",
+      "total": 279.25,
+      "place": 8,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Kristaps Porzingis",
+          "player_id": "kristaps-porzingis",
+          "cost": 20.1,
+          "pts": 21.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Michael Porter Jr",
+          "player_id": "michael-porter-jr",
+          "cost": 16.7,
+          "pts": 38.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Nickeil Alexander-Walker",
+          "player_id": "nickeil-alexander-walker",
+          "cost": 8.0,
+          "pts": 27.25,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Georges Niang",
+          "player_id": "georges-niang",
+          "cost": 9.4,
+          "pts": 7.0,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Luka Doncic",
+          "player_id": "luka-doncic",
+          "cost": 33.9,
+          "pts": 123.25,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Obi Toppin",
+          "player_id": "obi-toppin",
+          "cost": 10.3,
+          "pts": 40.5,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Kyle Lowry",
+          "player_id": "kyle-lowry",
+          "cost": 8.0,
+          "pts": 10.5,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Nikola Jovic",
+          "player_id": "nikola-jovic",
+          "cost": 7.7,
+          "pts": 11.0,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Skylar",
+      "total": 279.0,
+      "place": 9,
+      "remaining": 1,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jayson Tatum",
+          "player_id": "jayson-tatum",
+          "cost": 26.9,
+          "pts": 106.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Nickeil Alexander-Walker",
+          "player_id": "nickeil-alexander-walker",
+          "cost": 8.0,
+          "pts": 27.25,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "James Harden",
+          "player_id": "james-harden",
+          "cost": 16.6,
+          "pts": 26.0,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Mo Wagner",
+          "player_id": "mo-wagner",
+          "cost": 10.9,
+          "pts": 9.25,
+          "eliminated": true
+        },
+        {
+          "seed": 6,
+          "player": "Obi Toppin",
+          "player_id": "obi-toppin",
+          "cost": 10.3,
+          "pts": 40.5,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Taurean Prince",
+          "player_id": "taurean-prince",
+          "cost": 8.9,
+          "pts": 8.25,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Herbert Jones",
+          "player_id": "herbert-jones",
+          "cost": 11.0,
+          "pts": 13.0,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Chris Rossi",
+      "total": 277.25,
+      "place": 10,
+      "remaining": 1,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jayson Tatum",
+          "player_id": "jayson-tatum",
+          "cost": 26.9,
+          "pts": 106.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Mike Conley",
+          "player_id": "mike-conley",
+          "cost": 11.4,
+          "pts": 38.5,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Ivica Zubac",
+          "player_id": "ivica-zubac",
+          "cost": 11.7,
+          "pts": 17.75,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Jalen Suggs",
+          "player_id": "jalen-suggs",
+          "cost": 12.6,
+          "pts": 18.0,
+          "eliminated": true
+        },
+        {
+          "seed": 6,
+          "player": "T.J. McConnell",
+          "player_id": "t-j-mcconnell",
+          "cost": 10.2,
+          "pts": 41.0,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Buddy Hield",
+          "player_id": "buddy-hield",
+          "cost": 12.1,
+          "pts": 5.5,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Vikram (Air India)",
+      "total": 265.5,
+      "place": 11,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jayson Tatum",
+          "player_id": "jayson-tatum",
+          "cost": 26.9,
+          "pts": 106.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Bobby Portis",
+          "player_id": "bobby-portis",
+          "cost": 13.8,
+          "pts": 20.25,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "James Harden",
+          "player_id": "james-harden",
+          "cost": 16.6,
+          "pts": 26.0,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Derrick Jones Jr.",
+          "player_id": "derrick-jones-jr",
+          "cost": 8.6,
+          "pts": 44.5,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Jusuf Nurkic",
+          "player_id": "jusuf-nurkic",
+          "cost": 10.9,
+          "pts": 7.75,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Kyle Lowry",
+          "player_id": "kyle-lowry",
+          "cost": 8.0,
+          "pts": 10.5,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Bryan Bui",
+      "total": 264.75,
+      "place": 12,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jayson Tatum",
+          "player_id": "jayson-tatum",
+          "cost": 26.9,
+          "pts": 106.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Damian Lillard",
+          "player_id": "damian-lillard",
+          "cost": 24.3,
+          "pts": 31.25,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Isaac Okoro",
+          "player_id": "isaac-okoro",
+          "cost": 9.4,
+          "pts": 15.0,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Dereck Lively II",
+          "player_id": "dereck-lively-ii",
+          "cost": 8.8,
+          "pts": 37.25,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Royce O'Neale",
+          "player_id": "royce-oneale",
+          "cost": 7.7,
+          "pts": 5.0,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Kyle Lowry",
+          "player_id": "kyle-lowry",
+          "cost": 8.0,
+          "pts": 10.5,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Nikola Jovic",
+          "player_id": "nikola-jovic",
+          "cost": 7.7,
+          "pts": 11.0,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Cory Vest",
+      "total": 259.5,
+      "place": 13,
+      "remaining": 1,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jaylen Brown",
+          "player_id": "jaylen-brown",
+          "cost": 23.0,
+          "pts": 104.0,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Naz Reid",
+          "player_id": "naz-reid",
+          "cost": 13.5,
+          "pts": 37.0,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Terance Mann",
+          "player_id": "terance-mann",
+          "cost": 8.8,
+          "pts": 12.25,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Wendell Carter Jr.",
+          "player_id": "wendell-carter-jr",
+          "cost": 11.0,
+          "pts": 8.75,
+          "eliminated": true
+        },
+        {
+          "seed": 6,
+          "player": "Obi Toppin",
+          "player_id": "obi-toppin",
+          "cost": 10.3,
+          "pts": 40.5,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Buddy Hield",
+          "player_id": "buddy-hield",
+          "cost": 12.1,
+          "pts": 5.5,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Duncan Robinson",
+          "player_id": "duncan-robinson",
+          "cost": 12.9,
+          "pts": 3.25,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Zach Zimmerman",
+      "total": 256.5,
+      "place": 14,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jayson Tatum",
+          "player_id": "jayson-tatum",
+          "cost": 26.9,
+          "pts": 106.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Malik Beasley",
+          "player_id": "malik-beasley",
+          "cost": 11.3,
+          "pts": 12.75,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Norman Powell",
+          "player_id": "norman-powell",
+          "cost": 13.9,
+          "pts": 16.5,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "P.J. Washington",
+          "player_id": "p-j-washington",
+          "cost": 11.7,
+          "pts": 60.25,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Royce O'Neale",
+          "player_id": "royce-oneale",
+          "cost": 7.7,
+          "pts": 5.0,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Buddy Hield",
+          "player_id": "buddy-hield",
+          "cost": 12.1,
+          "pts": 5.5,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Ian Golembeski",
+      "total": 254.75,
+      "place": 15,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Kristaps Porzingis",
+          "player_id": "kristaps-porzingis",
+          "cost": 20.1,
+          "pts": 21.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Nikola Jokic",
+          "player_id": "nikola-jokic",
+          "cost": 26.4,
+          "pts": 64.5,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Naz Reid",
+          "player_id": "naz-reid",
+          "cost": 13.5,
+          "pts": 37.0,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Norman Powell",
+          "player_id": "norman-powell",
+          "cost": 13.9,
+          "pts": 16.5,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Derrick Jones Jr.",
+          "player_id": "derrick-jones-jr",
+          "cost": 8.6,
+          "pts": 44.5,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Andrew Nembhard",
+          "player_id": "andrew-nembhard",
+          "cost": 9.2,
+          "pts": 52.75,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Kelly Oubre Jr.",
+          "player_id": "kelly-oubre-jr",
+          "cost": 15.4,
+          "pts": 16.25,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Austin Yamada",
+      "total": 244.0,
+      "place": 16,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Kristaps Porzingis",
+          "player_id": "kristaps-porzingis",
+          "cost": 20.1,
+          "pts": 21.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Khris Middleton",
+          "player_id": "khris-middleton",
+          "cost": 15.1,
+          "pts": 29.75,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Darius Garland",
+          "player_id": "darius-garland",
+          "cost": 18.0,
+          "pts": 36.5,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "P.J. Washington",
+          "player_id": "p-j-washington",
+          "cost": 11.7,
+          "pts": 60.25,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Aaron Nesmith",
+          "player_id": "aaron-nesmith",
+          "cost": 12.2,
+          "pts": 35.5,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Kyle Lowry",
+          "player_id": "kyle-lowry",
+          "cost": 8.0,
+          "pts": 10.5,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Pete Hayes",
+      "total": 237.0,
+      "place": 17,
+      "remaining": 1,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jayson Tatum",
+          "player_id": "jayson-tatum",
+          "cost": 26.9,
+          "pts": 106.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Nickeil Alexander-Walker",
+          "player_id": "nickeil-alexander-walker",
+          "cost": 8.0,
+          "pts": 27.25,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Kawhi Leonard",
+          "player_id": "kawhi-leonard",
+          "cost": 23.7,
+          "pts": 6.0,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Markelle Fultz",
+          "player_id": "markelle-fultz",
+          "cost": 7.8,
+          "pts": 9.5,
+          "eliminated": true
+        },
+        {
+          "seed": 6,
+          "player": "Aaron Nesmith",
+          "player_id": "aaron-nesmith",
+          "cost": 12.2,
+          "pts": 35.5,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Paul Reed",
+          "player_id": "paul-reed",
+          "cost": 7.3,
+          "pts": 2.25,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Clark",
+      "total": 236.75,
+      "place": 18,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Derrick White",
+          "player_id": "derrick-white",
+          "cost": 15.2,
+          "pts": 73.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Nikola Jokic",
+          "player_id": "nikola-jokic",
+          "cost": 26.4,
+          "pts": 64.5,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Khris Middleton",
+          "player_id": "khris-middleton",
+          "cost": 15.1,
+          "pts": 29.75,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Russell Westbrook",
+          "player_id": "russell-westbrook",
+          "cost": 11.1,
+          "pts": 8.0,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Dereck Lively II",
+          "player_id": "dereck-lively-ii",
+          "cost": 8.8,
+          "pts": 37.25,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Bradley Beal",
+          "player_id": "bradley-beal",
+          "cost": 18.2,
+          "pts": 16.5,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Buddy Hield",
+          "player_id": "buddy-hield",
+          "cost": 12.1,
+          "pts": 5.5,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Carter Kranz",
+      "total": 235.5,
+      "place": 19,
+      "remaining": 1,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jayson Tatum",
+          "player_id": "jayson-tatum",
+          "cost": 26.9,
+          "pts": 106.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Naz Reid",
+          "player_id": "naz-reid",
+          "cost": 13.5,
+          "pts": 37.0,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Max Strus",
+          "player_id": "max-strus",
+          "cost": 12.2,
+          "pts": 22.75,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Mo Wagner",
+          "player_id": "mo-wagner",
+          "cost": 10.9,
+          "pts": 9.25,
+          "eliminated": true
+        },
+        {
+          "seed": 6,
+          "player": "Grayson Allen",
+          "player_id": "grayson-allen",
+          "cost": 13.5,
+          "pts": 1.75,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Taurean Prince",
+          "player_id": "taurean-prince",
+          "cost": 8.9,
+          "pts": 8.25,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Vincent Bonta",
+      "total": 223.75,
+      "place": 20,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Kristaps Porzingis",
+          "player_id": "kristaps-porzingis",
+          "cost": 20.1,
+          "pts": 21.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Brook Lopez",
+          "player_id": "brook-lopez",
+          "cost": 12.5,
+          "pts": 20.75,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Max Strus",
+          "player_id": "max-strus",
+          "cost": 12.2,
+          "pts": 22.75,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Kyrie Irving",
+          "player_id": "kyrie-irving",
+          "cost": 25.6,
+          "pts": 101.5,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Royce O'Neale",
+          "player_id": "royce-oneale",
+          "cost": 7.7,
+          "pts": 5.0,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Paul Reed",
+          "player_id": "paul-reed",
+          "cost": 7.3,
+          "pts": 2.25,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Shea stevens",
+      "total": 223.0,
+      "place": 21,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jaylen Brown",
+          "player_id": "jaylen-brown",
+          "cost": 23.0,
+          "pts": 104.0,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Josh Hart",
+          "player_id": "josh-hart",
+          "cost": 9.4,
+          "pts": 38.0,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Bobby Portis",
+          "player_id": "bobby-portis",
+          "cost": 13.8,
+          "pts": 20.25,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Georges Niang",
+          "player_id": "georges-niang",
+          "cost": 9.4,
+          "pts": 7.0,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Tim Hardaway Jr.",
+          "player_id": "tim-hardaway-jr",
+          "cost": 14.4,
+          "pts": 16.0,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Jusuf Nurkic",
+          "player_id": "jusuf-nurkic",
+          "cost": 10.9,
+          "pts": 7.75,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "LeBron James",
+          "player_id": "lebron-james",
+          "cost": 25.7,
+          "pts": 28.25,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Gage Mercer",
+      "total": 212.0,
+      "place": 22,
+      "remaining": 2,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Jayson Tatum",
+          "player_id": "jayson-tatum",
+          "cost": 26.9,
+          "pts": 106.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Michael Porter Jr",
+          "player_id": "michael-porter-jr",
+          "cost": 16.7,
+          "pts": 38.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Brook Lopez",
+          "player_id": "brook-lopez",
+          "cost": 12.5,
+          "pts": 20.75,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Terance Mann",
+          "player_id": "terance-mann",
+          "cost": 8.8,
+          "pts": 12.25,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Tim Hardaway Jr.",
+          "player_id": "tim-hardaway-jr",
+          "cost": 14.4,
+          "pts": 16.0,
+          "eliminated": false
+        },
+        {
+          "seed": 6,
+          "player": "Grayson Allen",
+          "player_id": "grayson-allen",
+          "cost": 13.5,
+          "pts": 1.75,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Buddy Hield",
+          "player_id": "buddy-hield",
+          "cost": 12.1,
+          "pts": 5.5,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Nikola Jovic",
+          "player_id": "nikola-jovic",
+          "cost": 7.7,
+          "pts": 11.0,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Luke Gasque",
+      "total": 183.25,
+      "place": 23,
+      "remaining": 1,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Kristaps Porzingis",
+          "player_id": "kristaps-porzingis",
+          "cost": 20.1,
+          "pts": 21.5,
+          "eliminated": false
+        },
+        {
+          "seed": 2,
+          "player": "Jamal Murray",
+          "player_id": "jamal-murray",
+          "cost": 21.2,
+          "pts": 48.25,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Jaden McDaniels",
+          "player_id": "jaden-mcdaniels",
+          "cost": 10.5,
+          "pts": 44.75,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Max Strus",
+          "player_id": "max-strus",
+          "cost": 12.2,
+          "pts": 22.75,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Paolo Banchero",
+          "player_id": "paolo-banchero",
+          "cost": 22.6,
+          "pts": 33.75,
+          "eliminated": true
+        },
+        {
+          "seed": 6,
+          "player": "Royce O'Neale",
+          "player_id": "royce-oneale",
+          "cost": 7.7,
+          "pts": 5.0,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Buddy Hield",
+          "player_id": "buddy-hield",
+          "cost": 12.1,
+          "pts": 5.5,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Jose Alvarado",
+          "player_id": "jose-alvarado",
+          "cost": 7.1,
+          "pts": 1.75,
+          "eliminated": true
+        }
+      ]
+    },
+    {
+      "name": "Brent Uhrich",
+      "total": 168.75,
+      "place": 24,
+      "remaining": 0,
+      "seeds": [
+        {
+          "seed": 1,
+          "player": "Chet Holmgren",
+          "player_id": "chet-holmgren",
+          "cost": 16.5,
+          "pts": 33.0,
+          "eliminated": true
+        },
+        {
+          "seed": 2,
+          "player": "Donte Divicenzo",
+          "player_id": "donte-divicenzo",
+          "cost": 15.5,
+          "pts": 46.5,
+          "eliminated": true
+        },
+        {
+          "seed": 3,
+          "player": "Khris Middleton",
+          "player_id": "khris-middleton",
+          "cost": 15.1,
+          "pts": 29.75,
+          "eliminated": true
+        },
+        {
+          "seed": 4,
+          "player": "Ivica Zubac",
+          "player_id": "ivica-zubac",
+          "cost": 11.7,
+          "pts": 17.75,
+          "eliminated": true
+        },
+        {
+          "seed": 5,
+          "player": "Jalen Suggs",
+          "player_id": "jalen-suggs",
+          "cost": 12.6,
+          "pts": 18.0,
+          "eliminated": true
+        },
+        {
+          "seed": 6,
+          "player": "Grayson Allen",
+          "player_id": "grayson-allen",
+          "cost": 13.5,
+          "pts": 1.75,
+          "eliminated": true
+        },
+        {
+          "seed": 7,
+          "player": "Austin Reaves",
+          "player_id": "austin-reaves",
+          "cost": 15.9,
+          "pts": 18.75,
+          "eliminated": true
+        },
+        {
+          "seed": 8,
+          "player": "Duncan Robinson",
+          "player_id": "duncan-robinson",
+          "cost": 12.9,
+          "pts": 3.25,
+          "eliminated": true
+        }
+      ]
+    }
+  ]
+}
