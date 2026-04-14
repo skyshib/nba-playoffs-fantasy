@@ -365,6 +365,45 @@ footer { text-align: center; padding: 2rem 1rem; color: var(--text-muted); font-
 .live-game-score { font-size: 1.1rem; font-weight: 900; }
 .live-game-team.winning .live-game-score { color: var(--live-green); }
 
+/* === Seed cell two-column layout (full mode) === */
+.seed-cell-row {
+  display: flex;
+  align-items: stretch;
+  gap: 0.35rem;
+  width: 100%;
+}
+.seed-cell-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+.seed-cell-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 2px;
+  font-variant-numeric: tabular-nums;
+  min-width: 2.6rem;
+  padding-left: 0.2rem;
+  border-left: 1px solid rgba(255,255,255,0.06);
+}
+.seed-cost {
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.seed-diff {
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+.seed-diff.pos { color: var(--live-green); }
+.seed-diff.neg { color: var(--over-budget); }
+.seed-cell.eliminated .seed-cost,
+.seed-cell.eliminated .seed-diff { opacity: 0.55; }
+
 /* === Headshots in seed cells === */
 .seed-headshot-wrap {
   width: 50px;

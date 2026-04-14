@@ -280,15 +280,21 @@ const Scoreboard = (() => {
             ptsEl.textContent = fmtPts(info.subtotal);
             td.appendChild(ptsEl);
           } else {
-            // Seed label + multiplier
+            // Two-column layout: left = visual, right = cost + +/-
+            const row = document.createElement('div');
+            row.className = 'seed-cell-row';
+            const left = document.createElement('div');
+            left.className = 'seed-cell-left';
+            const right = document.createElement('div');
+            right.className = 'seed-cell-right';
+
             const seedLabel = document.createElement('span');
             seedLabel.className = 'seed-number';
             seedLabel.textContent = year >= multStartYear
               ? `${seed} · ${info.multiplier.toFixed(1)}×`
               : `Seed ${seed}`;
-            td.appendChild(seedLabel);
+            left.appendChild(seedLabel);
 
-            // Headshot + team logo wrapper
             const hsUrl = headshotsData[info.pick.player_id];
             const teamName = getTeamName(info.pick);
             const logoUrl = teamName ? teamLogosData[teamName] : null;
@@ -304,18 +310,38 @@ const Scoreboard = (() => {
                 img.onerror = function () { this.style.display = 'none'; };
                 wrap.appendChild(img);
               }
-              td.appendChild(wrap);
+              left.appendChild(wrap);
             }
 
             const nameSpan = document.createElement('span');
             nameSpan.className = 'seed-player-name';
             nameSpan.textContent = lastName(info.pick.name);
-            td.appendChild(nameSpan);
+            left.appendChild(nameSpan);
 
             const ptsSpan = document.createElement('span');
             ptsSpan.className = 'seed-pts';
             ptsSpan.textContent = fmtPts(info.subtotal);
-            td.appendChild(ptsSpan);
+            left.appendChild(ptsSpan);
+
+            // Right column: cost + per-pick +/- (only shown if pick has played)
+            const costEl = document.createElement('span');
+            costEl.className = 'seed-cost';
+            costEl.textContent = info.pick.cost != null
+              ? `$${info.pick.cost.toFixed(info.pick.cost % 1 === 0 ? 0 : 1)}`
+              : '';
+            right.appendChild(costEl);
+
+            if (info.roundsPlayed > 0 && info.pointsDiff != null) {
+              const diffEl = document.createElement('span');
+              diffEl.className = 'seed-diff ' + (info.pointsDiff >= 0 ? 'pos' : 'neg');
+              const sign = info.pointsDiff >= 0 ? '+' : '';
+              diffEl.textContent = `${sign}${info.pointsDiff.toFixed(1)}`;
+              right.appendChild(diffEl);
+            }
+
+            row.appendChild(left);
+            row.appendChild(right);
+            td.appendChild(row);
           }
 
           td.addEventListener('mouseenter', e => showTooltip(e, info, pickCounts, totalEntrants));
