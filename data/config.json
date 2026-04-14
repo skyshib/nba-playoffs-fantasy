@@ -8,6 +8,8 @@
     2026
   ],
   "multiplier_start_year": 2025,
+  "lock_at": "2026-04-18T22:00:00Z",
+  "lock_note": "Deadline for pick submissions (Round 1 tipoff 2026-04-18 6pm ET).",
   "budget": 115.61,
   "budget_note": "Set by fetch_budget.py on 2026-04-14 from season 2026.",
   "refresh_static_ms": 300000,
