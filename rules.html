@@ -154,30 +154,28 @@
       <li><strong>Seed cells</strong>: each cell shows the seed · multiplier, player headshot, name, and current fantasy total. Hover for per-game stats.</li>
     </ul>
 
-    <h2>Payouts</h2>
-    <p>Pot = entrants × buy-in. The default structure scales by league size. Enter your own numbers below:</p>
+    <h2>Tiebreaker</h2>
+    <p>When you submit your roster, you'll also guess the <strong>highest single-game point total</strong> any one of your 8 players will score across the entire playoffs. If two or more entrants are tied on total fantasy points at the end, whoever's guess is closest (by absolute distance) wins. A second tie falls back to earliest submission.</p>
 
+    <h2>Payouts</h2>
+    <p>Example — 30 entrants at $50 buy-in (2 of whom are organizers Ian &amp; Skylar, entering free):</p>
     <div class="payout-calc">
-      <div class="inputs">
-        <label>Buy-in ($)<input id="buyin" type="number" min="0" step="1" value="50"></label>
-        <label>Entrants<input id="entrants" type="number" min="1" step="1" value="27"></label>
-      </div>
-      <div class="pot" id="pot-display">Pot: $0 · Paying 0 places</div>
+      <div class="pot">Pot: $1,400 · Paying top 6</div>
       <table class="payout-table">
         <thead><tr><th>Place</th><th>Share</th><th>Payout</th></tr></thead>
-        <tbody id="payout-body"></tbody>
+        <tbody>
+          <tr><td class="place">1st</td><td>45%</td><td class="amt">$630</td></tr>
+          <tr><td class="place">2nd</td><td>23%</td><td class="amt">$322</td></tr>
+          <tr><td class="place">3rd</td><td>13%</td><td class="amt">$182</td></tr>
+          <tr><td class="place">4th</td><td>9%</td><td class="amt">$126</td></tr>
+          <tr><td class="place">5th</td><td>6%</td><td class="amt">$84</td></tr>
+          <tr><td class="place">6th</td><td>4%</td><td class="amt">$56</td></tr>
+        </tbody>
       </table>
     </div>
 
-    <h3>Tier reference</h3>
-    <p>The default split by league size (summing to 100%):</p>
-    <table class="tier-table" id="tier-table">
-      <thead><tr><th>Entrants</th><th>Places paid</th><th>Split (% of pot)</th></tr></thead>
-      <tbody></tbody>
-    </table>
-
     <p style="margin-top: 2rem; color: var(--text-muted); font-size: .8rem;">
-      Organizers Ian and Skylar receive free registrations.
+      Organizers Ian and Skylar receive free registrations. Exact payouts scale with actual entrant count.
     </p>
   </main>
 
@@ -186,55 +184,7 @@
   </footer>
 
   <script>
-    // Tiered payout structure — shares sum to 1.0 of the pot.
-    const TIERS = [
-      { min: 16, places: 5, shares: [0.50, 0.25, 0.13, 0.07, 0.05] },
-      { min: 30, places: 6, shares: [0.45, 0.23, 0.13, 0.09, 0.06, 0.04] },
-      { min: 50, places: 7, shares: [0.42, 0.22, 0.13, 0.09, 0.07, 0.05, 0.02] },
-    ];
-
-    function tierFor(n) {
-      let t = TIERS[0];
-      for (const x of TIERS) if (n >= x.min) t = x;
-      return t;
-    }
-
-    function render() {
-      const buyin = parseFloat(document.getElementById('buyin').value) || 0;
-      const N = Math.max(1, parseInt(document.getElementById('entrants').value) || 0);
-      const pot = buyin * N;
-      const tier = tierFor(N);
-
-      document.getElementById('pot-display').textContent =
-        `Pot: $${pot.toFixed(2)} · Paying top ${tier.places} (${N} entrants)`;
-
-      const tbody = document.getElementById('payout-body');
-      tbody.innerHTML = '';
-      tier.shares.forEach((sh, i) => {
-        const tr = document.createElement('tr');
-        const amt = pot * sh;
-        tr.innerHTML = `<td class="place">${i + 1}${['st','nd','rd','th','th','th','th'][i]}</td>`
-          + `<td>${(sh * 100).toFixed(0)}%</td>`
-          + `<td class="amt">$${amt.toFixed(2)}</td>`;
-        tbody.appendChild(tr);
-      });
-
-      // Render tier table, highlight active
-      const ttb = document.querySelector('#tier-table tbody');
-      ttb.innerHTML = '';
-      for (let i = 0; i < TIERS.length; i++) {
-        const t = TIERS[i];
-        const nextMin = TIERS[i+1]?.min;
-        const range = nextMin ? `${t.min}–${nextMin - 1}` : `${t.min}+`;
-        const pct = t.shares.map(s => (s * 100).toFixed(0)).join(' / ');
-        const tr = document.createElement('tr');
-        if (t === tier) tr.className = 'active';
-        tr.innerHTML = `<td>${range}</td><td>${t.places}</td><td>${pct}</td>`;
-        ttb.appendChild(tr);
-      }
-    }
-
-    // Load config for display
+    // Load config for display (season + budget labels)
     (async () => {
       try {
         const cfg = await fetch('data/config.json?t=' + Date.now()).then(r => r.json());
@@ -244,9 +194,6 @@
       } catch (e) {}
     })();
 
-    document.getElementById('buyin').addEventListener('input', render);
-    document.getElementById('entrants').addEventListener('input', render);
-    render();
   </script>
 </body>
 </html>

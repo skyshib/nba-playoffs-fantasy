@@ -9,6 +9,7 @@ const PicksUI = (() => {
   let bySeed = {};         // seed -> [players sorted by cost desc]
   let selected = {};       // seed -> player_id
   let entrantName = '';
+  let tiebreaker = '';     // predicted highest single-game points by one of my picks
 
   function effectiveCost(cost) {
     return Math.max(cost, config.budget / 16);
@@ -42,6 +43,7 @@ const PicksUI = (() => {
     const saved = JSON.parse(localStorage.getItem('nbaFantasyPicks') || '{}');
     entrantName = saved.name || '';
     selected = saved.picks || {};
+    tiebreaker = saved.tiebreaker || '';
 
     render();
   }
@@ -71,6 +73,13 @@ const PicksUI = (() => {
     html += '</div>';
 
     html += '<div id="picks-budget-bar"><span>Total spent</span><span id="picks-spent">$0.00 / $' + cap.toFixed(2) + '</span></div>';
+
+    html += `<div style="margin-top:1rem;padding-top:.75rem;border-top:1px solid var(--border)">
+      <label style="display:block">Tiebreaker — predicted highest single-game points scored by any of your 8 picks, across the entire playoffs
+        <input id="picks-tiebreaker" type="number" min="0" max="150" step="1" value="${tiebreaker}" placeholder="e.g. 50">
+      </label>
+    </div>`;
+
     html += '<div id="picks-warnings"></div>';
     html += `<div id="picks-actions">
       <button id="picks-submit">Submit picks</button>
@@ -82,6 +91,12 @@ const PicksUI = (() => {
     document.getElementById('picks-name').addEventListener('input', e => {
       entrantName = e.target.value;
       persist();
+    });
+
+    document.getElementById('picks-tiebreaker').addEventListener('input', e => {
+      tiebreaker = e.target.value;
+      persist();
+      recompute();
     });
 
     ui.querySelectorAll('select[data-seed]').forEach(sel => {
@@ -102,7 +117,7 @@ const PicksUI = (() => {
   }
 
   function persist() {
-    localStorage.setItem('nbaFantasyPicks', JSON.stringify({ name: entrantName, picks: selected }));
+    localStorage.setItem('nbaFantasyPicks', JSON.stringify({ name: entrantName, picks: selected, tiebreaker }));
   }
 
   function recompute() {
@@ -126,6 +141,8 @@ const PicksUI = (() => {
     const msgs = [];
     if (spent > cap + 1e-9) msgs.push(`Over budget by $${(spent - cap).toFixed(2)}`);
     if (dupes.length) msgs.push(`Duplicate player(s): ${dupes.join(', ')}`);
+    const tb = parseFloat(tiebreaker);
+    if (!tiebreaker || isNaN(tb) || tb < 0) msgs.push('Enter a tiebreaker guess');
     warn.textContent = msgs.join(' · ');
     document.getElementById('picks-submit').disabled = !!msgs.length || !entrantName.trim();
   }
@@ -150,6 +167,7 @@ const PicksUI = (() => {
     const blob = {
       name: entrantName.trim(),
       submitted_at: new Date().toISOString(),
+      tiebreaker: parseFloat(tiebreaker),
       picks,
     };
 

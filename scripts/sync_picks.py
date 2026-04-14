@@ -68,6 +68,7 @@ def main():
             by_name[key] = {
                 "name": name,
                 "submitted_at": ts,
+                "tiebreaker": blob.get("tiebreaker"),
                 "picks": blob.get("picks", {}),
             }
 

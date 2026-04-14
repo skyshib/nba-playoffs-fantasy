@@ -15,6 +15,7 @@ const HEADER = [
   'Submitted',
   'Entrant',
   'Total Cost',
+  'Tiebreaker',
   'Seed 1 Player', 'Seed 1 Cost',
   'Seed 2 Player', 'Seed 2 Cost',
   'Seed 3 Player', 'Seed 3 Cost',
@@ -51,6 +52,7 @@ function doPost(e) {
       body.submitted_at || new Date().toISOString(),
       body.name || '(unnamed)',
       Math.round(totalCost * 100) / 100,
+      body.tiebreaker != null ? Number(body.tiebreaker) : '',
       ...seedCols,
       JSON.stringify(body),
     ];
