@@ -8,8 +8,8 @@
     2026
   ],
   "multiplier_start_year": 2025,
-  "budget": 115.6,
-  "budget_note": "Set by fetch_budget.py on 2026-04-13 from season 2026.",
+  "budget": 115.61,
+  "budget_note": "Set by fetch_budget.py on 2026-04-14 from season 2026.",
   "refresh_static_ms": 300000,
   "refresh_live_ms": 60000,
   "picks_endpoint": "https://script.google.com/macros/s/AKfycbxjIXCF5O0RiJNbp3EkSvrN5qOzftu_n6BK8F38fPCzgAHfSg9PtZMd2R_0hrRlG-ps/exec",
@@ -19,5 +19,3 @@
     "_jayson-tatum": 27.0
   }
 }
-
-
