@@ -172,7 +172,7 @@
     <h3>Tier reference</h3>
     <p>The default split by league size (summing to 100%):</p>
     <table class="tier-table" id="tier-table">
-      <thead><tr><th>Entrants</th><th>Places paid</th><th>Split (% of pot)</th><th>Organizer cut</th></tr></thead>
+      <thead><tr><th>Entrants</th><th>Places paid</th><th>Split (% of pot)</th></tr></thead>
       <tbody></tbody>
     </table>
 
@@ -186,14 +186,11 @@
   </footer>
 
   <script>
-    // Tiered payout structure
-    // Each tier: { min entrants, places, shares[] summing to 1.0, orgCut }
-    // shares[] are pre-cut percentages of the pot (placement winners only).
-    // orgCut is taken off the top before paying out.
+    // Tiered payout structure — shares sum to 1.0 of the pot.
     const TIERS = [
-      { min: 16, places: 5, shares: [0.50, 0.25, 0.13, 0.07, 0.05], orgCut: 0.00 },
-      { min: 30, places: 6, shares: [0.45, 0.23, 0.13, 0.09, 0.06, 0.04], orgCut: 0.05 },
-      { min: 50, places: 7, shares: [0.42, 0.22, 0.13, 0.09, 0.07, 0.05, 0.02], orgCut: 0.05 },
+      { min: 16, places: 5, shares: [0.50, 0.25, 0.13, 0.07, 0.05] },
+      { min: 30, places: 6, shares: [0.45, 0.23, 0.13, 0.09, 0.06, 0.04] },
+      { min: 50, places: 7, shares: [0.42, 0.22, 0.13, 0.09, 0.07, 0.05, 0.02] },
     ];
 
     function tierFor(n) {
@@ -207,31 +204,20 @@
       const N = Math.max(1, parseInt(document.getElementById('entrants').value) || 0);
       const pot = buyin * N;
       const tier = tierFor(N);
-      const orgAmt = pot * tier.orgCut;
-      const winnerPool = pot - orgAmt;
 
-      const cutTxt = tier.orgCut > 0 ? ` · ${(tier.orgCut * 100).toFixed(0)}% organizer cut` : '';
       document.getElementById('pot-display').textContent =
-        `Pot: $${pot.toFixed(2)} · Paying top ${tier.places} (${N} entrants)${cutTxt}`;
+        `Pot: $${pot.toFixed(2)} · Paying top ${tier.places} (${N} entrants)`;
 
       const tbody = document.getElementById('payout-body');
       tbody.innerHTML = '';
       tier.shares.forEach((sh, i) => {
         const tr = document.createElement('tr');
-        const amt = winnerPool * sh;
+        const amt = pot * sh;
         tr.innerHTML = `<td class="place">${i + 1}${['st','nd','rd','th','th','th','th'][i]}</td>`
-          + `<td>${(sh * 100 * (1 - tier.orgCut)).toFixed(1)}%</td>`
+          + `<td>${(sh * 100).toFixed(0)}%</td>`
           + `<td class="amt">$${amt.toFixed(2)}</td>`;
         tbody.appendChild(tr);
       });
-      if (tier.orgCut > 0) {
-        const tr = document.createElement('tr');
-        tr.style.color = 'var(--text-muted)';
-        tr.innerHTML = `<td class="place">Organizer</td>`
-          + `<td>${(tier.orgCut * 100).toFixed(0)}%</td>`
-          + `<td class="amt" style="color:var(--text-muted)">$${orgAmt.toFixed(2)}</td>`;
-        tbody.appendChild(tr);
-      }
 
       // Render tier table, highlight active
       const ttb = document.querySelector('#tier-table tbody');
@@ -240,11 +226,10 @@
         const t = TIERS[i];
         const nextMin = TIERS[i+1]?.min;
         const range = nextMin ? `${t.min}–${nextMin - 1}` : `${t.min}+`;
-        const pct = t.shares.map(s => (s * 100 * (1 - t.orgCut)).toFixed(1)).join(' / ');
-        const cut = t.orgCut > 0 ? `${(t.orgCut * 100).toFixed(0)}%` : '—';
+        const pct = t.shares.map(s => (s * 100).toFixed(0)).join(' / ');
         const tr = document.createElement('tr');
         if (t === tier) tr.className = 'active';
-        tr.innerHTML = `<td>${range}</td><td>${t.places}</td><td>${pct}</td><td>${cut}</td>`;
+        tr.innerHTML = `<td>${range}</td><td>${t.places}</td><td>${pct}</td>`;
         ttb.appendChild(tr);
       }
     }

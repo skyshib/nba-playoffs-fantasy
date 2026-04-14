@@ -205,7 +205,7 @@ def main():
                 "team": info["name"],
                 "team_abbrev": info["abbrev"],
                 "seed": info["seed"],
-                "cost": round(ppg, 2),
+                "cost": round(ppg, 1),
             })
         n_added = sum(1 for p in players if p["team"] == info["name"])
         print(f"  {info['name']} (seed {info['seed']}): {n_added} players")
