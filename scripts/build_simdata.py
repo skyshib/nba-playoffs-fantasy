@@ -80,7 +80,9 @@ def historical_year(year: int, data_dir: Path) -> dict | None:
     for seed in pool:
         pool[seed].sort(key=lambda x: -x["ppg"])
 
-    # opponents: every entrant's roster
+    # opponents: every entrant's roster. Historical picks.json lacks team info
+    # per pick (Excel didn't record teams), so cross-reference stats.json.
+    stats_players = stats.get("players", {})
     opponents = []
     for ent in picks.get("entrants", []):
         plist = []
@@ -88,11 +90,17 @@ def historical_year(year: int, data_dir: Path) -> dict | None:
             pick = (ent.get("picks") or {}).get(str(s))
             if not pick:
                 continue
+            slug = pick.get("player_id")
+            stats_p = stats_players.get(slug, {})
+            team = pick.get("team") or stats_p.get("team") or ""
+            ppg = pick.get("cost")
+            if ppg is None:
+                ppg = stats_p.get("cost", 0)
             plist.append({
-                "slug": pick.get("player_id"),
+                "slug": slug,
                 "name": pick.get("name"),
-                "team": pick.get("team"),
-                "ppg": (pick.get("cost") or 0),
+                "team": team,
+                "ppg": ppg,
                 "seed": s,
             })
         opponents.append({"name": ent["name"], "players": plist})

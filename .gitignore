@@ -3,3 +3,7 @@
 __pycache__/
 *.pyc
 .env
+
+# Local-only: sim dashboard + recovered files (not for public site)
+sim/
+recovered_sim/
