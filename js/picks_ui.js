@@ -9,6 +9,7 @@ const PicksUI = (() => {
   let bySeed = {};         // seed -> [players sorted by cost desc]
   let selected = {};       // seed -> player_id
   let entrantName = '';
+  let entrantEmail = '';   // optional
   let tiebreaker = '';     // predicted highest single-game points by one of my picks
 
   function effectiveCost(cost) {
@@ -42,6 +43,7 @@ const PicksUI = (() => {
     // Restore from localStorage
     const saved = JSON.parse(localStorage.getItem('nbaFantasyPicks') || '{}');
     entrantName = saved.name || '';
+    entrantEmail = saved.email || '';
     selected = saved.picks || {};
     tiebreaker = saved.tiebreaker || '';
 
@@ -52,6 +54,7 @@ const PicksUI = (() => {
     const ui = document.getElementById('picks-ui');
     const cap = config.budget;
     let html = `<label>Your name<input id="picks-name" type="text" value="${entrantName.replace(/"/g, '&quot;')}"></label>`;
+    html += `<label style="margin-top:.4rem">Email (optional — for payout contact)<input id="picks-email" type="email" value="${entrantEmail.replace(/"/g, '&quot;')}" placeholder="you@example.com"></label>`;
     html += `<div style="margin-top:.6rem;font-size:.8rem;color:var(--text-secondary)">Budget cap: <strong>${cap.toFixed(2)}</strong> · minimum cost per pick: <strong>${(cap / 16).toFixed(2)}</strong></div>`;
 
     html += '<div style="margin-top:1rem">';
@@ -93,6 +96,11 @@ const PicksUI = (() => {
       persist();
     });
 
+    document.getElementById('picks-email').addEventListener('input', e => {
+      entrantEmail = e.target.value;
+      persist();
+    });
+
     document.getElementById('picks-tiebreaker').addEventListener('input', e => {
       tiebreaker = e.target.value;
       persist();
@@ -117,7 +125,7 @@ const PicksUI = (() => {
   }
 
   function persist() {
-    localStorage.setItem('nbaFantasyPicks', JSON.stringify({ name: entrantName, picks: selected, tiebreaker }));
+    localStorage.setItem('nbaFantasyPicks', JSON.stringify({ name: entrantName, email: entrantEmail, picks: selected, tiebreaker }));
   }
 
   function recompute() {
@@ -166,6 +174,7 @@ const PicksUI = (() => {
     }
     const blob = {
       name: entrantName.trim(),
+      email: entrantEmail.trim() || null,
       submitted_at: new Date().toISOString(),
       tiebreaker: parseFloat(tiebreaker),
       picks,

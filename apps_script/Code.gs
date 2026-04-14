@@ -14,6 +14,7 @@
 const HEADER = [
   'Submitted',
   'Entrant',
+  'Email',
   'Total Cost',
   'Tiebreaker',
   'Seed 1 Player', 'Seed 1 Cost',
@@ -51,6 +52,7 @@ function doPost(e) {
     const row = [
       body.submitted_at || new Date().toISOString(),
       body.name || '(unnamed)',
+      body.email || '',
       Math.round(totalCost * 100) / 100,
       body.tiebreaker != null ? Number(body.tiebreaker) : '',
       ...seedCols,

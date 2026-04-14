@@ -67,6 +67,7 @@ def main():
         if existing is None or ts > existing.get("submitted_at", ""):
             by_name[key] = {
                 "name": name,
+                "email": blob.get("email"),
                 "submitted_at": ts,
                 "tiebreaker": blob.get("tiebreaker"),
                 "picks": blob.get("picks", {}),
