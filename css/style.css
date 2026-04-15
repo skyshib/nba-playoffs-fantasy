@@ -278,6 +278,7 @@ td.col-remaining { color: var(--text-secondary); }
 .compact-mode .seed-cell .seed-mult { display: none; }
 .compact-mode .seed-cell .seed-player-name { font-size: 0.55rem; max-width: 4rem; }
 .compact-mode .seed-cell .seed-pts { font-size: 0.65rem; }
+.compact-mode .seed-cell .compact-name { margin-right: 0.25rem; }
 .compact-mode tbody td { padding: 0.1rem 0.2rem; }
 .compact-mode tbody td.col-name { font-size: 0.7rem; max-width: 6rem; overflow: hidden; text-overflow: ellipsis; }
 
