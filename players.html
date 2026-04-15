@@ -40,6 +40,29 @@
     .pp-budget-bar .pp-budget-val { font-weight: 700; color: var(--accent-gold); font-size: 1.05rem; }
     .pp-budget-bar .pp-budget-cap { color: var(--text-muted); }
     .pp-budget-bar.over .pp-budget-val { color: var(--over-budget); }
+
+    /* Roster validation state — applied to .pp-roster */
+    .pp-roster.state-valid   .pp-budget-val { color: var(--live-green); }
+    .pp-roster.state-partial .pp-budget-val { color: var(--accent-gold); }
+    .pp-roster.state-invalid .pp-budget-val { color: var(--over-budget); }
+
+    .pp-roster.state-valid   .pp-slot.filled {
+      border-color: var(--live-green);
+      background: rgba(34, 197, 94, 0.08);
+    }
+    .pp-roster.state-valid   .pp-slot.filled .pp-slot-cost { color: var(--live-green); }
+
+    .pp-roster.state-partial .pp-slot.filled {
+      border-color: var(--accent-gold);
+      background: rgba(251, 191, 36, 0.08);
+    }
+    .pp-roster.state-partial .pp-slot.filled .pp-slot-cost { color: var(--accent-gold); }
+
+    .pp-roster.state-invalid .pp-slot.filled {
+      border-color: var(--over-budget);
+      background: rgba(239, 68, 68, 0.08);
+    }
+    .pp-roster.state-invalid .pp-slot.filled .pp-slot-cost { color: var(--over-budget); }
     .pp-roster-count {
       font-size: 0.7rem;
       color: var(--text-muted);
@@ -657,6 +680,14 @@
       bar.classList.toggle('over', over);
       document.getElementById('pp-spent').textContent = `$${spent.toFixed(2)}`;
       document.getElementById('pp-roster-count').textContent = `${filled} / 8 picks` + (over ? ` · over by $${(spent - BUDGET).toFixed(2)}` : '');
+
+      // Overall roster validation state — drives green/yellow/red theming
+      // of the slots + total.
+      const roster = document.getElementById('pp-roster');
+      roster.classList.remove('state-valid', 'state-partial', 'state-invalid');
+      if (over) roster.classList.add('state-invalid');
+      else if (filled === 8) roster.classList.add('state-valid');
+      else roster.classList.add('state-partial');
 
       // Dirty indicator
       const dirty = isDirty();
