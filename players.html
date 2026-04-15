@@ -322,6 +322,9 @@
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
       z-index: 50;
     }
+    .pp-dot.hovered.state-valid   { border-color: var(--live-green); }
+    .pp-dot.hovered.state-partial { border-color: var(--accent-gold); }
+    .pp-dot.hovered.state-invalid { border-color: var(--over-budget); }
     .pp-row-plot.has-hover .pp-dot:not(.hovered) { opacity: 0.55; }
     .pp-row-plot { cursor: pointer; }
     .pp-dot.dim { opacity: 0.18; filter: grayscale(100%); }
@@ -855,10 +858,13 @@
         <div class="pp-tip-stat"><span class="pp-tip-label">Seed multiplier</span><span class="pp-tip-value">${(1 + parseInt(d.seed)/10).toFixed(1)}×</span></div>
         ${overNote}
       `;
-      // Border color reflects what clicking would do to the roster
+      // Border color reflects what clicking would do to the roster.
+      // Apply to both the tooltip and the hovered dot's ring.
       const state = whatIfState(d.slug, parseInt(d.seed));
       tip.classList.remove('state-valid', 'state-partial', 'state-invalid');
       tip.classList.add('state-' + state);
+      el.classList.remove('state-valid', 'state-partial', 'state-invalid');
+      el.classList.add('state-' + state);
       const rect = el.getBoundingClientRect();
       tip.classList.add('visible');
       const tr = tip.getBoundingClientRect();
@@ -899,7 +905,10 @@
       });
 
       plot.addEventListener('mouseleave', () => {
-        if (active) { active.classList.remove('hovered'); active = null; }
+        if (active) {
+          active.classList.remove('hovered', 'state-valid', 'state-partial', 'state-invalid');
+          active = null;
+        }
         plot.classList.remove('has-hover');
         hideTooltip();
       });
