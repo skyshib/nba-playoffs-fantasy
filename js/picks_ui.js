@@ -214,6 +214,10 @@ const PicksUI = (() => {
       // no-cors → opaque response; assume success unless it threw
       status.className = 'picks-status ok';
       status.innerHTML = `✓ Submitted! Your picks for <strong>${entrantName}</strong> were sent. You can close this window.`;
+      // Mark submission so cross-page nav can reflect "Update Picks" state
+      localStorage.setItem('nbaFantasyLastSubmittedAt', new Date().toISOString());
+      // Notify nav to refresh (countdown.js runs on all pages)
+      window.dispatchEvent(new Event('nba-roster-submitted'));
     } catch (err) {
       status.className = 'picks-status err';
       status.textContent = 'Submission failed: ' + err.message;

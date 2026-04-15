@@ -1,7 +1,31 @@
 /**
- * Header countdown timer to pick-submission deadline.
- * Reads `lock_at` (ISO 8601) from data/config.json. Updates every second.
+ * Header countdown timer to pick-submission deadline + Enter Picks button
+ * state. Runs on every page that loads it.
  */
+
+// Enter Picks button: turn primary style off + change text to "Update Picks"
+// once the user has successfully submitted a roster at least once.
+function refreshEnterPicksButton() {
+  const el = document.getElementById('nav-enter-picks');
+  if (!el) return;
+  const submitted = localStorage.getItem('nbaFantasyLastSubmittedAt');
+  if (submitted) {
+    el.classList.remove('primary');
+    el.textContent = 'Update Picks';
+    el.title = 'Update your submitted roster (last submitted ' + new Date(submitted).toLocaleString() + ')';
+  } else {
+    el.classList.add('primary');
+    el.textContent = 'Enter Picks';
+    el.title = 'Build a roster';
+  }
+}
+refreshEnterPicksButton();
+window.addEventListener('nba-roster-submitted', refreshEnterPicksButton);
+// Cross-tab: if another tab submits, update this one too
+window.addEventListener('storage', e => {
+  if (e.key === 'nbaFantasyLastSubmittedAt') refreshEnterPicksButton();
+});
+
 (async function () {
   const el = document.getElementById('countdown');
   if (!el) return;
