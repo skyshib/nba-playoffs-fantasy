@@ -146,12 +146,56 @@ main { max-width: 1600px; margin: 1.5rem auto; padding: 0 1rem; }
 #scoreboard thead th.col-remaining { width: 3rem; }
 #scoreboard thead th.col-ppgrem { width: 4rem; }
 
-/* Synthetic entrant rows (e.g. "Best Possible Roster") — reference only,
-   not a ranked entrant. */
-#scoreboard tbody tr.synthetic-row { background: rgba(251, 191, 36, 0.05); font-style: italic; }
-#scoreboard tbody tr.synthetic-row td.col-name { color: var(--accent-gold); font-style: normal; font-weight: 700; }
-#scoreboard tbody tr.synthetic-row td.col-rank { color: var(--text-muted); font-weight: 400; }
-#scoreboard tbody tr.first-real-row td { border-top: 2px solid var(--accent-red); }
+/* Synthetic collapsible card (Best Possible Roster) above the main table */
+#synthetic-container { margin-bottom: 0.75rem; }
+.synthetic-card {
+  background: rgba(251, 191, 36, 0.05);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.synthetic-card summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.55rem 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.synthetic-card summary::-webkit-details-marker { display: none; }
+.synthetic-card summary::before {
+  content: '▸';
+  color: var(--accent-gold);
+  margin-right: 0.5rem;
+  transition: transform 0.15s;
+}
+.synthetic-card[open] summary::before { transform: rotate(90deg); display: inline-block; }
+.synth-title { font-weight: 700; color: var(--accent-gold); font-size: 0.9rem; flex: 1; }
+.synth-total { color: var(--accent-gold); font-weight: 700; font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+.synth-body {
+  padding: 0.5rem 0.9rem 0.9rem;
+  overflow-x: auto;
+  border-top: 1px solid rgba(251, 191, 36, 0.2);
+}
+.synth-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+}
+.synth-table th {
+  color: var(--text-muted);
+  text-align: left;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+}
+.synth-table td {
+  padding: 0.3rem 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
 
 td.col-diff { font-weight: 600; font-variant-numeric: tabular-nums; }
 td.col-diff.pos { color: var(--live-green); }

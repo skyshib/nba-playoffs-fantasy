@@ -143,14 +143,20 @@ const Scoreboard = (() => {
 
   function rankAll() {
     if (!picksData?.entrants) return [];
-    // Split synthetic entrants (e.g. "Best Possible Roster") from real ones.
-    // Real entrants get ranked; synthetic entrants are pinned at the top with
-    // no rank assigned.
-    const all = picksData.entrants
-      .map(e => ({ name: e.name, entrant: e, synthetic: !!e._synthetic, ...scoreEntrant(e) }));
-    const synth = all.filter(r => r.synthetic).sort((a, b) => b.total - a.total);
-    const real  = all.filter(r => !r.synthetic).sort((a, b) => b.total - a.total);
-    return synth.concat(real);
+    // Only rank real entrants. Synthetic ones (e.g. Best Possible Roster)
+    // render above the table, not in it.
+    return picksData.entrants
+      .filter(e => !e._synthetic)
+      .map(e => ({ name: e.name, entrant: e, ...scoreEntrant(e) }))
+      .sort((a, b) => b.total - a.total);
+  }
+
+  function syntheticEntrants() {
+    if (!picksData?.entrants) return [];
+    return picksData.entrants
+      .filter(e => e._synthetic)
+      .map(e => ({ name: e.name, entrant: e, synthetic: true, ...scoreEntrant(e) }))
+      .sort((a, b) => b.total - a.total);
   }
 
   function fmtPts(v) {
@@ -163,9 +169,50 @@ const Scoreboard = (() => {
     return parts[parts.length - 1];
   }
 
+  function renderSynthetic() {
+    const host = document.getElementById('synthetic-container');
+    if (!host) return;
+    const synth = syntheticEntrants();
+    if (!synth.length) { host.innerHTML = ''; return; }
+
+    let html = '';
+    for (const r of synth) {
+      const key = 'synth_open_' + r.name.replace(/\W+/g, '_');
+      const isOpen = localStorage.getItem(key) === '1';
+      html += `<details class="synthetic-card" ${isOpen ? 'open' : ''} data-key="${key}">`;
+      html += `<summary><span class="synth-title">${r.name}</span><span class="synth-total">${fmtPts(r.total)} pts</span></summary>`;
+      html += '<div class="synth-body"><table class="synth-table"><thead><tr>';
+      html += '<th>Sd</th><th>Mult</th><th>Player</th><th>Team</th><th>Cost</th>';
+      for (const rd of ROUNDS) html += `<th>${ROUND_LABELS[rd]}</th>`;
+      html += '<th>Total</th></tr></thead><tbody>';
+      for (let seed = 1; seed <= 8; seed++) {
+        const info = r.breakdown[seed];
+        if (!info.pick) continue;
+        const cost = info.pick.cost != null ? info.pick.cost.toFixed(1) : '—';
+        html += `<tr><td>${seed}</td><td style="color:var(--text-muted)">${info.multiplier.toFixed(1)}×</td>`;
+        html += `<td>${info.pick.name}</td><td>${info.pick.team || '—'}</td><td>${cost}</td>`;
+        for (const rd of ROUNDS) {
+          const v = info.perRound[rd];
+          html += `<td>${typeof v === 'number' && v > 0 ? fmtPts(v) : '—'}</td>`;
+        }
+        html += `<td><strong>${fmtPts(info.subtotal)}</strong></td></tr>`;
+      }
+      html += '</tbody></table></div></details>';
+    }
+    host.innerHTML = html;
+
+    // Persist open/close state
+    host.querySelectorAll('details').forEach(d => {
+      d.addEventListener('toggle', () => {
+        localStorage.setItem(d.dataset.key, d.open ? '1' : '0');
+      });
+    });
+  }
+
   function render() {
     const tbody = document.getElementById('scoreboard-body');
     if (!tbody) return;
+    renderSynthetic();
     const ranked = rankAll();
     tbody.innerHTML = '';
 
@@ -178,11 +225,9 @@ const Scoreboard = (() => {
       }
     }
 
-    // Min/max for color gradient — exclude synthetic rows so they don't
-    // stretch the range and get their own colors.
+    // Min/max for color gradient
     let minPts = Infinity, maxPts = -Infinity;
     for (const r of ranked) {
-      if (r.synthetic) continue;
       for (let s = 1; s <= 8; s++) {
         const info = r.breakdown[s];
         if (info.pick) {
@@ -206,48 +251,26 @@ const Scoreboard = (() => {
     const uniqRanks = {};
     uniqArr.forEach((e, i) => { uniqRanks[e.name] = i + 1; });
 
-    // Ranks with ties — synthetic rows skip numeric ranks
+    // Ranks with ties
     const ranks = [];
-    let realIndex = 0;
     for (let i = 0; i < ranked.length; i++) {
-      if (ranked[i].synthetic) {
-        ranks.push(null);
-      } else {
-        const realPrev = realIndex - 1;
-        const prevTotal = realPrev >= 0 ? ranked.slice(0, i).filter(r => !r.synthetic)[realPrev].total : null;
-        if (prevTotal == null || ranked[i].total < prevTotal) {
-          ranks.push(realIndex + 1);
-        } else {
-          ranks.push(ranks[i - 1]);
-        }
-        realIndex++;
-      }
+      if (i === 0 || ranked[i].total < ranked[i - 1].total) ranks.push(i + 1);
+      else ranks.push(ranks[i - 1]);
     }
-    // Count of real ranks for tie detection
-    const realRanks = ranks.filter(r => r != null);
-
-    // Find index of first real entrant (for visual break above it)
-    const firstRealIdx = ranked.findIndex(r => !r.synthetic);
 
     for (let i = 0; i < ranked.length; i++) {
       const r = ranked[i];
       const tr = document.createElement('tr');
       tr.dataset.entrant = r.name;
-      if (r.synthetic) tr.classList.add('synthetic-row');
-      if (i === firstRealIdx && firstRealIdx > 0) tr.classList.add('first-real-row');
 
       const rank = ranks[i];
+      const isTied = ranks.filter(x => x === rank).length > 1;
       const badges = ['🥇', '🥈', '🥉', '💲', '💲'];
       const tdRank = document.createElement('td');
       tdRank.className = 'col-rank';
-      if (rank == null) {
-        tdRank.textContent = '—';
-      } else {
-        const isTied = realRanks.filter(x => x === rank).length > 1;
-        tdRank.textContent = rank <= 5
-          ? `${isTied ? 'T-' : ''}${rank} ${badges[rank - 1]}`
-          : `${isTied ? 'T-' : ''}${rank}`;
-      }
+      tdRank.textContent = rank <= 5
+        ? `${isTied ? 'T-' : ''}${rank} ${badges[rank - 1]}`
+        : `${isTied ? 'T-' : ''}${rank}`;
       tr.appendChild(tdRank);
 
       const tdName = document.createElement('td');
@@ -290,8 +313,8 @@ const Scoreboard = (() => {
           if (info.eliminated) td.classList.add('eliminated');
           if (info.live) td.classList.add('live');
 
-          // Color gradient (skip for synthetic rows — they're reference only)
-          if (!r.synthetic && maxPts > minPts) {
+          // Color gradient
+          if (maxPts > minPts) {
             const t = (info.subtotal - minPts) / (maxPts - minPts);
             const r0 = Math.round(180 - 150 * t);
             const g0 = Math.round(40 + 100 * t);
