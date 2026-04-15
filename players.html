@@ -167,10 +167,18 @@
     }
     .pp-slot-clear:hover { color: var(--over-budget); }
 
-    /* Dot selected indicator */
+    /* Dot selected indicator — uses roster state for color */
     .pp-dot.selected {
       border-color: var(--accent-gold) !important;
       box-shadow: 0 0 0 2px var(--accent-gold), 0 0 8px rgba(251, 191, 36, 0.5) !important;
+    }
+    body.state-valid .pp-dot.selected {
+      border-color: var(--live-green) !important;
+      box-shadow: 0 0 0 2px var(--live-green), 0 0 8px rgba(34, 197, 94, 0.5) !important;
+    }
+    body.state-invalid .pp-dot.selected {
+      border-color: var(--over-budget) !important;
+      box-shadow: 0 0 0 2px var(--over-budget), 0 0 8px rgba(239, 68, 68, 0.5) !important;
     }
     .pp-dot.selected::after {
       content: '✓';
@@ -189,6 +197,8 @@
       justify-content: center;
       border: 1px solid var(--bg-secondary);
     }
+    body.state-valid .pp-dot.selected::after { background: var(--live-green); }
+    body.state-invalid .pp-dot.selected::after { background: var(--over-budget); color: #fff; }
     .pp-controls {
       display: flex;
       gap: 0.5rem;
@@ -711,12 +721,14 @@
       document.getElementById('pp-roster-count').textContent = countText;
 
       // Overall roster validation state — drives green/yellow/red theming
-      // of the slots + total.
+      // of the slots + total. Applied to <body> too so rules can cascade to
+      // the player dots in the chart.
       const roster = document.getElementById('pp-roster');
-      roster.classList.remove('state-valid', 'state-partial', 'state-invalid');
-      if (over) roster.classList.add('state-invalid');
-      else if (filled === 8) roster.classList.add('state-valid');
-      else roster.classList.add('state-partial');
+      const state = over ? 'state-invalid' : (filled === 8 ? 'state-valid' : 'state-partial');
+      for (const el of [roster, document.body]) {
+        el.classList.remove('state-valid', 'state-partial', 'state-invalid');
+        el.classList.add(state);
+      }
 
       // Dirty indicator
       const dirty = isDirty();
