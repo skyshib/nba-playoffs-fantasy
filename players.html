@@ -334,6 +334,37 @@
       z-index: 1;
       pointer-events: none;
     }
+    .pp-target-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      border-left: 2px solid var(--accent-gold);
+      z-index: 2;
+      pointer-events: none;
+      box-shadow: 0 0 8px rgba(251, 191, 36, 0.55);
+      animation: ppTargetPulse 1.5s ease-in-out infinite;
+      display: none;
+    }
+    @keyframes ppTargetPulse {
+      0%, 100% { opacity: 1; box-shadow: 0 0 6px rgba(251, 191, 36, 0.45); }
+      50%      { opacity: 0.55; box-shadow: 0 0 14px rgba(251, 191, 36, 0.85); }
+    }
+    .pp-target-label {
+      position: absolute;
+      bottom: -0.1rem;
+      transform: translateX(-50%);
+      font-size: 0.55rem;
+      color: var(--accent-gold);
+      letter-spacing: 0.05em;
+      background: var(--bg-secondary);
+      padding: 0 0.3rem;
+      white-space: nowrap;
+      z-index: 3;
+      pointer-events: none;
+      font-weight: 700;
+      display: none;
+    }
 
     .pp-tooltip {
       position: fixed;
@@ -452,17 +483,25 @@
       bucket[conf][p.seed].players.push(p);
     }
 
-    function row(conf, seed, info, isFirstOfConf, isFirstRow) {
+    // lastRowFlag is true for the final row so we can anchor the target-avg
+    // label at the bottom of the chart instead of the top.
+    function row(conf, seed, info, isFirstOfConf, isFirstRow, isLastRow) {
       const logoUrl = teamLogos[info.team] || '';
       const label = isFirstOfConf ? `<div class="pp-section-label">${conf}</div>` : '';
       const floorLabel = isFirstRow
         ? `<div class="pp-floor-label" style="left:${floorPct}%">min $${floor.toFixed(2)}</div>`
         : '';
       const floorLine = `<div class="pp-floor-line" style="left:${floorPct}%"></div>`;
+      // Target-average line: vertical stripe at the avg PPG remaining picks
+      // need to stay under budget. Rendered hidden; updated on roster change.
+      const targetLine = `<div class="pp-target-line" data-target></div>`;
+      const targetLabel = isLastRow
+        ? `<div class="pp-target-label" data-target-label></div>`
+        : '';
       let html = `<div class="pp-row" data-conf="${conf}" data-seed="${seed}" data-team="${info.team}">`;
       html += `<div class="pp-row-team">${logoUrl ? `<img class="pp-row-logo" src="${logoUrl}" onerror="this.style.display='none'">` : ''}<span>${info.team.replace(/\\bGolden State\\b/, 'GS').replace(/\\bOklahoma City\\b/, 'OKC').replace(/\\bLos Angeles\\b/, 'LA').replace(/\\bSan Antonio\\b/, 'SA').replace(/\\bNew Orleans\\b/, 'NO').replace(/\\bNew York\\b/, 'NY')}</span></div>`;
       html += `<div class="pp-row-seed">Sd ${seed}</div>`;
-      html += `<div class="pp-row-plot">${label}${floorLine}${floorLabel}`;
+      html += `<div class="pp-row-plot">${label}${floorLine}${floorLabel}${targetLine}${targetLabel}`;
 
       // Sort by PPG ascending. Detect clusters (players within CLUSTER_GAP of
       // each other) and stagger their *displayed* X position symmetrically
@@ -503,17 +542,22 @@
       return html;
     }
 
-    let html = '';
-    let firstRow = true;
-    // Group by seed: seed 1 East + West, gap, seed 2 East + West, gap, ...
+    // First gather rows so we know which is last, then render
+    const rowList = [];
     for (let s = 1; s <= 8; s++) {
       for (const conf of ['East', 'West']) {
         const info = bucket[conf][s];
-        if (!info) continue;
-        html += row(conf, s, info, false, firstRow);
-        firstRow = false;
+        if (info) rowList.push({ conf, s, info });
       }
-      if (s < 8) html += `<div class="pp-row gap"></div>`;
+    }
+
+    let html = '';
+    let renderedSeed = 0;
+    for (let i = 0; i < rowList.length; i++) {
+      const { conf, s, info } = rowList[i];
+      if (renderedSeed && s !== renderedSeed) html += `<div class="pp-row gap"></div>`;
+      html += row(conf, s, info, false, i === 0, i === rowList.length - 1);
+      renderedSeed = s;
     }
 
     // X-axis
@@ -612,6 +656,34 @@
       // Dirty indicator
       const dirty = isDirty();
       document.getElementById('pp-dirty-note').style.display = dirty ? '' : 'none';
+
+      // Target-average line: at what PPG must each remaining pick land to
+      // stay under budget? (budget − spent) / remaining_slots
+      const remaining = 8 - filled;
+      const showTarget = remaining > 0 && filled > 0 && !over;
+      let targetPPG = null;
+      if (showTarget) {
+        targetPPG = (BUDGET - spent) / remaining;
+      }
+      document.querySelectorAll('.pp-target-line').forEach(line => {
+        if (showTarget && targetPPG >= 0 && targetPPG <= xMax) {
+          const pct = (targetPPG / xMax) * 100;
+          line.style.left = pct + '%';
+          line.style.display = 'block';
+        } else {
+          line.style.display = 'none';
+        }
+      });
+      document.querySelectorAll('[data-target-label]').forEach(lbl => {
+        if (showTarget && targetPPG >= 0 && targetPPG <= xMax) {
+          const pct = (targetPPG / xMax) * 100;
+          lbl.style.left = pct + '%';
+          lbl.style.display = 'block';
+          lbl.textContent = `avg for remaining ${remaining}: $${targetPPG.toFixed(2)}`;
+        } else {
+          lbl.style.display = 'none';
+        }
+      });
       // "Use This Roster" is always enabled — incomplete/over-budget rosters
       // still transfer to the Enter Picks modal where the user can fix them.
 
