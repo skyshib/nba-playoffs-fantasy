@@ -2,6 +2,68 @@
   "year": 2022,
   "entrants": [
     {
+      "name": "\u2b50 Best Possible Roster",
+      "picks": {
+        "1": {
+          "player_id": "jimmy-butler",
+          "name": "Jimmy Butler",
+          "team": "Miami Heat",
+          "seed": 1,
+          "cost": 21.4
+        },
+        "2": {
+          "player_id": "jaylen-brown",
+          "name": "Jaylen Brown",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 23.6
+        },
+        "3": {
+          "player_id": "stephen-curry",
+          "name": "Stephen Curry",
+          "team": "Golden State Warriors",
+          "seed": 3,
+          "cost": 25.5
+        },
+        "4": {
+          "player_id": "maxi-kleber",
+          "name": "Maxi Kleber",
+          "team": "Dallas Mavericks",
+          "seed": 4,
+          "cost": 7.0
+        },
+        "5": {
+          "player_id": "precious-achiuwa",
+          "name": "Precious Achiuwa",
+          "team": "Toronto Raptors",
+          "seed": 5,
+          "cost": 9.1
+        },
+        "6": {
+          "player_id": "monte-morris",
+          "name": "Monte Morris",
+          "team": "Denver Nuggets",
+          "seed": 6,
+          "cost": 12.6
+        },
+        "7": {
+          "player_id": "bruce-brown",
+          "name": "Bruce Brown",
+          "team": "Brooklyn Nets",
+          "seed": 7,
+          "cost": 8.8
+        },
+        "8": {
+          "player_id": "larry-nance-jr",
+          "name": "Larry Nance Jr.",
+          "team": "New Orleans Pelicans",
+          "seed": 8,
+          "cost": 7.3
+        }
+      },
+      "_synthetic": true
+    },
+    {
       "name": "Carter Kranz",
       "picks": {
         "1": {

@@ -2,6 +2,68 @@
   "year": 2023,
   "entrants": [
     {
+      "name": "\u2b50 Best Possible Roster",
+      "picks": {
+        "1": {
+          "player_id": "jamal-murray",
+          "name": "Jamal Murray",
+          "team": "Denver Nuggets",
+          "seed": 1,
+          "cost": 20.0
+        },
+        "2": {
+          "player_id": "marcus-smart",
+          "name": "Marcus Smart",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 11.5
+        },
+        "3": {
+          "player_id": "tobias-harris",
+          "name": "Tobias Harris",
+          "team": "Philadelphia 76ers",
+          "seed": 3,
+          "cost": 14.7
+        },
+        "4": {
+          "player_id": "devin-booker",
+          "name": "Devin Booker",
+          "team": "Phoenix Suns",
+          "seed": 4,
+          "cost": 27.8
+        },
+        "5": {
+          "player_id": "obi-toppin",
+          "name": "Obi Toppin",
+          "team": "New York Knicks",
+          "seed": 5,
+          "cost": 7.4
+        },
+        "6": {
+          "player_id": "draymond-green",
+          "name": "Draymond Green",
+          "team": "Golden State Warriors",
+          "seed": 6,
+          "cost": 8.5
+        },
+        "7": {
+          "player_id": "austin-reaves",
+          "name": "Austin Reaves",
+          "team": "Los Angeles Lakers",
+          "seed": 7,
+          "cost": 13.0
+        },
+        "8": {
+          "player_id": "kyle-lowry",
+          "name": "Kyle Lowry",
+          "team": "Miami Heat",
+          "seed": 8,
+          "cost": 11.2
+        }
+      },
+      "_synthetic": true
+    },
+    {
       "name": "Ian Golembeski",
       "picks": {
         "1": {

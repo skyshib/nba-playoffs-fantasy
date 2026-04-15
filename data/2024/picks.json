@@ -2,6 +2,68 @@
   "year": 2024,
   "entrants": [
     {
+      "name": "\u2b50 Best Possible Roster",
+      "picks": {
+        "1": {
+          "player_id": "jaylen-brown",
+          "name": "Jaylen Brown",
+          "team": "Boston Celtics",
+          "seed": 1,
+          "cost": 23.0
+        },
+        "2": {
+          "player_id": "josh-hart",
+          "name": "Josh Hart",
+          "team": "New York Knicks",
+          "seed": 2,
+          "cost": 9.4
+        },
+        "3": {
+          "player_id": "jaden-mcdaniels",
+          "name": "Jaden McDaniels",
+          "team": "Minnesota Timberwolves",
+          "seed": 3,
+          "cost": 10.5
+        },
+        "4": {
+          "player_id": "max-strus",
+          "name": "Max Strus",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 12.2
+        },
+        "5": {
+          "player_id": "luka-doncic",
+          "name": "Luka Doncic",
+          "team": "Dallas Mavericks",
+          "seed": 5,
+          "cost": 33.9
+        },
+        "6": {
+          "player_id": "andrew-nembhard",
+          "name": "Andrew Nembhard",
+          "team": "Indiana Pacers",
+          "seed": 6,
+          "cost": 9.2
+        },
+        "7": {
+          "player_id": "kyle-lowry",
+          "name": "Kyle Lowry",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 8.0
+        },
+        "8": {
+          "player_id": "nikola-jovic",
+          "name": "Nikola Jovic",
+          "team": "Miami Heat",
+          "seed": 8,
+          "cost": 7.7
+        }
+      },
+      "_synthetic": true
+    },
+    {
       "name": "Brent Uhrich",
       "picks": {
         "1": {

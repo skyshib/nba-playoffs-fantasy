@@ -2,6 +2,68 @@
   "year": 2025,
   "entrants": [
     {
+      "name": "\u2b50 Best Possible Roster",
+      "picks": {
+        "1": {
+          "player_id": "jalen-williams",
+          "name": "Jalen Williams",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 21.6
+        },
+        "2": {
+          "player_id": "derrick-white",
+          "name": "Derrick White",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 16.4
+        },
+        "3": {
+          "player_id": "josh-hart",
+          "name": "Josh Hart",
+          "team": "New York Knicks",
+          "seed": 3,
+          "cost": 13.6
+        },
+        "4": {
+          "player_id": "andrew-nembhard",
+          "name": "Andrew Nembhard",
+          "team": "Indiana Pacers",
+          "seed": 4,
+          "cost": 10.0
+        },
+        "5": {
+          "player_id": "aj-green",
+          "name": "AJ Green",
+          "team": "Milwaukee Bucks",
+          "seed": 5,
+          "cost": 7.4
+        },
+        "6": {
+          "player_id": "julius-randle",
+          "name": "Julius Randle",
+          "team": "Minnesota Timberwolves",
+          "seed": 6,
+          "cost": 18.7
+        },
+        "7": {
+          "player_id": "jimmy-butler-iii",
+          "name": "Jimmy Butler III",
+          "team": "Golden State Warriors",
+          "seed": 7,
+          "cost": 17.5
+        },
+        "8": {
+          "player_id": "scotty-pippen-jr",
+          "name": "Scotty Pippen Jr.",
+          "team": "Memphis Grizzlies",
+          "seed": 8,
+          "cost": 9.9
+        }
+      },
+      "_synthetic": true
+    },
+    {
       "name": "Cory vest",
       "picks": {
         "1": {
