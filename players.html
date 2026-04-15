@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Players — NBA Playoffs Fantasy</title>
+  <title>Player Pool — NBA Playoffs Fantasy</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
@@ -152,6 +152,29 @@
       background: var(--bg-hover);
     }
 
+    .pp-floor-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      border-left: 1px dashed rgba(255, 255, 255, 0.25);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .pp-floor-label {
+      position: absolute;
+      top: -0.1rem;
+      transform: translateX(-50%);
+      font-size: 0.55rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      background: var(--bg-secondary);
+      padding: 0 0.3rem;
+      white-space: nowrap;
+      z-index: 1;
+      pointer-events: none;
+    }
+
     .pp-tooltip {
       position: fixed;
       z-index: 1000;
@@ -187,7 +210,7 @@
     <div class="header-content">
       <div class="logo">
         <span class="logo-icon">🏀</span>
-        <h1>NBA Playoffs Fantasy — Players</h1>
+        <h1>NBA Playoffs Fantasy — Player Pool</h1>
       </div>
       <div class="controls">
         <span id="countdown" class="countdown" title="Time until picks lock"></span>
@@ -233,6 +256,9 @@
     const maxPPG = Math.max(...players.map(p => p.cost || 0), 35);
     // Round up to nearest 5
     const xMax = Math.ceil(maxPPG / 5) * 5;
+    // Budget floor (minimum cost per pick): budget / 16
+    const floor = (budget.league_ppg || 115.61) / 16;
+    const floorPct = (floor / xMax) * 100;
 
     // Group players: conference → seed → [players]
     const bucket = {East: {}, West: {}};
@@ -246,13 +272,17 @@
       bucket[conf][p.seed].players.push(p);
     }
 
-    function row(conf, seed, info, isFirstOfConf) {
+    function row(conf, seed, info, isFirstOfConf, isFirstRow) {
       const logoUrl = teamLogos[info.team] || '';
       const label = isFirstOfConf ? `<div class="pp-section-label">${conf}</div>` : '';
+      const floorLabel = isFirstRow
+        ? `<div class="pp-floor-label" style="left:${floorPct}%">min $${floor.toFixed(2)}</div>`
+        : '';
+      const floorLine = `<div class="pp-floor-line" style="left:${floorPct}%"></div>`;
       let html = `<div class="pp-row" data-conf="${conf}" data-seed="${seed}" data-team="${info.team}">`;
       html += `<div class="pp-row-team">${logoUrl ? `<img class="pp-row-logo" src="${logoUrl}" onerror="this.style.display='none'">` : ''}<span>${info.team.replace(/\\bGolden State\\b/, 'GS').replace(/\\bOklahoma City\\b/, 'OKC').replace(/\\bLos Angeles\\b/, 'LA').replace(/\\bSan Antonio\\b/, 'SA').replace(/\\bNew Orleans\\b/, 'NO').replace(/\\bNew York\\b/, 'NY')}</span></div>`;
       html += `<div class="pp-row-seed">Sd ${seed}</div>`;
-      html += `<div class="pp-row-plot">${label}`;
+      html += `<div class="pp-row-plot">${label}${floorLine}${floorLabel}`;
       for (const p of info.players) {
         const xPct = Math.min(100, (p.cost / xMax) * 100);
         const hs = headshots[p.player_id] || '';
@@ -267,12 +297,14 @@
     }
 
     let html = '';
+    let firstRow = true;
     for (let i = 0; i < 2; i++) {
       const conf = i === 0 ? 'East' : 'West';
       for (let s = 1; s <= 8; s++) {
         const info = bucket[conf][s];
         if (!info) continue;
-        html += row(conf, s, info, s === 1);
+        html += row(conf, s, info, s === 1, firstRow);
+        firstRow = false;
       }
       if (i === 0) html += `<div class="pp-row gap"></div>`;
     }
