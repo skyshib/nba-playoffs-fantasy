@@ -64,7 +64,8 @@ const PicksUI = (() => {
       let opts = `<option value="">— pick a ${s}-seed —</option>`;
       for (const p of players) {
         const eff = effectiveCost(p.cost);
-        const label = `${p.name} (${p.team}) — PPG ${p.cost.toFixed(1)}${eff > p.cost ? ` → ${eff.toFixed(2)}` : ''}`;
+        const overrideNote = p.cost_overridden ? ' ⚠' : '';
+        const label = `${p.name} (${p.team}) — PPG ${p.cost.toFixed(1)}${overrideNote}${eff > p.cost ? ` → ${eff.toFixed(2)}` : ''}`;
         opts += `<option value="${p.player_id}" ${sel === p.player_id ? 'selected' : ''}>${label}</option>`;
       }
       html += `<div class="seed-row"><div class="seed-label">${s} seed <span style="font-size:.7em;color:var(--text-muted)">scores ×${(1 + s / 10).toFixed(1)}</span></div>`;
@@ -72,6 +73,9 @@ const PicksUI = (() => {
       const chosen = players.find(p => p.player_id === sel);
       const cost = chosen ? effectiveCost(chosen.cost).toFixed(2) : '—';
       html += `<div class="pick-cost" id="cost-${s}">$${cost}</div></div>`;
+      if (chosen?.cost_overridden) {
+        html += `<div style="grid-column:1/-1;margin:-.2rem 0 .4rem 4.6rem;font-size:.7rem;color:var(--accent-gold)">⚠ Manually adjusted cost (see Rules → Budget &amp; Player Cost)</div>`;
+      }
     }
     html += '</div>';
 

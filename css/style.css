@@ -398,9 +398,8 @@ footer { text-align: center; padding: 2rem 1rem; color: var(--text-muted); font-
 .seed-diff {
   font-size: 0.65rem;
   font-weight: 700;
+  color: var(--text-secondary);
 }
-.seed-diff.pos { color: var(--live-green); }
-.seed-diff.neg { color: var(--over-budget); }
 .seed-cell.eliminated .seed-cost,
 .seed-cell.eliminated .seed-diff { opacity: 0.55; }
 

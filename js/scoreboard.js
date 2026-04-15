@@ -213,7 +213,7 @@ const Scoreboard = (() => {
 
       const rank = ranks[i];
       const isTied = ranks.filter(x => x === rank).length > 1;
-      const badges = ['🥇', '🥈', '🥉', '💵', '💵'];
+      const badges = ['🥇', '🥈', '🥉', '💲', '💲'];
       const tdRank = document.createElement('td');
       tdRank.className = 'col-rank';
       tdRank.textContent = rank <= 5
@@ -291,7 +291,7 @@ const Scoreboard = (() => {
             const seedLabel = document.createElement('span');
             seedLabel.className = 'seed-number';
             seedLabel.textContent = year >= multStartYear
-              ? `${seed} · ${info.multiplier.toFixed(1)}×`
+              ? `${info.multiplier.toFixed(1)}×`
               : `Seed ${seed}`;
             left.appendChild(seedLabel);
 
@@ -333,7 +333,7 @@ const Scoreboard = (() => {
 
             if (info.roundsPlayed > 0 && info.pointsDiff != null) {
               const diffEl = document.createElement('span');
-              diffEl.className = 'seed-diff ' + (info.pointsDiff >= 0 ? 'pos' : 'neg');
+              diffEl.className = 'seed-diff';
               const sign = info.pointsDiff >= 0 ? '+' : '';
               diffEl.textContent = `${sign}${info.pointsDiff.toFixed(1)}`;
               right.appendChild(diffEl);

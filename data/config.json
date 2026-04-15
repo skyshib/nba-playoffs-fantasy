@@ -18,6 +18,6 @@
   "picks_endpoint_note": "Paste the Apps Script /exec URL here. See apps_script/README.md.",
   "cost_overrides": {
     "_comment": "Override a player's cost (PPG) to reflect injury return / trade / limited games. Key: player slug. Prefix a key with _ to disable it (like commenting out).",
-    "_jayson-tatum": 27.0
+    "jayson-tatum": 23.6
   }
 }
