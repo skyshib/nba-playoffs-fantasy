@@ -482,15 +482,15 @@
 
     let html = '';
     let firstRow = true;
-    for (let i = 0; i < 2; i++) {
-      const conf = i === 0 ? 'East' : 'West';
-      for (let s = 1; s <= 8; s++) {
+    // Group by seed: seed 1 East + West, gap, seed 2 East + West, gap, ...
+    for (let s = 1; s <= 8; s++) {
+      for (const conf of ['East', 'West']) {
         const info = bucket[conf][s];
         if (!info) continue;
-        html += row(conf, s, info, s === 1, firstRow);
+        html += row(conf, s, info, false, firstRow);
         firstRow = false;
       }
-      if (i === 0) html += `<div class="pp-row gap"></div>`;
+      if (s < 8) html += `<div class="pp-row gap"></div>`;
     }
 
     // X-axis
