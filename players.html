@@ -464,11 +464,34 @@
       html += `<div class="pp-row-seed">Sd ${seed}</div>`;
       html += `<div class="pp-row-plot">${label}${floorLine}${floorLabel}`;
 
-      // Z-order: higher PPG first so lower-PPG dots draw on top of higher-PPG
-      // ones; not critical since hover is JS-driven but keeps visuals consistent.
+      // Sort by PPG ascending. Detect clusters (players within CLUSTER_GAP of
+      // each other) and stagger their *displayed* X position symmetrically
+      // around the cluster centroid so faces don't overlap. True PPG is
+      // preserved for tooltip + hover-value.
       const sorted = info.players.slice().sort((a, b) => a.cost - b.cost);
+      const CLUSTER_GAP = xMax * 0.016;  // min PPG gap to treat dots as separated
+      const STAGGER = xMax * 0.017;      // spread between staggered cluster members
+
+      let clusterStart = 0;
+      function applyStagger(lo, hi) {
+        const n = hi - lo + 1;
+        if (n <= 1) { sorted[lo]._displayPPG = sorted[lo].cost; return; }
+        const centroid = sorted.slice(lo, hi + 1).reduce((a, p) => a + p.cost, 0) / n;
+        for (let i = lo; i <= hi; i++) {
+          const offset = (i - lo - (n - 1) / 2) * STAGGER;
+          sorted[i]._displayPPG = Math.max(0, Math.min(xMax, centroid + offset));
+        }
+      }
+      for (let i = 0; i < sorted.length; i++) {
+        if (i > 0 && sorted[i].cost - sorted[i - 1].cost > CLUSTER_GAP) {
+          applyStagger(clusterStart, i - 1);
+          clusterStart = i;
+        }
+      }
+      if (sorted.length) applyStagger(clusterStart, sorted.length - 1);
+
       for (const p of sorted) {
-        const xPct = Math.min(100, (p.cost / xMax) * 100);
+        const xPct = Math.min(100, (p._displayPPG / xMax) * 100);
         const hs = headshots[p.player_id] || '';
         const initials = p.name.split(' ').filter(Boolean).slice(0,2).map(w => w[0]).join('');
         const face = hs
@@ -586,12 +609,11 @@
       document.getElementById('pp-spent').textContent = `$${spent.toFixed(2)}`;
       document.getElementById('pp-roster-count').textContent = `${filled} / 8 picks` + (over ? ` · over by $${(spent - BUDGET).toFixed(2)}` : '');
 
-      // Dirty indicator + "Use This Roster" button state
+      // Dirty indicator
       const dirty = isDirty();
       document.getElementById('pp-dirty-note').style.display = dirty ? '' : 'none';
-      const useBtn = document.getElementById('pp-use-roster');
-      // Enable only when 8 picks, under budget, and different from committed
-      useBtn.disabled = filled < 8 || over;
+      // "Use This Roster" is always enabled — incomplete/over-budget rosters
+      // still transfer to the Enter Picks modal where the user can fix them.
 
       // Wire clear buttons
       slotsEl.querySelectorAll('[data-clear]').forEach(b => {
