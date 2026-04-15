@@ -9,6 +9,152 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <style>
     .players-main { max-width: 1600px; margin: 1rem auto; padding: 0 1rem; }
+
+    .pp-roster {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.6rem 0.85rem;
+      margin-bottom: 0.75rem;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    }
+    .pp-roster-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .pp-budget-bar {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-variant-numeric: tabular-nums;
+      font-size: 0.9rem;
+    }
+    .pp-budget-bar .pp-budget-val { font-weight: 700; color: var(--accent-gold); font-size: 1.05rem; }
+    .pp-budget-bar .pp-budget-cap { color: var(--text-muted); }
+    .pp-budget-bar.over .pp-budget-val { color: var(--over-budget); }
+    .pp-roster-count {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .pp-roster-actions { display: flex; gap: 0.4rem; }
+    .pp-roster-btn {
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      border-radius: 4px;
+      padding: 0.3rem 0.6rem;
+      font-size: 0.7rem;
+      cursor: pointer;
+      font-family: inherit;
+    }
+    .pp-roster-btn:hover { background: var(--bg-hover); color: var(--text-primary); }
+    .pp-roster-btn.primary { background: var(--accent-red); color: #fff; border-color: var(--accent-red); font-weight: 700; }
+    .pp-roster-btn.primary:hover { filter: brightness(1.1); }
+
+    .pp-slots {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      gap: 0.3rem;
+    }
+    .pp-slot {
+      background: var(--bg-primary);
+      border: 1px dashed var(--border);
+      border-radius: 4px;
+      padding: 0.3rem 0.4rem;
+      min-height: 46px;
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      font-size: 0.7rem;
+      cursor: default;
+      position: relative;
+    }
+    .pp-slot.filled {
+      border-style: solid;
+      border-color: var(--accent-red);
+      background: rgba(200, 16, 46, 0.08);
+    }
+    .pp-slot-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-muted);
+      font-size: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .pp-slot-header .pp-slot-mult { color: var(--accent-gold); font-weight: 700; }
+    .pp-slot-body {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      min-height: 22px;
+    }
+    .pp-slot-face {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--bg-secondary);
+      flex-shrink: 0;
+    }
+    .pp-slot-face img { width: 100%; height: 100%; object-fit: cover; }
+    .pp-slot-name {
+      flex: 1;
+      font-weight: 600;
+      color: var(--text-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .pp-slot-cost { color: var(--accent-gold); font-variant-numeric: tabular-nums; font-size: 0.7rem; font-weight: 700; }
+    .pp-slot-empty { color: var(--text-muted); font-style: italic; font-size: 0.7rem; }
+    .pp-slot-clear {
+      position: absolute;
+      top: 2px;
+      right: 4px;
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 0.8rem;
+      line-height: 1;
+      padding: 0 0.2rem;
+    }
+    .pp-slot-clear:hover { color: var(--over-budget); }
+
+    /* Dot selected indicator */
+    .pp-dot.selected {
+      border-color: var(--accent-gold) !important;
+      box-shadow: 0 0 0 2px var(--accent-gold), 0 0 8px rgba(251, 191, 36, 0.5) !important;
+    }
+    .pp-dot.selected::after {
+      content: '✓';
+      position: absolute;
+      bottom: -6px;
+      right: -6px;
+      background: var(--accent-gold);
+      color: #000;
+      font-size: 0.6rem;
+      font-weight: 900;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--bg-secondary);
+    }
     .pp-controls {
       display: flex;
       gap: 0.5rem;
@@ -213,22 +359,41 @@
 <body>
   <header>
     <div class="header-content">
-      <div class="logo">
+      <a class="logo" href="index.html" style="text-decoration:none;color:inherit">
         <span class="logo-icon">🏀</span>
         <h1>NBA Playoffs Fantasy — Player Pool</h1>
-      </div>
+      </a>
       <div class="controls">
         <span id="countdown" class="countdown" title="Time until picks lock"></span>
-        <a class="view-toggle" href="index.html">← Scoreboard</a>
+        <a class="view-toggle" href="index.html">Scoreboard</a>
+        <a class="view-toggle active" href="players.html">Player Pool</a>
         <a class="view-toggle" href="rules.html">Rules</a>
+        <a class="view-toggle" href="index.html#bug">Report Bug</a>
+        <a class="view-toggle primary" href="index.html#picks">Enter Picks</a>
       </div>
     </div>
   </header>
 
   <main class="players-main">
+    <!-- Sticky roster-builder bar -->
+    <div class="pp-roster" id="pp-roster">
+      <div class="pp-roster-top">
+        <div class="pp-budget-bar" id="pp-budget-bar">
+          <span class="pp-budget-val" id="pp-spent">$0.00</span>
+          <span class="pp-budget-cap">/ <span id="pp-cap">$115.61</span> budget</span>
+          <span class="pp-roster-count" id="pp-roster-count" style="margin-left:.6rem">0 / 8 picks</span>
+        </div>
+        <div class="pp-roster-actions">
+          <button class="pp-roster-btn" id="pp-clear-roster">Clear</button>
+          <a class="pp-roster-btn primary" href="index.html#picks">Submit →</a>
+        </div>
+      </div>
+      <div class="pp-slots" id="pp-slots"></div>
+    </div>
+
     <div class="pp-controls">
       <input id="pp-search" type="search" placeholder="Filter by player or team…">
-      <span class="pp-legend">Tip: hover a face for details. Click to highlight.</span>
+      <span class="pp-legend">Click a face to add. Click again to remove. Picks save automatically.</span>
       <span id="pp-count" class="pp-legend" style="margin-left:auto"></span>
     </div>
 
@@ -330,6 +495,134 @@
     document.getElementById('pp-inner').innerHTML = html;
     document.getElementById('pp-count').textContent = `${players.length} players`;
 
+    // ---------- Roster selection (tentative, shared with picks UI via localStorage) ----------
+    const BUDGET = budget.league_ppg || 115.61;
+    const FLOOR = BUDGET / 16;
+    const STORE_KEY = 'nbaFantasyPicks';
+
+    document.getElementById('pp-cap').textContent = `$${BUDGET.toFixed(2)}`;
+
+    // Quick lookup by slug
+    const bySlug = {};
+    for (const p of players) bySlug[p.player_id] = p;
+
+    function effCost(c) { return Math.max(c, FLOOR); }
+
+    function loadState() {
+      try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); }
+      catch(e) { return {}; }
+    }
+    function saveState(st) {
+      localStorage.setItem(STORE_KEY, JSON.stringify(st));
+    }
+
+    // selected[seed] = player_id
+    let selected = (loadState().picks) || {};
+
+    function persist() {
+      const st = loadState();
+      st.picks = selected;
+      saveState(st);
+    }
+
+    function renderRoster() {
+      const slotsEl = document.getElementById('pp-slots');
+      let slotsHtml = '';
+      let spent = 0;
+      let filled = 0;
+      for (let s = 1; s <= 8; s++) {
+        const slug = selected[s];
+        const p = slug ? bySlug[slug] : null;
+        const mult = (1 + s/10).toFixed(1) + '×';
+        if (p) {
+          const cost = effCost(p.cost);
+          spent += cost;
+          filled++;
+          const hs = headshots[p.player_id] || '';
+          slotsHtml += `<div class="pp-slot filled" data-seed="${s}">
+            <button class="pp-slot-clear" title="Remove" data-clear="${s}">×</button>
+            <div class="pp-slot-header"><span>Sd ${s}</span><span class="pp-slot-mult">${mult}</span></div>
+            <div class="pp-slot-body">
+              ${hs ? `<span class="pp-slot-face"><img src="${hs}"></span>` : ''}
+              <span class="pp-slot-name" title="${p.name} · ${p.team}">${p.name}</span>
+              <span class="pp-slot-cost">$${cost.toFixed(2)}</span>
+            </div>
+          </div>`;
+        } else {
+          slotsHtml += `<div class="pp-slot" data-seed="${s}">
+            <div class="pp-slot-header"><span>Sd ${s}</span><span class="pp-slot-mult">${mult}</span></div>
+            <div class="pp-slot-body"><span class="pp-slot-empty">— empty —</span></div>
+          </div>`;
+        }
+      }
+      slotsEl.innerHTML = slotsHtml;
+
+      const bar = document.getElementById('pp-budget-bar');
+      const over = spent > BUDGET + 1e-9;
+      bar.classList.toggle('over', over);
+      document.getElementById('pp-spent').textContent = `$${spent.toFixed(2)}`;
+      document.getElementById('pp-roster-count').textContent = `${filled} / 8 picks` + (over ? ` · over by $${(spent - BUDGET).toFixed(2)}` : '');
+
+      // Wire clear buttons
+      slotsEl.querySelectorAll('[data-clear]').forEach(b => {
+        b.addEventListener('click', e => {
+          e.stopPropagation();
+          const s = parseInt(b.dataset.clear);
+          delete selected[s];
+          persist();
+          renderRoster();
+          refreshDotSelection();
+        });
+      });
+
+      // Clicking a slot scrolls to that seed row (nice affordance)
+      slotsEl.querySelectorAll('.pp-slot').forEach(el => {
+        el.addEventListener('click', () => {
+          const s = el.dataset.seed;
+          const slug = selected[s];
+          const target = slug
+            ? document.querySelector(`.pp-dot[data-slug="${slug}"]`)
+            : document.querySelector(`.pp-row[data-seed="${s}"]`);
+          target?.scrollIntoView({behavior: 'smooth', block: 'center'});
+        });
+      });
+    }
+
+    function refreshDotSelection() {
+      document.querySelectorAll('.pp-dot').forEach(d => {
+        const isSelected = Object.values(selected).includes(d.dataset.slug);
+        d.classList.toggle('selected', isSelected);
+      });
+    }
+
+    function toggleSelectionFromDot(dotEl) {
+      const slug = dotEl.dataset.slug;
+      const seed = parseInt(dotEl.dataset.seed);
+      // If this slug is already selected anywhere, deselect.
+      const existingSeed = Object.keys(selected).find(k => selected[k] === slug);
+      if (existingSeed) {
+        delete selected[existingSeed];
+      } else {
+        selected[seed] = slug;
+      }
+      persist();
+      renderRoster();
+      refreshDotSelection();
+    }
+
+    document.getElementById('pp-clear-roster').addEventListener('click', () => {
+      if (!confirm('Clear all 8 picks?')) return;
+      selected = {};
+      persist();
+      renderRoster();
+      refreshDotSelection();
+    });
+
+    // Initial render + hook up dot clicks via row-level listener so it works
+    // even when pointer-events is none on dots.
+    renderRoster();
+    refreshDotSelection();
+
     // Tooltip + nearest-dot hover detection per row.
     // Rather than relying on CSS :hover (which only fires over a dot's box),
     // we listen on the plot area for mousemove and highlight the dot whose
@@ -389,6 +682,11 @@
         if (active) { active.classList.remove('hovered'); active = null; }
         plot.classList.remove('has-hover');
         hideTooltip();
+      });
+
+      // Click = toggle selection on currently-nearest dot
+      plot.addEventListener('click', e => {
+        if (active) toggleSelectionFromDot(active);
       });
     });
 

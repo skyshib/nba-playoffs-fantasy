@@ -238,6 +238,21 @@
     const year = await initYearSelector();
     await loadYear(year);
     startTimers();
+
+    // Hash-based deep links from other pages (e.g. players.html → Enter Picks)
+    function handleHash() {
+      if (location.hash === '#picks') {
+        picksModal.classList.remove('hidden');
+        PicksUI.open(config);
+        history.replaceState(null, '', location.pathname);
+      } else if (location.hash === '#bug') {
+        bugModal?.classList.remove('hidden');
+        loadBugReports();
+        history.replaceState(null, '', location.pathname);
+      }
+    }
+    handleHash();
+    window.addEventListener('hashchange', handleHash);
   } catch (e) {
     console.error('Init failed', e);
     document.getElementById('scoreboard-body').innerHTML =

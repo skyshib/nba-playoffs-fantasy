@@ -73,6 +73,7 @@ h1 {
   transition: background 0.15s;
 }
 .view-toggle:hover { background: var(--bg-hover); }
+.view-toggle.active { background: var(--bg-hover); border-color: var(--accent-red); color: #fff; }
 .view-toggle.primary { background: var(--accent-red); border-color: var(--accent-red); color: #fff; font-weight: 700; }
 .view-toggle.primary:hover { filter: brightness(1.1); }
 
