@@ -59,10 +59,12 @@
     .pp-roster.state-partial .pp-slot.filled .pp-slot-cost { color: var(--accent-gold); }
 
     .pp-roster.state-invalid .pp-slot.filled {
-      border-color: var(--over-budget);
-      background: rgba(239, 68, 68, 0.08);
+      border-color: var(--over-budget) !important;
+      background: rgba(239, 68, 68, 0.12) !important;
     }
-    .pp-roster.state-invalid .pp-slot.filled .pp-slot-cost { color: var(--over-budget); }
+    .pp-roster.state-invalid .pp-slot.filled .pp-slot-cost { color: var(--over-budget) !important; }
+    .pp-roster.state-invalid .pp-budget-val { color: var(--over-budget) !important; }
+    .pp-roster.state-invalid .pp-roster-count { color: var(--over-budget); }
     .pp-roster-count {
       font-size: 0.7rem;
       color: var(--text-muted);
@@ -418,6 +420,15 @@
       border-radius: 3px;
       background: var(--accent-gold); color: #000;
       margin-left: 0.3rem;
+    }
+    .pp-tip-override {
+      margin-top: 0.5rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.7rem;
+      color: var(--accent-gold);
+      line-height: 1.35;
+      font-style: italic;
     }
   </style>
 </head>
@@ -808,11 +819,15 @@
     function showTooltipFor(el) {
       const d = el.dataset;
       const overBadge = d.overridden === '1' ? '<span class="pp-tip-badge">ADJ</span>' : '';
+      const overNote = d.overridden === '1'
+        ? `<div class="pp-tip-override">${d.name}'s cost has been manually adjusted from his season PPG to better reflect his expected playoff output. See Rules → Budget for details.</div>`
+        : '';
       tip.innerHTML = `
         <div class="pp-tip-name">${d.name}${overBadge}</div>
         <div class="pp-tip-team">${d.team} · ${d.conf} ${d.seed}-seed</div>
         <div class="pp-tip-stat"><span class="pp-tip-label">PPG (cost)</span><span class="pp-tip-value">${Number(d.ppg).toFixed(1)}</span></div>
         <div class="pp-tip-stat"><span class="pp-tip-label">Seed multiplier</span><span class="pp-tip-value">${(1 + parseInt(d.seed)/10).toFixed(1)}×</span></div>
+        ${overNote}
       `;
       const rect = el.getBoundingClientRect();
       tip.classList.add('visible');
