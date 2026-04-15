@@ -408,6 +408,9 @@
       font-size: 0.78rem;
     }
     .pp-tooltip.visible { opacity: 1; }
+    .pp-tooltip.state-valid   { border-color: var(--live-green); box-shadow: 0 8px 24px rgba(34,197,94,0.25); }
+    .pp-tooltip.state-partial { border-color: var(--accent-gold); box-shadow: 0 8px 24px rgba(251,191,36,0.2); }
+    .pp-tooltip.state-invalid { border-color: var(--over-budget); box-shadow: 0 8px 24px rgba(239,68,68,0.3); }
     .pp-tip-name { font-weight: 700; font-size: 0.9rem; color: var(--text-primary); }
     .pp-tip-team { color: var(--text-muted); font-size: 0.72rem; margin-bottom: 0.3rem; }
     .pp-tip-stat { display: flex; justify-content: space-between; padding: 0.1rem 0; }
@@ -816,6 +819,29 @@
     // browsable — any lateral nudge picks up the adjacent player.
     const tip = document.getElementById('pp-tooltip');
 
+    // Compute the roster state as if the user clicked this player right now
+    // (toggle: add if not selected, remove if already selected anywhere).
+    function whatIfState(slug, seed) {
+      const whatIf = Object.assign({}, selected);
+      const existingSeed = Object.keys(whatIf).find(k => whatIf[k] === slug);
+      if (existingSeed) delete whatIf[existingSeed];
+      else whatIf[seed] = slug;
+      let spent = 0, filled = 0;
+      for (let s = 1; s <= 8; s++) {
+        const sl = whatIf[s];
+        if (!sl) continue;
+        const p = bySlug[sl];
+        if (!p) continue;
+        spent += effCost(p.cost);
+        filled++;
+      }
+      const remaining = 8 - filled;
+      const minPossible = spent + remaining * FLOOR;
+      if (minPossible > BUDGET + 1e-9) return 'invalid';
+      if (filled === 8) return 'valid';
+      return 'partial';
+    }
+
     function showTooltipFor(el) {
       const d = el.dataset;
       const overBadge = d.overridden === '1' ? '<span class="pp-tip-badge">ADJ</span>' : '';
@@ -829,6 +855,10 @@
         <div class="pp-tip-stat"><span class="pp-tip-label">Seed multiplier</span><span class="pp-tip-value">${(1 + parseInt(d.seed)/10).toFixed(1)}×</span></div>
         ${overNote}
       `;
+      // Border color reflects what clicking would do to the roster
+      const state = whatIfState(d.slug, parseInt(d.seed));
+      tip.classList.remove('state-valid', 'state-partial', 'state-invalid');
+      tip.classList.add('state-' + state);
       const rect = el.getBoundingClientRect();
       tip.classList.add('visible');
       const tr = tip.getBoundingClientRect();
