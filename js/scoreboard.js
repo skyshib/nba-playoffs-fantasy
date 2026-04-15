@@ -359,15 +359,18 @@ const Scoreboard = (() => {
     if (info.eliminated) td.classList.add('eliminated');
     if (info.live) td.classList.add('live');
 
+    let gradientBg = null;
     if (!noColor && maxPts > minPts) {
       const t = (info.subtotal - minPts) / (maxPts - minPts);
       const r0 = Math.round(180 - 150 * t);
       const g0 = Math.round(40 + 100 * t);
       const b0 = Math.round(40 + 30 * t);
-      td.style.backgroundColor = `rgb(${r0},${g0},${b0})`;
+      gradientBg = `rgb(${r0},${g0},${b0})`;
     }
 
     if (compactMode) {
+      // Compact mode: no split, apply gradient to the whole cell
+      if (gradientBg) td.style.backgroundColor = gradientBg;
       const nameEl = document.createElement('span');
       nameEl.className = 'compact-name';
       nameEl.textContent = lastName(info.pick.name);
@@ -381,6 +384,8 @@ const Scoreboard = (() => {
       row.className = 'seed-cell-row';
       const left = document.createElement('div');
       left.className = 'seed-cell-left';
+      // Apply the gradient only to the left (visual) half; right stays neutral
+      if (gradientBg) left.style.backgroundColor = gradientBg;
       const right = document.createElement('div');
       right.className = 'seed-cell-right';
 
