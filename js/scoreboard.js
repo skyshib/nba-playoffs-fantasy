@@ -384,8 +384,6 @@ const Scoreboard = (() => {
       row.className = 'seed-cell-row';
       const left = document.createElement('div');
       left.className = 'seed-cell-left';
-      // Apply the gradient only to the left (visual) half; right stays neutral
-      if (gradientBg) left.style.backgroundColor = gradientBg;
       const right = document.createElement('div');
       right.className = 'seed-cell-right';
 
@@ -422,6 +420,8 @@ const Scoreboard = (() => {
       const ptsSpan = document.createElement('span');
       ptsSpan.className = 'seed-pts';
       ptsSpan.textContent = fmtPts(info.subtotal);
+      // Gradient paints only the total score (not the whole cell half)
+      if (gradientBg) ptsSpan.style.backgroundColor = gradientBg;
       left.appendChild(ptsSpan);
 
       const costEl = document.createElement('span');
