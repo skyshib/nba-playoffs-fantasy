@@ -54,7 +54,7 @@ const PicksUI = (() => {
     const ui = document.getElementById('picks-ui');
     const cap = config.budget;
     let html = `<label>Your name<input id="picks-name" type="text" value="${entrantName.replace(/"/g, '&quot;')}"></label>`;
-    html += `<label style="margin-top:.4rem">Email (optional — for payout contact)<input id="picks-email" type="email" value="${entrantEmail.replace(/"/g, '&quot;')}" placeholder="you@example.com"></label>`;
+    html += `<label style="margin-top:.4rem">Email<input id="picks-email" type="email" value="${entrantEmail.replace(/"/g, '&quot;')}" placeholder="you@example.com"></label>`;
     html += `<div style="margin-top:.6rem;font-size:.8rem;color:var(--text-secondary)">Budget cap: <strong>${cap.toFixed(2)}</strong> · minimum cost per pick: <strong>${(cap / 16).toFixed(2)}</strong></div>`;
 
     html += '<div style="margin-top:1rem">';
