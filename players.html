@@ -60,6 +60,15 @@
     .pp-roster-btn:hover { background: var(--bg-hover); color: var(--text-primary); }
     .pp-roster-btn.primary { background: var(--accent-red); color: #fff; border-color: var(--accent-red); font-weight: 700; }
     .pp-roster-btn.primary:hover { filter: brightness(1.1); }
+    .pp-roster-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+    .pp-dirty-note {
+      margin-left: 0.5rem;
+      font-size: 0.65rem;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-style: italic;
+    }
 
     .pp-slots {
       display: grid;
@@ -382,10 +391,11 @@
           <span class="pp-budget-val" id="pp-spent">$0.00</span>
           <span class="pp-budget-cap">/ <span id="pp-cap">$115.61</span> budget</span>
           <span class="pp-roster-count" id="pp-roster-count" style="margin-left:.6rem">0 / 8 picks</span>
+          <span class="pp-dirty-note" id="pp-dirty-note" style="display:none">· unsaved changes</span>
         </div>
         <div class="pp-roster-actions">
           <button class="pp-roster-btn" id="pp-clear-roster">Clear</button>
-          <a class="pp-roster-btn primary" href="index.html#picks">Submit →</a>
+          <button class="pp-roster-btn primary" id="pp-use-roster">Use This Roster →</button>
         </div>
       </div>
       <div class="pp-slots" id="pp-slots"></div>
@@ -516,13 +526,26 @@
       localStorage.setItem(STORE_KEY, JSON.stringify(st));
     }
 
-    // selected[seed] = player_id
-    let selected = (loadState().picks) || {};
+    // `selected` = the tentative (in-memory) roster you build on this page.
+    // Only committed via the "Use This Roster" button, which writes to the
+    // localStorage key Enter Picks reads from.
+    let selected = {};
+    // Initialize from the most-recently-committed roster so users can tweak.
+    const committedInitial = (loadState().picks) || {};
+    for (const k in committedInitial) selected[k] = committedInitial[k];
 
-    function persist() {
+    function committedPicksSnapshot() {
+      return JSON.stringify((loadState().picks) || {});
+    }
+    function isDirty() {
+      return JSON.stringify(selected) !== committedPicksSnapshot();
+    }
+
+    function commit() {
       const st = loadState();
       st.picks = selected;
       saveState(st);
+      renderRoster();  // refreshes dirty indicator
     }
 
     function renderRoster() {
@@ -563,13 +586,19 @@
       document.getElementById('pp-spent').textContent = `$${spent.toFixed(2)}`;
       document.getElementById('pp-roster-count').textContent = `${filled} / 8 picks` + (over ? ` · over by $${(spent - BUDGET).toFixed(2)}` : '');
 
+      // Dirty indicator + "Use This Roster" button state
+      const dirty = isDirty();
+      document.getElementById('pp-dirty-note').style.display = dirty ? '' : 'none';
+      const useBtn = document.getElementById('pp-use-roster');
+      // Enable only when 8 picks, under budget, and different from committed
+      useBtn.disabled = filled < 8 || over;
+
       // Wire clear buttons
       slotsEl.querySelectorAll('[data-clear]').forEach(b => {
         b.addEventListener('click', e => {
           e.stopPropagation();
           const s = parseInt(b.dataset.clear);
           delete selected[s];
-          persist();
           renderRoster();
           refreshDotSelection();
         });
@@ -605,17 +634,21 @@
       } else {
         selected[seed] = slug;
       }
-      persist();
       renderRoster();
       refreshDotSelection();
     }
 
     document.getElementById('pp-clear-roster').addEventListener('click', () => {
-      if (!confirm('Clear all 8 picks?')) return;
+      if (!confirm('Clear all 8 picks? (This only resets the in-progress roster; your committed picks are unchanged until you press Use This Roster.)')) return;
       selected = {};
-      persist();
       renderRoster();
       refreshDotSelection();
+    });
+
+    document.getElementById('pp-use-roster').addEventListener('click', () => {
+      commit();
+      // Navigate to Enter Picks so the user can add their name + tiebreaker + submit
+      location.href = 'index.html#picks';
     });
 
     // Initial render + hook up dot clicks via row-level listener so it works
