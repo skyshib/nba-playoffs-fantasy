@@ -2,7 +2,7 @@
   "generated_at": "2026-04-14T17:47:23.908465+00:00",
   "season": 2026,
   "league_ppg": 115.61,
-  "n_playoff_teams": 16,
+  "n_playoff_teams": 19,
   "players": [
     {
       "player_id": "cade-cunningham",
@@ -2190,7 +2190,7 @@
       "name": "Grayson Allen",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 16.49
     },
     {
@@ -2199,7 +2199,7 @@
       "name": "Devin Booker",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 26.06
     },
     {
@@ -2208,7 +2208,7 @@
       "name": "Jamaree Bouyea",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 5.72
     },
     {
@@ -2217,7 +2217,7 @@
       "name": "Koby Brea",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 3.75
     },
     {
@@ -2226,7 +2226,7 @@
       "name": "Dillon Brooks",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 20.2
     },
     {
@@ -2235,7 +2235,7 @@
       "name": "Amir Coffey",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 3.24
     },
     {
@@ -2244,7 +2244,7 @@
       "name": "Ryan Dunn",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 5.81
     },
     {
@@ -2253,7 +2253,7 @@
       "name": "Rasheer Fleming",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 4.33
     },
     {
@@ -2262,7 +2262,7 @@
       "name": "Collin Gillespie",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 12.65
     },
     {
@@ -2271,7 +2271,7 @@
       "name": "Jordan Goodwin",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 8.7
     },
     {
@@ -2280,7 +2280,7 @@
       "name": "Jalen Green",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 17.75
     },
     {
@@ -2289,7 +2289,7 @@
       "name": "Haywood Highsmith",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 5.43
     },
     {
@@ -2298,7 +2298,7 @@
       "name": "CJ Huntley",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 3.0
     },
     {
@@ -2307,7 +2307,7 @@
       "name": "Oso Ighodaro",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 6.48
     },
     {
@@ -2316,7 +2316,7 @@
       "name": "Isaiah Livers",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 1.81
     },
     {
@@ -2325,7 +2325,7 @@
       "name": "Khaman Maluach",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 3.02
     },
     {
@@ -2334,7 +2334,7 @@
       "name": "Royce O'Neale",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 9.81
     },
     {
@@ -2343,7 +2343,7 @@
       "name": "Mark Williams",
       "team": "Phoenix Suns",
       "team_abbrev": "PHX",
-      "seed": 7,
+      "seed": 8,
       "cost": 11.67
     },
     {
@@ -2352,7 +2352,7 @@
       "name": "Deni Avdija",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 24.21
     },
     {
@@ -2361,7 +2361,7 @@
       "name": "Toumani Camara",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 13.41
     },
     {
@@ -2370,7 +2370,7 @@
       "name": "Sidy Cissoko",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 5.11
     },
     {
@@ -2379,7 +2379,7 @@
       "name": "Donovan Clingan",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 12.13
     },
     {
@@ -2388,7 +2388,7 @@
       "name": "Jerami Grant",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 18.6
     },
     {
@@ -2397,7 +2397,7 @@
       "name": "Yang Hansen",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 2.21
     },
     {
@@ -2406,7 +2406,7 @@
       "name": "Scoot Henderson",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 14.23
     },
     {
@@ -2415,7 +2415,7 @@
       "name": "Jrue Holiday",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 16.32
     },
     {
@@ -2424,7 +2424,7 @@
       "name": "Jayson Kent",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 2.0
     },
     {
@@ -2433,7 +2433,7 @@
       "name": "Vit Krejci",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 8.46
     },
     {
@@ -2442,7 +2442,7 @@
       "name": "Caleb Love",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 10.39
     },
     {
@@ -2451,7 +2451,7 @@
       "name": "Kris Murray",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 5.81
     },
     {
@@ -2460,7 +2460,7 @@
       "name": "Shaedon Sharpe",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 20.84
     },
     {
@@ -2469,7 +2469,7 @@
       "name": "Matisse Thybulle",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 5.8
     },
     {
@@ -2478,7 +2478,7 @@
       "name": "Blake Wesley",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 4.77
     },
     {
@@ -2487,7 +2487,7 @@
       "name": "Robert Williams III",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 6.73
     },
     {
@@ -2496,8 +2496,800 @@
       "name": "Chris Youngblood",
       "team": "Portland Trail Blazers",
       "team_abbrev": "POR",
-      "seed": 8,
+      "seed": 7,
       "cost": 2.09
+    },
+    {
+      "player_id": "dominick-barlow",
+      "espn_id": "4870562",
+      "name": "Dominick Barlow",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 7.68
+    },
+    {
+      "player_id": "marjon-beauchamp",
+      "espn_id": "4432179",
+      "name": "MarJon Beauchamp",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 6.79
+    },
+    {
+      "player_id": "adem-bona",
+      "espn_id": "5105637",
+      "name": "Adem Bona",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 4.85
+    },
+    {
+      "player_id": "johni-broome",
+      "espn_id": "4433569",
+      "name": "Johni Broome",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 0.91
+    },
+    {
+      "player_id": "andre-drummond",
+      "espn_id": "6585",
+      "name": "Andre Drummond",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 6.4
+    },
+    {
+      "player_id": "vj-edgecombe",
+      "espn_id": "5124612",
+      "name": "VJ Edgecombe",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 15.99
+    },
+    {
+      "player_id": "justin-edwards",
+      "espn_id": "4711297",
+      "name": "Justin Edwards",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 6.03
+    },
+    {
+      "player_id": "joel-embiid",
+      "espn_id": "3059318",
+      "name": "Joel Embiid",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 26.87
+    },
+    {
+      "player_id": "paul-george",
+      "espn_id": "4251",
+      "name": "Paul George",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 17.32
+    },
+    {
+      "player_id": "quentin-grimes",
+      "espn_id": "4397014",
+      "name": "Quentin Grimes",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 13.41
+    },
+    {
+      "player_id": "kyle-lowry",
+      "espn_id": "3012",
+      "name": "Kyle Lowry",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 1.21
+    },
+    {
+      "player_id": "tyrese-martin",
+      "espn_id": "4397179",
+      "name": "Tyrese Martin",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 6.3
+    },
+    {
+      "player_id": "tyrese-maxey",
+      "espn_id": "4431678",
+      "name": "Tyrese Maxey",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 28.29
+    },
+    {
+      "player_id": "kelly-oubre-jr",
+      "espn_id": "3133603",
+      "name": "Kelly Oubre Jr.",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 14.1
+    },
+    {
+      "player_id": "dalen-terry",
+      "espn_id": "4433159",
+      "name": "Dalen Terry",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 3.67
+    },
+    {
+      "player_id": "jabari-walker",
+      "espn_id": "4432446",
+      "name": "Jabari Walker",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 4.31
+    },
+    {
+      "player_id": "trendon-watford",
+      "espn_id": "4431675",
+      "name": "Trendon Watford",
+      "team": "Philadelphia 76ers",
+      "team_abbrev": "PHI",
+      "seed": 8,
+      "cost": 6.53
+    },
+    {
+      "player_id": "paolo-banchero",
+      "espn_id": "4432573",
+      "name": "Paolo Banchero",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 22.21
+    },
+    {
+      "player_id": "desmond-bane",
+      "espn_id": "4066320",
+      "name": "Desmond Bane",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 20.09
+    },
+    {
+      "player_id": "goga-bitadze",
+      "espn_id": "4348700",
+      "name": "Goga Bitadze",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 5.86
+    },
+    {
+      "player_id": "anthony-black",
+      "espn_id": "4712849",
+      "name": "Anthony Black",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 14.98
+    },
+    {
+      "player_id": "jamal-cain",
+      "espn_id": "4278572",
+      "name": "Jamal Cain",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 5.38
+    },
+    {
+      "player_id": "jevon-carter",
+      "espn_id": "3133635",
+      "name": "Jevon Carter",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 6.4
+    },
+    {
+      "player_id": "wendell-carter-jr",
+      "espn_id": "4277847",
+      "name": "Wendell Carter Jr.",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 11.82
+    },
+    {
+      "player_id": "colin-castleton",
+      "espn_id": "4397204",
+      "name": "Colin Castleton",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 1.25
+    },
+    {
+      "player_id": "tristan-da-silva",
+      "espn_id": "4702382",
+      "name": "Tristan da Silva",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 9.9
+    },
+    {
+      "player_id": "jett-howard",
+      "espn_id": "5105806",
+      "name": "Jett Howard",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 5.47
+    },
+    {
+      "player_id": "jonathan-isaac",
+      "espn_id": "4065654",
+      "name": "Jonathan Isaac",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 2.58
+    },
+    {
+      "player_id": "alex-morales",
+      "espn_id": "4593034",
+      "name": "Alex Morales",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 2.0
+    },
+    {
+      "player_id": "noah-penda",
+      "espn_id": "5214637",
+      "name": "Noah Penda",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 3.85
+    },
+    {
+      "player_id": "jase-richardson",
+      "espn_id": "5239561",
+      "name": "Jase Richardson",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 4.43
+    },
+    {
+      "player_id": "jalen-suggs",
+      "espn_id": "4432165",
+      "name": "Jalen Suggs",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 13.79
+    },
+    {
+      "player_id": "franz-wagner",
+      "espn_id": "4566434",
+      "name": "Franz Wagner",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 20.56
+    },
+    {
+      "player_id": "moritz-wagner",
+      "espn_id": "3150844",
+      "name": "Moritz Wagner",
+      "team": "Orlando Magic",
+      "team_abbrev": "ORL",
+      "seed": 7,
+      "cost": 6.86
+    },
+    {
+      "player_id": "nicolas-batum",
+      "espn_id": "3416",
+      "name": "Nicolas Batum",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 3.96
+    },
+    {
+      "player_id": "bradley-beal",
+      "espn_id": "6580",
+      "name": "Bradley Beal",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 8.17
+    },
+    {
+      "player_id": "bogdan-bogdanovic",
+      "espn_id": "3037789",
+      "name": "Bogdan Bogdanovic",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 7.43
+    },
+    {
+      "player_id": "cam-christie",
+      "espn_id": "4845363",
+      "name": "Cam Christie",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 2.84
+    },
+    {
+      "player_id": "john-collins",
+      "espn_id": "3908845",
+      "name": "John Collins",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 13.55
+    },
+    {
+      "player_id": "kris-dunn",
+      "espn_id": "2991139",
+      "name": "Kris Dunn",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 7.27
+    },
+    {
+      "player_id": "darius-garland",
+      "espn_id": "4396907",
+      "name": "Darius Garland",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 18.78
+    },
+    {
+      "player_id": "isaiah-jackson",
+      "espn_id": "4432170",
+      "name": "Isaiah Jackson",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 6.73
+    },
+    {
+      "player_id": "derrick-jones-jr",
+      "espn_id": "3936099",
+      "name": "Derrick Jones Jr.",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 10.08
+    },
+    {
+      "player_id": "kawhi-leonard",
+      "espn_id": "6450",
+      "name": "Kawhi Leonard",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 27.89
+    },
+    {
+      "player_id": "brook-lopez",
+      "espn_id": "3448",
+      "name": "Brook Lopez",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 8.45
+    },
+    {
+      "player_id": "bennedict-mathurin",
+      "espn_id": "4683634",
+      "name": "Bennedict Mathurin",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 17.57
+    },
+    {
+      "player_id": "jordan-miller",
+      "espn_id": "4396818",
+      "name": "Jordan Miller",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 9.97
+    },
+    {
+      "player_id": "yanic-konan-niederhauser",
+      "espn_id": "5108024",
+      "name": "Yanic Konan Niederhauser",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 4.29
+    },
+    {
+      "player_id": "norchad-omier",
+      "espn_id": "4702134",
+      "name": "Norchad Omier",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 2.83
+    },
+    {
+      "player_id": "sean-pedulla",
+      "espn_id": "4709131",
+      "name": "Sean Pedulla",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 1.86
+    },
+    {
+      "player_id": "kobe-sanders",
+      "espn_id": "4702352",
+      "name": "Kobe Sanders",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 7.28
+    },
+    {
+      "player_id": "tyty-washington-jr",
+      "espn_id": "4683749",
+      "name": "TyTy Washington Jr.",
+      "team": "LA Clippers",
+      "team_abbrev": "LAC",
+      "seed": 8,
+      "cost": 1.31
+    },
+    {
+      "player_id": "charles-bassey",
+      "espn_id": "4397886",
+      "name": "Charles Bassey",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 5.85
+    },
+    {
+      "player_id": "jimmy-butler-iii",
+      "espn_id": "6430",
+      "name": "Jimmy Butler III",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 20.0
+    },
+    {
+      "player_id": "lj-cryer",
+      "espn_id": "4433149",
+      "name": "LJ Cryer",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 8.22
+    },
+    {
+      "player_id": "seth-curry",
+      "espn_id": "2326307",
+      "name": "Seth Curry",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 7.1
+    },
+    {
+      "player_id": "stephen-curry",
+      "espn_id": "3975",
+      "name": "Stephen Curry",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 26.56
+    },
+    {
+      "player_id": "draymond-green",
+      "espn_id": "6589",
+      "name": "Draymond Green",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 8.38
+    },
+    {
+      "player_id": "al-horford",
+      "espn_id": "3213",
+      "name": "Al Horford",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 8.27
+    },
+    {
+      "player_id": "malevy-leons",
+      "espn_id": "4897449",
+      "name": "Malevy Leons",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 3.32
+    },
+    {
+      "player_id": "deanthony-melton",
+      "espn_id": "4066436",
+      "name": "De'Anthony Melton",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 12.29
+    },
+    {
+      "player_id": "moses-moody",
+      "espn_id": "4432171",
+      "name": "Moses Moody",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 12.13
+    },
+    {
+      "player_id": "gary-payton-ii",
+      "espn_id": "3134903",
+      "name": "Gary Payton II",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 7.49
+    },
+    {
+      "player_id": "brandin-podziemski",
+      "espn_id": "4709138",
+      "name": "Brandin Podziemski",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 13.82
+    },
+    {
+      "player_id": "kristaps-porzingis",
+      "espn_id": "3102531",
+      "name": "Kristaps Porzingis",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 16.66
+    },
+    {
+      "player_id": "quinten-post",
+      "espn_id": "4593016",
+      "name": "Quinten Post",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 7.66
+    },
+    {
+      "player_id": "will-richard",
+      "espn_id": "4897262",
+      "name": "Will Richard",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 6.39
+    },
+    {
+      "player_id": "gui-santos",
+      "espn_id": "4997536",
+      "name": "Gui Santos",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 9.19
+    },
+    {
+      "player_id": "pat-spencer",
+      "espn_id": "4592714",
+      "name": "Pat Spencer",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 7.21
+    },
+    {
+      "player_id": "nate-williams",
+      "espn_id": "4397821",
+      "name": "Nate Williams",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 8.0
+    },
+    {
+      "player_id": "omer-yurtseven",
+      "espn_id": "3074213",
+      "name": "Omer Yurtseven",
+      "team": "Golden State Warriors",
+      "team_abbrev": "GS",
+      "seed": 8,
+      "cost": 3.78
+    },
+    {
+      "player_id": "lamelo-ball",
+      "espn_id": "4432816",
+      "name": "LaMelo Ball",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 20.07
+    },
+    {
+      "player_id": "miles-bridges",
+      "espn_id": "4066383",
+      "name": "Miles Bridges",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 17.06
+    },
+    {
+      "player_id": "pat-connaughton",
+      "espn_id": "2578239",
+      "name": "Pat Connaughton",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 2.62
+    },
+    {
+      "player_id": "moussa-diabate",
+      "espn_id": "4433249",
+      "name": "Moussa Diabate",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 7.88
+    },
+    {
+      "player_id": "josh-green",
+      "espn_id": "4432811",
+      "name": "Josh Green",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 4.29
+    },
+    {
+      "player_id": "pj-hall",
+      "espn_id": "4701225",
+      "name": "PJ Hall",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 4.53
+    },
+    {
+      "player_id": "sion-james",
+      "espn_id": "4602025",
+      "name": "Sion James",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 5.38
+    },
+    {
+      "player_id": "ryan-kalkbrenner",
+      "espn_id": "4576060",
+      "name": "Ryan Kalkbrenner",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 7.55
+    },
+    {
+      "player_id": "kon-knueppel",
+      "espn_id": "5061575",
+      "name": "Kon Knueppel",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 18.49
+    },
+    {
+      "player_id": "tre-mann",
+      "espn_id": "4432819",
+      "name": "Tre Mann",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 5.49
+    },
+    {
+      "player_id": "liam-mcneeley",
+      "espn_id": "5239590",
+      "name": "Liam McNeeley",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 4.26
+    },
+    {
+      "player_id": "brandon-miller",
+      "espn_id": "4433287",
+      "name": "Brandon Miller",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 20.17
+    },
+    {
+      "player_id": "antonio-reeves",
+      "espn_id": "4592686",
+      "name": "Antonio Reeves",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 2.7
+    },
+    {
+      "player_id": "tidjane-salaun",
+      "espn_id": "5211176",
+      "name": "Tidjane Salaun",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 6.0
+    },
+    {
+      "player_id": "xavier-tillman",
+      "espn_id": "4277964",
+      "name": "Xavier Tillman",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 1.47
+    },
+    {
+      "player_id": "coby-white",
+      "espn_id": "4395651",
+      "name": "Coby White",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 17.36
+    },
+    {
+      "player_id": "grant-williams",
+      "espn_id": "4066218",
+      "name": "Grant Williams",
+      "team": "Charlotte Hornets",
+      "team_abbrev": "CHA",
+      "seed": 8,
+      "cost": 7.0
     }
   ]
 }

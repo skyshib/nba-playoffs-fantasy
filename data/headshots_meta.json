@@ -91,6 +91,10 @@
     "espn_id": "4594268",
     "name": "Anthony Edwards"
   },
+  "antonio-reeves": {
+    "espn_id": "4592686",
+    "name": "Antonio Reeves"
+  },
   "ariel-hukporti": {
     "espn_id": "4871141",
     "name": "Ariel Hukporti"
@@ -114,6 +118,10 @@
   "baylor-scheierman": {
     "espn_id": "4593841",
     "name": "Baylor Scheierman"
+  },
+  "bennedict-mathurin": {
+    "espn_id": "4683634",
+    "name": "Bennedict Mathurin"
   },
   "bismack-biyombo": {
     "espn_id": "6427",
@@ -155,6 +163,10 @@
     "espn_id": "3913176",
     "name": "Brandon Ingram"
   },
+  "brandon-miller": {
+    "espn_id": "4433287",
+    "name": "Brandon Miller"
+  },
   "bronny-james": {
     "espn_id": "4683774",
     "name": "Bronny James"
@@ -187,6 +199,10 @@
     "espn_id": "4433144",
     "name": "Caleb Love"
   },
+  "cam-christie": {
+    "espn_id": "4845363",
+    "name": "Cam Christie"
+  },
   "cameron-johnson": {
     "espn_id": "3138196",
     "name": "Cameron Johnson"
@@ -202,6 +218,10 @@
   "cason-wallace": {
     "espn_id": "4683692",
     "name": "Cason Wallace"
+  },
+  "charles-bassey": {
+    "espn_id": "4397886",
+    "name": "Charles Bassey"
   },
   "chaz-lanier": {
     "espn_id": "4700852",
@@ -238,6 +258,10 @@
   "clint-capela": {
     "espn_id": "3102529",
     "name": "Clint Capela"
+  },
+  "coby-white": {
+    "espn_id": "4395651",
+    "name": "Coby White"
   },
   "colin-castleton": {
     "espn_id": "4397204",
@@ -459,6 +483,10 @@
     "espn_id": "3135045",
     "name": "Grayson Allen"
   },
+  "gui-santos": {
+    "espn_id": "4997536",
+    "name": "Gui Santos"
+  },
   "harrison-barnes": {
     "espn_id": "6578",
     "name": "Harrison Barnes"
@@ -498,6 +526,10 @@
   "isaiah-hartenstein": {
     "espn_id": "4222252",
     "name": "Isaiah Hartenstein"
+  },
+  "isaiah-jackson": {
+    "espn_id": "4432170",
+    "name": "Isaiah Jackson"
   },
   "isaiah-joe": {
     "espn_id": "4395702",
@@ -703,6 +735,10 @@
     "espn_id": "3059318",
     "name": "Joel Embiid"
   },
+  "john-collins": {
+    "espn_id": "3908845",
+    "name": "John Collins"
+  },
   "john-konchar": {
     "espn_id": "3134932",
     "name": "John Konchar"
@@ -743,6 +779,10 @@
     "espn_id": "3134916",
     "name": "Jordan McLaughlin"
   },
+  "jordan-miller": {
+    "espn_id": "4396818",
+    "name": "Jordan Miller"
+  },
   "jordan-poole": {
     "espn_id": "4277956",
     "name": "Jordan Poole"
@@ -754,6 +794,10 @@
   "jose-alvarado": {
     "espn_id": "4277869",
     "name": "Jose Alvarado"
+  },
+  "josh-green": {
+    "espn_id": "4432811",
+    "name": "Josh Green"
   },
   "josh-hart": {
     "espn_id": "3062679",
@@ -867,9 +911,17 @@
     "espn_id": "6475",
     "name": "Klay Thompson"
   },
+  "kobe-sanders": {
+    "espn_id": "4702352",
+    "name": "Kobe Sanders"
+  },
   "koby-brea": {
     "espn_id": "4591259",
     "name": "Koby Brea"
+  },
+  "kon-knueppel": {
+    "espn_id": "5061575",
+    "name": "Kon Knueppel"
   },
   "kris-dunn": {
     "espn_id": "2991139",
@@ -895,6 +947,10 @@
     "espn_id": "6442",
     "name": "Kyrie Irving"
   },
+  "lamelo-ball": {
+    "espn_id": "4432816",
+    "name": "LaMelo Ball"
+  },
   "landry-shamet": {
     "espn_id": "3914044",
     "name": "Landry Shamet"
@@ -907,9 +963,17 @@
     "espn_id": "1966",
     "name": "LeBron James"
   },
+  "liam-mcneeley": {
+    "espn_id": "5239590",
+    "name": "Liam McNeeley"
+  },
   "lindy-waters-iii": {
     "espn_id": "4066317",
     "name": "Lindy Waters III"
+  },
+  "lj-cryer": {
+    "espn_id": "4433149",
+    "name": "LJ Cryer"
   },
   "luguentz-dort": {
     "espn_id": "4397020",
@@ -930,6 +994,10 @@
   "luke-kornet": {
     "espn_id": "3064560",
     "name": "Luke Kornet"
+  },
+  "malevy-leons": {
+    "espn_id": "4897449",
+    "name": "Malevy Leons"
   },
   "malik-monk": {
     "espn_id": "4066262",
@@ -983,6 +1051,10 @@
     "espn_id": "3195",
     "name": "Mike Conley"
   },
+  "miles-bridges": {
+    "espn_id": "4066383",
+    "name": "Miles Bridges"
+  },
   "miles-mcbride": {
     "espn_id": "4431823",
     "name": "Miles McBride"
@@ -1007,6 +1079,10 @@
     "espn_id": "4712863",
     "name": "Mouhamed Gueye"
   },
+  "moussa-diabate": {
+    "espn_id": "4433249",
+    "name": "Moussa Diabate"
+  },
   "myles-turner": {
     "espn_id": "3133628",
     "name": "Myles Turner"
@@ -1014,6 +1090,10 @@
   "naeqwan-tomlin": {
     "espn_id": "5106268",
     "name": "Nae'Qwan Tomlin"
+  },
+  "nate-williams": {
+    "espn_id": "4397821",
+    "name": "Nate Williams"
   },
   "naz-reid": {
     "espn_id": "4396971",
@@ -1035,6 +1115,10 @@
     "espn_id": "4278039",
     "name": "Nickeil Alexander-Walker"
   },
+  "nicolas-batum": {
+    "espn_id": "3416",
+    "name": "Nicolas Batum"
+  },
   "nikola-jokic": {
     "espn_id": "3112335",
     "name": "Nikola Jokic"
@@ -1055,6 +1139,10 @@
     "espn_id": "5214637",
     "name": "Noah Penda"
   },
+  "norchad-omier": {
+    "espn_id": "4702134",
+    "name": "Norchad Omier"
+  },
   "norman-powell": {
     "espn_id": "2595516",
     "name": "Norman Powell"
@@ -1070,6 +1158,10 @@
   "olivier-sarr": {
     "espn_id": "4278046",
     "name": "Olivier Sarr"
+  },
+  "omer-yurtseven": {
+    "espn_id": "3074213",
+    "name": "Omer Yurtseven"
   },
   "onyeka-okongwu": {
     "espn_id": "4431680",
@@ -1095,6 +1187,10 @@
     "espn_id": "2578239",
     "name": "Pat Connaughton"
   },
+  "pat-spencer": {
+    "espn_id": "4592714",
+    "name": "Pat Spencer"
+  },
   "paul-george": {
     "espn_id": "4251",
     "name": "Paul George"
@@ -1115,6 +1211,10 @@
     "espn_id": "4576087",
     "name": "Peyton Watson"
   },
+  "pj-hall": {
+    "espn_id": "4701225",
+    "name": "PJ Hall"
+  },
   "precious-achiuwa": {
     "espn_id": "4431679",
     "name": "Precious Achiuwa"
@@ -1122,6 +1222,10 @@
   "quentin-grimes": {
     "espn_id": "4397014",
     "name": "Quentin Grimes"
+  },
+  "quinten-post": {
+    "espn_id": "4593016",
+    "name": "Quinten Post"
   },
   "rasheer-fleming": {
     "espn_id": "5105977",
@@ -1183,6 +1287,10 @@
     "espn_id": "4888725",
     "name": "Ryan Dunn"
   },
+  "ryan-kalkbrenner": {
+    "espn_id": "4576060",
+    "name": "Ryan Kalkbrenner"
+  },
   "ryan-rollins": {
     "espn_id": "4591725",
     "name": "Ryan Rollins"
@@ -1211,6 +1319,10 @@
     "espn_id": "4431785",
     "name": "Scotty Pippen Jr."
   },
+  "sean-pedulla": {
+    "espn_id": "4709131",
+    "name": "Sean Pedulla"
+  },
   "seth-curry": {
     "espn_id": "2326307",
     "name": "Seth Curry"
@@ -1230,6 +1342,10 @@
   "simone-fontecchio": {
     "espn_id": "3899664",
     "name": "Simone Fontecchio"
+  },
+  "sion-james": {
+    "espn_id": "4602025",
+    "name": "Sion James"
   },
   "spencer-jones": {
     "espn_id": "4592427",
@@ -1271,6 +1387,10 @@
     "espn_id": "3934723",
     "name": "Thomas Bryant"
   },
+  "tidjane-salaun": {
+    "espn_id": "5211176",
+    "name": "Tidjane Salaun"
+  },
   "tim-hardaway-jr": {
     "espn_id": "2528210",
     "name": "Tim Hardaway Jr."
@@ -1294,6 +1414,10 @@
   "trayce-jackson-davis": {
     "espn_id": "4431684",
     "name": "Trayce Jackson-Davis"
+  },
+  "tre-mann": {
+    "espn_id": "4432819",
+    "name": "Tre Mann"
   },
   "trendon-watford": {
     "espn_id": "4431675",
@@ -1335,6 +1459,10 @@
     "espn_id": "5023693",
     "name": "Tyrese Proctor"
   },
+  "tyty-washington-jr": {
+    "espn_id": "4683749",
+    "name": "TyTy Washington Jr."
+  },
   "tyus-jones": {
     "espn_id": "3135046",
     "name": "Tyus Jones"
@@ -1359,9 +1487,21 @@
     "espn_id": "4592187",
     "name": "Wendell Moore Jr."
   },
+  "will-richard": {
+    "espn_id": "4897262",
+    "name": "Will Richard"
+  },
+  "xavier-tillman": {
+    "espn_id": "4277964",
+    "name": "Xavier Tillman"
+  },
   "yang-hansen": {
     "espn_id": "5217746",
     "name": "Yang Hansen"
+  },
+  "yanic-konan-niederhauser": {
+    "espn_id": "5108024",
+    "name": "Yanic Konan Niederhauser"
   },
   "zaccharie-risacher": {
     "espn_id": "5211175",

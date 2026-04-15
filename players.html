@@ -522,23 +522,20 @@
     const floor = (budget.league_ppg || 115.61) / 16;
     const floorPct = (floor / xMax) * 100;
 
-    // Group players: conference → seed → [players]
+    // Group players: conference → seed → team → [players]
+    // Multiple teams may share a seed (play-in bubble). Each team gets its
+    // own row so you can see the team logo next to its roster.
     const bucket = {East: {}, West: {}};
     for (const p of players) {
       const conf = EAST_TEAMS.has(p.team) ? 'East' : 'West';
-      if (!bucket[conf][p.seed]) bucket[conf][p.seed] = {team: p.team, players: []};
-      // In case two teams share a seed slot in our data (shouldn't happen post-play-in)
-      if (bucket[conf][p.seed].team !== p.team) {
-        // Keep the first seen; future work if multi-team-per-seed
-      }
-      bucket[conf][p.seed].players.push(p);
+      if (!bucket[conf][p.seed]) bucket[conf][p.seed] = {};
+      if (!bucket[conf][p.seed][p.team]) bucket[conf][p.seed][p.team] = [];
+      bucket[conf][p.seed][p.team].push(p);
     }
 
-    function row(conf, seed, info, isFirstOfConf, isFirstRow, isLastRow) {
-      const logoUrl = teamLogos[info.team] || '';
+    function row(conf, seed, team, teamPlayers, isFirstOfConf, isFirstRow, isLastRow) {
+      const logoUrl = teamLogos[team] || '';
       const label = isFirstOfConf ? `<div class="pp-section-label">${conf}</div>` : '';
-      // Floor + target labels render on both first and last rows so the
-      // markers are visible from the top and bottom of the chart.
       const floorLabelTop = isFirstRow
         ? `<div class="pp-floor-label pp-floor-label-top" style="left:${floorPct}%">min $${floor.toFixed(2)}</div>`
         : '';
@@ -553,16 +550,12 @@
       const targetLabelBot = isLastRow
         ? `<div class="pp-target-label pp-target-label-bot" data-target-label></div>`
         : '';
-      let html = `<div class="pp-row" data-conf="${conf}" data-seed="${seed}" data-team="${info.team}">`;
-      html += `<div class="pp-row-team">${logoUrl ? `<img class="pp-row-logo" src="${logoUrl}" onerror="this.style.display='none'">` : ''}<span>${info.team.replace(/\\bGolden State\\b/, 'GS').replace(/\\bOklahoma City\\b/, 'OKC').replace(/\\bLos Angeles\\b/, 'LA').replace(/\\bSan Antonio\\b/, 'SA').replace(/\\bNew Orleans\\b/, 'NO').replace(/\\bNew York\\b/, 'NY')}</span></div>`;
+      let html = `<div class="pp-row" data-conf="${conf}" data-seed="${seed}" data-team="${team}">`;
+      html += `<div class="pp-row-team">${logoUrl ? `<img class="pp-row-logo" src="${logoUrl}" onerror="this.style.display='none'">` : ''}<span>${team.replace(/\\bGolden State\\b/, 'GS').replace(/\\bOklahoma City\\b/, 'OKC').replace(/\\bLos Angeles\\b/, 'LA').replace(/\\bSan Antonio\\b/, 'SA').replace(/\\bNew Orleans\\b/, 'NO').replace(/\\bNew York\\b/, 'NY')}</span></div>`;
       html += `<div class="pp-row-seed">Sd ${seed}</div>`;
       html += `<div class="pp-row-plot">${label}${floorLine}${floorLabelTop}${floorLabelBot}${targetLine}${targetLabelTop}${targetLabelBot}`;
 
-      // Sort by PPG ascending. Detect clusters (players within CLUSTER_GAP of
-      // each other) and stagger their *displayed* X position symmetrically
-      // around the cluster centroid so faces don't overlap. True PPG is
-      // preserved for tooltip + hover-value.
-      const sorted = info.players.slice().sort((a, b) => a.cost - b.cost);
+      const sorted = teamPlayers.slice().sort((a, b) => a.cost - b.cost);
       const CLUSTER_GAP = xMax * 0.012;  // min PPG gap to treat dots as separated
       const STAGGER = xMax * 0.013;      // spread between staggered cluster members
 
@@ -597,21 +590,27 @@
       return html;
     }
 
-    // First gather rows so we know which is last, then render
+    // First gather rows (one per team-seed combination) so we know which is
+    // last. Seeds are grouped E→W with a gap between seed numbers.
     const rowList = [];
     for (let s = 1; s <= 8; s++) {
       for (const conf of ['East', 'West']) {
-        const info = bucket[conf][s];
-        if (info) rowList.push({ conf, s, info });
+        const seedMap = bucket[conf][s];
+        if (!seedMap) continue;
+        // Sort teams alphabetically within a conf-seed for stability
+        const teams = Object.keys(seedMap).sort();
+        for (const team of teams) {
+          rowList.push({ conf, s, team, players: seedMap[team] });
+        }
       }
     }
 
     let html = '';
     let renderedSeed = 0;
     for (let i = 0; i < rowList.length; i++) {
-      const { conf, s, info } = rowList[i];
+      const { conf, s, team, players: tp } = rowList[i];
       if (renderedSeed && s !== renderedSeed) html += `<div class="pp-row gap"></div>`;
-      html += row(conf, s, info, false, i === 0, i === rowList.length - 1);
+      html += row(conf, s, team, tp, false, i === 0, i === rowList.length - 1);
       renderedSeed = s;
     }
 
@@ -798,10 +797,14 @@
     function toggleSelectionFromDot(dotEl) {
       const slug = dotEl.dataset.slug;
       const seed = parseInt(dotEl.dataset.seed);
-      // If this slug is already selected anywhere, deselect.
       const existingSeed = Object.keys(selected).find(k => selected[k] === slug);
-      if (existingSeed) {
+      if (existingSeed && parseInt(existingSeed) === seed) {
+        // Clicked same slot as current selection → toggle off
         delete selected[existingSeed];
+      } else if (existingSeed) {
+        // Same player at a different seed (play-in bubble) → move
+        delete selected[existingSeed];
+        selected[seed] = slug;
       } else {
         selected[seed] = slug;
       }
@@ -839,8 +842,14 @@
     function whatIfState(slug, seed) {
       const whatIf = Object.assign({}, selected);
       const existingSeed = Object.keys(whatIf).find(k => whatIf[k] === slug);
-      if (existingSeed) delete whatIf[existingSeed];
-      else whatIf[seed] = slug;
+      if (existingSeed && parseInt(existingSeed) === seed) {
+        delete whatIf[existingSeed];
+      } else if (existingSeed) {
+        delete whatIf[existingSeed];
+        whatIf[seed] = slug;
+      } else {
+        whatIf[seed] = slug;
+      }
       let spent = 0, filled = 0;
       for (let s = 1; s <= 8; s++) {
         const sl = whatIf[s];
