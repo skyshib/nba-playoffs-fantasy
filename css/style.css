@@ -273,10 +273,23 @@ td.col-remaining { color: var(--text-secondary); }
   margin-top: 2px;
   min-width: 1.6rem;
 }
-.seed-cell.eliminated { color: var(--eliminated); }
+.seed-cell.eliminated { color: var(--eliminated); position: relative; }
 .seed-cell.eliminated .seed-player-name { text-decoration: line-through; }
 .seed-cell.eliminated .seed-pts { color: var(--text-primary); }
 .compact-mode .seed-cell.eliminated .compact-pts { color: var(--text-primary); }
+/* Red strikethrough across the full cell for eliminated picks (matches MM) */
+.seed-cell.eliminated::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  right: 8%;
+  height: 2px;
+  background: rgba(239, 68, 68, 0.85);
+  z-index: 2;
+  pointer-events: none;
+}
+.seed-cell.eliminated .seed-headshot-wrap { filter: grayscale(100%); }
 .seed-cell.live { color: var(--live-green); font-weight: 700; }
 
 /* Compact mode */
