@@ -174,27 +174,47 @@ main { max-width: 1600px; margin: 1.5rem auto; padding: 0 1rem; }
 .synth-title { font-weight: 700; color: var(--accent-gold); font-size: 0.9rem; flex: 1; }
 .synth-total { color: var(--accent-gold); font-weight: 700; font-size: 0.95rem; font-variant-numeric: tabular-nums; }
 .synth-body {
-  padding: 0.5rem 0.9rem 0.9rem;
+  padding: 0;
   overflow-x: auto;
   border-top: 1px solid rgba(251, 191, 36, 0.2);
 }
-.synth-table {
+/* Reuse the main scoreboard styling for a single synthetic row */
+.synth-scoreboard {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.78rem;
-  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
 }
-.synth-table th {
-  color: var(--text-muted);
-  text-align: left;
-  padding: 0.3rem 0.5rem;
-  font-size: 0.65rem;
-  text-transform: uppercase;
+.synth-scoreboard tbody tr {
+  background: var(--bg-row);
+}
+.synth-scoreboard tbody td {
+  padding: 0.4rem 0.4rem;
+  text-align: center;
   border-bottom: 1px solid var(--border);
+  vertical-align: middle;
 }
-.synth-table td {
-  padding: 0.3rem 0.5rem;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+.synth-scoreboard td.col-rank {
+  font-size: 1rem;
+  color: var(--accent-gold);
+  width: 4.5rem;
+  white-space: nowrap;
+}
+.synth-scoreboard td.col-name {
+  text-align: left;
+  font-weight: 700;
+  color: var(--accent-gold);
+  max-width: 11rem;
+}
+.synth-scoreboard td.col-total {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--accent-gold);
+  width: 4rem;
+}
+.synth-scoreboard td.col-diff,
+.synth-scoreboard td.col-remaining,
+.synth-scoreboard td.col-ppgrem {
+  color: var(--text-muted);
 }
 
 td.col-diff { font-weight: 600; font-variant-numeric: tabular-nums; }

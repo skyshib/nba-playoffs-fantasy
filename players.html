@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Players — NBA Playoffs Fantasy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    .players-main { max-width: 1600px; margin: 1rem auto; padding: 0 1rem; }
+    .pp-controls {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+      font-size: 0.85rem;
+    }
+    .pp-controls input {
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.4rem 0.6rem;
+      font-family: inherit;
+      font-size: 0.85rem;
+      min-width: 180px;
+    }
+    .pp-legend { color: var(--text-muted); font-size: 0.75rem; }
+
+    .pp-chart {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.75rem;
+      position: relative;
+      overflow-x: auto;
+    }
+    .pp-inner {
+      position: relative;
+      min-width: 1100px;
+    }
+
+    .pp-row {
+      display: grid;
+      grid-template-columns: 110px 36px 1fr;
+      align-items: center;
+      height: 48px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      position: relative;
+    }
+    .pp-row.gap { height: 16px; border-bottom: none; background: rgba(255,255,255,0.015); }
+    .pp-row-team {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding-right: 0.5rem;
+      color: var(--text-secondary);
+      font-size: 0.75rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .pp-row-logo {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+    .pp-row-seed {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+    .pp-row-plot {
+      position: relative;
+      height: 100%;
+      border-left: 1px solid var(--border);
+    }
+    .pp-section-label {
+      position: absolute;
+      left: 0.5rem;
+      top: 0.1rem;
+      font-size: 0.55rem;
+      letter-spacing: 0.15em;
+      color: var(--accent-gold);
+      text-transform: uppercase;
+      font-weight: 700;
+      background: var(--bg-secondary);
+      padding: 0 0.4rem;
+      z-index: 2;
+    }
+
+    .pp-axis {
+      display: grid;
+      grid-template-columns: 110px 36px 1fr;
+      margin-top: 0.5rem;
+      color: var(--text-muted);
+      font-size: 0.65rem;
+    }
+    .pp-axis-plot {
+      position: relative;
+      height: 24px;
+      border-top: 1px solid var(--border);
+    }
+    .pp-tick {
+      position: absolute;
+      transform: translateX(-50%);
+      top: 4px;
+      color: var(--text-muted);
+    }
+    .pp-axis-label {
+      text-align: center;
+      margin-top: 0.25rem;
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .pp-dot {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: var(--bg-row);
+      border: 2px solid var(--border);
+      cursor: pointer;
+      transition: transform 0.12s, border-color 0.12s, z-index 0s;
+      z-index: 1;
+    }
+    .pp-dot:hover {
+      transform: translate(-50%, -50%) scale(1.8);
+      border-color: var(--accent-red);
+      z-index: 10;
+    }
+    .pp-dot.dim { opacity: 0.18; filter: grayscale(100%); }
+    .pp-dot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .pp-dot-fallback {
+      width: 100%; height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      color: var(--text-secondary);
+      font-weight: 700;
+      background: var(--bg-hover);
+    }
+
+    .pp-tooltip {
+      position: fixed;
+      z-index: 1000;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.6rem 0.75rem;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.1s;
+      min-width: 180px;
+      font-size: 0.78rem;
+    }
+    .pp-tooltip.visible { opacity: 1; }
+    .pp-tip-name { font-weight: 700; font-size: 0.9rem; color: var(--text-primary); }
+    .pp-tip-team { color: var(--text-muted); font-size: 0.72rem; margin-bottom: 0.3rem; }
+    .pp-tip-stat { display: flex; justify-content: space-between; padding: 0.1rem 0; }
+    .pp-tip-label { color: var(--text-muted); }
+    .pp-tip-value { color: var(--accent-red); font-weight: 700; font-variant-numeric: tabular-nums; }
+    .pp-tip-badge {
+      display: inline-block;
+      font-size: 0.6rem; font-weight: 700;
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      background: var(--accent-gold); color: #000;
+      margin-left: 0.3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <span class="logo-icon">🏀</span>
+        <h1>NBA Playoffs Fantasy — Players</h1>
+      </div>
+      <div class="controls">
+        <span id="countdown" class="countdown" title="Time until picks lock"></span>
+        <a class="view-toggle" href="index.html">← Scoreboard</a>
+        <a class="view-toggle" href="rules.html">Rules</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="players-main">
+    <div class="pp-controls">
+      <input id="pp-search" type="search" placeholder="Filter by player or team…">
+      <span class="pp-legend">Tip: hover a face for details. Click to highlight.</span>
+      <span id="pp-count" class="pp-legend" style="margin-left:auto"></span>
+    </div>
+
+    <div class="pp-chart">
+      <div class="pp-inner" id="pp-inner">Loading…</div>
+    </div>
+  </main>
+
+  <div id="pp-tooltip" class="pp-tooltip"></div>
+
+  <script src="js/countdown.js?v=1"></script>
+  <script>
+  (async function() {
+    // Conference assignment — ESPN doesn't give us conference on budget.json,
+    // so we hard-code for the 16 NBA teams. Add any new team here.
+    const EAST_TEAMS = new Set([
+      'Atlanta Hawks', 'Boston Celtics', 'Brooklyn Nets', 'Charlotte Hornets',
+      'Chicago Bulls', 'Cleveland Cavaliers', 'Detroit Pistons', 'Indiana Pacers',
+      'Miami Heat', 'Milwaukee Bucks', 'New York Knicks', 'Orlando Magic',
+      'Philadelphia 76ers', 'Toronto Raptors', 'Washington Wizards'
+    ]);
+
+    const [budget, headshots, teamLogos] = await Promise.all([
+      fetch('data/budget.json?t=' + Date.now()).then(r => r.json()),
+      fetch('data/headshots.json?t=' + Date.now()).then(r => r.json()).catch(() => ({})),
+      fetch('data/team_logos.json?t=' + Date.now()).then(r => r.json()).catch(() => ({})),
+    ]);
+
+    const players = budget.players || [];
+    const maxPPG = Math.max(...players.map(p => p.cost || 0), 35);
+    // Round up to nearest 5
+    const xMax = Math.ceil(maxPPG / 5) * 5;
+
+    // Group players: conference → seed → [players]
+    const bucket = {East: {}, West: {}};
+    for (const p of players) {
+      const conf = EAST_TEAMS.has(p.team) ? 'East' : 'West';
+      if (!bucket[conf][p.seed]) bucket[conf][p.seed] = {team: p.team, players: []};
+      // In case two teams share a seed slot in our data (shouldn't happen post-play-in)
+      if (bucket[conf][p.seed].team !== p.team) {
+        // Keep the first seen; future work if multi-team-per-seed
+      }
+      bucket[conf][p.seed].players.push(p);
+    }
+
+    function row(conf, seed, info, isFirstOfConf) {
+      const logoUrl = teamLogos[info.team] || '';
+      const label = isFirstOfConf ? `<div class="pp-section-label">${conf}</div>` : '';
+      let html = `<div class="pp-row" data-conf="${conf}" data-seed="${seed}" data-team="${info.team}">`;
+      html += `<div class="pp-row-team">${logoUrl ? `<img class="pp-row-logo" src="${logoUrl}" onerror="this.style.display='none'">` : ''}<span>${info.team.replace(/\\bGolden State\\b/, 'GS').replace(/\\bOklahoma City\\b/, 'OKC').replace(/\\bLos Angeles\\b/, 'LA').replace(/\\bSan Antonio\\b/, 'SA').replace(/\\bNew Orleans\\b/, 'NO').replace(/\\bNew York\\b/, 'NY')}</span></div>`;
+      html += `<div class="pp-row-seed">Sd ${seed}</div>`;
+      html += `<div class="pp-row-plot">${label}`;
+      for (const p of info.players) {
+        const xPct = Math.min(100, (p.cost / xMax) * 100);
+        const hs = headshots[p.player_id] || '';
+        const initials = p.name.split(' ').filter(Boolean).slice(0,2).map(w => w[0]).join('');
+        const face = hs
+          ? `<img src="${hs}" onerror="this.style.display='none';this.parentNode.classList.add('no-hs')">`
+          : `<span class="pp-dot-fallback">${initials}</span>`;
+        html += `<div class="pp-dot" style="left:${xPct}%" data-slug="${p.player_id}" data-name="${p.name.replace(/"/g,'&quot;')}" data-team="${p.team}" data-seed="${seed}" data-conf="${conf}" data-ppg="${p.cost}" data-overridden="${p.cost_overridden ? '1' : ''}">${face}</div>`;
+      }
+      html += `</div></div>`;
+      return html;
+    }
+
+    let html = '';
+    for (let i = 0; i < 2; i++) {
+      const conf = i === 0 ? 'East' : 'West';
+      for (let s = 1; s <= 8; s++) {
+        const info = bucket[conf][s];
+        if (!info) continue;
+        html += row(conf, s, info, s === 1);
+      }
+      if (i === 0) html += `<div class="pp-row gap"></div>`;
+    }
+
+    // X-axis
+    html += `<div class="pp-axis"><div></div><div></div><div class="pp-axis-plot">`;
+    for (let x = 0; x <= xMax; x += 5) {
+      const pct = (x / xMax) * 100;
+      html += `<div class="pp-tick" style="left:${pct}%">${x}</div>`;
+    }
+    html += `</div></div>`;
+    html += `<div class="pp-axis-label">Regular-season PPG (cost)</div>`;
+
+    document.getElementById('pp-inner').innerHTML = html;
+    document.getElementById('pp-count').textContent = `${players.length} players`;
+
+    // Tooltip
+    const tip = document.getElementById('pp-tooltip');
+    document.querySelectorAll('.pp-dot').forEach(el => {
+      el.addEventListener('mouseenter', e => {
+        const d = el.dataset;
+        const overBadge = d.overridden === '1' ? '<span class="pp-tip-badge">ADJ</span>' : '';
+        tip.innerHTML = `
+          <div class="pp-tip-name">${d.name}${overBadge}</div>
+          <div class="pp-tip-team">${d.team} · ${d.conf} ${d.seed}-seed</div>
+          <div class="pp-tip-stat"><span class="pp-tip-label">PPG (cost)</span><span class="pp-tip-value">${Number(d.ppg).toFixed(1)}</span></div>
+          <div class="pp-tip-stat"><span class="pp-tip-label">Seed multiplier</span><span class="pp-tip-value">${(1 + parseInt(d.seed)/10).toFixed(1)}×</span></div>
+        `;
+        const rect = el.getBoundingClientRect();
+        tip.classList.add('visible');
+        const tr = tip.getBoundingClientRect();
+        let left = rect.left + rect.width/2 - tr.width/2;
+        let top  = rect.top - tr.height - 8;
+        if (left < 6) left = 6;
+        if (left + tr.width > window.innerWidth - 6) left = window.innerWidth - tr.width - 6;
+        if (top < 6) top = rect.bottom + 8;
+        tip.style.left = left + 'px';
+        tip.style.top  = top + 'px';
+      });
+      el.addEventListener('mouseleave', () => tip.classList.remove('visible'));
+    });
+
+    // Filter
+    const input = document.getElementById('pp-search');
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      document.querySelectorAll('.pp-dot').forEach(el => {
+        if (!q) { el.classList.remove('dim'); return; }
+        const match = el.dataset.name.toLowerCase().includes(q) || el.dataset.team.toLowerCase().includes(q);
+        el.classList.toggle('dim', !match);
+      });
+    });
+  })();
+  </script>
+</body>
+</html>

@@ -174,34 +174,68 @@ const Scoreboard = (() => {
     if (!host) return;
     const synth = syntheticEntrants();
     if (!synth.length) { host.innerHTML = ''; return; }
+    host.innerHTML = '';
 
-    let html = '';
     for (const r of synth) {
       const key = 'synth_open_' + r.name.replace(/\W+/g, '_');
       const isOpen = localStorage.getItem(key) === '1';
-      html += `<details class="synthetic-card" ${isOpen ? 'open' : ''} data-key="${key}">`;
-      html += `<summary><span class="synth-title">${r.name}</span><span class="synth-total">${fmtPts(r.total)} pts</span></summary>`;
-      html += '<div class="synth-body"><table class="synth-table"><thead><tr>';
-      html += '<th>Sd</th><th>Mult</th><th>Player</th><th>Team</th><th>Cost</th>';
-      for (const rd of ROUNDS) html += `<th>${ROUND_LABELS[rd]}</th>`;
-      html += '<th>Total</th></tr></thead><tbody>';
-      for (let seed = 1; seed <= 8; seed++) {
-        const info = r.breakdown[seed];
-        if (!info.pick) continue;
-        const cost = info.pick.cost != null ? info.pick.cost.toFixed(1) : '—';
-        html += `<tr><td>${seed}</td><td style="color:var(--text-muted)">${info.multiplier.toFixed(1)}×</td>`;
-        html += `<td>${info.pick.name}</td><td>${info.pick.team || '—'}</td><td>${cost}</td>`;
-        for (const rd of ROUNDS) {
-          const v = info.perRound[rd];
-          html += `<td>${typeof v === 'number' && v > 0 ? fmtPts(v) : '—'}</td>`;
-        }
-        html += `<td><strong>${fmtPts(info.subtotal)}</strong></td></tr>`;
-      }
-      html += '</tbody></table></div></details>';
-    }
-    host.innerHTML = html;
+      const details = document.createElement('details');
+      details.className = 'synthetic-card';
+      details.dataset.key = key;
+      if (isOpen) details.open = true;
 
-    // Persist open/close state
+      const summary = document.createElement('summary');
+      summary.innerHTML = `<span class="synth-title">${r.name}</span><span class="synth-total">${fmtPts(r.total)} pts</span>`;
+      details.appendChild(summary);
+
+      // Build a one-row mini-scoreboard matching the main table columns
+      const body = document.createElement('div');
+      body.className = 'synth-body';
+      const table = document.createElement('table');
+      table.className = 'synth-scoreboard';
+      if (compactMode) table.classList.add('compact-mode');
+
+      const tbody = document.createElement('tbody');
+      const tr = document.createElement('tr');
+
+      const tdSpacer = document.createElement('td');
+      tdSpacer.className = 'col-rank';
+      tdSpacer.textContent = '⭐';
+      tr.appendChild(tdSpacer);
+
+      const tdName = document.createElement('td');
+      tdName.className = 'col-name';
+      tdName.textContent = r.name;
+      tr.appendChild(tdName);
+
+      const tdTotal = document.createElement('td');
+      tdTotal.className = 'col-total';
+      tdTotal.textContent = fmtPts(r.total);
+      tr.appendChild(tdTotal);
+
+      // Skip +/-, Alive, PPG Rem columns for synthetic (mostly meaningless)
+      const tdSkip1 = document.createElement('td');
+      tdSkip1.className = 'col-diff'; tdSkip1.textContent = '—';
+      tr.appendChild(tdSkip1);
+      const tdSkip2 = document.createElement('td');
+      tdSkip2.className = 'col-remaining'; tdSkip2.textContent = `${r.alive}/8`;
+      tr.appendChild(tdSkip2);
+      const tdSkip3 = document.createElement('td');
+      tdSkip3.className = 'col-ppgrem'; tdSkip3.textContent = '—';
+      tr.appendChild(tdSkip3);
+
+      // Seed cells — reuse the same builder (no color, no click for tooltip though)
+      for (let seed = 1; seed <= 8; seed++) {
+        tr.appendChild(buildSeedCell(r, seed, { noColor: true }));
+      }
+
+      tbody.appendChild(tr);
+      table.appendChild(tbody);
+      body.appendChild(table);
+      details.appendChild(body);
+      host.appendChild(details);
+    }
+
     host.querySelectorAll('details').forEach(d => {
       d.addEventListener('toggle', () => {
         localStorage.setItem(d.dataset.key, d.open ? '1' : '0');
@@ -302,109 +336,114 @@ const Scoreboard = (() => {
       tr.appendChild(tdPpg);
 
       for (let seed = 1; seed <= 8; seed++) {
-        const td = document.createElement('td');
-        td.className = 'seed-cell';
-        if (compactMode) td.classList.add('compact');
-        const info = r.breakdown[seed];
-        if (!info.pick) {
-          td.textContent = '-';
-          td.classList.add('eliminated');
-        } else {
-          if (info.eliminated) td.classList.add('eliminated');
-          if (info.live) td.classList.add('live');
-
-          // Color gradient
-          if (maxPts > minPts) {
-            const t = (info.subtotal - minPts) / (maxPts - minPts);
-            const r0 = Math.round(180 - 150 * t);
-            const g0 = Math.round(40 + 100 * t);
-            const b0 = Math.round(40 + 30 * t);
-            td.style.backgroundColor = `rgb(${r0},${g0},${b0})`;
-          }
-
-          if (compactMode) {
-            const nameEl = document.createElement('span');
-            nameEl.className = 'compact-name';
-            nameEl.textContent = lastName(info.pick.name);
-            td.appendChild(nameEl);
-            const ptsEl = document.createElement('span');
-            ptsEl.className = 'compact-pts';
-            ptsEl.textContent = fmtPts(info.subtotal);
-            td.appendChild(ptsEl);
-          } else {
-            // Two-column layout: left = visual, right = cost + +/-
-            const row = document.createElement('div');
-            row.className = 'seed-cell-row';
-            const left = document.createElement('div');
-            left.className = 'seed-cell-left';
-            const right = document.createElement('div');
-            right.className = 'seed-cell-right';
-
-            const seedLabel = document.createElement('span');
-            seedLabel.className = 'seed-number';
-            seedLabel.textContent = year >= multStartYear
-              ? `${info.multiplier.toFixed(1)}×`
-              : `Seed ${seed}`;
-            left.appendChild(seedLabel);
-
-            const hsUrl = headshotsData[info.pick.player_id];
-            const teamName = getTeamName(info.pick);
-            const logoUrl = teamName ? teamLogosData[teamName] : null;
-            if (hsUrl || logoUrl) {
-              const wrap = document.createElement('div');
-              wrap.className = 'seed-headshot-wrap';
-              if (logoUrl) wrap.style.backgroundImage = `url(${logoUrl})`;
-              if (hsUrl) {
-                const img = document.createElement('img');
-                img.className = 'seed-headshot';
-                img.src = hsUrl;
-                img.alt = '';
-                img.onerror = function () { this.style.display = 'none'; };
-                wrap.appendChild(img);
-              }
-              left.appendChild(wrap);
-            }
-
-            const nameSpan = document.createElement('span');
-            nameSpan.className = 'seed-player-name';
-            nameSpan.textContent = lastName(info.pick.name);
-            left.appendChild(nameSpan);
-
-            const ptsSpan = document.createElement('span');
-            ptsSpan.className = 'seed-pts';
-            ptsSpan.textContent = fmtPts(info.subtotal);
-            left.appendChild(ptsSpan);
-
-            // Right column: cost + per-pick +/- (only shown if pick has played)
-            const costEl = document.createElement('span');
-            costEl.className = 'seed-cost';
-            costEl.textContent = info.pick.cost != null
-              ? `$${info.pick.cost.toFixed(info.pick.cost % 1 === 0 ? 0 : 1)}`
-              : '';
-            right.appendChild(costEl);
-
-            if (info.roundsPlayed > 0 && info.pointsDiff != null) {
-              const diffEl = document.createElement('span');
-              diffEl.className = 'seed-diff';
-              const sign = info.pointsDiff >= 0 ? '+' : '';
-              diffEl.textContent = `${sign}${info.pointsDiff.toFixed(1)}`;
-              right.appendChild(diffEl);
-            }
-
-            row.appendChild(left);
-            row.appendChild(right);
-            td.appendChild(row);
-          }
-
-          td.addEventListener('mouseenter', e => showTooltip(e, info, pickCounts, totalEntrants));
-          td.addEventListener('mouseleave', hideTooltip);
-        }
-        tr.appendChild(td);
+        tr.appendChild(buildSeedCell(r, seed, { minPts, maxPts, pickCounts, totalEntrants }));
       }
 
       tr.addEventListener('click', () => showDetail(r, pickCounts, totalEntrants, uniqRanks));
       tbody.appendChild(tr);
     }
+  }
+
+  // Build a single seed-cell <td>. Shared between main scoreboard + synthetic card.
+  function buildSeedCell(r, seed, opts) {
+    const { minPts, maxPts, pickCounts, totalEntrants, noColor, noTooltip } = opts || {};
+    const td = document.createElement('td');
+    td.className = 'seed-cell';
+    if (compactMode) td.classList.add('compact');
+    const info = r.breakdown[seed];
+    if (!info.pick) {
+      td.textContent = '-';
+      td.classList.add('eliminated');
+      return td;
+    }
+    if (info.eliminated) td.classList.add('eliminated');
+    if (info.live) td.classList.add('live');
+
+    if (!noColor && maxPts > minPts) {
+      const t = (info.subtotal - minPts) / (maxPts - minPts);
+      const r0 = Math.round(180 - 150 * t);
+      const g0 = Math.round(40 + 100 * t);
+      const b0 = Math.round(40 + 30 * t);
+      td.style.backgroundColor = `rgb(${r0},${g0},${b0})`;
+    }
+
+    if (compactMode) {
+      const nameEl = document.createElement('span');
+      nameEl.className = 'compact-name';
+      nameEl.textContent = lastName(info.pick.name);
+      td.appendChild(nameEl);
+      const ptsEl = document.createElement('span');
+      ptsEl.className = 'compact-pts';
+      ptsEl.textContent = fmtPts(info.subtotal);
+      td.appendChild(ptsEl);
+    } else {
+      const row = document.createElement('div');
+      row.className = 'seed-cell-row';
+      const left = document.createElement('div');
+      left.className = 'seed-cell-left';
+      const right = document.createElement('div');
+      right.className = 'seed-cell-right';
+
+      const seedLabel = document.createElement('span');
+      seedLabel.className = 'seed-number';
+      seedLabel.textContent = year >= multStartYear
+        ? `${info.multiplier.toFixed(1)}×`
+        : `Seed ${seed}`;
+      left.appendChild(seedLabel);
+
+      const hsUrl = headshotsData[info.pick.player_id];
+      const teamName = getTeamName(info.pick);
+      const logoUrl = teamName ? teamLogosData[teamName] : null;
+      if (hsUrl || logoUrl) {
+        const wrap = document.createElement('div');
+        wrap.className = 'seed-headshot-wrap';
+        if (logoUrl) wrap.style.backgroundImage = `url(${logoUrl})`;
+        if (hsUrl) {
+          const img = document.createElement('img');
+          img.className = 'seed-headshot';
+          img.src = hsUrl;
+          img.alt = '';
+          img.onerror = function () { this.style.display = 'none'; };
+          wrap.appendChild(img);
+        }
+        left.appendChild(wrap);
+      }
+
+      const nameSpan = document.createElement('span');
+      nameSpan.className = 'seed-player-name';
+      nameSpan.textContent = lastName(info.pick.name);
+      left.appendChild(nameSpan);
+
+      const ptsSpan = document.createElement('span');
+      ptsSpan.className = 'seed-pts';
+      ptsSpan.textContent = fmtPts(info.subtotal);
+      left.appendChild(ptsSpan);
+
+      const costEl = document.createElement('span');
+      costEl.className = 'seed-cost';
+      costEl.textContent = info.pick.cost != null
+        ? `$${info.pick.cost.toFixed(info.pick.cost % 1 === 0 ? 0 : 1)}`
+        : '';
+      right.appendChild(costEl);
+
+      if (info.roundsPlayed > 0 && info.pointsDiff != null) {
+        const diffEl = document.createElement('span');
+        diffEl.className = 'seed-diff';
+        const sign = info.pointsDiff >= 0 ? '+' : '';
+        diffEl.textContent = `${sign}${info.pointsDiff.toFixed(1)}`;
+        right.appendChild(diffEl);
+      }
+
+      row.appendChild(left);
+      row.appendChild(right);
+      td.appendChild(row);
+    }
+
+    if (!noTooltip) {
+      td.addEventListener('mouseenter', e => showTooltip(e, info, pickCounts || {}, totalEntrants || 0));
+      td.addEventListener('mouseleave', hideTooltip);
+    }
+    return td;
   }
 
   function showTooltip(e, info, pickCounts, totalEntrants) {
