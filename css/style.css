@@ -146,6 +146,13 @@ main { max-width: 1600px; margin: 1.5rem auto; padding: 0 1rem; }
 #scoreboard thead th.col-remaining { width: 3rem; }
 #scoreboard thead th.col-ppgrem { width: 4rem; }
 
+/* Synthetic entrant rows (e.g. "Best Possible Roster") — reference only,
+   not a ranked entrant. */
+#scoreboard tbody tr.synthetic-row { background: rgba(251, 191, 36, 0.05); font-style: italic; }
+#scoreboard tbody tr.synthetic-row td.col-name { color: var(--accent-gold); font-style: normal; font-weight: 700; }
+#scoreboard tbody tr.synthetic-row td.col-rank { color: var(--text-muted); font-weight: 400; }
+#scoreboard tbody tr.first-real-row td { border-top: 2px solid var(--accent-red); }
+
 td.col-diff { font-weight: 600; font-variant-numeric: tabular-nums; }
 td.col-diff.pos { color: var(--live-green); }
 td.col-diff.neg { color: var(--over-budget); }
