@@ -663,9 +663,11 @@
       document.getElementById('pp-dirty-note').style.display = dirty ? '' : 'none';
 
       // Target-average line: at what PPG must each remaining pick land to
-      // stay under budget? (budget − spent) / remaining_slots
+      // stay under budget? (budget − spent) / remaining_slots.
+      // Always shown when there are remaining slots (even with 0 picks made
+      // yet, so users can see the baseline budget/8 average).
       const remaining = 8 - filled;
-      const showTarget = remaining > 0 && filled > 0 && !over;
+      const showTarget = remaining > 0 && !over;
       let targetPPG = null;
       if (showTarget) {
         targetPPG = (BUDGET - spent) / remaining;
