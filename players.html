@@ -46,7 +46,7 @@
       display: grid;
       grid-template-columns: 110px 36px 1fr;
       align-items: center;
-      height: 72px;
+      height: 52px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.03);
       position: relative;
     }
@@ -122,24 +122,28 @@
 
     .pp-dot {
       position: absolute;
-      width: 30px;
-      height: 30px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       overflow: hidden;
       background: var(--bg-row);
-      border: 2px solid rgba(255, 255, 255, 0.25);
+      border: 2px solid rgba(255, 255, 255, 0.2);
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6);
       cursor: pointer;
-      transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+      transition: transform 0.12s, border-color 0.12s, box-shadow 0.12s;
       z-index: 1;
+      pointer-events: none;  /* hover driven by row-level JS */
     }
-    .pp-dot:hover {
-      transform: translate(var(--dot-x, -50%), calc(var(--dot-y, -50%))) scale(2);
+    .pp-dot.hovered {
+      transform: translate(-50%, -50%) scale(1.9);
       border-color: var(--accent-red);
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
       z-index: 50;
     }
-    .pp-row-plot:hover .pp-dot:not(:hover) { opacity: 0.7; }
+    .pp-row-plot.has-hover .pp-dot:not(.hovered) { opacity: 0.55; }
+    .pp-row-plot { cursor: pointer; }
     .pp-dot.dim { opacity: 0.18; filter: grayscale(100%); }
     .pp-dot img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .pp-dot-fallback {
@@ -285,26 +289,9 @@
       html += `<div class="pp-row-seed">Sd ${seed}</div>`;
       html += `<div class="pp-row-plot">${label}${floorLine}${floorLabel}`;
 
-      // Sort players by PPG ascending, then assign vertical staircase offsets
-      // to members of proximity clusters so none fully overlap.
+      // Z-order: higher PPG first so lower-PPG dots draw on top of higher-PPG
+      // ones; not critical since hover is JS-driven but keeps visuals consistent.
       const sorted = info.players.slice().sort((a, b) => a.cost - b.cost);
-      // threshold in PPG — players within this distance overlap visually
-      const CLUSTER_THRESHOLD = xMax * 0.03;  // 3% of x-range
-      let clusterStart = 0;
-      for (let i = 0; i < sorted.length; i++) {
-        // If gap to previous exceeds threshold, new cluster starts here.
-        if (i > 0 && sorted[i].cost - sorted[i - 1].cost > CLUSTER_THRESHOLD) {
-          clusterStart = i;
-        }
-        const clusterIdx = i - clusterStart;
-        // Staircase pattern: 0, -1, +1, -2, +2, …
-        // Each step = 12px of vertical offset (row is 72px tall, dot is 30px,
-        // so +/- 20px keeps dots on-row)
-        const step = Math.ceil(clusterIdx / 2) * (clusterIdx % 2 === 1 ? -1 : 1);
-        const yOffset = step * 12;  // px
-        sorted[i]._y = yOffset;
-      }
-
       for (const p of sorted) {
         const xPct = Math.min(100, (p.cost / xMax) * 100);
         const hs = headshots[p.player_id] || '';
@@ -312,9 +299,7 @@
         const face = hs
           ? `<img src="${hs}" onerror="this.style.display='none';this.parentNode.classList.add('no-hs')">`
           : `<span class="pp-dot-fallback">${initials}</span>`;
-        const yPx = p._y || 0;
-        // Use CSS variables so :hover transform can reuse them
-        html += `<div class="pp-dot" style="left:${xPct}%; top: calc(50% + ${yPx}px); transform: translate(-50%, -50%); --dot-x: -50%; --dot-y: -50%" data-slug="${p.player_id}" data-name="${p.name.replace(/"/g,'&quot;')}" data-team="${p.team}" data-seed="${seed}" data-conf="${conf}" data-ppg="${p.cost}" data-overridden="${p.cost_overridden ? '1' : ''}">${face}</div>`;
+        html += `<div class="pp-dot" style="left:${xPct}%" data-slug="${p.player_id}" data-name="${p.name.replace(/"/g,'&quot;')}" data-team="${p.team}" data-seed="${seed}" data-conf="${conf}" data-ppg="${p.cost}" data-overridden="${p.cost_overridden ? '1' : ''}">${face}</div>`;
       }
       html += `</div></div>`;
       return html;
@@ -345,30 +330,66 @@
     document.getElementById('pp-inner').innerHTML = html;
     document.getElementById('pp-count').textContent = `${players.length} players`;
 
-    // Tooltip
+    // Tooltip + nearest-dot hover detection per row.
+    // Rather than relying on CSS :hover (which only fires over a dot's box),
+    // we listen on the plot area for mousemove and highlight the dot whose
+    // X-position is closest to the cursor. That way clusters remain fully
+    // browsable — any lateral nudge picks up the adjacent player.
     const tip = document.getElementById('pp-tooltip');
-    document.querySelectorAll('.pp-dot').forEach(el => {
-      el.addEventListener('mouseenter', e => {
-        const d = el.dataset;
-        const overBadge = d.overridden === '1' ? '<span class="pp-tip-badge">ADJ</span>' : '';
-        tip.innerHTML = `
-          <div class="pp-tip-name">${d.name}${overBadge}</div>
-          <div class="pp-tip-team">${d.team} · ${d.conf} ${d.seed}-seed</div>
-          <div class="pp-tip-stat"><span class="pp-tip-label">PPG (cost)</span><span class="pp-tip-value">${Number(d.ppg).toFixed(1)}</span></div>
-          <div class="pp-tip-stat"><span class="pp-tip-label">Seed multiplier</span><span class="pp-tip-value">${(1 + parseInt(d.seed)/10).toFixed(1)}×</span></div>
-        `;
-        const rect = el.getBoundingClientRect();
-        tip.classList.add('visible');
-        const tr = tip.getBoundingClientRect();
-        let left = rect.left + rect.width/2 - tr.width/2;
-        let top  = rect.top - tr.height - 8;
-        if (left < 6) left = 6;
-        if (left + tr.width > window.innerWidth - 6) left = window.innerWidth - tr.width - 6;
-        if (top < 6) top = rect.bottom + 8;
-        tip.style.left = left + 'px';
-        tip.style.top  = top + 'px';
+
+    function showTooltipFor(el) {
+      const d = el.dataset;
+      const overBadge = d.overridden === '1' ? '<span class="pp-tip-badge">ADJ</span>' : '';
+      tip.innerHTML = `
+        <div class="pp-tip-name">${d.name}${overBadge}</div>
+        <div class="pp-tip-team">${d.team} · ${d.conf} ${d.seed}-seed</div>
+        <div class="pp-tip-stat"><span class="pp-tip-label">PPG (cost)</span><span class="pp-tip-value">${Number(d.ppg).toFixed(1)}</span></div>
+        <div class="pp-tip-stat"><span class="pp-tip-label">Seed multiplier</span><span class="pp-tip-value">${(1 + parseInt(d.seed)/10).toFixed(1)}×</span></div>
+      `;
+      const rect = el.getBoundingClientRect();
+      tip.classList.add('visible');
+      const tr = tip.getBoundingClientRect();
+      let left = rect.left + rect.width/2 - tr.width/2;
+      let top  = rect.top - tr.height - 8;
+      if (left < 6) left = 6;
+      if (left + tr.width > window.innerWidth - 6) left = window.innerWidth - tr.width - 6;
+      if (top < 6) top = rect.bottom + 8;
+      tip.style.left = left + 'px';
+      tip.style.top  = top + 'px';
+    }
+
+    function hideTooltip() { tip.classList.remove('visible'); }
+
+    document.querySelectorAll('.pp-row-plot').forEach(plot => {
+      const dots = Array.from(plot.querySelectorAll('.pp-dot'));
+      if (!dots.length) return;
+      let active = null;
+
+      plot.addEventListener('mousemove', e => {
+        const rect = plot.getBoundingClientRect();
+        const mouseX = e.clientX - rect.left;
+        // Find the dot whose center X is closest to the cursor
+        let best = null, bestDist = Infinity;
+        for (const d of dots) {
+          const dRect = d.getBoundingClientRect();
+          const centerX = dRect.left + dRect.width / 2 - rect.left;
+          const dist = Math.abs(centerX - mouseX);
+          if (dist < bestDist) { bestDist = dist; best = d; }
+        }
+        if (best && best !== active) {
+          if (active) active.classList.remove('hovered');
+          best.classList.add('hovered');
+          active = best;
+          plot.classList.add('has-hover');
+          showTooltipFor(best);
+        }
       });
-      el.addEventListener('mouseleave', () => tip.classList.remove('visible'));
+
+      plot.addEventListener('mouseleave', () => {
+        if (active) { active.classList.remove('hovered'); active = null; }
+        plot.classList.remove('has-hover');
+        hideTooltip();
+      });
     });
 
     // Filter
