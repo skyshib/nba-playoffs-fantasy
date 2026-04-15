@@ -433,7 +433,7 @@ const Scoreboard = (() => {
 
       if (info.roundsPlayed > 0 && info.pointsDiff != null) {
         const diffEl = document.createElement('span');
-        diffEl.className = 'seed-diff';
+        diffEl.className = 'seed-diff ' + (info.pointsDiff >= 0 ? 'pos' : 'neg');
         const sign = info.pointsDiff >= 0 ? '+' : '';
         diffEl.textContent = `${sign}${info.pointsDiff.toFixed(1)}`;
         right.appendChild(diffEl);
