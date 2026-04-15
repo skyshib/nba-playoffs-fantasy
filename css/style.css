@@ -343,6 +343,106 @@ footer { text-align: center; padding: 2rem 1rem; color: var(--text-muted); font-
 }
 .picks-modal-content { width: 720px; max-width: 100%; }
 
+/* Bug report modal — dark-theme inputs, larger sizing, tidy history */
+#bug-modal .bug-modal-content {
+  width: 560px;
+  padding: 1.5rem 1.75rem 1.75rem;
+}
+#bug-modal h2 {
+  margin-bottom: 1.25rem;
+  font-size: 1.3rem;
+  color: var(--text-primary);
+}
+#bug-modal label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-bottom: 0.85rem;
+}
+#bug-modal input[type="text"],
+#bug-modal textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.35rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.55rem 0.7rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+  transition: border-color 0.15s;
+}
+#bug-modal input[type="text"]:focus,
+#bug-modal textarea:focus {
+  outline: none;
+  border-color: var(--accent-red);
+}
+#bug-modal textarea { min-height: 90px; }
+#bug-modal textarea::placeholder,
+#bug-modal input::placeholder {
+  color: var(--text-muted);
+  font-style: italic;
+}
+#bug-modal .bug-submit {
+  background: var(--accent-red);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.55rem 1.4rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: inherit;
+  margin-top: 0.25rem;
+  transition: filter 0.1s;
+}
+#bug-modal .bug-submit:hover { filter: brightness(1.15); }
+#bug-modal #bug-status {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: var(--live-green);
+  min-height: 1em;
+}
+#bug-modal .bug-history {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+#bug-modal .bug-history h3 {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+#bug-modal #bug-list {
+  max-height: 260px;
+  overflow-y: auto;
+}
+#bug-modal .bug-entry {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+#bug-modal .bug-entry-name {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-right: 0.4rem;
+}
+#bug-modal .bug-entry-time {
+  color: var(--text-muted);
+  font-size: 0.7rem;
+}
+
 .picks-modal-content h2 { margin-bottom: 1rem; font-size: 1.3rem; }
 .picks-modal-content label { display: block; font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
 .picks-modal-content input,
