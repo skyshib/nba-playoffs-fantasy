@@ -228,6 +228,29 @@ def main():
         cfg_path.write_text(json.dumps(cfg, indent=2))
         print(f"Updated config.json budget = {league_ppg}")
 
+    # Re-apply any overrides from config.json automatically so they don't get
+    # silently dropped after a refetch.
+    overrides = {k: v for k, v in cfg.get("cost_overrides", {}).items()
+                 if not k.startswith("_")} if args.update_config else {}
+    if not overrides:
+        try:
+            cfg_data = json.loads((base / "config.json").read_text())
+            overrides = {k: v for k, v in (cfg_data.get("cost_overrides") or {}).items()
+                         if not k.startswith("_")}
+        except Exception:
+            overrides = {}
+    if overrides:
+        applied = 0
+        for p in players:
+            slug = p.get("player_id")
+            if slug in overrides:
+                p["cost_original"] = p["cost"]
+                p["cost"] = overrides[slug]
+                p["cost_overridden"] = True
+                applied += 1
+        (base / "budget.json").write_text(json.dumps(out, indent=2))
+        print(f"Re-applied {applied} cost override(s)")
+
 
 if __name__ == "__main__":
     main()

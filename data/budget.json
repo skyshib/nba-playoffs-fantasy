@@ -254,7 +254,9 @@
       "team": "Boston Celtics",
       "team_abbrev": "BOS",
       "seed": 2,
-      "cost": 21.75
+      "cost": 23.6,
+      "cost_original": 21.75,
+      "cost_overridden": true
     },
     {
       "player_id": "john-tonje",
