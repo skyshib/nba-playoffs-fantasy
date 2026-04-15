@@ -18,6 +18,7 @@
       <div class="controls">
         <span id="countdown" class="countdown" title="Time until picks lock"></span>
         <a class="view-toggle" href="rules.html" title="Rules &amp; payouts">Rules</a>
+        <button id="bug-report-btn" class="view-toggle" title="Report a bug">Report Bug</button>
         <button id="enter-picks-btn" class="view-toggle primary" title="Build a roster">Enter Picks</button>
         <button id="view-toggle" class="view-toggle" title="Toggle compact view">Compact</button>
         <select id="year-select" aria-label="Select year"></select>
@@ -57,6 +58,24 @@
         <button id="picks-close" class="close-btn">&times;</button>
         <h2>Build your roster</h2>
         <div id="picks-ui"></div>
+      </div>
+    </div>
+
+    <!-- Bug Report Modal -->
+    <div id="bug-modal" class="bug-modal hidden">
+      <div class="bug-modal-content">
+        <button id="bug-close" class="close-btn">&times;</button>
+        <h2>🐛 Report a Bug</h2>
+        <form id="bug-form">
+          <label>Your name<input type="text" id="bug-name" required></label>
+          <label>What's wrong?<textarea id="bug-desc" rows="4" required placeholder="e.g. Scoreboard total for X is off, player Y's team logo is wrong..."></textarea></label>
+          <button type="submit" class="bug-submit">Submit</button>
+          <div id="bug-status"></div>
+        </form>
+        <div class="bug-history">
+          <h3>Your recent reports</h3>
+          <div id="bug-list"></div>
+        </div>
       </div>
     </div>
   </main>

@@ -28,9 +28,31 @@ const HEADER = [
   'Raw JSON',
 ];
 
+const BUG_HEADER = ['Submitted', 'Name', 'Description'];
+
 function doPost(e) {
   try {
     const body = JSON.parse(e.postData.contents);
+
+    // Route bug reports to a separate tab
+    if (body.action === 'bug') {
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      let bugs = ss.getSheetByName('Bugs');
+      if (!bugs) {
+        bugs = ss.insertSheet('Bugs');
+        bugs.appendRow(BUG_HEADER);
+        bugs.setFrozenRows(1);
+      }
+      bugs.appendRow([
+        body.submitted_at || new Date().toISOString(),
+        body.name || '(anonymous)',
+        body.description || '',
+      ]);
+      return ContentService
+        .createTextOutput(JSON.stringify({ ok: true, kind: 'bug' }))
+        .setMimeType(ContentService.MimeType.JSON);
+    }
+
     const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
 
     // Ensure header

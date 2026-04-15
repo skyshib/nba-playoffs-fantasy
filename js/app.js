@@ -173,6 +173,64 @@
   document.getElementById('picks-close')?.addEventListener('click', () => picksModal.classList.add('hidden'));
   picksModal?.addEventListener('click', e => { if (e.target === picksModal) picksModal.classList.add('hidden'); });
 
+  // --- Bug report modal
+  const bugModal = document.getElementById('bug-modal');
+  const bugForm = document.getElementById('bug-form');
+  const bugList = document.getElementById('bug-list');
+
+  function loadBugReports() {
+    const bugs = JSON.parse(localStorage.getItem('nbaBugReports') || '[]');
+    if (bugList) {
+      bugList.innerHTML = bugs.length === 0
+        ? '<div style="color:var(--text-muted);font-size:0.75rem">No reports yet</div>'
+        : bugs.slice(-20).reverse().map(b =>
+          `<div class="bug-entry"><span class="bug-entry-name">${b.name}</span> <span class="bug-entry-time">${new Date(b.time).toLocaleString()}</span><br>${b.desc}</div>`
+        ).join('');
+    }
+  }
+
+  document.getElementById('bug-report-btn')?.addEventListener('click', () => {
+    bugModal?.classList.remove('hidden');
+    loadBugReports();
+  });
+  document.getElementById('bug-close')?.addEventListener('click', () => bugModal?.classList.add('hidden'));
+  bugModal?.addEventListener('click', e => { if (e.target === bugModal) bugModal.classList.add('hidden'); });
+
+  bugForm?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = document.getElementById('bug-name').value.trim();
+    const desc = document.getElementById('bug-desc').value.trim();
+    if (!name || !desc) return;
+
+    const report = { name, desc, time: Date.now() };
+    const bugs = JSON.parse(localStorage.getItem('nbaBugReports') || '[]');
+    bugs.push(report);
+    localStorage.setItem('nbaBugReports', JSON.stringify(bugs));
+
+    const status = document.getElementById('bug-status');
+    const endpoint = config.picks_endpoint || '';
+    if (endpoint) {
+      status.textContent = 'Sending…';
+      try {
+        await fetch(endpoint, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({ action: 'bug', name, description: desc, submitted_at: new Date().toISOString() }),
+        });
+        status.textContent = '✓ Submitted!';
+      } catch (err) {
+        status.textContent = 'Failed to send: ' + err.message;
+      }
+    } else {
+      status.textContent = '✓ Saved locally (endpoint not configured).';
+    }
+
+    bugForm.reset();
+    loadBugReports();
+    setTimeout(() => { status.textContent = ''; }, 3000);
+  });
+
   // --- Init
   try {
     config = await loadJSON('data/config.json');
