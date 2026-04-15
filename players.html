@@ -46,7 +46,7 @@
       display: grid;
       grid-template-columns: 110px 36px 1fr;
       align-items: center;
-      height: 48px;
+      height: 72px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.03);
       position: relative;
     }
@@ -122,23 +122,24 @@
 
     .pp-dot {
       position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 32px;
-      height: 32px;
+      width: 30px;
+      height: 30px;
       border-radius: 50%;
       overflow: hidden;
       background: var(--bg-row);
-      border: 2px solid var(--border);
+      border: 2px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.6);
       cursor: pointer;
-      transition: transform 0.12s, border-color 0.12s, z-index 0s;
+      transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
       z-index: 1;
     }
     .pp-dot:hover {
-      transform: translate(-50%, -50%) scale(1.8);
+      transform: translate(var(--dot-x, -50%), calc(var(--dot-y, -50%))) scale(2);
       border-color: var(--accent-red);
-      z-index: 10;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+      z-index: 50;
     }
+    .pp-row-plot:hover .pp-dot:not(:hover) { opacity: 0.7; }
     .pp-dot.dim { opacity: 0.18; filter: grayscale(100%); }
     .pp-dot img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .pp-dot-fallback {
@@ -283,14 +284,37 @@
       html += `<div class="pp-row-team">${logoUrl ? `<img class="pp-row-logo" src="${logoUrl}" onerror="this.style.display='none'">` : ''}<span>${info.team.replace(/\\bGolden State\\b/, 'GS').replace(/\\bOklahoma City\\b/, 'OKC').replace(/\\bLos Angeles\\b/, 'LA').replace(/\\bSan Antonio\\b/, 'SA').replace(/\\bNew Orleans\\b/, 'NO').replace(/\\bNew York\\b/, 'NY')}</span></div>`;
       html += `<div class="pp-row-seed">Sd ${seed}</div>`;
       html += `<div class="pp-row-plot">${label}${floorLine}${floorLabel}`;
-      for (const p of info.players) {
+
+      // Sort players by PPG ascending, then assign vertical staircase offsets
+      // to members of proximity clusters so none fully overlap.
+      const sorted = info.players.slice().sort((a, b) => a.cost - b.cost);
+      // threshold in PPG — players within this distance overlap visually
+      const CLUSTER_THRESHOLD = xMax * 0.03;  // 3% of x-range
+      let clusterStart = 0;
+      for (let i = 0; i < sorted.length; i++) {
+        // If gap to previous exceeds threshold, new cluster starts here.
+        if (i > 0 && sorted[i].cost - sorted[i - 1].cost > CLUSTER_THRESHOLD) {
+          clusterStart = i;
+        }
+        const clusterIdx = i - clusterStart;
+        // Staircase pattern: 0, -1, +1, -2, +2, …
+        // Each step = 12px of vertical offset (row is 72px tall, dot is 30px,
+        // so +/- 20px keeps dots on-row)
+        const step = Math.ceil(clusterIdx / 2) * (clusterIdx % 2 === 1 ? -1 : 1);
+        const yOffset = step * 12;  // px
+        sorted[i]._y = yOffset;
+      }
+
+      for (const p of sorted) {
         const xPct = Math.min(100, (p.cost / xMax) * 100);
         const hs = headshots[p.player_id] || '';
         const initials = p.name.split(' ').filter(Boolean).slice(0,2).map(w => w[0]).join('');
         const face = hs
           ? `<img src="${hs}" onerror="this.style.display='none';this.parentNode.classList.add('no-hs')">`
           : `<span class="pp-dot-fallback">${initials}</span>`;
-        html += `<div class="pp-dot" style="left:${xPct}%" data-slug="${p.player_id}" data-name="${p.name.replace(/"/g,'&quot;')}" data-team="${p.team}" data-seed="${seed}" data-conf="${conf}" data-ppg="${p.cost}" data-overridden="${p.cost_overridden ? '1' : ''}">${face}</div>`;
+        const yPx = p._y || 0;
+        // Use CSS variables so :hover transform can reuse them
+        html += `<div class="pp-dot" style="left:${xPct}%; top: calc(50% + ${yPx}px); transform: translate(-50%, -50%); --dot-x: -50%; --dot-y: -50%" data-slug="${p.player_id}" data-name="${p.name.replace(/"/g,'&quot;')}" data-team="${p.team}" data-seed="${seed}" data-conf="${conf}" data-ppg="${p.cost}" data-overridden="${p.cost_overridden ? '1' : ''}">${face}</div>`;
       }
       html += `</div></div>`;
       return html;
