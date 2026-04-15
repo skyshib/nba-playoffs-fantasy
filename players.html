@@ -896,7 +896,7 @@
           if (dist < bestDist) { bestDist = dist; best = d; }
         }
         if (best && best !== active) {
-          if (active) active.classList.remove('hovered');
+          if (active) active.classList.remove('hovered', 'state-valid', 'state-partial', 'state-invalid');
           best.classList.add('hovered');
           active = best;
           plot.classList.add('has-hover');
