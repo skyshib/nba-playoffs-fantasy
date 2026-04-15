@@ -569,7 +569,12 @@ footer { text-align: center; padding: 2rem 1rem; color: var(--text-muted); font-
   font-variant-numeric: tabular-nums;
   min-width: 2.6rem;
   padding-left: 0.2rem;
-  border-left: 1px solid rgba(255,255,255,0.06);
+}
+
+/* Divider between adjacent seed cells (so each player's visual + stats are
+   visually grouped). Skip the last seed cell to avoid a trailing border. */
+#scoreboard tbody td.seed-cell:not(:last-child) {
+  border-right: 1px solid rgba(255,255,255,0.08);
 }
 .seed-cost {
   font-size: 0.6rem;
