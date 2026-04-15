@@ -323,7 +323,6 @@
     }
     .pp-floor-label {
       position: absolute;
-      top: -0.1rem;
       transform: translateX(-50%);
       font-size: 0.55rem;
       color: var(--text-muted);
@@ -334,6 +333,8 @@
       z-index: 1;
       pointer-events: none;
     }
+    .pp-floor-label-top { top: -0.1rem; }
+    .pp-floor-label-bot { bottom: -0.1rem; }
     .pp-target-line {
       position: absolute;
       top: 0;
@@ -352,7 +353,6 @@
     }
     .pp-target-label {
       position: absolute;
-      bottom: -0.1rem;
       transform: translateX(-50%);
       font-size: 0.55rem;
       color: var(--accent-gold);
@@ -365,6 +365,8 @@
       font-weight: 700;
       display: none;
     }
+    .pp-target-label-top { top: -0.1rem; }
+    .pp-target-label-bot { bottom: -0.1rem; }
 
     .pp-tooltip {
       position: fixed;
@@ -482,25 +484,29 @@
       bucket[conf][p.seed].players.push(p);
     }
 
-    // lastRowFlag is true for the final row so we can anchor the target-avg
-    // label at the bottom of the chart instead of the top.
     function row(conf, seed, info, isFirstOfConf, isFirstRow, isLastRow) {
       const logoUrl = teamLogos[info.team] || '';
       const label = isFirstOfConf ? `<div class="pp-section-label">${conf}</div>` : '';
-      const floorLabel = isFirstRow
-        ? `<div class="pp-floor-label" style="left:${floorPct}%">min $${floor.toFixed(2)}</div>`
+      // Floor + target labels render on both first and last rows so the
+      // markers are visible from the top and bottom of the chart.
+      const floorLabelTop = isFirstRow
+        ? `<div class="pp-floor-label pp-floor-label-top" style="left:${floorPct}%">min $${floor.toFixed(2)}</div>`
+        : '';
+      const floorLabelBot = isLastRow
+        ? `<div class="pp-floor-label pp-floor-label-bot" style="left:${floorPct}%">min $${floor.toFixed(2)}</div>`
         : '';
       const floorLine = `<div class="pp-floor-line" style="left:${floorPct}%"></div>`;
-      // Target-average line: vertical stripe at the avg PPG remaining picks
-      // need to stay under budget. Rendered hidden; updated on roster change.
       const targetLine = `<div class="pp-target-line" data-target></div>`;
-      const targetLabel = isLastRow
-        ? `<div class="pp-target-label" data-target-label></div>`
+      const targetLabelTop = isFirstRow
+        ? `<div class="pp-target-label pp-target-label-top" data-target-label></div>`
+        : '';
+      const targetLabelBot = isLastRow
+        ? `<div class="pp-target-label pp-target-label-bot" data-target-label></div>`
         : '';
       let html = `<div class="pp-row" data-conf="${conf}" data-seed="${seed}" data-team="${info.team}">`;
       html += `<div class="pp-row-team">${logoUrl ? `<img class="pp-row-logo" src="${logoUrl}" onerror="this.style.display='none'">` : ''}<span>${info.team.replace(/\\bGolden State\\b/, 'GS').replace(/\\bOklahoma City\\b/, 'OKC').replace(/\\bLos Angeles\\b/, 'LA').replace(/\\bSan Antonio\\b/, 'SA').replace(/\\bNew Orleans\\b/, 'NO').replace(/\\bNew York\\b/, 'NY')}</span></div>`;
       html += `<div class="pp-row-seed">Sd ${seed}</div>`;
-      html += `<div class="pp-row-plot">${label}${floorLine}${floorLabel}${targetLine}${targetLabel}`;
+      html += `<div class="pp-row-plot">${label}${floorLine}${floorLabelTop}${floorLabelBot}${targetLine}${targetLabelTop}${targetLabelBot}`;
 
       // Sort by PPG ascending. Detect clusters (players within CLUSTER_GAP of
       // each other) and stagger their *displayed* X position symmetrically
