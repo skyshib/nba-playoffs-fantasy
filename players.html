@@ -469,8 +469,8 @@
       // around the cluster centroid so faces don't overlap. True PPG is
       // preserved for tooltip + hover-value.
       const sorted = info.players.slice().sort((a, b) => a.cost - b.cost);
-      const CLUSTER_GAP = xMax * 0.008;  // min PPG gap to treat dots as separated
-      const STAGGER = xMax * 0.0085;     // spread between staggered cluster members
+      const CLUSTER_GAP = xMax * 0.012;  // min PPG gap to treat dots as separated
+      const STAGGER = xMax * 0.013;      // spread between staggered cluster members
 
       let clusterStart = 0;
       function applyStagger(lo, hi) {
