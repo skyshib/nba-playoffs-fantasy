@@ -232,37 +232,50 @@
       min-width: 1100px;
     }
 
+    /* One seed group = the big seed number on the left + stacked team rows */
+    .pp-seed-group {
+      display: grid;
+      grid-template-columns: 54px 48px 1fr;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .pp-seed-label-big {
+      grid-column: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+      padding: 0 0.3rem;
+    }
+    .pp-seed-teams {
+      grid-column: 2 / 4;
+      display: contents; /* lets child rows span cols 2-3 of the group grid */
+    }
+    /* Rows inside a seed group: logo | plot (no seed col, no team name) */
     .pp-row {
       display: grid;
-      grid-template-columns: 110px 36px 1fr;
+      grid-column: 2 / 4;
+      grid-template-columns: 48px 1fr;
       align-items: center;
       height: 52px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+      border-top: 1px solid rgba(255, 255, 255, 0.03);
       position: relative;
     }
+    .pp-seed-group > .pp-row:first-of-type { border-top: none; }
     .pp-row.gap { height: 16px; border-bottom: none; background: rgba(255,255,255,0.015); }
     .pp-row-team {
       display: flex;
       align-items: center;
-      gap: 0.4rem;
-      padding-right: 0.5rem;
-      color: var(--text-secondary);
-      font-size: 0.75rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      justify-content: center;
+      padding: 0;
     }
     .pp-row-logo {
-      width: 28px;
-      height: 28px;
+      width: 34px;
+      height: 34px;
       object-fit: contain;
       flex-shrink: 0;
-    }
-    .pp-row-seed {
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.7rem;
-      font-weight: 700;
     }
     .pp-row-plot {
       position: relative;
@@ -285,7 +298,7 @@
 
     .pp-axis {
       display: grid;
-      grid-template-columns: 110px 36px 1fr;
+      grid-template-columns: 54px 48px 1fr;
       margin-top: 0.5rem;
       color: var(--text-muted);
       font-size: 0.65rem;
@@ -533,9 +546,8 @@
       bucket[conf][p.seed][p.team].push(p);
     }
 
-    function row(conf, seed, team, teamPlayers, isFirstOfConf, isFirstRow, isLastRow) {
+    function row(conf, seed, team, teamPlayers, isFirstRow, isLastRow) {
       const logoUrl = teamLogos[team] || '';
-      const label = isFirstOfConf ? `<div class="pp-section-label">${conf}</div>` : '';
       const floorLabelTop = isFirstRow
         ? `<div class="pp-floor-label pp-floor-label-top" style="left:${floorPct}%">min $${floor.toFixed(2)}</div>`
         : '';
@@ -551,9 +563,8 @@
         ? `<div class="pp-target-label pp-target-label-bot" data-target-label></div>`
         : '';
       let html = `<div class="pp-row" data-conf="${conf}" data-seed="${seed}" data-team="${team}">`;
-      html += `<div class="pp-row-team">${logoUrl ? `<img class="pp-row-logo" src="${logoUrl}" onerror="this.style.display='none'">` : ''}<span>${team.replace(/\\bGolden State\\b/, 'GS').replace(/\\bOklahoma City\\b/, 'OKC').replace(/\\bLos Angeles\\b/, 'LA').replace(/\\bSan Antonio\\b/, 'SA').replace(/\\bNew Orleans\\b/, 'NO').replace(/\\bNew York\\b/, 'NY')}</span></div>`;
-      html += `<div class="pp-row-seed">Sd ${seed}</div>`;
-      html += `<div class="pp-row-plot">${label}${floorLine}${floorLabelTop}${floorLabelBot}${targetLine}${targetLabelTop}${targetLabelBot}`;
+      html += `<div class="pp-row-team">${logoUrl ? `<img class="pp-row-logo" src="${logoUrl}" title="${team}" onerror="this.style.display='none'">` : ''}</div>`;
+      html += `<div class="pp-row-plot">${floorLine}${floorLabelTop}${floorLabelBot}${targetLine}${targetLabelTop}${targetLabelBot}`;
 
       const sorted = teamPlayers.slice().sort((a, b) => a.cost - b.cost);
       const CLUSTER_GAP = xMax * 0.012;  // min PPG gap to treat dots as separated
@@ -590,28 +601,34 @@
       return html;
     }
 
-    // First gather rows (one per team-seed combination) so we know which is
-    // last. Seeds are grouped E→W with a gap between seed numbers.
-    const rowList = [];
+    // Build list of (seed → list of team/players entries).
+    const bySeed = [];
     for (let s = 1; s <= 8; s++) {
+      const teams = [];
       for (const conf of ['East', 'West']) {
         const seedMap = bucket[conf][s];
         if (!seedMap) continue;
-        // Sort teams alphabetically within a conf-seed for stability
-        const teams = Object.keys(seedMap).sort();
-        for (const team of teams) {
-          rowList.push({ conf, s, team, players: seedMap[team] });
+        for (const team of Object.keys(seedMap).sort()) {
+          teams.push({ conf, team, players: seedMap[team] });
         }
       }
+      if (teams.length) bySeed.push({ s, teams });
     }
 
+    // Flatten to figure out first/last rows globally
+    const totalRows = bySeed.reduce((a, g) => a + g.teams.length, 0);
+    let globalIdx = 0;
+
     let html = '';
-    let renderedSeed = 0;
-    for (let i = 0; i < rowList.length; i++) {
-      const { conf, s, team, players: tp } = rowList[i];
-      if (renderedSeed && s !== renderedSeed) html += `<div class="pp-row gap"></div>`;
-      html += row(conf, s, team, tp, false, i === 0, i === rowList.length - 1);
-      renderedSeed = s;
+    for (let i = 0; i < bySeed.length; i++) {
+      const { s, teams } = bySeed[i];
+      html += `<div class="pp-seed-group"><div class="pp-seed-label-big">${s}</div>`;
+      for (const t of teams) {
+        html += row(t.conf, s, t.team, t.players, globalIdx === 0, globalIdx === totalRows - 1);
+        globalIdx++;
+      }
+      html += `</div>`;
+      if (i < bySeed.length - 1) html += `<div class="pp-row gap"></div>`;
     }
 
     // X-axis
