@@ -513,6 +513,12 @@ const Scoreboard = (() => {
       const ttCost = effectiveCost(info.pick.cost);
       html += `<div class="tt-cost">Cost: ${ttCost.toFixed(2)} PPG</div>`;
     }
+    // Series opponent + record from stats.team_series
+    const seriesInfo = statsData?.team_series?.[team];
+    if (seriesInfo) {
+      const record = `${seriesInfo.wins}-${seriesInfo.losses}`;
+      html += `<div class="tt-series">vs ${seriesInfo.opponent} · ${record}</div>`;
+    }
     // Live game indicator with clock
     if (info.live) {
       const liveData = liveOverrides[info.pick.player_id];
@@ -520,23 +526,53 @@ const Scoreboard = (() => {
       html += `<div class="tt-live-game">LIVE${clock ? ' \u2022 ' + clock : ''}</div>`;
     }
 
-    if (games.length) {
-      // One row per round; columns = G1..G7 + Round total (multiplier applied)
+    // Build merged game list: committed games + live overlay for in-progress game
+    const mergedByRound = {};
+    for (const g of games) (mergedByRound[g.round] ||= []).push({...g});
+    const liveData = liveOverrides[info.pick.player_id];
+    if (liveData && typeof liveData.pts === 'number') {
+      const ROUND_ORDER = ['R1', 'CSF', 'CF', 'Finals'];
+      const playedRounds = new Set(games.map(g => g.round));
+      const liveRound = ROUND_ORDER.filter(r => playedRounds.has(r)).pop() || 'R1';
+      const activeGameIds = statsData?.active_games || [];
+      const roundArr = (mergedByRound[liveRound] ||= []);
+      // Check if there's a committed game for the active game — replace it
+      let replaced = false;
+      for (let i = 0; i < roundArr.length; i++) {
+        if (roundArr[i].game_id && activeGameIds.includes(roundArr[i].game_id)) {
+          roundArr[i] = {...roundArr[i], pts: liveData.pts, live: true};
+          replaced = true;
+          break;
+        }
+      }
+      if (!replaced) {
+        roundArr.push({round: liveRound, pts: liveData.pts, game_num: roundArr.length + 1, live: true, opponent: liveData.opponent || ''});
+      }
+    }
+
+    const hasAnyGames = Object.values(mergedByRound).some(arr => arr.length > 0);
+    if (hasAnyGames) {
       html += `<table class="tt-games"><thead><tr><th>Round</th>`;
       for (let i = 1; i <= 7; i++) html += `<th>G${i}</th>`;
       html += `<th>Total</th></tr></thead><tbody>`;
-      const byRound = {};
-      for (const g of games) (byRound[g.round] ||= []).push(g);
       for (const rd of ROUNDS) {
-        const arr = (byRound[rd] || []).slice().sort((a, b) => (a.game_num || 0) - (b.game_num || 0));
+        const arr = (mergedByRound[rd] || []).slice().sort((a, b) => (a.game_num || 0) - (b.game_num || 0));
+        if (!arr.length) {
+          html += `<tr><td class="tt-round-label">${ROUND_LABELS[rd]}</td>`;
+          for (let i = 0; i < 7; i++) html += `<td class="empty">—</td>`;
+          const rt = info.perRound[rd];
+          html += `<td class="tt-round-total">${typeof rt === 'number' && rt > 0 ? fmtPts(rt) : '—'}</td></tr>`;
+          continue;
+        }
         const top4 = new Set(arr.slice().sort((a, b) => b.pts - a.pts).slice(0, 4));
         html += `<tr><td class="tt-round-label">${ROUND_LABELS[rd]}</td>`;
         for (let i = 0; i < 7; i++) {
           const g = arr[i];
           if (g) {
-            const cls = top4.has(g) ? 'top4' : 'other';
+            const cls = g.live ? 'live' : (top4.has(g) ? 'top4' : 'other');
             const opp = g.opponent ? ` vs ${g.opponent}` : '';
-            html += `<td class="${cls}" title="G${g.game_num || i + 1}${opp}">${fmtPts(g.pts)}</td>`;
+            const style = g.live ? ' style="color:var(--live-green)"' : '';
+            html += `<td class="${cls}" title="G${g.game_num || i + 1}${opp}"${style}>${fmtPts(g.pts)}</td>`;
           } else {
             html += `<td class="empty">—</td>`;
           }

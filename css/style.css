@@ -702,6 +702,7 @@ footer { text-align: center; padding: 2rem 1rem; color: var(--text-muted); font-
 .tt-games td.other { color: var(--text-secondary); }
 .tt-games td.empty { color: var(--text-muted); opacity: 0.35; }
 .tt-games td.tt-round-total { font-weight: 700; color: var(--accent-red); }
+.tt-series { font-size: 0.72rem; color: var(--text-secondary); font-weight: 600; margin-bottom: 0.3rem; }
 .tt-no-games { font-size: 0.75rem; color: var(--text-muted); font-style: italic; margin-bottom: 0.4rem; }
 .tt-rounds { font-size: 0.72rem; color: var(--text-secondary); padding: 0.3rem 0; border-top: 1px solid var(--border); }
 .tt-rounds .ppg { color: var(--text-muted); font-size: 0.65rem; }

@@ -104,6 +104,8 @@ def main():
     active_games = []
     live_games = []
     eliminated_team_ids = set()
+    # Track series info: team_name -> { opponent, round, wins, losses, summary }
+    team_series: dict[str, dict] = {}
 
     for ev in events:
         if is_play_in(ev):
@@ -116,6 +118,36 @@ def main():
         if state == "pre":
             continue
         eid = ev.get("id")
+
+        # Extract series record from competition data
+        series = comp.get("series")
+        if isinstance(series, dict):
+            summary = series.get("summary", "")
+            competitors = series.get("competitors", [])
+            comp_teams = comp.get("competitors", [])
+            # Map series competitor IDs to team names
+            for sc in competitors:
+                sc_id = sc.get("id")
+                wins = sc.get("wins", 0)
+                # Find matching team in competitors
+                for ct in comp_teams:
+                    if ct.get("id") == sc_id or ct.get("team", {}).get("id") == sc_id:
+                        team_name = ct.get("team", {}).get("displayName", "")
+                        # Find opponent
+                        opp = next((c.get("team", {}).get("displayName", "")
+                                   for c in comp_teams if c != ct), "")
+                        opp_wins = next((c2.get("wins", 0)
+                                        for c2 in competitors if c2.get("id") != sc_id), 0)
+                        if team_name:
+                            team_series[team_name] = {
+                                "opponent": opp,
+                                "round": rd,
+                                "wins": wins,
+                                "losses": opp_wins,
+                                "summary": summary,
+                            }
+                        break
+
         if state == "in":
             active_games.append(eid)
             live_games.append({
@@ -220,6 +252,7 @@ def main():
         "players": player_stats,
         "active_games": active_games,
         "live_games": live_games,
+        "team_series": team_series,
     }
     (data_dir / "stats.json").write_text(json.dumps(out, indent=2))
     print(f"Wrote stats.json — {len(player_stats)} players, {len(active_games)} active")
