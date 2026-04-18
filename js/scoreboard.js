@@ -102,9 +102,8 @@ const Scoreboard = (() => {
       perRound[rd] = (typeof v === 'number') ? v * mult : 0;
       subtotal += perRound[rd];
     }
-    // Points +/- per pick = avg PPG actually achieved per round - cost
-    // (matches Excel Pts+/- column)
-    const cost = pick.cost;
+    // Points +/- per pick = avg PPG actually achieved per round - effective cost
+    const cost = pick.cost != null ? effectiveCost(pick.cost) : null;
     const pointsDiff = (cost != null && roundsPlayed > 0)
       ? (rawTotal / roundsPlayed) - cost
       : null;
@@ -428,8 +427,9 @@ const Scoreboard = (() => {
 
       const costEl = document.createElement('span');
       costEl.className = 'seed-cost';
-      costEl.textContent = info.pick.cost != null
-        ? `$${info.pick.cost.toFixed(info.pick.cost % 1 === 0 ? 0 : 1)}`
+      const displayCost = info.pick.cost != null ? effectiveCost(info.pick.cost) : null;
+      costEl.textContent = displayCost != null
+        ? `$${displayCost.toFixed(displayCost % 1 === 0 ? 0 : 1)}`
         : '';
       right.appendChild(costEl);
 
@@ -468,7 +468,8 @@ const Scoreboard = (() => {
     let html = `<div class="tt-header">${info.pick.name}${multBadge}</div>`;
     html += `<div class="tt-team">${team || ''} · ${info.pick.seed} seed · Picked by ${count}/${totalEntrants}</div>`;
     if (info.pick.cost != null) {
-      html += `<div class="tt-cost">Cost: ${info.pick.cost.toFixed(1)} PPG</div>`;
+      const ttCost = effectiveCost(info.pick.cost);
+      html += `<div class="tt-cost">Cost: ${ttCost.toFixed(2)} PPG</div>`;
     }
     // Live game indicator with clock
     if (info.live) {
@@ -593,7 +594,7 @@ const Scoreboard = (() => {
       }
       const elim = info.eliminated ? ' style="opacity:.6;text-decoration:line-through"' : '';
       const liveRow = info.live ? ' class="detail-live-row"' : '';
-      const cost = info.pick.cost != null ? info.pick.cost.toFixed(1) : '—';
+      const cost = info.pick.cost != null ? effectiveCost(info.pick.cost).toFixed(1) : '—';
       const multStr = year >= multStartYear ? ` <span style="color:var(--text-muted);font-size:.7em">${info.multiplier.toFixed(1)}×</span>` : '';
       const hsUrl = headshotsData[info.pick.player_id];
       const hsImg = hsUrl ? `<img class="detail-headshot" src="${hsUrl}" alt="" onerror="this.style.display='none'">` : '';
