@@ -17,6 +17,7 @@ const Scoreboard = (() => {
   let year = null;
   let multStartYear = 2025;
   let liveOverrides = {};
+  let liveGamesInfo = [];
   let compactMode = false;
 
   function setData(picks, stats, headshots, teamLogos, _year, _multStart) {
@@ -29,6 +30,7 @@ const Scoreboard = (() => {
   }
 
   function setLiveOverrides(o) { liveOverrides = o || {}; }
+  function setLiveGames(games) { liveGamesInfo = games || []; }
 
   function multiplierFor(seed) {
     return year >= multStartYear ? (1 + seed / 10) : 1;
@@ -468,6 +470,12 @@ const Scoreboard = (() => {
     if (info.pick.cost != null) {
       html += `<div class="tt-cost">Cost: ${info.pick.cost.toFixed(1)} PPG</div>`;
     }
+    // Live game indicator with clock
+    if (info.live) {
+      const liveData = liveOverrides[info.pick.player_id];
+      const clock = liveData?.gameStatus || '';
+      html += `<div class="tt-live-game">LIVE${clock ? ' \u2022 ' + clock : ''}</div>`;
+    }
 
     if (games.length) {
       // One row per round; columns = G1..G7 + Round total (multiplier applied)
@@ -547,6 +555,31 @@ const Scoreboard = (() => {
     if (bestMatch) html += ` · Most similar: <strong>${bestMatch}</strong> (${bestOverlap}/8)`;
     html += '</div>';
 
+    // "Rooting for" section — shows which live games matter to this entrant
+    if (liveGamesInfo.length > 0) {
+      const myTeams = new Set();
+      for (let s = 1; s <= 8; s++) {
+        const info = r.breakdown[s];
+        if (info.pick && !info.eliminated) myTeams.add(info.pick.team?.toLowerCase());
+      }
+      const rooting = [];
+      for (const game of liveGamesInfo) {
+        if (!game.teams || game.teams.length < 2) continue;
+        const t0 = game.teams[0], t1 = game.teams[1];
+        const match0 = [...myTeams].some(pt => (t0.fullName || t0.name || '').toLowerCase().includes(pt));
+        const match1 = [...myTeams].some(pt => (t1.fullName || t1.name || '').toLowerCase().includes(pt));
+        const n0 = t0.abbrev || t0.name, n1 = t1.abbrev || t1.name;
+        if (match0 && !match1) rooting.push(`${n0} over ${n1}`);
+        else if (match1 && !match0) rooting.push(`${n1} over ${n0}`);
+        else if (match0 && match1) rooting.push(`${n0} vs ${n1} — conflicted!`);
+      }
+      if (rooting.length > 0) {
+        html += '<div class="detail-rooting"><div class="detail-rooting-title">\uD83C\uDFC0 Rooting for...</div>';
+        for (const line of rooting) html += `<div class="detail-rooting-line">${line}</div>`;
+        html += '</div>';
+      }
+    }
+
     html += '<table class="detail-table"><thead><tr>';
     html += '<th>Seed</th><th>Player</th><th>Cost</th>';
     for (const rd of ROUNDS) html += `<th>${ROUND_LABELS[rd]}</th>`;
@@ -559,11 +592,13 @@ const Scoreboard = (() => {
         continue;
       }
       const elim = info.eliminated ? ' style="opacity:.6;text-decoration:line-through"' : '';
+      const liveRow = info.live ? ' class="detail-live-row"' : '';
       const cost = info.pick.cost != null ? info.pick.cost.toFixed(1) : '—';
       const multStr = year >= multStartYear ? ` <span style="color:var(--text-muted);font-size:.7em">${info.multiplier.toFixed(1)}×</span>` : '';
       const hsUrl = headshotsData[info.pick.player_id];
       const hsImg = hsUrl ? `<img class="detail-headshot" src="${hsUrl}" alt="" onerror="this.style.display='none'">` : '';
-      html += `<tr${elim}><td>${seed}${multStr}</td><td><span class="detail-player-cell">${hsImg}${info.pick.name}</span></td><td>${cost}</td>`;
+      const liveBadge = info.live ? ' <span style="color:var(--live-green);font-size:.7em">● LIVE</span>' : '';
+      html += `<tr${elim}${liveRow}><td>${seed}${multStr}</td><td><span class="detail-player-cell">${hsImg}${info.pick.name}${liveBadge}</span></td><td>${cost}</td>`;
       for (const rd of ROUNDS) {
         const ppg = info.ppg?.[rd];
         const scored = info.perRound[rd];
@@ -631,5 +666,5 @@ const Scoreboard = (() => {
     render();
   }
 
-  return { setData, setLiveOverrides, markEliminated, render, rankAll, scoreEntrant, hideDetail, toggleCompact, ROUNDS };
+  return { setData, setLiveOverrides, setLiveGames, markEliminated, render, rankAll, scoreEntrant, hideDetail, toggleCompact, ROUNDS };
 })();

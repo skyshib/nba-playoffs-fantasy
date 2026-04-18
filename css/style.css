@@ -696,6 +696,62 @@ footer { text-align: center; padding: 2rem 1rem; color: var(--text-muted); font-
   background: var(--accent-blue); color: #fff; font-weight: 700;
 }
 
+/* Rooting-for section in detail panel */
+.detail-rooting {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+.detail-rooting-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+}
+.detail-rooting-line {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding: 0.15rem 0;
+}
+.detail-rooting-line::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: var(--live-green);
+  border-radius: 50%;
+  margin-right: 6px;
+  animation: pulse 2s infinite;
+  vertical-align: middle;
+}
+
+/* Live row pulse in detail table */
+.detail-live-row {
+  animation: liveRowPulse 2s infinite;
+}
+@keyframes liveRowPulse {
+  0%, 100% { background: transparent; }
+  50% { background: rgba(34, 197, 94, 0.08); }
+}
+
+/* Live indicator in tooltip */
+.tt-live-game {
+  font-size: 0.75rem;
+  color: var(--live-green);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+.tt-live-game::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--live-green);
+  border-radius: 50%;
+  margin-right: 5px;
+  animation: pulse 2s infinite;
+}
+
 @media (max-width: 900px) {
   h1 { font-size: 1.1rem; }
   #scoreboard { font-size: 0.75rem; }

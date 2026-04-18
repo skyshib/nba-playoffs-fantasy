@@ -497,6 +497,16 @@
 
       let translatedLive = {};
       const fetchIds = [...activeIds, ...recentlyCompleted];
+      // Pass live game info to Scoreboard for "Rooting for" feature
+      const liveForScoreboard = liveGames.map(g => ({
+        teams: g.teams.map(t => ({
+          name: t.abbrev || t.name,
+          fullName: (t.name || '').toLowerCase(),
+          seed: t.seed,
+        })),
+      }));
+      Scoreboard.setLiveGames(liveForScoreboard);
+
       if (fetchIds.length > 0) {
         const espnLive = await ESPN.getLivePlayerStats(fetchIds);
         if (Object.keys(espnLive).length > 0) {
