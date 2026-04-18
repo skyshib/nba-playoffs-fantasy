@@ -1,7 +1,478 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-18T16:20:55.845771+00:00",
-  "players": {},
-  "active_games": [],
-  "live_games": []
+  "last_updated": "2026-04-18T22:29:18.663189+00:00",
+  "players": {
+    "rj-barrett": {
+      "name": "RJ Barrett",
+      "team": "Toronto Raptors",
+      "seed": 5,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 24,
+          "game_id": "401869187",
+          "opponent": "Cleveland Cavaliers"
+        }
+      ]
+    },
+    "jakob-poeltl": {
+      "name": "Jakob Poeltl",
+      "team": "Toronto Raptors",
+      "seed": 5,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 4,
+          "game_id": "401869187",
+          "opponent": "Cleveland Cavaliers"
+        }
+      ]
+    },
+    "jakobe-walter": {
+      "name": "Ja'Kobe Walter",
+      "team": "Toronto Raptors",
+      "seed": 5,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 7,
+          "game_id": "401869187",
+          "opponent": "Cleveland Cavaliers"
+        }
+      ]
+    },
+    "garrett-temple": {
+      "name": "Garrett Temple",
+      "team": "Toronto Raptors",
+      "seed": 5,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869187",
+          "opponent": "Cleveland Cavaliers"
+        }
+      ]
+    },
+    "dean-wade": {
+      "name": "Dean Wade",
+      "team": "Cleveland Cavaliers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869187",
+          "opponent": "Toronto Raptors"
+        }
+      ]
+    },
+    "jarrett-allen": {
+      "name": "Jarrett Allen",
+      "team": "Cleveland Cavaliers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869187",
+          "opponent": "Toronto Raptors"
+        }
+      ]
+    },
+    "evan-mobley": {
+      "name": "Evan Mobley",
+      "team": "Cleveland Cavaliers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 17,
+          "game_id": "401869187",
+          "opponent": "Toronto Raptors"
+        }
+      ]
+    },
+    "james-harden": {
+      "name": "James Harden",
+      "team": "Cleveland Cavaliers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 22,
+          "game_id": "401869187",
+          "opponent": "Toronto Raptors"
+        }
+      ]
+    },
+    "donovan-mitchell": {
+      "name": "Donovan Mitchell",
+      "team": "Cleveland Cavaliers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 32,
+          "game_id": "401869187",
+          "opponent": "Toronto Raptors"
+        }
+      ]
+    },
+    "dennis-schroder": {
+      "name": "Dennis Schroder",
+      "team": "Cleveland Cavaliers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869187",
+          "opponent": "Toronto Raptors"
+        }
+      ]
+    },
+    "max-strus": {
+      "name": "Max Strus",
+      "team": "Cleveland Cavaliers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 24,
+          "game_id": "401869187",
+          "opponent": "Toronto Raptors"
+        }
+      ]
+    },
+    "sam-merrill": {
+      "name": "Sam Merrill",
+      "team": "Cleveland Cavaliers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 7,
+          "game_id": "401869187",
+          "opponent": "Toronto Raptors"
+        }
+      ]
+    },
+    "jaylon-tyson": {
+      "name": "Jaylon Tyson",
+      "team": "Cleveland Cavaliers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869187",
+          "opponent": "Toronto Raptors"
+        }
+      ]
+    },
+    "rudy-gobert": {
+      "name": "Rudy Gobert",
+      "team": "Minnesota Timberwolves",
+      "seed": 6,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 17,
+          "game_id": "401869188",
+          "opponent": "Denver Nuggets"
+        }
+      ]
+    },
+    "anthony-edwards": {
+      "name": "Anthony Edwards",
+      "team": "Minnesota Timberwolves",
+      "seed": 6,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 22,
+          "game_id": "401869188",
+          "opponent": "Denver Nuggets"
+        }
+      ]
+    },
+    "kyle-anderson": {
+      "name": "Kyle Anderson",
+      "team": "Minnesota Timberwolves",
+      "seed": 6,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869188",
+          "opponent": "Denver Nuggets"
+        }
+      ]
+    },
+    "bones-hyland": {
+      "name": "Bones Hyland",
+      "team": "Minnesota Timberwolves",
+      "seed": 6,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869188",
+          "opponent": "Denver Nuggets"
+        }
+      ]
+    },
+    "terrence-shannon-jr": {
+      "name": "Terrence Shannon Jr.",
+      "team": "Minnesota Timberwolves",
+      "seed": 6,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869188",
+          "opponent": "Denver Nuggets"
+        }
+      ]
+    },
+    "aaron-gordon": {
+      "name": "Aaron Gordon",
+      "team": "Denver Nuggets",
+      "seed": 3,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 17,
+          "game_id": "401869188",
+          "opponent": "Minnesota Timberwolves"
+        }
+      ]
+    },
+    "cameron-johnson": {
+      "name": "Cameron Johnson",
+      "team": "Denver Nuggets",
+      "seed": 3,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 12,
+          "game_id": "401869188",
+          "opponent": "Minnesota Timberwolves"
+        }
+      ]
+    },
+    "nikola-jokic": {
+      "name": "Nikola Jokic",
+      "team": "Denver Nuggets",
+      "seed": 3,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 25,
+          "game_id": "401869188",
+          "opponent": "Minnesota Timberwolves"
+        }
+      ]
+    },
+    "jamal-murray": {
+      "name": "Jamal Murray",
+      "team": "Denver Nuggets",
+      "seed": 3,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 30,
+          "game_id": "401869188",
+          "opponent": "Minnesota Timberwolves"
+        }
+      ]
+    },
+    "jonas-valanciunas": {
+      "name": "Jonas Valanciunas",
+      "team": "Denver Nuggets",
+      "seed": 3,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869188",
+          "opponent": "Minnesota Timberwolves"
+        }
+      ]
+    },
+    "tim-hardaway-jr": {
+      "name": "Tim Hardaway Jr.",
+      "team": "Denver Nuggets",
+      "seed": 3,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 7,
+          "game_id": "401869188",
+          "opponent": "Minnesota Timberwolves"
+        }
+      ]
+    },
+    "bruce-brown": {
+      "name": "Bruce Brown",
+      "team": "Denver Nuggets",
+      "seed": 3,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 8,
+          "game_id": "401869188",
+          "opponent": "Minnesota Timberwolves"
+        }
+      ]
+    },
+    "julian-strawther": {
+      "name": "Julian Strawther",
+      "team": "Denver Nuggets",
+      "seed": 3,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869188",
+          "opponent": "Minnesota Timberwolves"
+        }
+      ]
+    },
+    "onyeka-okongwu": {
+      "name": "Onyeka Okongwu",
+      "team": "Atlanta Hawks",
+      "seed": 6,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869189",
+          "opponent": "New York Knicks"
+        }
+      ]
+    },
+    "dyson-daniels": {
+      "name": "Dyson Daniels",
+      "team": "Atlanta Hawks",
+      "seed": 6,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 4,
+          "game_id": "401869189",
+          "opponent": "New York Knicks"
+        }
+      ]
+    },
+    "jonathan-kuminga": {
+      "name": "Jonathan Kuminga",
+      "team": "Atlanta Hawks",
+      "seed": 6,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869189",
+          "opponent": "New York Knicks"
+        }
+      ]
+    },
+    "mouhamed-gueye": {
+      "name": "Mouhamed Gueye",
+      "team": "Atlanta Hawks",
+      "seed": 6,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869189",
+          "opponent": "New York Knicks"
+        }
+      ]
+    },
+    "buddy-hield": {
+      "name": "Buddy Hield",
+      "team": "Atlanta Hawks",
+      "seed": 6,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869189",
+          "opponent": "New York Knicks"
+        }
+      ]
+    },
+    "josh-hart": {
+      "name": "Josh Hart",
+      "team": "New York Knicks",
+      "seed": 3,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869189",
+          "opponent": "Atlanta Hawks"
+        }
+      ]
+    }
+  },
+  "active_games": [
+    "401869189"
+  ],
+  "live_games": [
+    {
+      "id": "401869189",
+      "round": "R1",
+      "status": "5:55 - 1st",
+      "teams": [
+        {
+          "name": "New York Knicks",
+          "abbrev": "NY",
+          "score": "22",
+          "winner": null
+        },
+        {
+          "name": "Atlanta Hawks",
+          "abbrev": "ATL",
+          "score": "16",
+          "winner": null
+        }
+      ]
+    }
+  ]
 }

@@ -58,7 +58,7 @@ def classify_round(event) -> str | None:
 
 
 def fetch_postseason(season: int):
-    url = f"{ESPN_NBA}/scoreboard?seasontype=3&limit=200&dates={season-1}1015-{season}0701"
+    url = f"{ESPN_NBA}/scoreboard?seasontype=3&limit=200"
     r = requests.get(url, timeout=30)
     r.raise_for_status()
     return r.json().get("events", [])
@@ -135,12 +135,8 @@ def main():
                 # Heuristic: rely on series records. ESPN puts series info in `series` field.
                 pass  # handled below via series check
 
-        # Series elimination check: 4 wins ends the series
-        for s in comp.get("series", []) or []:
-            for t in s.get("competitors", []) or []:
-                wins = (t.get("record") or {}).get("summary") or t.get("wins")
-                # Skip — accurate elimination tracking requires aggregating across the series.
-                pass
+        # Series elimination check (skipped — handled below via win counts)
+        pass
 
         try:
             summary = fetch_summary(eid)
