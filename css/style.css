@@ -540,8 +540,9 @@ footer { text-align: center; padding: 2rem 1rem; color: var(--text-muted); font-
   border: 1px solid var(--border);
   border-left: 3px solid var(--live-green);
   border-radius: var(--radius);
-  padding: 0.6rem 0.8rem;
-  min-width: 220px; max-width: 280px;
+  padding: 0.6rem 1rem;
+  min-width: 320px; max-width: 420px;
+  flex: 1 1 320px;
 }
 .live-game-status {
   font-size: 0.65rem; color: var(--live-green);
