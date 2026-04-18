@@ -558,6 +558,37 @@ footer { text-align: center; padding: 2rem 1rem; color: var(--text-muted); font-
 .live-game-score { font-size: 1.1rem; font-weight: 900; }
 .live-game-team.winning .live-game-score { color: var(--live-green); }
 
+.live-game-players-row {
+  margin-top: 0.4rem;
+  padding-top: 0.4rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 0.3rem;
+}
+.live-game-side-picks {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.live-game-side-picks.left { text-align: left; }
+.live-game-side-picks.right { text-align: right; }
+.live-game-picks-divider {
+  width: 1px;
+  background: var(--border);
+  flex-shrink: 0;
+}
+.live-game-pick {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  line-height: 1.3;
+  cursor: default;
+}
+.live-game-pts {
+  color: var(--live-green);
+  font-weight: 700;
+}
+
 /* === Seed cell two-column layout (full mode) === */
 .seed-cell-row {
   display: flex;
