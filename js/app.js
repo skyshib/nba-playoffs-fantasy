@@ -449,33 +449,61 @@
         }
       }
 
-      // Mark ALL eliminated players from ALL completed games
-      const allEliminatedSlugs = [];
+      // NBA series elimination: a team is out only when their opponent wins
+      // 4 games in the same series (best-of-7). Track wins per (team, round)
+      // across all completed games.
+      const seriesWins = {};  // "teamName:round" → win count
       for (const ev of data.events || []) {
         if (ESPN.isPlayIn(ev)) continue;
         const comp2 = ev.competitions?.[0];
-        if (comp2?.status?.type?.state === 'post') {
-          for (const team of comp2.competitors || []) {
-            if (team.winner === false) {
-              const losingTeam = team.team?.displayName || '';
-              for (const ent of currentPicks.entrants || []) {
-                for (const [seed, pick] of Object.entries(ent.picks || {})) {
-                  if (teamsMatch(pick.team, losingTeam)) {
-                    allEliminatedSlugs.push(pick.player_id);
-                  }
-                }
-              }
-            }
+        if (comp2?.status?.type?.state !== 'post') continue;
+        const rd = ESPN.classifyRound(ev);
+        if (!rd) continue;
+        for (const team of comp2.competitors || []) {
+          if (team.winner === true) {
+            const key = (team.team?.displayName || '') + ':' + rd;
+            seriesWins[key] = (seriesWins[key] || 0) + 1;
           }
         }
       }
-      if (allEliminatedSlugs.length > 0) {
-        Scoreboard.markEliminated([...new Set(allEliminatedSlugs)]);
+
+      // A team is eliminated if their opponent in the same round has 4 wins
+      const eliminatedTeams = new Set();
+      for (const ev of data.events || []) {
+        if (ESPN.isPlayIn(ev)) continue;
+        const comp2 = ev.competitions?.[0];
+        if (comp2?.status?.type?.state !== 'post') continue;
+        const rd = ESPN.classifyRound(ev);
+        if (!rd) continue;
+        for (const team of comp2.competitors || []) {
+          const oppTeam = comp2.competitors.find(t => t !== team);
+          const oppKey = (oppTeam?.team?.displayName || '') + ':' + rd;
+          if ((seriesWins[oppKey] || 0) >= 4) {
+            eliminatedTeams.add(team.team?.displayName || '');
+          }
+        }
       }
 
-      // Show banner only for NEW eliminations
-      if (newEliminations.length > 0) {
-        try { showEliminationBanner(newEliminations); } catch (e) {}
+      if (eliminatedTeams.size > 0) {
+        const allEliminatedSlugs = [];
+        for (const ent of currentPicks.entrants || []) {
+          for (const [seed, pick] of Object.entries(ent.picks || {})) {
+            if (eliminatedTeams.has(pick.team)) {
+              allEliminatedSlugs.push(pick.player_id);
+            }
+          }
+        }
+        if (allEliminatedSlugs.length > 0) {
+          Scoreboard.markEliminated([...new Set(allEliminatedSlugs)]);
+        }
+      }
+
+      // Show banner only for NEW eliminations (series losses, not single games)
+      // newEliminations is already populated from single-game detection above;
+      // filter to only include teams that are actually series-eliminated.
+      const seriesEliminations = newEliminations.filter(e => eliminatedTeams.has(e.team));
+      if (seriesEliminations.length > 0) {
+        try { showEliminationBanner(seriesEliminations); } catch (e) {}
       }
 
       // Fetch recently completed games not yet in stats.json
