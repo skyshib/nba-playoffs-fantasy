@@ -618,5 +618,18 @@ const Scoreboard = (() => {
     return compactMode;
   }
 
-  return { setData, setLiveOverrides, render, rankAll, scoreEntrant, hideDetail, toggleCompact, ROUNDS };
+  function markEliminated(slugs) {
+    if (!statsData) return;
+    if (!statsData.players) statsData.players = {};
+    for (const slug of slugs) {
+      if (statsData.players[slug]) {
+        statsData.players[slug].eliminated = true;
+      } else {
+        statsData.players[slug] = { name: '', team: '', seed: 0, eliminated: true, games: [] };
+      }
+    }
+    render();
+  }
+
+  return { setData, setLiveOverrides, markEliminated, render, rankAll, scoreEntrant, hideDetail, toggleCompact, ROUNDS };
 })();

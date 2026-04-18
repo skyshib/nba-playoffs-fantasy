@@ -27,9 +27,9 @@ const ESPN = (() => {
     const notes = event.competitions?.[0]?.notes || [];
     for (const n of notes) {
       const h = (n.headline || '').toLowerCase();
-      if (h.includes('first round')) return 'R1';
-      if (h.includes('conference semi') || h.includes('semifinal')) return 'CSF';
-      if (h.includes('conference final')) return 'CF';
+      if (h.includes('1st round') || h.includes('first round')) return 'R1';
+      if (h.includes('conference semi') || h.includes('semifinal') || h.includes('2nd round')) return 'CSF';
+      if (h.includes('east finals') || h.includes('west finals') || h.includes('conference final')) return 'CF';
       if (h.includes('nba final') || h.includes('finals')) return 'Finals';
     }
     return null;

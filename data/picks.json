@@ -1,4 +1,1589 @@
 {
   "year": 2026,
-  "entrants": []
+  "entrants": [
+    {
+      "name": "Air India",
+      "email": "vikramnayudu@gmail.com",
+      "submitted_at": "2026-04-18T15:38:31.712Z",
+      "tiebreaker": 40,
+      "picks": {
+        "1": {
+          "player_id": "jalen-williams",
+          "name": "Jalen Williams",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 17.06,
+          "effective_cost": 17.06
+        },
+        "2": {
+          "player_id": "victor-wembanyama",
+          "name": "Victor Wembanyama",
+          "team": "San Antonio Spurs",
+          "seed": 2,
+          "cost": 25,
+          "effective_cost": 25
+        },
+        "3": {
+          "player_id": "josh-hart",
+          "name": "Josh Hart",
+          "team": "New York Knicks",
+          "seed": 3,
+          "cost": 12,
+          "effective_cost": 12
+        },
+        "4": {
+          "player_id": "dennis-schroder",
+          "name": "Dennis Schroder",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 10.8,
+          "effective_cost": 10.8
+        },
+        "5": {
+          "player_id": "amen-thompson",
+          "name": "Amen Thompson",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 18.27,
+          "effective_cost": 18.27
+        },
+        "6": {
+          "player_id": "jonathan-kuminga",
+          "name": "Jonathan Kuminga",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 12.17,
+          "effective_cost": 12.17
+        },
+        "7": {
+          "player_id": "vit-krejci",
+          "name": "Vit Krejci",
+          "team": "Portland Trail Blazers",
+          "seed": 7,
+          "cost": 8.46,
+          "effective_cost": 8.46
+        },
+        "8": {
+          "player_id": "jordan-goodwin",
+          "name": "Jordan Goodwin",
+          "team": "Phoenix Suns",
+          "seed": 8,
+          "cost": 8.7,
+          "effective_cost": 8.7
+        }
+      }
+    },
+    {
+      "name": "Alex Fernando",
+      "email": "alexfernando6@yahoo.com",
+      "submitted_at": "2026-04-18T16:57:49.587Z",
+      "tiebreaker": 48,
+      "picks": {
+        "1": {
+          "player_id": "chet-holmgren",
+          "name": "Chet Holmgren",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 17.12,
+          "effective_cost": 17.12
+        },
+        "2": {
+          "player_id": "jayson-tatum",
+          "name": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "3": {
+          "player_id": "tim-hardaway-jr",
+          "name": "Tim Hardaway Jr.",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 13.49,
+          "effective_cost": 13.49
+        },
+        "4": {
+          "player_id": "jarrett-allen",
+          "name": "Jarrett Allen",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 15.36,
+          "effective_cost": 15.36
+        },
+        "5": {
+          "player_id": "reed-sheppard",
+          "name": "Reed Sheppard",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 13.54,
+          "effective_cost": 13.54
+        },
+        "6": {
+          "player_id": "buddy-hield",
+          "name": "Buddy Hield",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 7.65,
+          "effective_cost": 7.65
+        },
+        "7": {
+          "player_id": "donovan-clingan",
+          "name": "Donovan Clingan",
+          "team": "Portland Trail Blazers",
+          "seed": 7,
+          "cost": 12.13,
+          "effective_cost": 12.13
+        },
+        "8": {
+          "player_id": "wendell-carter-jr",
+          "name": "Wendell Carter Jr.",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 11.82,
+          "effective_cost": 11.82
+        }
+      }
+    },
+    {
+      "name": "Austin Yamada",
+      "email": "austintheyam@gmail.com",
+      "submitted_at": "2026-04-18T17:39:14.639Z",
+      "tiebreaker": 42,
+      "picks": {
+        "1": {
+          "player_id": "jalen-williams",
+          "name": "Jalen Williams",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 17.06,
+          "effective_cost": 17.06
+        },
+        "2": {
+          "player_id": "jayson-tatum",
+          "name": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "3": {
+          "player_id": "aaron-gordon",
+          "name": "Aaron Gordon",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 16.17,
+          "effective_cost": 16.17
+        },
+        "4": {
+          "player_id": "lebron-james",
+          "name": "LeBron James",
+          "team": "Los Angeles Lakers",
+          "seed": 4,
+          "cost": 20.93,
+          "effective_cost": 20.93
+        },
+        "5": {
+          "player_id": "tari-eason",
+          "name": "Tari Eason",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 10.45,
+          "effective_cost": 10.45
+        },
+        "6": {
+          "player_id": "dyson-daniels",
+          "name": "Dyson Daniels",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 11.86,
+          "effective_cost": 11.86
+        },
+        "7": {
+          "player_id": "adem-bona",
+          "name": "Adem Bona",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 4.85,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "goga-bitadze",
+          "name": "Goga Bitadze",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 5.86,
+          "effective_cost": 7.225625
+        }
+      }
+    },
+    {
+      "name": "Blitz",
+      "email": null,
+      "submitted_at": "2026-04-14T22:39:25.083Z",
+      "tiebreaker": 43,
+      "picks": {
+        "1": {
+          "player_id": "ajay-mitchell",
+          "name": "Ajay Mitchell",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 13.58,
+          "effective_cost": 13.58
+        },
+        "2": {
+          "player_id": "stephon-castle",
+          "name": "Stephon Castle",
+          "team": "San Antonio Spurs",
+          "seed": 2,
+          "cost": 16.66,
+          "effective_cost": 16.66
+        },
+        "3": {
+          "player_id": "aaron-gordon",
+          "name": "Aaron Gordon",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 16.17,
+          "effective_cost": 16.17
+        },
+        "4": {
+          "player_id": "jaylon-tyson",
+          "name": "Jaylon Tyson",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 13.21,
+          "effective_cost": 13.21
+        },
+        "5": {
+          "player_id": "reed-sheppard",
+          "name": "Reed Sheppard",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 13.54,
+          "effective_cost": 13.54
+        },
+        "6": {
+          "player_id": "dyson-daniels",
+          "name": "Dyson Daniels",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 11.86,
+          "effective_cost": 11.86
+        },
+        "7": {
+          "player_id": "jordan-goodwin",
+          "name": "Jordan Goodwin",
+          "team": "Phoenix Suns",
+          "seed": 7,
+          "cost": 8.7,
+          "effective_cost": 8.7
+        },
+        "8": {
+          "player_id": "jrue-holiday",
+          "name": "Jrue Holiday",
+          "team": "Portland Trail Blazers",
+          "seed": 8,
+          "cost": 16.32,
+          "effective_cost": 16.32
+        }
+      }
+    },
+    {
+      "name": "Bryan Bui",
+      "email": "bryanhb287@yahoo.com",
+      "submitted_at": "2026-04-18T03:19:51.686Z",
+      "tiebreaker": 55,
+      "picks": {
+        "1": {
+          "player_id": "shai-gilgeous-alexander",
+          "name": "Shai Gilgeous-Alexander",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 31.13,
+          "effective_cost": 31.13
+        },
+        "2": {
+          "player_id": "payton-pritchard",
+          "name": "Payton Pritchard",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 17.03,
+          "effective_cost": 17.03
+        },
+        "3": {
+          "player_id": "jonas-valanciunas",
+          "name": "Jonas Valanciunas",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 8.72,
+          "effective_cost": 8.72
+        },
+        "4": {
+          "player_id": "donovan-mitchell",
+          "name": "Donovan Mitchell",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 27.89,
+          "effective_cost": 27.89
+        },
+        "5": {
+          "player_id": "aaron-holiday",
+          "name": "Aaron Holiday",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 5.47,
+          "effective_cost": 7.225625
+        },
+        "6": {
+          "player_id": "mouhamed-gueye",
+          "name": "Mouhamed Gueye",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 4.44,
+          "effective_cost": 7.225625
+        },
+        "7": {
+          "player_id": "trendon-watford",
+          "name": "Trendon Watford",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 6.53,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "jett-howard",
+          "name": "Jett Howard",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 5.47,
+          "effective_cost": 7.225625
+        }
+      }
+    },
+    {
+      "name": "Carson Stickler",
+      "email": "kloppsticks@gmail.com",
+      "submitted_at": "2026-04-18T16:58:54.340Z",
+      "tiebreaker": 39,
+      "picks": {
+        "1": {
+          "player_id": "cade-cunningham",
+          "name": "Cade Cunningham",
+          "team": "Detroit Pistons",
+          "seed": 1,
+          "cost": 23.92,
+          "effective_cost": 23.92
+        },
+        "2": {
+          "player_id": "deaaron-fox",
+          "name": "De'Aaron Fox",
+          "team": "San Antonio Spurs",
+          "seed": 2,
+          "cost": 18.56,
+          "effective_cost": 18.56
+        },
+        "3": {
+          "player_id": "cameron-johnson",
+          "name": "Cameron Johnson",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 12.22,
+          "effective_cost": 12.22
+        },
+        "4": {
+          "player_id": "jarrett-allen",
+          "name": "Jarrett Allen",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 15.36,
+          "effective_cost": 15.36
+        },
+        "5": {
+          "player_id": "reed-sheppard",
+          "name": "Reed Sheppard",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 13.54,
+          "effective_cost": 13.54
+        },
+        "6": {
+          "player_id": "bones-hyland",
+          "name": "Bones Hyland",
+          "team": "Minnesota Timberwolves",
+          "seed": 6,
+          "cost": 8.51,
+          "effective_cost": 8.51
+        },
+        "7": {
+          "player_id": "kelly-oubre-jr",
+          "name": "Kelly Oubre Jr.",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 14.1,
+          "effective_cost": 14.1
+        },
+        "8": {
+          "player_id": "jordan-goodwin",
+          "name": "Jordan Goodwin",
+          "team": "Phoenix Suns",
+          "seed": 8,
+          "cost": 8.7,
+          "effective_cost": 8.7
+        }
+      }
+    },
+    {
+      "name": "Carter Kounovsky",
+      "email": "carterkounovsky@gmail.com",
+      "submitted_at": "2026-04-18T15:38:55.001Z",
+      "tiebreaker": 36,
+      "picks": {
+        "1": {
+          "player_id": "shai-gilgeous-alexander",
+          "name": "Shai Gilgeous-Alexander",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 31.13,
+          "effective_cost": 31.13
+        },
+        "2": {
+          "player_id": "jayson-tatum",
+          "name": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "3": {
+          "player_id": "cameron-johnson",
+          "name": "Cameron Johnson",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 12.22,
+          "effective_cost": 12.22
+        },
+        "4": {
+          "player_id": "evan-mobley",
+          "name": "Evan Mobley",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 18.15,
+          "effective_cost": 18.15
+        },
+        "5": {
+          "player_id": "jakobe-walter",
+          "name": "Ja'Kobe Walter",
+          "team": "Toronto Raptors",
+          "seed": 5,
+          "cost": 7.51,
+          "effective_cost": 7.51
+        },
+        "6": {
+          "player_id": "buddy-hield",
+          "name": "Buddy Hield",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 7.65,
+          "effective_cost": 7.65
+        },
+        "7": {
+          "player_id": "andre-drummond",
+          "name": "Andre Drummond",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 6.4,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "oso-ighodaro",
+          "name": "Oso Ighodaro",
+          "team": "Phoenix Suns",
+          "seed": 8,
+          "cost": 6.48,
+          "effective_cost": 7.225625
+        }
+      }
+    },
+    {
+      "name": "Chris Rossi",
+      "email": "chrismrossi93@gmail.com",
+      "submitted_at": "2026-04-18T15:21:58.199Z",
+      "tiebreaker": 41,
+      "picks": {
+        "1": {
+          "player_id": "cade-cunningham",
+          "name": "Cade Cunningham",
+          "team": "Detroit Pistons",
+          "seed": 1,
+          "cost": 23.92,
+          "effective_cost": 23.92
+        },
+        "2": {
+          "player_id": "victor-wembanyama",
+          "name": "Victor Wembanyama",
+          "team": "San Antonio Spurs",
+          "seed": 2,
+          "cost": 25,
+          "effective_cost": 25
+        },
+        "3": {
+          "player_id": "cameron-johnson",
+          "name": "Cameron Johnson",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 12.22,
+          "effective_cost": 12.22
+        },
+        "4": {
+          "player_id": "jarrett-allen",
+          "name": "Jarrett Allen",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 15.36,
+          "effective_cost": 15.36
+        },
+        "5": {
+          "player_id": "jabari-smith-jr",
+          "name": "Jabari Smith Jr.",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 15.78,
+          "effective_cost": 15.78
+        },
+        "6": {
+          "player_id": "bones-hyland",
+          "name": "Bones Hyland",
+          "team": "Minnesota Timberwolves",
+          "seed": 6,
+          "cost": 8.51,
+          "effective_cost": 8.51
+        },
+        "7": {
+          "player_id": "andre-drummond",
+          "name": "Andre Drummond",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 6.4,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "goga-bitadze",
+          "name": "Goga Bitadze",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 5.86,
+          "effective_cost": 7.225625
+        }
+      }
+    },
+    {
+      "name": "Christopher Holmquist",
+      "email": "cholmquist93@hotmail.com",
+      "submitted_at": "2026-04-18T04:41:03.645Z",
+      "tiebreaker": 54,
+      "picks": {
+        "1": {
+          "player_id": "cade-cunningham",
+          "name": "Cade Cunningham",
+          "team": "Detroit Pistons",
+          "seed": 1,
+          "cost": 23.92,
+          "effective_cost": 23.92
+        },
+        "2": {
+          "player_id": "derrick-white",
+          "name": "Derrick White",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 16.45,
+          "effective_cost": 16.45
+        },
+        "3": {
+          "player_id": "jamal-murray",
+          "name": "Jamal Murray",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 25.4,
+          "effective_cost": 25.4
+        },
+        "4": {
+          "player_id": "deandre-ayton",
+          "name": "Deandre Ayton",
+          "team": "Los Angeles Lakers",
+          "seed": 4,
+          "cost": 12.46,
+          "effective_cost": 12.46
+        },
+        "5": {
+          "player_id": "jakob-poeltl",
+          "name": "Jakob Poeltl",
+          "team": "Toronto Raptors",
+          "seed": 5,
+          "cost": 10.72,
+          "effective_cost": 10.72
+        },
+        "6": {
+          "player_id": "jonathan-kuminga",
+          "name": "Jonathan Kuminga",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 12.17,
+          "effective_cost": 12.17
+        },
+        "7": {
+          "player_id": "robert-williams-iii",
+          "name": "Robert Williams III",
+          "team": "Portland Trail Blazers",
+          "seed": 7,
+          "cost": 6.73,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "oso-ighodaro",
+          "name": "Oso Ighodaro",
+          "team": "Phoenix Suns",
+          "seed": 8,
+          "cost": 6.48,
+          "effective_cost": 7.225625
+        }
+      }
+    },
+    {
+      "name": "Clark Marshall",
+      "email": "clarkbm15@gmail.com",
+      "submitted_at": "2026-04-18T16:16:03.491Z",
+      "tiebreaker": 44,
+      "picks": {
+        "1": {
+          "player_id": "jalen-williams",
+          "name": "Jalen Williams",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 17.06,
+          "effective_cost": 17.06
+        },
+        "2": {
+          "player_id": "jayson-tatum",
+          "name": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "3": {
+          "player_id": "jamal-murray",
+          "name": "Jamal Murray",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 25.4,
+          "effective_cost": 25.4
+        },
+        "4": {
+          "player_id": "max-strus",
+          "name": "Max Strus",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 11.17,
+          "effective_cost": 11.17
+        },
+        "5": {
+          "player_id": "reed-sheppard",
+          "name": "Reed Sheppard",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 13.54,
+          "effective_cost": 13.54
+        },
+        "6": {
+          "player_id": "bones-hyland",
+          "name": "Bones Hyland",
+          "team": "Minnesota Timberwolves",
+          "seed": 6,
+          "cost": 8.51,
+          "effective_cost": 8.51
+        },
+        "7": {
+          "player_id": "andre-drummond",
+          "name": "Andre Drummond",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 6.4,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "moritz-wagner",
+          "name": "Moritz Wagner",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 6.86,
+          "effective_cost": 7.225625
+        }
+      }
+    },
+    {
+      "name": "Cody Thompson",
+      "email": "codyethompson22@gmail.com",
+      "submitted_at": "2026-04-18T16:13:03.378Z",
+      "tiebreaker": 41,
+      "picks": {
+        "1": {
+          "player_id": "chet-holmgren",
+          "name": "Chet Holmgren",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 17.12,
+          "effective_cost": 17.12
+        },
+        "2": {
+          "player_id": "payton-pritchard",
+          "name": "Payton Pritchard",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 17.03,
+          "effective_cost": 17.03
+        },
+        "3": {
+          "player_id": "tim-hardaway-jr",
+          "name": "Tim Hardaway Jr.",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 13.49,
+          "effective_cost": 13.49
+        },
+        "4": {
+          "player_id": "evan-mobley",
+          "name": "Evan Mobley",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 18.15,
+          "effective_cost": 18.15
+        },
+        "5": {
+          "player_id": "reed-sheppard",
+          "name": "Reed Sheppard",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 13.54,
+          "effective_cost": 13.54
+        },
+        "6": {
+          "player_id": "jonathan-kuminga",
+          "name": "Jonathan Kuminga",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 12.17,
+          "effective_cost": 12.17
+        },
+        "7": {
+          "player_id": "donovan-clingan",
+          "name": "Donovan Clingan",
+          "team": "Portland Trail Blazers",
+          "seed": 7,
+          "cost": 12.13,
+          "effective_cost": 12.13
+        },
+        "8": {
+          "player_id": "wendell-carter-jr",
+          "name": "Wendell Carter Jr.",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 11.82,
+          "effective_cost": 11.82
+        }
+      }
+    },
+    {
+      "name": "Cory Vest",
+      "email": "vest.cory@gmail.com",
+      "submitted_at": "2026-04-18T06:27:49.906Z",
+      "tiebreaker": 45,
+      "picks": {
+        "1": {
+          "player_id": "shai-gilgeous-alexander",
+          "name": "Shai Gilgeous-Alexander",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 31.13,
+          "effective_cost": 31.13
+        },
+        "2": {
+          "player_id": "jayson-tatum",
+          "name": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "3": {
+          "player_id": "aaron-gordon",
+          "name": "Aaron Gordon",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 16.17,
+          "effective_cost": 16.17
+        },
+        "4": {
+          "player_id": "sam-merrill",
+          "name": "Sam Merrill",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 12.75,
+          "effective_cost": 12.75
+        },
+        "5": {
+          "player_id": "jakobe-walter",
+          "name": "Ja'Kobe Walter",
+          "team": "Toronto Raptors",
+          "seed": 5,
+          "cost": 7.51,
+          "effective_cost": 7.51
+        },
+        "6": {
+          "player_id": "bones-hyland",
+          "name": "Bones Hyland",
+          "team": "Minnesota Timberwolves",
+          "seed": 6,
+          "cost": 8.51,
+          "effective_cost": 8.51
+        },
+        "7": {
+          "player_id": "vit-krejci",
+          "name": "Vit Krejci",
+          "team": "Portland Trail Blazers",
+          "seed": 7,
+          "cost": 8.46,
+          "effective_cost": 8.46
+        },
+        "8": {
+          "player_id": "goga-bitadze",
+          "name": "Goga Bitadze",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 5.86,
+          "effective_cost": 7.225625
+        }
+      }
+    },
+    {
+      "name": "Gabri Erspamer",
+      "email": "erspamer.gabri@gmail.com",
+      "submitted_at": "2026-04-18T06:08:17.487Z",
+      "tiebreaker": 35,
+      "picks": {
+        "1": {
+          "player_id": "chet-holmgren",
+          "name": "Chet Holmgren",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 17.12,
+          "effective_cost": 17.12
+        },
+        "2": {
+          "player_id": "neemias-queta",
+          "name": "Neemias Queta",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 10.21,
+          "effective_cost": 10.21
+        },
+        "3": {
+          "player_id": "jamal-murray",
+          "name": "Jamal Murray",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 25.4,
+          "effective_cost": 25.4
+        },
+        "4": {
+          "player_id": "jarrett-allen",
+          "name": "Jarrett Allen",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 15.36,
+          "effective_cost": 15.36
+        },
+        "5": {
+          "player_id": "reed-sheppard",
+          "name": "Reed Sheppard",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 13.54,
+          "effective_cost": 13.54
+        },
+        "6": {
+          "player_id": "dyson-daniels",
+          "name": "Dyson Daniels",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 11.86,
+          "effective_cost": 11.86
+        },
+        "7": {
+          "player_id": "andre-drummond",
+          "name": "Andre Drummond",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 6.4,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "jalen-suggs",
+          "name": "Jalen Suggs",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 13.79,
+          "effective_cost": 13.79
+        }
+      }
+    },
+    {
+      "name": "Ian",
+      "email": "igolembe@gmail.com",
+      "submitted_at": "2026-04-18T16:48:05.501Z",
+      "tiebreaker": 37,
+      "picks": {
+        "1": {
+          "player_id": "ajay-mitchell",
+          "name": "Ajay Mitchell",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 13.58,
+          "effective_cost": 13.58
+        },
+        "2": {
+          "player_id": "jayson-tatum",
+          "name": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "3": {
+          "player_id": "aaron-gordon",
+          "name": "Aaron Gordon",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 16.17,
+          "effective_cost": 16.17
+        },
+        "4": {
+          "player_id": "james-harden",
+          "name": "James Harden",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "5": {
+          "player_id": "tari-eason",
+          "name": "Tari Eason",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 10.45,
+          "effective_cost": 10.45
+        },
+        "6": {
+          "player_id": "jonathan-kuminga",
+          "name": "Jonathan Kuminga",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 12.17,
+          "effective_cost": 12.17
+        },
+        "7": {
+          "player_id": "andre-drummond",
+          "name": "Andre Drummond",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 6.4,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "jordan-goodwin",
+          "name": "Jordan Goodwin",
+          "team": "Phoenix Suns",
+          "seed": 8,
+          "cost": 8.7,
+          "effective_cost": 8.7
+        }
+      }
+    },
+    {
+      "name": "McKenna Hayes",
+      "email": "kennahaze@live.com",
+      "submitted_at": "2026-04-18T08:34:18.050Z",
+      "tiebreaker": 52,
+      "picks": {
+        "1": {
+          "player_id": "shai-gilgeous-alexander",
+          "name": "Shai Gilgeous-Alexander",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 31.13,
+          "effective_cost": 31.13
+        },
+        "2": {
+          "player_id": "luke-kornet",
+          "name": "Luke Kornet",
+          "team": "San Antonio Spurs",
+          "seed": 2,
+          "cost": 6.53,
+          "effective_cost": 7.225625
+        },
+        "3": {
+          "player_id": "julian-strawther",
+          "name": "Julian Strawther",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 7.25,
+          "effective_cost": 7.25
+        },
+        "4": {
+          "player_id": "dean-wade",
+          "name": "Dean Wade",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 5.8,
+          "effective_cost": 7.225625
+        },
+        "5": {
+          "player_id": "rj-barrett",
+          "name": "RJ Barrett",
+          "team": "Toronto Raptors",
+          "seed": 5,
+          "cost": 19.26,
+          "effective_cost": 19.26
+        },
+        "6": {
+          "player_id": "anthony-edwards",
+          "name": "Anthony Edwards",
+          "team": "Minnesota Timberwolves",
+          "seed": 6,
+          "cost": 28.8,
+          "effective_cost": 28.8
+        },
+        "7": {
+          "player_id": "marjon-beauchamp",
+          "name": "MarJon Beauchamp",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 6.79,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "moritz-wagner",
+          "name": "Moritz Wagner",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 6.86,
+          "effective_cost": 7.225625
+        }
+      }
+    },
+    {
+      "name": "Michael Moe",
+      "email": "thisismichaelmoe@gmail.com",
+      "submitted_at": "2026-04-18T03:47:15.232Z",
+      "tiebreaker": 43,
+      "picks": {
+        "1": {
+          "player_id": "shai-gilgeous-alexander",
+          "name": "Shai Gilgeous-Alexander",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 31.13,
+          "effective_cost": 31.13
+        },
+        "2": {
+          "player_id": "jayson-tatum",
+          "name": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "3": {
+          "player_id": "cameron-johnson",
+          "name": "Cameron Johnson",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 12.22,
+          "effective_cost": 12.22
+        },
+        "4": {
+          "player_id": "evan-mobley",
+          "name": "Evan Mobley",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 18.15,
+          "effective_cost": 18.15
+        },
+        "5": {
+          "player_id": "steven-adams",
+          "name": "Steven Adams",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 5.84,
+          "effective_cost": 7.225625
+        },
+        "6": {
+          "player_id": "kyle-anderson",
+          "name": "Kyle Anderson",
+          "team": "Minnesota Timberwolves",
+          "seed": 6,
+          "cost": 6.19,
+          "effective_cost": 7.225625
+        },
+        "7": {
+          "player_id": "andre-drummond",
+          "name": "Andre Drummond",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 6.4,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "moritz-wagner",
+          "name": "Moritz Wagner",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 6.86,
+          "effective_cost": 7.225625
+        }
+      }
+    },
+    {
+      "name": "Nevin B",
+      "email": "skyshib@gmail.com",
+      "submitted_at": "2026-04-18T17:34:22.913Z",
+      "tiebreaker": 44,
+      "picks": {
+        "1": {
+          "player_id": "jalen-williams",
+          "name": "Jalen Williams",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 17.06,
+          "effective_cost": 17.06
+        },
+        "2": {
+          "player_id": "derrick-white",
+          "name": "Derrick White",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 16.45,
+          "effective_cost": 16.45
+        },
+        "3": {
+          "player_id": "cameron-johnson",
+          "name": "Cameron Johnson",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 12.22,
+          "effective_cost": 12.22
+        },
+        "4": {
+          "player_id": "donovan-mitchell",
+          "name": "Donovan Mitchell",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 27.89,
+          "effective_cost": 27.89
+        },
+        "5": {
+          "player_id": "tari-eason",
+          "name": "Tari Eason",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 10.45,
+          "effective_cost": 10.45
+        },
+        "6": {
+          "player_id": "jonathan-kuminga",
+          "name": "Jonathan Kuminga",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 12.17,
+          "effective_cost": 12.17
+        },
+        "7": {
+          "player_id": "caleb-love",
+          "name": "Caleb Love",
+          "team": "Portland Trail Blazers",
+          "seed": 7,
+          "cost": 10.39,
+          "effective_cost": 10.39
+        },
+        "8": {
+          "player_id": "moritz-wagner",
+          "name": "Moritz Wagner",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 6.86,
+          "effective_cost": 7.225625
+        }
+      }
+    },
+    {
+      "name": "Pete hayes",
+      "email": "peteyboyo99@gmail.com",
+      "submitted_at": "2026-04-18T05:07:48.086Z",
+      "tiebreaker": 52,
+      "picks": {
+        "1": {
+          "player_id": "jalen-williams",
+          "name": "Jalen Williams",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 17.06,
+          "effective_cost": 17.06
+        },
+        "2": {
+          "player_id": "jayson-tatum",
+          "name": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "3": {
+          "player_id": "jamal-murray",
+          "name": "Jamal Murray",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 25.4,
+          "effective_cost": 25.4
+        },
+        "4": {
+          "player_id": "jarrett-allen",
+          "name": "Jarrett Allen",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 15.36,
+          "effective_cost": 15.36
+        },
+        "5": {
+          "player_id": "tristen-newton",
+          "name": "Tristen Newton",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 12,
+          "effective_cost": 12
+        },
+        "6": {
+          "player_id": "buddy-hield",
+          "name": "Buddy Hield",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 7.65,
+          "effective_cost": 7.65
+        },
+        "7": {
+          "player_id": "andre-drummond",
+          "name": "Andre Drummond",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 6.4,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "moritz-wagner",
+          "name": "Moritz Wagner",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 6.86,
+          "effective_cost": 7.225625
+        }
+      }
+    },
+    {
+      "name": "Shea Stevens",
+      "email": "sheastevens9434@gmail.com",
+      "submitted_at": "2026-04-18T05:26:15.540Z",
+      "tiebreaker": 52,
+      "picks": {
+        "1": {
+          "player_id": "shai-gilgeous-alexander",
+          "name": "Shai Gilgeous-Alexander",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 31.13,
+          "effective_cost": 31.13
+        },
+        "2": {
+          "player_id": "jayson-tatum",
+          "name": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "3": {
+          "player_id": "trey-jemison-iii",
+          "name": "Trey Jemison III",
+          "team": "New York Knicks",
+          "seed": 3,
+          "cost": 1,
+          "effective_cost": 7.225625
+        },
+        "4": {
+          "player_id": "lebron-james",
+          "name": "LeBron James",
+          "team": "Los Angeles Lakers",
+          "seed": 4,
+          "cost": 20.93,
+          "effective_cost": 20.93
+        },
+        "5": {
+          "player_id": "garrett-temple",
+          "name": "Garrett Temple",
+          "team": "Toronto Raptors",
+          "seed": 5,
+          "cost": 0.77,
+          "effective_cost": 7.225625
+        },
+        "6": {
+          "player_id": "rudy-gobert",
+          "name": "Rudy Gobert",
+          "team": "Minnesota Timberwolves",
+          "seed": 6,
+          "cost": 10.91,
+          "effective_cost": 10.91
+        },
+        "7": {
+          "player_id": "johni-broome",
+          "name": "Johni Broome",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 0.91,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "colin-castleton",
+          "name": "Colin Castleton",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 1.25,
+          "effective_cost": 7.225625
+        }
+      }
+    },
+    {
+      "name": "Skylar",
+      "email": "skyshib@gmail.com",
+      "submitted_at": "2026-04-18T16:10:42.697Z",
+      "tiebreaker": 47,
+      "picks": {
+        "1": {
+          "player_id": "shai-gilgeous-alexander",
+          "name": "Shai Gilgeous-Alexander",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 31.13,
+          "effective_cost": 31.13
+        },
+        "2": {
+          "player_id": "jayson-tatum",
+          "name": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "3": {
+          "player_id": "bruce-brown",
+          "name": "Bruce Brown",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 7.91,
+          "effective_cost": 7.91
+        },
+        "4": {
+          "player_id": "james-harden",
+          "name": "James Harden",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "5": {
+          "player_id": "aaron-holiday",
+          "name": "Aaron Holiday",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 5.47,
+          "effective_cost": 7.225625
+        },
+        "6": {
+          "player_id": "mouhamed-gueye",
+          "name": "Mouhamed Gueye",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 4.44,
+          "effective_cost": 7.225625
+        },
+        "7": {
+          "player_id": "andre-drummond",
+          "name": "Andre Drummond",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 6.4,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "oso-ighodaro",
+          "name": "Oso Ighodaro",
+          "team": "Phoenix Suns",
+          "seed": 8,
+          "cost": 6.48,
+          "effective_cost": 7.225625
+        }
+      }
+    },
+    {
+      "name": "Zach Hayes",
+      "email": "zachjhayes11@gmail.com",
+      "submitted_at": "2026-04-18T17:02:23.544Z",
+      "tiebreaker": 42,
+      "picks": {
+        "1": {
+          "player_id": "jalen-williams",
+          "name": "Jalen Williams",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 17.06,
+          "effective_cost": 17.06
+        },
+        "2": {
+          "player_id": "jayson-tatum",
+          "name": "Jayson Tatum",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "3": {
+          "player_id": "cameron-johnson",
+          "name": "Cameron Johnson",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 12.22,
+          "effective_cost": 12.22
+        },
+        "4": {
+          "player_id": "jarrett-allen",
+          "name": "Jarrett Allen",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 15.36,
+          "effective_cost": 15.36
+        },
+        "5": {
+          "player_id": "tari-eason",
+          "name": "Tari Eason",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 10.45,
+          "effective_cost": 10.45
+        },
+        "6": {
+          "player_id": "onyeka-okongwu",
+          "name": "Onyeka Okongwu",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 15.18,
+          "effective_cost": 15.18
+        },
+        "7": {
+          "player_id": "robert-williams-iii",
+          "name": "Robert Williams III",
+          "team": "Portland Trail Blazers",
+          "seed": 7,
+          "cost": 6.73,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "jalen-suggs",
+          "name": "Jalen Suggs",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 13.79,
+          "effective_cost": 13.79
+        }
+      }
+    },
+    {
+      "name": "Zach Zimmerman",
+      "email": "chickfilazach@gmail.com",
+      "submitted_at": "2026-04-18T05:14:43.847Z",
+      "tiebreaker": 54,
+      "picks": {
+        "1": {
+          "player_id": "alex-caruso",
+          "name": "Alex Caruso",
+          "team": "Oklahoma City Thunder",
+          "seed": 1,
+          "cost": 6.21,
+          "effective_cost": 7.225625
+        },
+        "2": {
+          "player_id": "payton-pritchard",
+          "name": "Payton Pritchard",
+          "team": "Boston Celtics",
+          "seed": 2,
+          "cost": 17.03,
+          "effective_cost": 17.03
+        },
+        "3": {
+          "player_id": "nikola-jokic",
+          "name": "Nikola Jokic",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 27.68,
+          "effective_cost": 27.68
+        },
+        "4": {
+          "player_id": "james-harden",
+          "name": "James Harden",
+          "team": "Cleveland Cavaliers",
+          "seed": 4,
+          "cost": 23.6,
+          "effective_cost": 23.6
+        },
+        "5": {
+          "player_id": "amen-thompson",
+          "name": "Amen Thompson",
+          "team": "Houston Rockets",
+          "seed": 5,
+          "cost": 18.27,
+          "effective_cost": 18.27
+        },
+        "6": {
+          "player_id": "terrence-shannon-jr",
+          "name": "Terrence Shannon Jr.",
+          "team": "Minnesota Timberwolves",
+          "seed": 6,
+          "cost": 5.6,
+          "effective_cost": 7.225625
+        },
+        "7": {
+          "player_id": "andre-drummond",
+          "name": "Andre Drummond",
+          "team": "Philadelphia 76ers",
+          "seed": 7,
+          "cost": 6.4,
+          "effective_cost": 7.225625
+        },
+        "8": {
+          "player_id": "jamal-cain",
+          "name": "Jamal Cain",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 5.38,
+          "effective_cost": 7.225625
+        }
+      }
+    }
+  ]
 }

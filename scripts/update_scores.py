@@ -46,11 +46,11 @@ def classify_round(event) -> str | None:
     notes = event.get("competitions", [{}])[0].get("notes", [])
     for n in notes:
         h = (n.get("headline", "") or "").lower()
-        if "first round" in h:
+        if "1st round" in h or "first round" in h:
             return "R1"
-        if "conference semi" in h or "semifinal" in h:
+        if "conference semi" in h or "semifinal" in h or "2nd round" in h:
             return "CSF"
-        if "conference final" in h:
+        if "east finals" in h or "west finals" in h or "conference final" in h:
             return "CF"
         if "nba final" in h or h == "finals":
             return "Finals"
