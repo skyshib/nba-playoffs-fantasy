@@ -38,18 +38,60 @@ const Scoreboard = (() => {
 
   function getRoundPPG(playerId) {
     const p = statsData?.players?.[playerId];
-    if (!p) return {};
-    if (p.round_ppg) return p.round_ppg;
+    if (p?.round_ppg) return p.round_ppg; // historical pre-baked
+
     const byRound = {};
-    for (const g of p.games || []) {
+    for (const g of (p?.games || [])) {
       (byRound[g.round] ||= []).push(g.pts || 0);
     }
+
+    // Merge live overlay: ESPN gives us current-game pts for in-progress games.
+    // Determine the round from active_games or default to 'R1' for current season.
     const live = liveOverrides[playerId];
-    if (live && live.round && typeof live.pts === 'number') {
-      const arr = (byRound[live.round] ||= []);
-      if (arr.length > 0) arr[arr.length - 1] = live.pts;
-      else arr.push(live.pts);
+    if (live && typeof live.pts === 'number') {
+      // Figure out which round the live game is in. If the player already has
+      // committed games, the live game is in the latest round they're playing.
+      // If no committed games, infer from active_games or default to R1.
+      const activeGames = statsData?.active_games || [];
+      const committedGames = p?.games || [];
+      let liveRound = live.round || null;
+
+      if (!liveRound) {
+        // Check if any committed game overlaps with an active game — that's the round
+        for (const g of committedGames) {
+          if (g.game_id && activeGames.includes(g.game_id)) {
+            liveRound = g.round;
+            break;
+          }
+        }
+      }
+      if (!liveRound) {
+        // Infer from the number of rounds already played
+        const ROUND_ORDER = ['R1', 'CSF', 'CF', 'Finals'];
+        const playedRounds = new Set(committedGames.map(g => g.round));
+        // The live round is the latest round they've played in, or R1 if none
+        liveRound = ROUND_ORDER.filter(r => playedRounds.has(r)).pop() || 'R1';
+      }
+
+      const arr = (byRound[liveRound] ||= []);
+      // Check if we have a committed game for this active game (overlap)
+      const activeGameIds = statsData?.active_games || [];
+      let replaced = false;
+      if (committedGames.length > 0) {
+        for (let i = arr.length - 1; i >= 0; i--) {
+          const g = committedGames.find(cg => cg.round === liveRound && cg.pts === arr[i]);
+          if (g && g.game_id && activeGameIds.includes(g.game_id)) {
+            arr[i] = live.pts; // replace committed with live
+            replaced = true;
+            break;
+          }
+        }
+      }
+      if (!replaced) {
+        arr.push(live.pts); // new game not yet committed
+      }
     }
+
     const out = {};
     for (const [rd, pts] of Object.entries(byRound)) {
       const top = pts.slice().sort((a, b) => b - a).slice(0, 4);
