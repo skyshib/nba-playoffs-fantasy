@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-18T22:29:18.663189+00:00",
+  "last_updated": "2026-04-18T22:49:53.347189+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -165,20 +165,6 @@
         {
           "round": "R1",
           "pts": 7,
-          "game_id": "401869187",
-          "opponent": "Toronto Raptors"
-        }
-      ]
-    },
-    "jaylon-tyson": {
-      "name": "Jaylon Tyson",
-      "team": "Cleveland Cavaliers",
-      "seed": 4,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 2,
           "game_id": "401869187",
           "opponent": "Toronto Raptors"
         }
@@ -374,7 +360,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 4,
           "game_id": "401869189",
           "opponent": "New York Knicks"
         }
@@ -402,7 +388,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 1,
           "game_id": "401869189",
           "opponent": "New York Knicks"
         }
@@ -458,18 +444,18 @@
     {
       "id": "401869189",
       "round": "R1",
-      "status": "5:55 - 1st",
+      "status": "10:45 - 2nd",
       "teams": [
         {
           "name": "New York Knicks",
           "abbrev": "NY",
-          "score": "22",
+          "score": "35",
           "winner": null
         },
         {
           "name": "Atlanta Hawks",
           "abbrev": "ATL",
-          "score": "16",
+          "score": "27",
           "winner": null
         }
       ]
