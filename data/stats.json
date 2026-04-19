@@ -1,8 +1,186 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-19T16:42:16.425648+00:00",
-  "players": {},
-  "active_games": [],
-  "live_games": [],
-  "team_series": {}
+  "last_updated": "2026-04-19T17:22:37.351641+00:00",
+  "players": {
+    "paul-george": {
+      "name": "Paul George",
+      "team": "Philadelphia 76ers",
+      "seed": 7,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        }
+      ]
+    },
+    "adem-bona": {
+      "name": "Adem Bona",
+      "team": "Philadelphia 76ers",
+      "seed": 7,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        }
+      ]
+    },
+    "kelly-oubre-jr": {
+      "name": "Kelly Oubre Jr.",
+      "team": "Philadelphia 76ers",
+      "seed": 7,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        }
+      ]
+    },
+    "andre-drummond": {
+      "name": "Andre Drummond",
+      "team": "Philadelphia 76ers",
+      "seed": 7,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        }
+      ]
+    },
+    "trendon-watford": {
+      "name": "Trendon Watford",
+      "team": "Philadelphia 76ers",
+      "seed": 7,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        }
+      ]
+    },
+    "johni-broome": {
+      "name": "Johni Broome",
+      "team": "Philadelphia 76ers",
+      "seed": 7,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        }
+      ]
+    },
+    "jayson-tatum": {
+      "name": "Jayson Tatum",
+      "team": "Boston Celtics",
+      "seed": 2,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 4,
+          "game_id": "401869191",
+          "opponent": "Philadelphia 76ers"
+        }
+      ]
+    },
+    "neemias-queta": {
+      "name": "Neemias Queta",
+      "team": "Boston Celtics",
+      "seed": 2,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869191",
+          "opponent": "Philadelphia 76ers"
+        }
+      ]
+    },
+    "derrick-white": {
+      "name": "Derrick White",
+      "team": "Boston Celtics",
+      "seed": 2,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869191",
+          "opponent": "Philadelphia 76ers"
+        }
+      ]
+    },
+    "payton-pritchard": {
+      "name": "Payton Pritchard",
+      "team": "Boston Celtics",
+      "seed": 2,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869191",
+          "opponent": "Philadelphia 76ers"
+        }
+      ]
+    }
+  },
+  "active_games": [
+    "401869191"
+  ],
+  "live_games": [
+    {
+      "id": "401869191",
+      "round": "R1",
+      "status": "7:24 - 1st",
+      "teams": [
+        {
+          "name": "Boston Celtics",
+          "abbrev": "BOS",
+          "score": "15",
+          "winner": null
+        },
+        {
+          "name": "Philadelphia 76ers",
+          "abbrev": "PHI",
+          "score": "7",
+          "winner": null
+        }
+      ]
+    }
+  ],
+  "team_series": {
+    "Boston Celtics": {
+      "opponent": "Philadelphia 76ers",
+      "round": "R1",
+      "wins": 0,
+      "losses": 0,
+      "summary": ""
+    },
+    "Philadelphia 76ers": {
+      "opponent": "Boston Celtics",
+      "round": "R1",
+      "wins": 0,
+      "losses": 0,
+      "summary": ""
+    }
+  }
 }
