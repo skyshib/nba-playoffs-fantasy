@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-19T18:02:46.899784+00:00",
+  "last_updated": "2026-04-19T19:09:34.184732+00:00",
   "players": {
     "paul-george": {
       "name": "Paul George",
@@ -10,7 +10,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 9,
+          "pts": 17,
           "game_id": "401869191",
           "opponent": "Boston Celtics"
         }
@@ -24,7 +24,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 1,
           "game_id": "401869191",
           "opponent": "Boston Celtics"
         }
@@ -38,7 +38,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 2,
+          "pts": 10,
           "game_id": "401869191",
           "opponent": "Boston Celtics"
         }
@@ -94,7 +94,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 13,
+          "pts": 23,
           "game_id": "401869191",
           "opponent": "Philadelphia 76ers"
         }
@@ -108,7 +108,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 7,
+          "pts": 9,
           "game_id": "401869191",
           "opponent": "Philadelphia 76ers"
         }
@@ -122,7 +122,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 3,
+          "pts": 10,
           "game_id": "401869191",
           "opponent": "Philadelphia 76ers"
         }
@@ -136,7 +136,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 6,
+          "pts": 9,
           "game_id": "401869191",
           "opponent": "Philadelphia 76ers"
         }
@@ -150,18 +150,18 @@
     {
       "id": "401869191",
       "round": "R1",
-      "status": "5:01 - 2nd",
+      "status": "10:30 - 4th",
       "teams": [
         {
           "name": "Boston Celtics",
           "abbrev": "BOS",
-          "score": "54",
+          "score": "98",
           "winner": null
         },
         {
           "name": "Philadelphia 76ers",
           "abbrev": "PHI",
-          "score": "31",
+          "score": "73",
           "winner": null
         }
       ]
