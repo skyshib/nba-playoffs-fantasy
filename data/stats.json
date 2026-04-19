@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-19T21:20:10.675294+00:00",
+  "last_updated": "2026-04-19T21:59:30.940860+00:00",
   "players": {
     "paul-george": {
       "name": "Paul George",
@@ -178,7 +178,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 1,
+          "pts": 4,
           "game_id": "401869192",
           "opponent": "Oklahoma City Thunder"
         }
@@ -206,7 +206,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 18,
+          "pts": 25,
           "game_id": "401869192",
           "opponent": "Phoenix Suns"
         }
@@ -220,7 +220,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 13,
+          "pts": 22,
           "game_id": "401869192",
           "opponent": "Phoenix Suns"
         }
@@ -248,7 +248,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 6,
+          "pts": 9,
           "game_id": "401869192",
           "opponent": "Phoenix Suns"
         }
@@ -262,18 +262,18 @@
     {
       "id": "401869192",
       "round": "R1",
-      "status": "7:54 - 3rd",
+      "status": "6:15 - 4th",
       "teams": [
         {
           "name": "Oklahoma City Thunder",
           "abbrev": "OKC",
-          "score": "72",
+          "score": "109",
           "winner": null
         },
         {
           "name": "Phoenix Suns",
           "abbrev": "PHX",
-          "score": "53",
+          "score": "75",
           "winner": null
         }
       ]
