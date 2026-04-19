@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-19T21:59:30.940860+00:00",
+  "last_updated": "2026-04-19T22:49:37.141215+00:00",
   "players": {
     "paul-george": {
       "name": "Paul George",
@@ -253,27 +253,125 @@
           "opponent": "Phoenix Suns"
         }
       ]
+    },
+    "wendell-carter-jr": {
+      "name": "Wendell Carter Jr.",
+      "team": "Orlando Magic",
+      "seed": 8,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869193",
+          "opponent": "Detroit Pistons"
+        }
+      ]
+    },
+    "jalen-suggs": {
+      "name": "Jalen Suggs",
+      "team": "Orlando Magic",
+      "seed": 8,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 8,
+          "game_id": "401869193",
+          "opponent": "Detroit Pistons"
+        }
+      ]
+    },
+    "moritz-wagner": {
+      "name": "Moritz Wagner",
+      "team": "Orlando Magic",
+      "seed": 8,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869193",
+          "opponent": "Detroit Pistons"
+        }
+      ]
+    },
+    "jamal-cain": {
+      "name": "Jamal Cain",
+      "team": "Orlando Magic",
+      "seed": 8,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869193",
+          "opponent": "Detroit Pistons"
+        }
+      ]
+    },
+    "goga-bitadze": {
+      "name": "Goga Bitadze",
+      "team": "Orlando Magic",
+      "seed": 8,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869193",
+          "opponent": "Detroit Pistons"
+        }
+      ]
+    },
+    "jett-howard": {
+      "name": "Jett Howard",
+      "team": "Orlando Magic",
+      "seed": 8,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869193",
+          "opponent": "Detroit Pistons"
+        }
+      ]
+    },
+    "cade-cunningham": {
+      "name": "Cade Cunningham",
+      "team": "Detroit Pistons",
+      "seed": 1,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869193",
+          "opponent": "Orlando Magic"
+        }
+      ]
     }
   },
   "active_games": [
-    "401869192"
+    "401869193"
   ],
   "live_games": [
     {
-      "id": "401869192",
+      "id": "401869193",
       "round": "R1",
-      "status": "6:15 - 4th",
+      "status": "7:33 - 1st",
       "teams": [
         {
-          "name": "Oklahoma City Thunder",
-          "abbrev": "OKC",
-          "score": "109",
+          "name": "Detroit Pistons",
+          "abbrev": "DET",
+          "score": "5",
           "winner": null
         },
         {
-          "name": "Phoenix Suns",
-          "abbrev": "PHX",
-          "score": "75",
+          "name": "Orlando Magic",
+          "abbrev": "ORL",
+          "score": "18",
           "winner": null
         }
       ]
@@ -297,12 +395,26 @@
     "Oklahoma City Thunder": {
       "opponent": "Phoenix Suns",
       "round": "R1",
+      "wins": 1,
+      "losses": 0,
+      "summary": "OKC leads series 1-0"
+    },
+    "Phoenix Suns": {
+      "opponent": "Oklahoma City Thunder",
+      "round": "R1",
+      "wins": 0,
+      "losses": 1,
+      "summary": "OKC leads series 1-0"
+    },
+    "Detroit Pistons": {
+      "opponent": "Orlando Magic",
+      "round": "R1",
       "wins": 0,
       "losses": 0,
       "summary": ""
     },
-    "Phoenix Suns": {
-      "opponent": "Oklahoma City Thunder",
+    "Orlando Magic": {
+      "opponent": "Detroit Pistons",
       "round": "R1",
       "wins": 0,
       "losses": 0,
