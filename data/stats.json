@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-18T23:21:28.916443+00:00",
+  "last_updated": "2026-04-19T00:00:51.551971+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -360,7 +360,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 12,
+          "pts": 15,
           "game_id": "401869189",
           "opponent": "New York Knicks"
         }
@@ -430,7 +430,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 4,
+          "pts": 6,
           "game_id": "401869189",
           "opponent": "Atlanta Hawks"
         }
@@ -444,18 +444,18 @@
     {
       "id": "401869189",
       "round": "R1",
-      "status": "Halftime",
+      "status": "3:19 - 3rd",
       "teams": [
         {
           "name": "New York Knicks",
           "abbrev": "NY",
-          "score": "57",
+          "score": "75",
           "winner": null
         },
         {
           "name": "Atlanta Hawks",
           "abbrev": "ATL",
-          "score": "55",
+          "score": "69",
           "winner": null
         }
       ]
