@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-19T19:09:34.184732+00:00",
+  "last_updated": "2026-04-19T19:54:10.091252+00:00",
   "players": {
     "paul-george": {
       "name": "Paul George",
@@ -24,7 +24,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 1,
+          "pts": 3,
           "game_id": "401869191",
           "opponent": "Boston Celtics"
         }
@@ -44,6 +44,20 @@
         }
       ]
     },
+    "trendon-watford": {
+      "name": "Trendon Watford",
+      "team": "Philadelphia 76ers",
+      "seed": 7,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        }
+      ]
+    },
     "andre-drummond": {
       "name": "Andre Drummond",
       "team": "Philadelphia 76ers",
@@ -53,20 +67,6 @@
         {
           "round": "R1",
           "pts": 2,
-          "game_id": "401869191",
-          "opponent": "Boston Celtics"
-        }
-      ]
-    },
-    "trendon-watford": {
-      "name": "Trendon Watford",
-      "team": "Philadelphia 76ers",
-      "seed": 7,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 0,
           "game_id": "401869191",
           "opponent": "Boston Celtics"
         }
@@ -94,7 +94,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 23,
+          "pts": 25,
           "game_id": "401869191",
           "opponent": "Philadelphia 76ers"
         }
@@ -108,7 +108,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 9,
+          "pts": 13,
           "game_id": "401869191",
           "opponent": "Philadelphia 76ers"
         }
@@ -136,32 +136,144 @@
       "games": [
         {
           "round": "R1",
-          "pts": 9,
+          "pts": 12,
           "game_id": "401869191",
           "opponent": "Philadelphia 76ers"
+        }
+      ]
+    },
+    "oso-ighodaro": {
+      "name": "Oso Ighodaro",
+      "team": "Phoenix Suns",
+      "seed": 8,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869192",
+          "opponent": "Oklahoma City Thunder"
+        }
+      ]
+    },
+    "jordan-goodwin": {
+      "name": "Jordan Goodwin",
+      "team": "Phoenix Suns",
+      "seed": 8,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869192",
+          "opponent": "Oklahoma City Thunder"
+        }
+      ]
+    },
+    "royce-oneale": {
+      "name": "Royce O'Neale",
+      "team": "Phoenix Suns",
+      "seed": 8,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869192",
+          "opponent": "Oklahoma City Thunder"
+        }
+      ]
+    },
+    "chet-holmgren": {
+      "name": "Chet Holmgren",
+      "team": "Oklahoma City Thunder",
+      "seed": 1,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869192",
+          "opponent": "Phoenix Suns"
+        }
+      ]
+    },
+    "shai-gilgeous-alexander": {
+      "name": "Shai Gilgeous-Alexander",
+      "team": "Oklahoma City Thunder",
+      "seed": 1,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869192",
+          "opponent": "Phoenix Suns"
+        }
+      ]
+    },
+    "jalen-williams": {
+      "name": "Jalen Williams",
+      "team": "Oklahoma City Thunder",
+      "seed": 1,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869192",
+          "opponent": "Phoenix Suns"
+        }
+      ]
+    },
+    "alex-caruso": {
+      "name": "Alex Caruso",
+      "team": "Oklahoma City Thunder",
+      "seed": 1,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869192",
+          "opponent": "Phoenix Suns"
+        }
+      ]
+    },
+    "ajay-mitchell": {
+      "name": "Ajay Mitchell",
+      "team": "Oklahoma City Thunder",
+      "seed": 1,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869192",
+          "opponent": "Phoenix Suns"
         }
       ]
     }
   },
   "active_games": [
-    "401869191"
+    "401869192"
   ],
   "live_games": [
     {
-      "id": "401869191",
+      "id": "401869192",
       "round": "R1",
-      "status": "10:30 - 4th",
+      "status": "7:36 - 1st",
       "teams": [
         {
-          "name": "Boston Celtics",
-          "abbrev": "BOS",
-          "score": "98",
+          "name": "Oklahoma City Thunder",
+          "abbrev": "OKC",
+          "score": "14",
           "winner": null
         },
         {
-          "name": "Philadelphia 76ers",
-          "abbrev": "PHI",
-          "score": "73",
+          "name": "Phoenix Suns",
+          "abbrev": "PHX",
+          "score": "12",
           "winner": null
         }
       ]
@@ -171,12 +283,26 @@
     "Boston Celtics": {
       "opponent": "Philadelphia 76ers",
       "round": "R1",
+      "wins": 1,
+      "losses": 0,
+      "summary": "BOS leads series 1-0"
+    },
+    "Philadelphia 76ers": {
+      "opponent": "Boston Celtics",
+      "round": "R1",
+      "wins": 0,
+      "losses": 1,
+      "summary": "BOS leads series 1-0"
+    },
+    "Oklahoma City Thunder": {
+      "opponent": "Phoenix Suns",
+      "round": "R1",
       "wins": 0,
       "losses": 0,
       "summary": ""
     },
-    "Philadelphia 76ers": {
-      "opponent": "Boston Celtics",
+    "Phoenix Suns": {
+      "opponent": "Oklahoma City Thunder",
       "round": "R1",
       "wins": 0,
       "losses": 0,
