@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-19T22:49:37.141215+00:00",
+  "last_updated": "2026-04-19T23:38:03.159715+00:00",
   "players": {
     "paul-george": {
       "name": "Paul George",
@@ -262,7 +262,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 5,
           "game_id": "401869193",
           "opponent": "Detroit Pistons"
         }
@@ -276,21 +276,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 8,
-          "game_id": "401869193",
-          "opponent": "Detroit Pistons"
-        }
-      ]
-    },
-    "moritz-wagner": {
-      "name": "Moritz Wagner",
-      "team": "Orlando Magic",
-      "seed": 8,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 0,
+          "pts": 11,
           "game_id": "401869193",
           "opponent": "Detroit Pistons"
         }
@@ -304,7 +290,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 2,
           "game_id": "401869193",
           "opponent": "Detroit Pistons"
         }
@@ -312,6 +298,20 @@
     },
     "goga-bitadze": {
       "name": "Goga Bitadze",
+      "team": "Orlando Magic",
+      "seed": 8,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 4,
+          "game_id": "401869193",
+          "opponent": "Detroit Pistons"
+        }
+      ]
+    },
+    "moritz-wagner": {
+      "name": "Moritz Wagner",
       "team": "Orlando Magic",
       "seed": 8,
       "eliminated": false,
@@ -346,7 +346,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 11,
           "game_id": "401869193",
           "opponent": "Orlando Magic"
         }
@@ -360,18 +360,18 @@
     {
       "id": "401869193",
       "round": "R1",
-      "status": "7:33 - 1st",
+      "status": "3:34 - 2nd",
       "teams": [
         {
           "name": "Detroit Pistons",
           "abbrev": "DET",
-          "score": "5",
+          "score": "47",
           "winner": null
         },
         {
           "name": "Orlando Magic",
           "abbrev": "ORL",
-          "score": "18",
+          "score": "49",
           "winner": null
         }
       ]
