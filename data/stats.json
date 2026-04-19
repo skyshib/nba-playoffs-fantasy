@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-19T00:00:51.551971+00:00",
+  "last_updated": "2026-04-19T01:57:49.763048+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -360,7 +360,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 15,
+          "pts": 19,
           "game_id": "401869189",
           "opponent": "New York Knicks"
         }
@@ -388,7 +388,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 3,
+          "pts": 8,
           "game_id": "401869189",
           "opponent": "New York Knicks"
         }
@@ -402,7 +402,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 2,
+          "pts": 3,
           "game_id": "401869189",
           "opponent": "New York Knicks"
         }
@@ -430,32 +430,130 @@
       "games": [
         {
           "round": "R1",
-          "pts": 6,
+          "pts": 11,
           "game_id": "401869189",
           "opponent": "Atlanta Hawks"
+        }
+      ]
+    },
+    "jabari-smith-jr": {
+      "name": "Jabari Smith Jr.",
+      "team": "Houston Rockets",
+      "seed": 5,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869190",
+          "opponent": "Los Angeles Lakers"
+        }
+      ]
+    },
+    "amen-thompson": {
+      "name": "Amen Thompson",
+      "team": "Houston Rockets",
+      "seed": 5,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 8,
+          "game_id": "401869190",
+          "opponent": "Los Angeles Lakers"
+        }
+      ]
+    },
+    "reed-sheppard": {
+      "name": "Reed Sheppard",
+      "team": "Houston Rockets",
+      "seed": 5,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 8,
+          "game_id": "401869190",
+          "opponent": "Los Angeles Lakers"
+        }
+      ]
+    },
+    "tari-eason": {
+      "name": "Tari Eason",
+      "team": "Houston Rockets",
+      "seed": 5,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869190",
+          "opponent": "Los Angeles Lakers"
+        }
+      ]
+    },
+    "aaron-holiday": {
+      "name": "Aaron Holiday",
+      "team": "Houston Rockets",
+      "seed": 5,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869190",
+          "opponent": "Los Angeles Lakers"
+        }
+      ]
+    },
+    "lebron-james": {
+      "name": "LeBron James",
+      "team": "Los Angeles Lakers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869190",
+          "opponent": "Houston Rockets"
+        }
+      ]
+    },
+    "deandre-ayton": {
+      "name": "Deandre Ayton",
+      "team": "Los Angeles Lakers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 12,
+          "game_id": "401869190",
+          "opponent": "Houston Rockets"
         }
       ]
     }
   },
   "active_games": [
-    "401869189"
+    "401869190"
   ],
   "live_games": [
     {
-      "id": "401869189",
+      "id": "401869190",
       "round": "R1",
-      "status": "3:19 - 3rd",
+      "status": "Halftime",
       "teams": [
         {
-          "name": "New York Knicks",
-          "abbrev": "NY",
-          "score": "75",
+          "name": "Los Angeles Lakers",
+          "abbrev": "LAL",
+          "score": "50",
           "winner": null
         },
         {
-          "name": "Atlanta Hawks",
-          "abbrev": "ATL",
-          "score": "69",
+          "name": "Houston Rockets",
+          "abbrev": "HOU",
+          "score": "48",
           "winner": null
         }
       ]
@@ -493,12 +591,26 @@
     "New York Knicks": {
       "opponent": "Atlanta Hawks",
       "round": "R1",
+      "wins": 1,
+      "losses": 0,
+      "summary": "NY leads series 1-0"
+    },
+    "Atlanta Hawks": {
+      "opponent": "New York Knicks",
+      "round": "R1",
+      "wins": 0,
+      "losses": 1,
+      "summary": "NY leads series 1-0"
+    },
+    "Los Angeles Lakers": {
+      "opponent": "Houston Rockets",
+      "round": "R1",
       "wins": 0,
       "losses": 0,
       "summary": ""
     },
-    "Atlanta Hawks": {
-      "opponent": "New York Knicks",
+    "Houston Rockets": {
+      "opponent": "Los Angeles Lakers",
       "round": "R1",
       "wins": 0,
       "losses": 0,
