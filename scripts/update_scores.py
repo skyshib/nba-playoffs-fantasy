@@ -58,10 +58,27 @@ def classify_round(event) -> str | None:
 
 
 def fetch_postseason(season: int):
-    url = f"{ESPN_NBA}/scoreboard?seasontype=3&limit=200"
-    r = requests.get(url, timeout=30)
-    r.raise_for_status()
-    return r.json().get("events", [])
+    """Fetch all NBA playoff events. ESPN's scoreboard API only returns the
+    current day's games, so we sweep a date range covering the full postseason."""
+    from datetime import datetime, timedelta
+    all_events = {}
+    # Sweep from mid-April through end of June to catch every playoff game
+    start = datetime(season, 4, 15)
+    end = min(datetime(season, 7, 1), datetime.now() + timedelta(days=1))
+    d = start
+    while d <= end:
+        ds = d.strftime("%Y%m%d")
+        try:
+            url = f"{ESPN_NBA}/scoreboard?seasontype=3&limit=50&dates={ds}"
+            r = requests.get(url, timeout=30)
+            r.raise_for_status()
+            for ev in r.json().get("events", []):
+                all_events[ev["id"]] = ev
+        except Exception as e:
+            print(f"  WARN: fetch {ds} failed: {e}")
+        d += timedelta(days=1)
+    print(f"  Swept {(end - start).days} days, found {len(all_events)} unique events")
+    return list(all_events.values())
 
 
 def fetch_summary(event_id: str):
