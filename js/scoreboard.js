@@ -9,6 +9,20 @@
 const Scoreboard = (() => {
   const ROUNDS = ['R1', 'CSF', 'CF', 'Finals'];
   const ROUND_LABELS = { R1: 'Round 1', CSF: 'Conf Semis', CF: 'Conf Finals', Finals: 'Finals' };
+  const NBA_ABBREVS = {
+    'atlanta hawks':'ATL','boston celtics':'BOS','brooklyn nets':'BKN',
+    'charlotte hornets':'CHA','chicago bulls':'CHI','cleveland cavaliers':'CLE',
+    'dallas mavericks':'DAL','denver nuggets':'DEN','detroit pistons':'DET',
+    'golden state warriors':'GSW','houston rockets':'HOU','indiana pacers':'IND',
+    'la clippers':'LAC','los angeles clippers':'LAC','los angeles lakers':'LAL',
+    'memphis grizzlies':'MEM','miami heat':'MIA','milwaukee bucks':'MIL',
+    'minnesota timberwolves':'MIN','new orleans pelicans':'NOP',
+    'new york knicks':'NYK','oklahoma city thunder':'OKC','orlando magic':'ORL',
+    'philadelphia 76ers':'PHI','phoenix suns':'PHX','portland trail blazers':'POR',
+    'sacramento kings':'SAC','san antonio spurs':'SAS','toronto raptors':'TOR',
+    'utah jazz':'UTA','washington wizards':'WAS',
+  };
+  function teamAbbrev(fullName) { return NBA_ABBREVS[(fullName||'').toLowerCase()] || fullName?.slice(0,3).toUpperCase() || ''; }
 
   let picksData = null;
   let statsData = null;
@@ -557,15 +571,21 @@ const Scoreboard = (() => {
       html += `<th>Total</th></tr></thead><tbody>`;
       for (const rd of ROUNDS) {
         const arr = (mergedByRound[rd] || []).slice().sort((a, b) => (a.game_num || 0) - (b.game_num || 0));
+        // Build round label with opponent abbreviation (e.g. "Round 1 vs PHI")
+        let rdLabel = ROUND_LABELS[rd];
+        const rdOpp = arr.find(g => g.opponent)?.opponent || '';
+        if (rdOpp) {
+          rdLabel += ` <span style="color:var(--text-muted);font-weight:400">vs ${teamAbbrev(rdOpp)}</span>`;
+        }
         if (!arr.length) {
-          html += `<tr><td class="tt-round-label">${ROUND_LABELS[rd]}</td>`;
+          html += `<tr><td class="tt-round-label">${rdLabel}</td>`;
           for (let i = 0; i < 7; i++) html += `<td class="empty">—</td>`;
           const rt = info.perRound[rd];
           html += `<td class="tt-round-total">${typeof rt === 'number' && rt > 0 ? fmtPts(rt) : '—'}</td></tr>`;
           continue;
         }
         const top4 = new Set(arr.slice().sort((a, b) => b.pts - a.pts).slice(0, 4));
-        html += `<tr><td class="tt-round-label">${ROUND_LABELS[rd]}</td>`;
+        html += `<tr><td class="tt-round-label">${rdLabel}</td>`;
         for (let i = 0; i < 7; i++) {
           const g = arr[i];
           if (g) {
