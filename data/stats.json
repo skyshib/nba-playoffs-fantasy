@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-19T23:38:03.159715+00:00",
+  "last_updated": "2026-04-20T01:10:51.470857+00:00",
   "players": {
     "paul-george": {
       "name": "Paul George",
@@ -262,7 +262,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 5,
+          "pts": 17,
           "game_id": "401869193",
           "opponent": "Detroit Pistons"
         }
@@ -276,7 +276,7 @@
       "games": [
         {
           "round": "R1",
-          "pts": 11,
+          "pts": 16,
           "game_id": "401869193",
           "opponent": "Detroit Pistons"
         }
@@ -346,37 +346,15 @@
       "games": [
         {
           "round": "R1",
-          "pts": 11,
+          "pts": 39,
           "game_id": "401869193",
           "opponent": "Orlando Magic"
         }
       ]
     }
   },
-  "active_games": [
-    "401869193"
-  ],
-  "live_games": [
-    {
-      "id": "401869193",
-      "round": "R1",
-      "status": "3:34 - 2nd",
-      "teams": [
-        {
-          "name": "Detroit Pistons",
-          "abbrev": "DET",
-          "score": "47",
-          "winner": null
-        },
-        {
-          "name": "Orlando Magic",
-          "abbrev": "ORL",
-          "score": "49",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Boston Celtics": {
       "opponent": "Philadelphia 76ers",
@@ -410,15 +388,15 @@
       "opponent": "Orlando Magic",
       "round": "R1",
       "wins": 0,
-      "losses": 0,
-      "summary": ""
+      "losses": 1,
+      "summary": "ORL leads series 1-0"
     },
     "Orlando Magic": {
       "opponent": "Detroit Pistons",
       "round": "R1",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
-      "summary": ""
+      "summary": "ORL leads series 1-0"
     }
   }
 }
