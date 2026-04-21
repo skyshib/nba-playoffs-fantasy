@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-21T23:08:41.679056+00:00",
+  "last_updated": "2026-04-21T23:52:23.914554+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -731,6 +731,12 @@
           "pts": 17,
           "game_id": "401869191",
           "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 9,
+          "game_id": "401869396",
+          "opponent": "Boston Celtics"
         }
       ]
     },
@@ -744,6 +750,12 @@
           "round": "R1",
           "pts": 3,
           "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869396",
           "opponent": "Boston Celtics"
         }
       ]
@@ -759,6 +771,12 @@
           "pts": 10,
           "game_id": "401869191",
           "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869396",
+          "opponent": "Boston Celtics"
         }
       ]
     },
@@ -772,6 +790,12 @@
           "round": "R1",
           "pts": 6,
           "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869396",
           "opponent": "Boston Celtics"
         }
       ]
@@ -787,6 +811,12 @@
           "pts": 2,
           "game_id": "401869191",
           "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869396",
+          "opponent": "Boston Celtics"
         }
       ]
     },
@@ -800,6 +830,12 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869396",
           "opponent": "Boston Celtics"
         }
       ]
@@ -815,6 +851,12 @@
           "pts": 25,
           "game_id": "401869191",
           "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "R1",
+          "pts": 9,
+          "game_id": "401869396",
+          "opponent": "Philadelphia 76ers"
         }
       ]
     },
@@ -828,6 +870,12 @@
           "round": "R1",
           "pts": 13,
           "game_id": "401869191",
+          "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869396",
           "opponent": "Philadelphia 76ers"
         }
       ]
@@ -843,6 +891,12 @@
           "pts": 10,
           "game_id": "401869191",
           "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869396",
+          "opponent": "Philadelphia 76ers"
         }
       ]
     },
@@ -856,6 +910,12 @@
           "round": "R1",
           "pts": 12,
           "game_id": "401869191",
+          "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869396",
           "opponent": "Philadelphia 76ers"
         }
       ]
@@ -1169,8 +1229,30 @@
       ]
     }
   },
-  "active_games": [],
-  "live_games": [],
+  "active_games": [
+    "401869396"
+  ],
+  "live_games": [
+    {
+      "id": "401869396",
+      "round": "R1",
+      "status": "9:15 - 2nd",
+      "teams": [
+        {
+          "name": "Boston Celtics",
+          "abbrev": "BOS",
+          "score": "35",
+          "winner": null
+        },
+        {
+          "name": "Philadelphia 76ers",
+          "abbrev": "PHI",
+          "score": "34",
+          "winner": null
+        }
+      ]
+    }
+  ],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
