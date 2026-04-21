@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-20T23:59:15.751366+00:00",
+  "last_updated": "2026-04-21T01:54:21.890413+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -16,7 +16,7 @@
         },
         {
           "round": "R1",
-          "pts": 6,
+          "pts": 22,
           "game_id": "401869369",
           "opponent": "Cleveland Cavaliers"
         }
@@ -56,7 +56,7 @@
         },
         {
           "round": "R1",
-          "pts": 6,
+          "pts": 14,
           "game_id": "401869369",
           "opponent": "Cleveland Cavaliers"
         }
@@ -96,7 +96,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 3,
           "game_id": "401869369",
           "opponent": "Toronto Raptors"
         }
@@ -116,7 +116,7 @@
         },
         {
           "round": "R1",
-          "pts": 6,
+          "pts": 10,
           "game_id": "401869369",
           "opponent": "Toronto Raptors"
         }
@@ -136,7 +136,7 @@
         },
         {
           "round": "R1",
-          "pts": 10,
+          "pts": 25,
           "game_id": "401869369",
           "opponent": "Toronto Raptors"
         }
@@ -156,7 +156,7 @@
         },
         {
           "round": "R1",
-          "pts": 13,
+          "pts": 28,
           "game_id": "401869369",
           "opponent": "Toronto Raptors"
         }
@@ -176,7 +176,7 @@
         },
         {
           "round": "R1",
-          "pts": 13,
+          "pts": 30,
           "game_id": "401869369",
           "opponent": "Toronto Raptors"
         }
@@ -196,7 +196,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 5,
           "game_id": "401869369",
           "opponent": "Toronto Raptors"
         }
@@ -216,7 +216,7 @@
         },
         {
           "round": "R1",
-          "pts": 3,
+          "pts": 6,
           "game_id": "401869369",
           "opponent": "Toronto Raptors"
         }
@@ -236,7 +236,7 @@
         },
         {
           "round": "R1",
-          "pts": 2,
+          "pts": 5,
           "game_id": "401869369",
           "opponent": "Toronto Raptors"
         }
@@ -435,6 +435,12 @@
           "pts": 19,
           "game_id": "401869189",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 11,
+          "game_id": "401869387",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -448,6 +454,12 @@
           "round": "R1",
           "pts": 4,
           "game_id": "401869189",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869387",
           "opponent": "New York Knicks"
         }
       ]
@@ -463,6 +475,12 @@
           "pts": 8,
           "game_id": "401869189",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 8,
+          "game_id": "401869387",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -476,6 +494,12 @@
           "round": "R1",
           "pts": 3,
           "game_id": "401869189",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869387",
           "opponent": "New York Knicks"
         }
       ]
@@ -491,6 +515,12 @@
           "pts": 0,
           "game_id": "401869189",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869387",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -504,6 +534,12 @@
           "round": "R1",
           "pts": 11,
           "game_id": "401869189",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 15,
+          "game_id": "401869387",
           "opponent": "Atlanta Hawks"
         }
       ]
@@ -1056,24 +1092,24 @@
     }
   },
   "active_games": [
-    "401869369"
+    "401869387"
   ],
   "live_games": [
     {
-      "id": "401869369",
+      "id": "401869387",
       "round": "R1",
-      "status": "3:49 - 2nd",
+      "status": "5:34 - 3rd",
       "teams": [
         {
-          "name": "Cleveland Cavaliers",
-          "abbrev": "CLE",
-          "score": "47",
+          "name": "New York Knicks",
+          "abbrev": "NY",
+          "score": "80",
           "winner": null
         },
         {
-          "name": "Toronto Raptors",
-          "abbrev": "TOR",
-          "score": "40",
+          "name": "Atlanta Hawks",
+          "abbrev": "ATL",
+          "score": "68",
           "winner": null
         }
       ]
@@ -1083,16 +1119,16 @@
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
       "round": "R1",
-      "wins": 1,
+      "wins": 2,
       "losses": 0,
-      "summary": "CLE leads series 1-0"
+      "summary": "CLE leads series 2-0"
     },
     "Toronto Raptors": {
       "opponent": "Cleveland Cavaliers",
       "round": "R1",
       "wins": 0,
-      "losses": 1,
-      "summary": "CLE leads series 1-0"
+      "losses": 2,
+      "summary": "CLE leads series 2-0"
     },
     "Denver Nuggets": {
       "opponent": "Minnesota Timberwolves",
