@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-21T04:44:18.645122+00:00",
+  "last_updated": "2026-04-21T05:42:03.360980+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -256,7 +256,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 2,
           "game_id": "401869395",
           "opponent": "Denver Nuggets"
         }
@@ -276,7 +276,7 @@
         },
         {
           "round": "R1",
-          "pts": 28,
+          "pts": 30,
           "game_id": "401869395",
           "opponent": "Denver Nuggets"
         }
@@ -316,7 +316,7 @@
         },
         {
           "round": "R1",
-          "pts": 10,
+          "pts": 13,
           "game_id": "401869395",
           "opponent": "Denver Nuggets"
         }
@@ -356,7 +356,7 @@
         },
         {
           "round": "R1",
-          "pts": 5,
+          "pts": 8,
           "game_id": "401869395",
           "opponent": "Minnesota Timberwolves"
         }
@@ -376,7 +376,7 @@
         },
         {
           "round": "R1",
-          "pts": 9,
+          "pts": 13,
           "game_id": "401869395",
           "opponent": "Minnesota Timberwolves"
         }
@@ -396,7 +396,7 @@
         },
         {
           "round": "R1",
-          "pts": 22,
+          "pts": 24,
           "game_id": "401869395",
           "opponent": "Minnesota Timberwolves"
         }
@@ -416,7 +416,7 @@
         },
         {
           "round": "R1",
-          "pts": 28,
+          "pts": 30,
           "game_id": "401869395",
           "opponent": "Minnesota Timberwolves"
         }
@@ -476,7 +476,7 @@
         },
         {
           "round": "R1",
-          "pts": 1,
+          "pts": 7,
           "game_id": "401869395",
           "opponent": "Minnesota Timberwolves"
         }
@@ -1169,30 +1169,8 @@
       ]
     }
   },
-  "active_games": [
-    "401869395"
-  ],
-  "live_games": [
-    {
-      "id": "401869395",
-      "round": "R1",
-      "status": "1:07 - 3rd",
-      "teams": [
-        {
-          "name": "Denver Nuggets",
-          "abbrev": "DEN",
-          "score": "91",
-          "winner": null
-        },
-        {
-          "name": "Minnesota Timberwolves",
-          "abbrev": "MIN",
-          "score": "87",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
@@ -1212,15 +1190,15 @@
       "opponent": "Minnesota Timberwolves",
       "round": "R1",
       "wins": 1,
-      "losses": 0,
-      "summary": "DEN leads series 1-0"
+      "losses": 1,
+      "summary": "Series tied 1-1"
     },
     "Minnesota Timberwolves": {
       "opponent": "Denver Nuggets",
       "round": "R1",
-      "wins": 0,
+      "wins": 1,
       "losses": 1,
-      "summary": "DEN leads series 1-0"
+      "summary": "Series tied 1-1"
     },
     "New York Knicks": {
       "opponent": "Atlanta Hawks",
