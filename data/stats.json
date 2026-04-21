@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-21T01:54:21.890413+00:00",
+  "last_updated": "2026-04-21T04:44:18.645122+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -253,6 +253,12 @@
           "pts": 17,
           "game_id": "401869188",
           "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869395",
+          "opponent": "Denver Nuggets"
         }
       ]
     },
@@ -266,6 +272,12 @@
           "round": "R1",
           "pts": 22,
           "game_id": "401869188",
+          "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 28,
+          "game_id": "401869395",
           "opponent": "Denver Nuggets"
         }
       ]
@@ -281,6 +293,12 @@
           "pts": 0,
           "game_id": "401869188",
           "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869395",
+          "opponent": "Denver Nuggets"
         }
       ]
     },
@@ -294,6 +312,12 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869188",
+          "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869395",
           "opponent": "Denver Nuggets"
         }
       ]
@@ -309,6 +333,12 @@
           "pts": 0,
           "game_id": "401869188",
           "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869395",
+          "opponent": "Denver Nuggets"
         }
       ]
     },
@@ -322,6 +352,12 @@
           "round": "R1",
           "pts": 17,
           "game_id": "401869188",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869395",
           "opponent": "Minnesota Timberwolves"
         }
       ]
@@ -337,6 +373,12 @@
           "pts": 12,
           "game_id": "401869188",
           "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 9,
+          "game_id": "401869395",
+          "opponent": "Minnesota Timberwolves"
         }
       ]
     },
@@ -350,6 +392,12 @@
           "round": "R1",
           "pts": 25,
           "game_id": "401869188",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 22,
+          "game_id": "401869395",
           "opponent": "Minnesota Timberwolves"
         }
       ]
@@ -365,6 +413,12 @@
           "pts": 30,
           "game_id": "401869188",
           "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 28,
+          "game_id": "401869395",
+          "opponent": "Minnesota Timberwolves"
         }
       ]
     },
@@ -378,6 +432,12 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869188",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869395",
           "opponent": "Minnesota Timberwolves"
         }
       ]
@@ -393,6 +453,12 @@
           "pts": 7,
           "game_id": "401869188",
           "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 16,
+          "game_id": "401869395",
+          "opponent": "Minnesota Timberwolves"
         }
       ]
     },
@@ -407,6 +473,12 @@
           "pts": 8,
           "game_id": "401869188",
           "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 1,
+          "game_id": "401869395",
+          "opponent": "Minnesota Timberwolves"
         }
       ]
     },
@@ -420,6 +492,12 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869188",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869395",
           "opponent": "Minnesota Timberwolves"
         }
       ]
@@ -438,7 +516,7 @@
         },
         {
           "round": "R1",
-          "pts": 11,
+          "pts": 15,
           "game_id": "401869387",
           "opponent": "New York Knicks"
         }
@@ -478,7 +556,7 @@
         },
         {
           "round": "R1",
-          "pts": 8,
+          "pts": 19,
           "game_id": "401869387",
           "opponent": "New York Knicks"
         }
@@ -1092,24 +1170,24 @@
     }
   },
   "active_games": [
-    "401869387"
+    "401869395"
   ],
   "live_games": [
     {
-      "id": "401869387",
+      "id": "401869395",
       "round": "R1",
-      "status": "5:34 - 3rd",
+      "status": "1:07 - 3rd",
       "teams": [
         {
-          "name": "New York Knicks",
-          "abbrev": "NY",
-          "score": "80",
+          "name": "Denver Nuggets",
+          "abbrev": "DEN",
+          "score": "91",
           "winner": null
         },
         {
-          "name": "Atlanta Hawks",
-          "abbrev": "ATL",
-          "score": "68",
+          "name": "Minnesota Timberwolves",
+          "abbrev": "MIN",
+          "score": "87",
           "winner": null
         }
       ]
@@ -1148,15 +1226,15 @@
       "opponent": "Atlanta Hawks",
       "round": "R1",
       "wins": 1,
-      "losses": 0,
-      "summary": "NY leads series 1-0"
+      "losses": 1,
+      "summary": "Series tied 1-1"
     },
     "Atlanta Hawks": {
       "opponent": "New York Knicks",
       "round": "R1",
-      "wins": 0,
+      "wins": 1,
       "losses": 1,
-      "summary": "NY leads series 1-0"
+      "summary": "Series tied 1-1"
     },
     "Los Angeles Lakers": {
       "opponent": "Houston Rockets",
