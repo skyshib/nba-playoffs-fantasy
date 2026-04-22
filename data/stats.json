@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-21T23:52:23.914554+00:00",
+  "last_updated": "2026-04-22T01:53:17.961528+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -734,7 +734,7 @@
         },
         {
           "round": "R1",
-          "pts": 9,
+          "pts": 19,
           "game_id": "401869396",
           "opponent": "Boston Celtics"
         }
@@ -774,7 +774,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 12,
           "game_id": "401869396",
           "opponent": "Boston Celtics"
         }
@@ -814,7 +814,7 @@
         },
         {
           "round": "R1",
-          "pts": 3,
+          "pts": 10,
           "game_id": "401869396",
           "opponent": "Boston Celtics"
         }
@@ -854,7 +854,7 @@
         },
         {
           "round": "R1",
-          "pts": 9,
+          "pts": 19,
           "game_id": "401869396",
           "opponent": "Philadelphia 76ers"
         }
@@ -874,7 +874,7 @@
         },
         {
           "round": "R1",
-          "pts": 2,
+          "pts": 8,
           "game_id": "401869396",
           "opponent": "Philadelphia 76ers"
         }
@@ -894,7 +894,7 @@
         },
         {
           "round": "R1",
-          "pts": 3,
+          "pts": 8,
           "game_id": "401869396",
           "opponent": "Philadelphia 76ers"
         }
@@ -914,7 +914,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 4,
           "game_id": "401869396",
           "opponent": "Philadelphia 76ers"
         }
@@ -1141,6 +1141,12 @@
           "pts": 4,
           "game_id": "401869194",
           "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "R1",
+          "pts": 9,
+          "game_id": "401869378",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -1154,6 +1160,12 @@
           "round": "R1",
           "pts": 11,
           "game_id": "401869194",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "R1",
+          "pts": 7,
+          "game_id": "401869378",
           "opponent": "San Antonio Spurs"
         }
       ]
@@ -1169,6 +1181,12 @@
           "pts": 0,
           "game_id": "401869194",
           "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869378",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -1182,6 +1200,12 @@
           "round": "R1",
           "pts": 35,
           "game_id": "401869194",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869378",
           "opponent": "Portland Trail Blazers"
         }
       ]
@@ -1197,6 +1221,12 @@
           "pts": 17,
           "game_id": "401869194",
           "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 13,
+          "game_id": "401869378",
+          "opponent": "Portland Trail Blazers"
         }
       ]
     },
@@ -1210,6 +1240,12 @@
           "round": "R1",
           "pts": 17,
           "game_id": "401869194",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 16,
+          "game_id": "401869378",
           "opponent": "Portland Trail Blazers"
         }
       ]
@@ -1225,29 +1261,35 @@
           "pts": 10,
           "game_id": "401869194",
           "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869378",
+          "opponent": "Portland Trail Blazers"
         }
       ]
     }
   },
   "active_games": [
-    "401869396"
+    "401869378"
   ],
   "live_games": [
     {
-      "id": "401869396",
+      "id": "401869378",
       "round": "R1",
-      "status": "9:15 - 2nd",
+      "status": "3:21 - 3rd",
       "teams": [
         {
-          "name": "Boston Celtics",
-          "abbrev": "BOS",
-          "score": "35",
+          "name": "San Antonio Spurs",
+          "abbrev": "SA",
+          "score": "76",
           "winner": null
         },
         {
-          "name": "Philadelphia 76ers",
-          "abbrev": "PHI",
-          "score": "34",
+          "name": "Portland Trail Blazers",
+          "abbrev": "POR",
+          "score": "70",
           "winner": null
         }
       ]
@@ -1314,15 +1356,15 @@
       "opponent": "Philadelphia 76ers",
       "round": "R1",
       "wins": 1,
-      "losses": 0,
-      "summary": "BOS leads series 1-0"
+      "losses": 1,
+      "summary": "Series tied 1-1"
     },
     "Philadelphia 76ers": {
       "opponent": "Boston Celtics",
       "round": "R1",
-      "wins": 0,
+      "wins": 1,
       "losses": 1,
-      "summary": "BOS leads series 1-0"
+      "summary": "Series tied 1-1"
     },
     "Oklahoma City Thunder": {
       "opponent": "Phoenix Suns",
