@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-22T04:41:42.715172+00:00",
+  "last_updated": "2026-04-22T05:45:39.599316+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -636,7 +636,7 @@
         },
         {
           "round": "R1",
-          "pts": 16,
+          "pts": 18,
           "game_id": "401869397",
           "opponent": "Los Angeles Lakers"
         }
@@ -656,7 +656,7 @@
         },
         {
           "round": "R1",
-          "pts": 15,
+          "pts": 16,
           "game_id": "401869397",
           "opponent": "Los Angeles Lakers"
         }
@@ -696,7 +696,7 @@
         },
         {
           "round": "R1",
-          "pts": 5,
+          "pts": 10,
           "game_id": "401869397",
           "opponent": "Los Angeles Lakers"
         }
@@ -736,7 +736,7 @@
         },
         {
           "round": "R1",
-          "pts": 19,
+          "pts": 28,
           "game_id": "401869397",
           "opponent": "Houston Rockets"
         }
@@ -1313,30 +1313,8 @@
       ]
     }
   },
-  "active_games": [
-    "401869397"
-  ],
-  "live_games": [
-    {
-      "id": "401869397",
-      "round": "R1",
-      "status": "11:34 - 4th",
-      "teams": [
-        {
-          "name": "Los Angeles Lakers",
-          "abbrev": "LAL",
-          "score": "78",
-          "winner": null
-        },
-        {
-          "name": "Houston Rockets",
-          "abbrev": "HOU",
-          "score": "70",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
@@ -1383,16 +1361,16 @@
     "Los Angeles Lakers": {
       "opponent": "Houston Rockets",
       "round": "R1",
-      "wins": 1,
+      "wins": 2,
       "losses": 0,
-      "summary": "LAL lead series 1-0"
+      "summary": "LAL lead series 2-0"
     },
     "Houston Rockets": {
       "opponent": "Los Angeles Lakers",
       "round": "R1",
       "wins": 0,
-      "losses": 1,
-      "summary": "LAL lead series 1-0"
+      "losses": 2,
+      "summary": "LAL lead series 2-0"
     },
     "Boston Celtics": {
       "opponent": "Philadelphia 76ers",
