@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-22T01:53:17.961528+00:00",
+  "last_updated": "2026-04-22T04:41:42.715172+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -633,6 +633,12 @@
           "pts": 16,
           "game_id": "401869190",
           "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "R1",
+          "pts": 16,
+          "game_id": "401869397",
+          "opponent": "Los Angeles Lakers"
         }
       ]
     },
@@ -646,6 +652,12 @@
           "round": "R1",
           "pts": 17,
           "game_id": "401869190",
+          "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "R1",
+          "pts": 15,
+          "game_id": "401869397",
           "opponent": "Los Angeles Lakers"
         }
       ]
@@ -661,6 +673,12 @@
           "pts": 17,
           "game_id": "401869190",
           "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869397",
+          "opponent": "Los Angeles Lakers"
         }
       ]
     },
@@ -674,6 +692,12 @@
           "round": "R1",
           "pts": 16,
           "game_id": "401869190",
+          "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869397",
           "opponent": "Los Angeles Lakers"
         }
       ]
@@ -689,6 +713,12 @@
           "pts": 0,
           "game_id": "401869190",
           "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869397",
+          "opponent": "Los Angeles Lakers"
         }
       ]
     },
@@ -703,6 +733,12 @@
           "pts": 19,
           "game_id": "401869190",
           "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 19,
+          "game_id": "401869397",
+          "opponent": "Houston Rockets"
         }
       ]
     },
@@ -716,6 +752,12 @@
           "round": "R1",
           "pts": 19,
           "game_id": "401869190",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869397",
           "opponent": "Houston Rockets"
         }
       ]
@@ -1164,7 +1206,7 @@
         },
         {
           "round": "R1",
-          "pts": 7,
+          "pts": 11,
           "game_id": "401869378",
           "opponent": "San Antonio Spurs"
         }
@@ -1224,7 +1266,7 @@
         },
         {
           "round": "R1",
-          "pts": 13,
+          "pts": 17,
           "game_id": "401869378",
           "opponent": "Portland Trail Blazers"
         }
@@ -1244,7 +1286,7 @@
         },
         {
           "round": "R1",
-          "pts": 16,
+          "pts": 18,
           "game_id": "401869378",
           "opponent": "Portland Trail Blazers"
         }
@@ -1264,7 +1306,7 @@
         },
         {
           "round": "R1",
-          "pts": 6,
+          "pts": 10,
           "game_id": "401869378",
           "opponent": "Portland Trail Blazers"
         }
@@ -1272,23 +1314,23 @@
     }
   },
   "active_games": [
-    "401869378"
+    "401869397"
   ],
   "live_games": [
     {
-      "id": "401869378",
+      "id": "401869397",
       "round": "R1",
-      "status": "3:21 - 3rd",
+      "status": "11:34 - 4th",
       "teams": [
         {
-          "name": "San Antonio Spurs",
-          "abbrev": "SA",
-          "score": "76",
+          "name": "Los Angeles Lakers",
+          "abbrev": "LAL",
+          "score": "78",
           "winner": null
         },
         {
-          "name": "Portland Trail Blazers",
-          "abbrev": "POR",
+          "name": "Houston Rockets",
+          "abbrev": "HOU",
           "score": "70",
           "winner": null
         }
@@ -1398,15 +1440,15 @@
       "opponent": "Portland Trail Blazers",
       "round": "R1",
       "wins": 1,
-      "losses": 0,
-      "summary": "SA leads series 1-0"
+      "losses": 1,
+      "summary": "Series tied 1-1"
     },
     "Portland Trail Blazers": {
       "opponent": "San Antonio Spurs",
       "round": "R1",
-      "wins": 0,
+      "wins": 1,
       "losses": 1,
-      "summary": "SA leads series 1-0"
+      "summary": "Series tied 1-1"
     }
   }
 }
