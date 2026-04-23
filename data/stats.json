@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-23T01:57:37.832310+00:00",
+  "last_updated": "2026-04-23T04:50:04.776606+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -976,7 +976,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 7,
           "game_id": "401869368",
           "opponent": "Oklahoma City Thunder"
         }
@@ -1010,7 +1010,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 16,
           "game_id": "401869368",
           "opponent": "Oklahoma City Thunder"
         }
@@ -1030,7 +1030,7 @@
         },
         {
           "round": "R1",
-          "pts": 3,
+          "pts": 19,
           "game_id": "401869368",
           "opponent": "Phoenix Suns"
         }
@@ -1050,7 +1050,7 @@
         },
         {
           "round": "R1",
-          "pts": 2,
+          "pts": 37,
           "game_id": "401869368",
           "opponent": "Phoenix Suns"
         }
@@ -1070,7 +1070,7 @@
         },
         {
           "round": "R1",
-          "pts": 6,
+          "pts": 19,
           "game_id": "401869368",
           "opponent": "Phoenix Suns"
         }
@@ -1090,7 +1090,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 7,
           "game_id": "401869368",
           "opponent": "Phoenix Suns"
         }
@@ -1110,7 +1110,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 14,
           "game_id": "401869368",
           "opponent": "Phoenix Suns"
         }
@@ -1397,30 +1397,8 @@
       ]
     }
   },
-  "active_games": [
-    "401869368"
-  ],
-  "live_games": [
-    {
-      "id": "401869368",
-      "round": "R1",
-      "status": "6:22 - 1st",
-      "teams": [
-        {
-          "name": "Oklahoma City Thunder",
-          "abbrev": "OKC",
-          "score": "17",
-          "winner": null
-        },
-        {
-          "name": "Phoenix Suns",
-          "abbrev": "PHX",
-          "score": "14",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
@@ -1495,16 +1473,16 @@
     "Oklahoma City Thunder": {
       "opponent": "Phoenix Suns",
       "round": "R1",
-      "wins": 1,
+      "wins": 2,
       "losses": 0,
-      "summary": "OKC leads series 1-0"
+      "summary": "OKC leads series 2-0"
     },
     "Phoenix Suns": {
       "opponent": "Oklahoma City Thunder",
       "round": "R1",
       "wins": 0,
-      "losses": 1,
-      "summary": "OKC leads series 1-0"
+      "losses": 2,
+      "summary": "OKC leads series 2-0"
     },
     "Detroit Pistons": {
       "opponent": "Orlando Magic",
