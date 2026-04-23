@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-23T01:13:53.643338+00:00",
+  "last_updated": "2026-04-23T01:57:37.832310+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -973,6 +973,12 @@
           "pts": 0,
           "game_id": "401869192",
           "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869368",
+          "opponent": "Oklahoma City Thunder"
         }
       ]
     },
@@ -1001,6 +1007,12 @@
           "pts": 4,
           "game_id": "401869192",
           "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869368",
+          "opponent": "Oklahoma City Thunder"
         }
       ]
     },
@@ -1014,6 +1026,12 @@
           "round": "R1",
           "pts": 16,
           "game_id": "401869192",
+          "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869368",
           "opponent": "Phoenix Suns"
         }
       ]
@@ -1029,6 +1047,12 @@
           "pts": 25,
           "game_id": "401869192",
           "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869368",
+          "opponent": "Phoenix Suns"
         }
       ]
     },
@@ -1042,6 +1066,12 @@
           "round": "R1",
           "pts": 22,
           "game_id": "401869192",
+          "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869368",
           "opponent": "Phoenix Suns"
         }
       ]
@@ -1057,6 +1087,12 @@
           "pts": 2,
           "game_id": "401869192",
           "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869368",
+          "opponent": "Phoenix Suns"
         }
       ]
     },
@@ -1070,6 +1106,12 @@
           "round": "R1",
           "pts": 9,
           "game_id": "401869192",
+          "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869368",
           "opponent": "Phoenix Suns"
         }
       ]
@@ -1108,7 +1150,7 @@
         },
         {
           "round": "R1",
-          "pts": 17,
+          "pts": 19,
           "game_id": "401869411",
           "opponent": "Detroit Pistons"
         }
@@ -1208,7 +1250,7 @@
         },
         {
           "round": "R1",
-          "pts": 20,
+          "pts": 27,
           "game_id": "401869411",
           "opponent": "Orlando Magic"
         }
@@ -1356,24 +1398,24 @@
     }
   },
   "active_games": [
-    "401869411"
+    "401869368"
   ],
   "live_games": [
     {
-      "id": "401869411",
+      "id": "401869368",
       "round": "R1",
-      "status": "11:16 - 4th",
+      "status": "6:22 - 1st",
       "teams": [
         {
-          "name": "Detroit Pistons",
-          "abbrev": "DET",
-          "score": "84",
+          "name": "Oklahoma City Thunder",
+          "abbrev": "OKC",
+          "score": "17",
           "winner": null
         },
         {
-          "name": "Orlando Magic",
-          "abbrev": "ORL",
-          "score": "63",
+          "name": "Phoenix Suns",
+          "abbrev": "PHX",
+          "score": "14",
           "winner": null
         }
       ]
@@ -1467,16 +1509,16 @@
     "Detroit Pistons": {
       "opponent": "Orlando Magic",
       "round": "R1",
-      "wins": 0,
+      "wins": 1,
       "losses": 1,
-      "summary": "ORL leads series 1-0"
+      "summary": "Series tied 1-1"
     },
     "Orlando Magic": {
       "opponent": "Detroit Pistons",
       "round": "R1",
       "wins": 1,
-      "losses": 0,
-      "summary": "ORL leads series 1-0"
+      "losses": 1,
+      "summary": "Series tied 1-1"
     },
     "San Antonio Spurs": {
       "opponent": "Portland Trail Blazers",
