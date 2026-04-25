@@ -20,46 +20,46 @@
           "cost": 6.53
         },
         "3": {
-          "player_id": "bruce-brown",
-          "name": "Bruce Brown",
-          "team": "Denver Nuggets",
+          "player_id": "og-anunoby",
+          "name": "OG Anunoby",
+          "team": "New York Knicks",
           "seed": 3,
-          "cost": 7.91
+          "cost": 16.69
         },
         "4": {
-          "player_id": "lebron-james",
-          "name": "LeBron James",
+          "player_id": "luke-kennard",
+          "name": "Luke Kennard",
           "team": "Los Angeles Lakers",
           "seed": 4,
-          "cost": 20.93
+          "cost": 8.36
         },
         "5": {
-          "player_id": "rj-barrett",
-          "name": "RJ Barrett",
+          "player_id": "collin-murray-boyles",
+          "name": "Collin Murray-Boyles",
           "team": "Toronto Raptors",
           "seed": 5,
-          "cost": 19.26
+          "cost": 8.49
         },
         "6": {
-          "player_id": "jonathan-kuminga",
-          "name": "Jonathan Kuminga",
+          "player_id": "cj-mccollum",
+          "name": "CJ McCollum",
           "team": "Atlanta Hawks",
           "seed": 6,
-          "cost": 12.17
+          "cost": 18.74
         },
         "7": {
-          "player_id": "robert-williams-iii",
-          "name": "Robert Williams III",
+          "player_id": "scoot-henderson",
+          "name": "Scoot Henderson",
           "team": "Portland Trail Blazers",
           "seed": 7,
-          "cost": 6.73
+          "cost": 14.23
         },
         "8": {
-          "player_id": "jalen-suggs",
-          "name": "Jalen Suggs",
-          "team": "Orlando Magic",
+          "player_id": "jalen-green",
+          "name": "Jalen Green",
+          "team": "Phoenix Suns",
           "seed": 8,
-          "cost": 13.79
+          "cost": 17.75
         }
       }
     },
