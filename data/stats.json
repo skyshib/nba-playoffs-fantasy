@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-25T12:47:07.740030+00:00",
+  "last_updated": "2026-04-25T16:43:16.198583+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -49,32 +49,6 @@
         {
           "round": "R1",
           "pts": 8,
-          "game_id": "401869375",
-          "opponent": "Cleveland Cavaliers"
-        }
-      ]
-    },
-    "collin-murray-boyles": {
-      "name": "Collin Murray-Boyles",
-      "team": "Toronto Raptors",
-      "seed": 5,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 14,
-          "game_id": "401869187",
-          "opponent": "Cleveland Cavaliers"
-        },
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869369",
-          "opponent": "Cleveland Cavaliers"
-        },
-        {
-          "round": "R1",
-          "pts": 22,
           "game_id": "401869375",
           "opponent": "Cleveland Cavaliers"
         }
@@ -692,32 +666,6 @@
         }
       ]
     },
-    "cj-mccollum": {
-      "name": "CJ McCollum",
-      "team": "Atlanta Hawks",
-      "seed": 6,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 26,
-          "game_id": "401869189",
-          "opponent": "New York Knicks"
-        },
-        {
-          "round": "R1",
-          "pts": 32,
-          "game_id": "401869387",
-          "opponent": "New York Knicks"
-        },
-        {
-          "round": "R1",
-          "pts": 23,
-          "game_id": "401869389",
-          "opponent": "New York Knicks"
-        }
-      ]
-    },
     "dyson-daniels": {
       "name": "Dyson Daniels",
       "team": "Atlanta Hawks",
@@ -819,32 +767,6 @@
           "pts": 0,
           "game_id": "401869389",
           "opponent": "New York Knicks"
-        }
-      ]
-    },
-    "og-anunoby": {
-      "name": "OG Anunoby",
-      "team": "New York Knicks",
-      "seed": 3,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 18,
-          "game_id": "401869189",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 14,
-          "game_id": "401869387",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 29,
-          "game_id": "401869389",
-          "opponent": "Atlanta Hawks"
         }
       ]
     },
@@ -1051,32 +973,6 @@
         {
           "round": "R1",
           "pts": 2,
-          "game_id": "401869400",
-          "opponent": "Houston Rockets"
-        }
-      ]
-    },
-    "luke-kennard": {
-      "name": "Luke Kennard",
-      "team": "Los Angeles Lakers",
-      "seed": 4,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 27,
-          "game_id": "401869190",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 23,
-          "game_id": "401869397",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 14,
           "game_id": "401869400",
           "opponent": "Houston Rockets"
         }
@@ -1376,26 +1272,6 @@
         }
       ]
     },
-    "jalen-green": {
-      "name": "Jalen Green",
-      "team": "Phoenix Suns",
-      "seed": 8,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869192",
-          "opponent": "Oklahoma City Thunder"
-        },
-        {
-          "round": "R1",
-          "pts": 21,
-          "game_id": "401869368",
-          "opponent": "Oklahoma City Thunder"
-        }
-      ]
-    },
     "royce-oneale": {
       "name": "Royce O'Neale",
       "team": "Phoenix Suns",
@@ -1677,32 +1553,6 @@
         {
           "round": "R1",
           "pts": 7,
-          "game_id": "401869382",
-          "opponent": "San Antonio Spurs"
-        }
-      ]
-    },
-    "scoot-henderson": {
-      "name": "Scoot Henderson",
-      "team": "Portland Trail Blazers",
-      "seed": 7,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 18,
-          "game_id": "401869194",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "R1",
-          "pts": 31,
-          "game_id": "401869378",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "R1",
-          "pts": 21,
           "game_id": "401869382",
           "opponent": "San Antonio Spurs"
         }
