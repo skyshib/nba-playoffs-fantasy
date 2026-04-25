@@ -233,6 +233,17 @@ const Scoreboard = (() => {
     if (!synth.length) { host.innerHTML = ''; return; }
     host.innerHTML = '';
 
+    // Build pick counts from real entrants so the synthetic card's tooltips
+    // show accurate "Picked by N/M" values.
+    const synthPickCounts = {};
+    const realEnts = (picksData?.entrants || []).filter(e => !e._synthetic);
+    const synthTotalEntrants = realEnts.length;
+    for (const e of realEnts) {
+      for (const p of Object.values(e.picks || {})) {
+        synthPickCounts[p.player_id] = (synthPickCounts[p.player_id] || 0) + 1;
+      }
+    }
+
     for (const r of synth) {
       const key = 'synth_open_' + r.name.replace(/\W+/g, '_');
       const isOpen = localStorage.getItem(key) === '1';
@@ -283,7 +294,7 @@ const Scoreboard = (() => {
 
       // Seed cells — reuse the same builder (no color, no click for tooltip though)
       for (let seed = 1; seed <= 8; seed++) {
-        tr.appendChild(buildSeedCell(r, seed, { noColor: true }));
+        tr.appendChild(buildSeedCell(r, seed, { noColor: true, pickCounts: synthPickCounts, totalEntrants: synthTotalEntrants }));
       }
 
       tbody.appendChild(tr);
@@ -307,10 +318,12 @@ const Scoreboard = (() => {
     const ranked = rankAll();
     tbody.innerHTML = '';
 
-    // Per-player pick counts
+    // Per-player pick counts (exclude synthetic entrants so "picked by"
+    // reflects only real users).
     const pickCounts = {};
-    const totalEntrants = picksData?.entrants?.length || 0;
-    for (const e of picksData?.entrants || []) {
+    const realEntrants = (picksData?.entrants || []).filter(e => !e._synthetic);
+    const totalEntrants = realEntrants.length;
+    for (const e of realEntrants) {
       for (const p of Object.values(e.picks || {})) {
         pickCounts[p.player_id] = (pickCounts[p.player_id] || 0) + 1;
       }
