@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-25T18:05:28.813380+00:00",
+  "last_updated": "2026-04-25T19:12:35.563425+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1412,7 +1412,7 @@
         },
         {
           "round": "R1",
-          "pts": 7,
+          "pts": 9,
           "game_id": "401869414",
           "opponent": "Detroit Pistons"
         }
@@ -1438,7 +1438,7 @@
         },
         {
           "round": "R1",
-          "pts": 7,
+          "pts": 15,
           "game_id": "401869414",
           "opponent": "Detroit Pistons"
         }
@@ -1464,7 +1464,7 @@
         },
         {
           "round": "R1",
-          "pts": 4,
+          "pts": 7,
           "game_id": "401869414",
           "opponent": "Detroit Pistons"
         }
@@ -1568,7 +1568,7 @@
         },
         {
           "round": "R1",
-          "pts": 8,
+          "pts": 15,
           "game_id": "401869414",
           "opponent": "Orlando Magic"
         }
@@ -1758,18 +1758,18 @@
     {
       "id": "401869414",
       "round": "R1",
-      "status": "3:27 - 2nd",
+      "status": "End of 3rd",
       "teams": [
         {
           "name": "Orlando Magic",
           "abbrev": "ORL",
-          "score": "50",
+          "score": "87",
           "winner": null
         },
         {
           "name": "Detroit Pistons",
           "abbrev": "DET",
-          "score": "43",
+          "score": "79",
           "winner": null
         }
       ]
