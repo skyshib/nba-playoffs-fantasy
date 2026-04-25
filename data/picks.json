@@ -2,6 +2,68 @@
   "year": 2026,
   "entrants": [
     {
+      "name": "\u2b50 Best Possible Roster",
+      "_synthetic": true,
+      "picks": {
+        "1": {
+          "player_id": "cade-cunningham",
+          "name": "Cade Cunningham",
+          "team": "Detroit Pistons",
+          "seed": 1,
+          "cost": 23.92
+        },
+        "2": {
+          "player_id": "luke-kornet",
+          "name": "Luke Kornet",
+          "team": "San Antonio Spurs",
+          "seed": 2,
+          "cost": 6.53
+        },
+        "3": {
+          "player_id": "bruce-brown",
+          "name": "Bruce Brown",
+          "team": "Denver Nuggets",
+          "seed": 3,
+          "cost": 7.91
+        },
+        "4": {
+          "player_id": "lebron-james",
+          "name": "LeBron James",
+          "team": "Los Angeles Lakers",
+          "seed": 4,
+          "cost": 20.93
+        },
+        "5": {
+          "player_id": "rj-barrett",
+          "name": "RJ Barrett",
+          "team": "Toronto Raptors",
+          "seed": 5,
+          "cost": 19.26
+        },
+        "6": {
+          "player_id": "jonathan-kuminga",
+          "name": "Jonathan Kuminga",
+          "team": "Atlanta Hawks",
+          "seed": 6,
+          "cost": 12.17
+        },
+        "7": {
+          "player_id": "robert-williams-iii",
+          "name": "Robert Williams III",
+          "team": "Portland Trail Blazers",
+          "seed": 7,
+          "cost": 6.73
+        },
+        "8": {
+          "player_id": "jalen-suggs",
+          "name": "Jalen Suggs",
+          "team": "Orlando Magic",
+          "seed": 8,
+          "cost": 13.79
+        }
+      }
+    },
+    {
       "name": "Air India",
       "email": "vikramnayudu@gmail.com",
       "submitted_at": "2026-04-18T15:38:31.712Z",
