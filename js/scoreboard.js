@@ -253,7 +253,8 @@ const Scoreboard = (() => {
       if (isOpen) details.open = true;
 
       const summary = document.createElement('summary');
-      summary.innerHTML = `<span class="synth-title">${r.name}</span><span class="synth-total">${fmtPts(r.total)} pts</span>`;
+      const shortName = r.name.replace(/^⭐\s*/, '').replace(/\s*\(.*\)$/, '');
+      summary.innerHTML = `<span class="synth-title"><span class="synth-title-closed">${r.name}</span><span class="synth-title-open">${shortName}</span></span><span class="synth-total">${fmtPts(r.total)} pts</span>`;
       details.appendChild(summary);
 
       // Build a one-row mini-scoreboard matching the main table columns

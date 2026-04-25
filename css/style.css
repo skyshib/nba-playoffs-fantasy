@@ -173,6 +173,9 @@ main { max-width: 1600px; margin: 1.5rem auto; padding: 0 1rem; }
 }
 .synthetic-card[open] summary::before { transform: rotate(90deg); display: inline-block; }
 .synth-title { font-weight: 700; color: var(--accent-gold); font-size: 0.9rem; flex: 1; }
+.synth-title-open { display: none; }
+.synthetic-card[open] .synth-title-closed { display: none; }
+.synthetic-card[open] .synth-title-open { display: inline; }
 .synth-total { color: var(--accent-gold); font-weight: 700; font-size: 0.95rem; font-variant-numeric: tabular-nums; }
 .synth-body {
   padding: 0;
