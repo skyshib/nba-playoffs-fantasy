@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-25T04:31:27.131164+00:00",
+  "last_updated": "2026-04-25T06:10:17.347450+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1552,7 +1552,7 @@
         },
         {
           "round": "R1",
-          "pts": 6,
+          "pts": 7,
           "game_id": "401869382",
           "opponent": "San Antonio Spurs"
         }
@@ -1578,7 +1578,7 @@
         },
         {
           "round": "R1",
-          "pts": 7,
+          "pts": 11,
           "game_id": "401869382",
           "opponent": "San Antonio Spurs"
         }
@@ -1650,7 +1650,7 @@
         },
         {
           "round": "R1",
-          "pts": 10,
+          "pts": 18,
           "game_id": "401869382",
           "opponent": "Portland Trail Blazers"
         }
@@ -1676,7 +1676,7 @@
         },
         {
           "round": "R1",
-          "pts": 22,
+          "pts": 33,
           "game_id": "401869382",
           "opponent": "Portland Trail Blazers"
         }
@@ -1702,37 +1702,15 @@
         },
         {
           "round": "R1",
-          "pts": 12,
+          "pts": 14,
           "game_id": "401869382",
           "opponent": "Portland Trail Blazers"
         }
       ]
     }
   },
-  "active_games": [
-    "401869382"
-  ],
-  "live_games": [
-    {
-      "id": "401869382",
-      "round": "R1",
-      "status": "6:27 - 3rd",
-      "teams": [
-        {
-          "name": "Portland Trail Blazers",
-          "abbrev": "POR",
-          "score": "77",
-          "winner": null
-        },
-        {
-          "name": "San Antonio Spurs",
-          "abbrev": "SA",
-          "score": "67",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
@@ -1835,16 +1813,16 @@
     "San Antonio Spurs": {
       "opponent": "Portland Trail Blazers",
       "round": "R1",
-      "wins": 1,
+      "wins": 2,
       "losses": 1,
-      "summary": "Series tied 1-1"
+      "summary": "SA leads series 2-1"
     },
     "Portland Trail Blazers": {
       "opponent": "San Antonio Spurs",
       "round": "R1",
       "wins": 1,
-      "losses": 1,
-      "summary": "Series tied 1-1"
+      "losses": 2,
+      "summary": "SA leads series 2-1"
     }
   }
 }
