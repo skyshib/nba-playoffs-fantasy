@@ -3,6 +3,7 @@
   "entrants": [
     {
       "name": "\u2b50 Best Possible Roster",
+      "_synthetic": true,
       "picks": {
         "1": {
           "player_id": "jalen-williams",
@@ -60,8 +61,7 @@
           "seed": 8,
           "cost": 9.9
         }
-      },
-      "_synthetic": true
+      }
     },
     {
       "name": "Cory vest",

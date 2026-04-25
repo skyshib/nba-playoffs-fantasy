@@ -3,6 +3,7 @@
   "entrants": [
     {
       "name": "\u2b50 Best Possible Roster",
+      "_synthetic": true,
       "picks": {
         "1": {
           "player_id": "jimmy-butler",
@@ -60,8 +61,7 @@
           "seed": 8,
           "cost": 7.3
         }
-      },
-      "_synthetic": true
+      }
     },
     {
       "name": "Carter Kranz",

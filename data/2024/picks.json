@@ -3,6 +3,7 @@
   "entrants": [
     {
       "name": "\u2b50 Best Possible Roster",
+      "_synthetic": true,
       "picks": {
         "1": {
           "player_id": "jaylen-brown",
@@ -60,8 +61,7 @@
           "seed": 8,
           "cost": 7.7
         }
-      },
-      "_synthetic": true
+      }
     },
     {
       "name": "Brent Uhrich",
