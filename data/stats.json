@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-25T22:01:56.373423+00:00",
+  "last_updated": "2026-04-25T22:57:42.125838+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -663,6 +663,12 @@
           "pts": 9,
           "game_id": "401869389",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869391",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -688,6 +694,12 @@
           "round": "R1",
           "pts": 8,
           "game_id": "401869389",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869391",
           "opponent": "New York Knicks"
         }
       ]
@@ -715,6 +727,12 @@
           "pts": 21,
           "game_id": "401869389",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869391",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -740,6 +758,12 @@
           "round": "R1",
           "pts": 5,
           "game_id": "401869389",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869391",
           "opponent": "New York Knicks"
         }
       ]
@@ -767,6 +791,12 @@
           "pts": 0,
           "game_id": "401869389",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869391",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -792,6 +822,12 @@
           "round": "R1",
           "pts": 2,
           "game_id": "401869389",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869391",
           "opponent": "Atlanta Hawks"
         }
       ]
@@ -1788,24 +1824,24 @@
     }
   },
   "active_games": [
-    "401869370"
+    "401869391"
   ],
   "live_games": [
     {
-      "id": "401869370",
+      "id": "401869391",
       "round": "R1",
-      "status": "5.7 - 4th",
+      "status": "7:22 - 2nd",
       "teams": [
         {
-          "name": "Phoenix Suns",
-          "abbrev": "PHX",
-          "score": "109",
+          "name": "Atlanta Hawks",
+          "abbrev": "ATL",
+          "score": "29",
           "winner": null
         },
         {
-          "name": "Oklahoma City Thunder",
-          "abbrev": "OKC",
-          "score": "121",
+          "name": "New York Knicks",
+          "abbrev": "NY",
+          "score": "38",
           "winner": null
         }
       ]
@@ -1885,16 +1921,16 @@
     "Oklahoma City Thunder": {
       "opponent": "Phoenix Suns",
       "round": "R1",
-      "wins": 2,
+      "wins": 3,
       "losses": 0,
-      "summary": "OKC leads series 2-0"
+      "summary": "OKC leads series 3-0"
     },
     "Phoenix Suns": {
       "opponent": "Oklahoma City Thunder",
       "round": "R1",
       "wins": 0,
-      "losses": 2,
-      "summary": "OKC leads series 2-0"
+      "losses": 3,
+      "summary": "OKC leads series 3-0"
     },
     "Detroit Pistons": {
       "opponent": "Orlando Magic",
