@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-24T23:25:50.305114+00:00",
+  "last_updated": "2026-04-25T00:05:39.853770+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -956,7 +956,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 8,
           "game_id": "401869404",
           "opponent": "Boston Celtics"
         }
@@ -982,7 +982,7 @@
         },
         {
           "round": "R1",
-          "pts": 4,
+          "pts": 6,
           "game_id": "401869404",
           "opponent": "Boston Celtics"
         }
@@ -1008,7 +1008,7 @@
         },
         {
           "round": "R1",
-          "pts": 3,
+          "pts": 7,
           "game_id": "401869404",
           "opponent": "Boston Celtics"
         }
@@ -1112,7 +1112,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 6,
           "game_id": "401869404",
           "opponent": "Philadelphia 76ers"
         }
@@ -1164,7 +1164,7 @@
         },
         {
           "round": "R1",
-          "pts": 2,
+          "pts": 5,
           "game_id": "401869404",
           "opponent": "Philadelphia 76ers"
         }
@@ -1190,7 +1190,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 6,
           "game_id": "401869404",
           "opponent": "Philadelphia 76ers"
         }
@@ -1638,18 +1638,18 @@
     {
       "id": "401869404",
       "round": "R1",
-      "status": "6:46 - 1st",
+      "status": "3:48 - 2nd",
       "teams": [
         {
           "name": "Philadelphia 76ers",
           "abbrev": "PHI",
-          "score": "9",
+          "score": "40",
           "winner": null
         },
         {
           "name": "Boston Celtics",
           "abbrev": "BOS",
-          "score": "9",
+          "score": "45",
           "winner": null
         }
       ]
