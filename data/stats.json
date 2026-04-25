@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-25T21:22:59.166921+00:00",
+  "last_updated": "2026-04-25T22:01:56.373423+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1258,7 +1258,7 @@
         },
         {
           "round": "R1",
-          "pts": 12,
+          "pts": 15,
           "game_id": "401869370",
           "opponent": "Oklahoma City Thunder"
         }
@@ -1298,7 +1298,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 3,
           "game_id": "401869370",
           "opponent": "Oklahoma City Thunder"
         }
@@ -1324,7 +1324,7 @@
         },
         {
           "round": "R1",
-          "pts": 4,
+          "pts": 10,
           "game_id": "401869370",
           "opponent": "Phoenix Suns"
         }
@@ -1350,7 +1350,7 @@
         },
         {
           "round": "R1",
-          "pts": 30,
+          "pts": 42,
           "game_id": "401869370",
           "opponent": "Phoenix Suns"
         }
@@ -1396,7 +1396,7 @@
         },
         {
           "round": "R1",
-          "pts": 10,
+          "pts": 13,
           "game_id": "401869370",
           "opponent": "Phoenix Suns"
         }
@@ -1422,7 +1422,7 @@
         },
         {
           "round": "R1",
-          "pts": 10,
+          "pts": 15,
           "game_id": "401869370",
           "opponent": "Phoenix Suns"
         }
@@ -1794,18 +1794,18 @@
     {
       "id": "401869370",
       "round": "R1",
-      "status": "47.1 - 3rd",
+      "status": "5.7 - 4th",
       "teams": [
         {
           "name": "Phoenix Suns",
           "abbrev": "PHX",
-          "score": "79",
+          "score": "109",
           "winner": null
         },
         {
           "name": "Oklahoma City Thunder",
           "abbrev": "OKC",
-          "score": "87",
+          "score": "121",
           "winner": null
         }
       ]
