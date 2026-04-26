@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-26T19:14:21.452301+00:00",
+  "last_updated": "2026-04-26T19:58:41.060497+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -28,7 +28,7 @@
         },
         {
           "round": "R1",
-          "pts": 13,
+          "pts": 18,
           "game_id": "401869377",
           "opponent": "Cleveland Cavaliers"
         }
@@ -92,7 +92,7 @@
         },
         {
           "round": "R1",
-          "pts": 12,
+          "pts": 15,
           "game_id": "401869377",
           "opponent": "Cleveland Cavaliers"
         }
@@ -220,7 +220,7 @@
         },
         {
           "round": "R1",
-          "pts": 1,
+          "pts": 3,
           "game_id": "401869377",
           "opponent": "Toronto Raptors"
         }
@@ -284,7 +284,7 @@
         },
         {
           "round": "R1",
-          "pts": 16,
+          "pts": 19,
           "game_id": "401869377",
           "opponent": "Toronto Raptors"
         }
@@ -316,7 +316,7 @@
         },
         {
           "round": "R1",
-          "pts": 8,
+          "pts": 20,
           "game_id": "401869377",
           "opponent": "Toronto Raptors"
         }
@@ -412,7 +412,7 @@
         },
         {
           "round": "R1",
-          "pts": 9,
+          "pts": 14,
           "game_id": "401869377",
           "opponent": "Toronto Raptors"
         }
@@ -2023,6 +2023,12 @@
           "pts": 7,
           "game_id": "401869382",
           "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869385",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -2048,6 +2054,12 @@
           "round": "R1",
           "pts": 21,
           "game_id": "401869382",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869385",
           "opponent": "San Antonio Spurs"
         }
       ]
@@ -2075,6 +2087,12 @@
           "pts": 11,
           "game_id": "401869382",
           "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869385",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -2101,6 +2119,12 @@
           "pts": 0,
           "game_id": "401869382",
           "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869385",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -2120,6 +2144,12 @@
           "round": "R1",
           "pts": 5,
           "game_id": "401869378",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869385",
           "opponent": "Portland Trail Blazers"
         },
         {
@@ -2153,6 +2183,12 @@
           "pts": 18,
           "game_id": "401869382",
           "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 4,
+          "game_id": "401869385",
+          "opponent": "Portland Trail Blazers"
         }
       ]
     },
@@ -2178,6 +2214,12 @@
           "round": "R1",
           "pts": 33,
           "game_id": "401869382",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869385",
           "opponent": "Portland Trail Blazers"
         }
       ]
@@ -2205,29 +2247,35 @@
           "pts": 14,
           "game_id": "401869382",
           "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869385",
+          "opponent": "Portland Trail Blazers"
         }
       ]
     }
   },
   "active_games": [
-    "401869377"
+    "401869385"
   ],
   "live_games": [
     {
-      "id": "401869377",
+      "id": "401869385",
       "round": "R1",
-      "status": "8:45 - 4th",
+      "status": "7:04 - 1st",
       "teams": [
         {
-          "name": "Toronto Raptors",
-          "abbrev": "TOR",
-          "score": "72",
+          "name": "Portland Trail Blazers",
+          "abbrev": "POR",
+          "score": "7",
           "winner": null
         },
         {
-          "name": "Cleveland Cavaliers",
-          "abbrev": "CLE",
-          "score": "67",
+          "name": "San Antonio Spurs",
+          "abbrev": "SA",
+          "score": "12",
           "winner": null
         }
       ]
@@ -2238,15 +2286,15 @@
       "opponent": "Toronto Raptors",
       "round": "R1",
       "wins": 2,
-      "losses": 1,
-      "summary": "CLE leads series 2-1"
+      "losses": 2,
+      "summary": "Series tied 2-2"
     },
     "Toronto Raptors": {
       "opponent": "Cleveland Cavaliers",
       "round": "R1",
-      "wins": 1,
+      "wins": 2,
       "losses": 2,
-      "summary": "CLE leads series 2-1"
+      "summary": "Series tied 2-2"
     },
     "Denver Nuggets": {
       "opponent": "Minnesota Timberwolves",
