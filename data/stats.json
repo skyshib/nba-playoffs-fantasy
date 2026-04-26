@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-26T20:51:58.909854+00:00",
+  "last_updated": "2026-04-26T21:15:01.241939+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1948,32 +1948,6 @@
         }
       ]
     },
-    "tobias-harris": {
-      "name": "Tobias Harris",
-      "team": "Detroit Pistons",
-      "seed": 1,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869193",
-          "opponent": "Orlando Magic"
-        },
-        {
-          "round": "R1",
-          "pts": 16,
-          "game_id": "401869411",
-          "opponent": "Orlando Magic"
-        },
-        {
-          "round": "R1",
-          "pts": 23,
-          "game_id": "401869414",
-          "opponent": "Orlando Magic"
-        }
-      ]
-    },
     "cade-cunningham": {
       "name": "Cade Cunningham",
       "team": "Detroit Pistons",
@@ -2148,7 +2122,7 @@
         },
         {
           "round": "R1",
-          "pts": 9,
+          "pts": 11,
           "game_id": "401869385",
           "opponent": "Portland Trail Blazers"
         },
@@ -2186,7 +2160,7 @@
         },
         {
           "round": "R1",
-          "pts": 8,
+          "pts": 13,
           "game_id": "401869385",
           "opponent": "Portland Trail Blazers"
         }
@@ -2264,7 +2238,7 @@
     {
       "id": "401869385",
       "round": "R1",
-      "status": "32.2 - 2nd",
+      "status": "9:25 - 3rd",
       "teams": [
         {
           "name": "Portland Trail Blazers",
@@ -2275,7 +2249,7 @@
         {
           "name": "San Antonio Spurs",
           "abbrev": "SA",
-          "score": "39",
+          "score": "49",
           "winner": null
         }
       ]

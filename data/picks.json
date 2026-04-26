@@ -6,18 +6,18 @@
       "_synthetic": true,
       "picks": {
         "1": {
-          "player_id": "tobias-harris",
-          "name": "Tobias Harris",
+          "player_id": "cade-cunningham",
+          "name": "Cade Cunningham",
           "team": "Detroit Pistons",
           "seed": 1,
-          "cost": 13.27
+          "cost": 23.92
         },
         "2": {
-          "player_id": "stephon-castle",
-          "name": "Stephon Castle",
+          "player_id": "luke-kornet",
+          "name": "Luke Kornet",
           "team": "San Antonio Spurs",
           "seed": 2,
-          "cost": 16.66
+          "cost": 6.53
         },
         "3": {
           "player_id": "og-anunoby",

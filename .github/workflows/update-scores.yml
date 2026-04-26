@@ -28,13 +28,19 @@ jobs:
       - name: Sync picks from Google Sheet
         run: python scripts/sync_picks.py || true
 
-      - name: Update scores
+      - name: Update scores (all players for best-roster computation)
+        run: python scripts/update_scores.py --year 2026 --all-players
+
+      - name: Recompute Best Possible Roster
+        run: python scripts/update_best_roster.py
+
+      - name: Update scores (picked players only for deploy)
         run: python scripts/update_scores.py --year 2026
 
       - name: Check for changes
         id: changes
         run: |
-          if git diff --quiet data/stats.json data/picks.json; then
+          if git diff --quiet data/stats.json data/picks.json 2>/dev/null; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
