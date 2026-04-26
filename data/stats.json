@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-26T05:22:33.025621+00:00",
+  "last_updated": "2026-04-26T05:42:45.584881+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -49,6 +49,32 @@
         {
           "round": "R1",
           "pts": 8,
+          "game_id": "401869375",
+          "opponent": "Cleveland Cavaliers"
+        }
+      ]
+    },
+    "collin-murray-boyles": {
+      "name": "Collin Murray-Boyles",
+      "team": "Toronto Raptors",
+      "seed": 5,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 14,
+          "game_id": "401869187",
+          "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "R1",
+          "pts": 17,
+          "game_id": "401869369",
+          "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "R1",
+          "pts": 22,
           "game_id": "401869375",
           "opponent": "Cleveland Cavaliers"
         }
@@ -405,6 +431,38 @@
         {
           "round": "R1",
           "pts": 0,
+          "game_id": "401869399",
+          "opponent": "Denver Nuggets"
+        }
+      ]
+    },
+    "ayo-dosunmu": {
+      "name": "Ayo Dosunmu",
+      "team": "Minnesota Timberwolves",
+      "seed": 6,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 14,
+          "game_id": "401869188",
+          "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 9,
+          "game_id": "401869395",
+          "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 25,
+          "game_id": "401869398",
+          "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 43,
           "game_id": "401869399",
           "opponent": "Denver Nuggets"
         }
@@ -890,6 +948,38 @@
         }
       ]
     },
+    "og-anunoby": {
+      "name": "OG Anunoby",
+      "team": "New York Knicks",
+      "seed": 3,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 18,
+          "game_id": "401869189",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 14,
+          "game_id": "401869387",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 29,
+          "game_id": "401869389",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 22,
+          "game_id": "401869391",
+          "opponent": "Atlanta Hawks"
+        }
+      ]
+    },
     "josh-hart": {
       "name": "Josh Hart",
       "team": "New York Knicks",
@@ -1099,6 +1189,32 @@
         {
           "round": "R1",
           "pts": 2,
+          "game_id": "401869400",
+          "opponent": "Houston Rockets"
+        }
+      ]
+    },
+    "luke-kennard": {
+      "name": "Luke Kennard",
+      "team": "Los Angeles Lakers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 27,
+          "game_id": "401869190",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 23,
+          "game_id": "401869397",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 14,
           "game_id": "401869400",
           "opponent": "Houston Rockets"
         }
@@ -1361,6 +1477,32 @@
           "pts": 15,
           "game_id": "401869404",
           "opponent": "Philadelphia 76ers"
+        }
+      ]
+    },
+    "dillon-brooks": {
+      "name": "Dillon Brooks",
+      "team": "Phoenix Suns",
+      "seed": 8,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 18,
+          "game_id": "401869192",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "R1",
+          "pts": 30,
+          "game_id": "401869368",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "R1",
+          "pts": 33,
+          "game_id": "401869370",
+          "opponent": "Oklahoma City Thunder"
         }
       ]
     },
@@ -1728,6 +1870,32 @@
         }
       ]
     },
+    "tobias-harris": {
+      "name": "Tobias Harris",
+      "team": "Detroit Pistons",
+      "seed": 1,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 17,
+          "game_id": "401869193",
+          "opponent": "Orlando Magic"
+        },
+        {
+          "round": "R1",
+          "pts": 16,
+          "game_id": "401869411",
+          "opponent": "Orlando Magic"
+        },
+        {
+          "round": "R1",
+          "pts": 23,
+          "game_id": "401869414",
+          "opponent": "Orlando Magic"
+        }
+      ]
+    },
     "cade-cunningham": {
       "name": "Cade Cunningham",
       "team": "Detroit Pistons",
@@ -1775,6 +1943,32 @@
         {
           "round": "R1",
           "pts": 7,
+          "game_id": "401869382",
+          "opponent": "San Antonio Spurs"
+        }
+      ]
+    },
+    "scoot-henderson": {
+      "name": "Scoot Henderson",
+      "team": "Portland Trail Blazers",
+      "seed": 7,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 18,
+          "game_id": "401869194",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "R1",
+          "pts": 31,
+          "game_id": "401869378",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "R1",
+          "pts": 21,
           "game_id": "401869382",
           "opponent": "San Antonio Spurs"
         }
