@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-26T18:48:42.774212+00:00",
+  "last_updated": "2026-04-26T19:14:21.452301+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -28,7 +28,7 @@
         },
         {
           "round": "R1",
-          "pts": 7,
+          "pts": 13,
           "game_id": "401869377",
           "opponent": "Cleveland Cavaliers"
         }
@@ -60,7 +60,7 @@
         },
         {
           "round": "R1",
-          "pts": 6,
+          "pts": 10,
           "game_id": "401869377",
           "opponent": "Cleveland Cavaliers"
         }
@@ -92,7 +92,7 @@
         },
         {
           "round": "R1",
-          "pts": 9,
+          "pts": 12,
           "game_id": "401869377",
           "opponent": "Cleveland Cavaliers"
         }
@@ -252,7 +252,7 @@
         },
         {
           "round": "R1",
-          "pts": 6,
+          "pts": 8,
           "game_id": "401869377",
           "opponent": "Toronto Raptors"
         }
@@ -284,7 +284,7 @@
         },
         {
           "round": "R1",
-          "pts": 14,
+          "pts": 16,
           "game_id": "401869377",
           "opponent": "Toronto Raptors"
         }
@@ -412,7 +412,7 @@
         },
         {
           "round": "R1",
-          "pts": 3,
+          "pts": 9,
           "game_id": "401869377",
           "opponent": "Toronto Raptors"
         }
@@ -2216,18 +2216,18 @@
     {
       "id": "401869377",
       "round": "R1",
-      "status": "4:38 - 3rd",
+      "status": "8:45 - 4th",
       "teams": [
         {
           "name": "Toronto Raptors",
           "abbrev": "TOR",
-          "score": "46",
+          "score": "72",
           "winner": null
         },
         {
           "name": "Cleveland Cavaliers",
           "abbrev": "CLE",
-          "score": "52",
+          "score": "67",
           "winner": null
         }
       ]
