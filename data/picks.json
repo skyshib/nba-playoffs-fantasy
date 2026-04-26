@@ -2,6 +2,68 @@
   "year": 2026,
   "entrants": [
     {
+      "name": "\u2b50 Best Possible Roster (So Far)",
+      "_synthetic": true,
+      "picks": {
+        "1": {
+          "player_id": "tobias-harris",
+          "name": "Tobias Harris",
+          "team": "Detroit Pistons",
+          "seed": 1,
+          "cost": 13.27
+        },
+        "2": {
+          "player_id": "stephon-castle",
+          "name": "Stephon Castle",
+          "team": "San Antonio Spurs",
+          "seed": 2,
+          "cost": 16.66
+        },
+        "3": {
+          "player_id": "og-anunoby",
+          "name": "OG Anunoby",
+          "team": "New York Knicks",
+          "seed": 3,
+          "cost": 16.69
+        },
+        "4": {
+          "player_id": "luke-kennard",
+          "name": "Luke Kennard",
+          "team": "Los Angeles Lakers",
+          "seed": 4,
+          "cost": 8.36
+        },
+        "5": {
+          "player_id": "collin-murray-boyles",
+          "name": "Collin Murray-Boyles",
+          "team": "Toronto Raptors",
+          "seed": 5,
+          "cost": 8.49
+        },
+        "6": {
+          "player_id": "ayo-dosunmu",
+          "name": "Ayo Dosunmu",
+          "team": "Minnesota Timberwolves",
+          "seed": 6,
+          "cost": 14.81
+        },
+        "7": {
+          "player_id": "scoot-henderson",
+          "name": "Scoot Henderson",
+          "team": "Portland Trail Blazers",
+          "seed": 7,
+          "cost": 14.23
+        },
+        "8": {
+          "player_id": "dillon-brooks",
+          "name": "Dillon Brooks",
+          "team": "Phoenix Suns",
+          "seed": 8,
+          "cost": 20.2
+        }
+      }
+    },
+    {
       "name": "Air India",
       "email": "vikramnayudu@gmail.com",
       "submitted_at": "2026-04-18T15:38:31.712Z",
