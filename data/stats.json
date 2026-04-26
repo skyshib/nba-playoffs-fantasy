@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-26T05:20:29.006472+00:00",
+  "last_updated": "2026-04-26T05:22:07.548548+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -465,6 +465,12 @@
           "pts": 3,
           "game_id": "401869399",
           "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869398",
+          "opponent": "Denver Nuggets"
         }
       ]
     },
@@ -490,6 +496,12 @@
           "round": "R1",
           "pts": 9,
           "game_id": "401869399",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869398",
           "opponent": "Minnesota Timberwolves"
         }
       ]
@@ -1389,6 +1401,18 @@
           "pts": 2,
           "game_id": "401869192",
           "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869368",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869370",
+          "opponent": "Oklahoma City Thunder"
         }
       ]
     },
@@ -1486,6 +1510,12 @@
           "round": "R1",
           "pts": 19,
           "game_id": "401869368",
+          "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869370",
           "opponent": "Phoenix Suns"
         }
       ]
@@ -1818,6 +1848,12 @@
           "round": "R1",
           "pts": 5,
           "game_id": "401869378",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869382",
           "opponent": "Portland Trail Blazers"
         }
       ]

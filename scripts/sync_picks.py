@@ -83,6 +83,13 @@ def main():
             print(f"  - {e['name']} ({e['submitted_at']})")
         return
 
+    # Preserve any synthetic entrants (e.g. "Best Possible Roster") from the
+    # existing file — they're added outside the Sheet and shouldn't be lost.
+    if picks_path.exists():
+        existing = json.loads(picks_path.read_text())
+        synthetics = [e for e in existing.get("entrants", []) if e.get("_synthetic")]
+        doc["entrants"] = synthetics + doc["entrants"]
+
     picks_path.write_text(json.dumps(doc, indent=2))
     print(f"\nWrote {picks_path} — {len(entrants)} entrants:")
     for e in entrants:

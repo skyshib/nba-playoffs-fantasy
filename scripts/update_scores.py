@@ -231,6 +231,46 @@ def main():
                         "opponent": opponent,
                     })
 
+    # DNP detection: for each picked player, check if their team played games
+    # that the player didn't appear in. Add 0-point entries for those games.
+    # (e.g., Jalen Williams missing Game 3 due to injury)
+    team_games = {}  # team_name → [(game_id, round, opponent)]
+    for ev in events:
+        if is_play_in(ev): continue
+        rd = classify_round(ev)
+        if not rd: continue
+        comp = ev.get("competitions", [{}])[0]
+        state = comp.get("status", {}).get("type", {}).get("state", "")
+        if state not in ("post", "in"): continue
+        eid = ev.get("id")
+        for t in comp.get("competitors", []):
+            tn = t.get("team", {}).get("displayName", "")
+            opp = next((c.get("team", {}).get("displayName", "")
+                       for c in comp.get("competitors", []) if c != t), "")
+            team_games.setdefault(tn, []).append((eid, rd, opp))
+
+    dnp_added = 0
+    for norm_name, mapped in pick_map.items():
+        slug = mapped["slug"]
+        pick_team = mapped.get("team", "")
+        if slug not in player_stats:
+            continue
+        ps = player_stats[slug]
+        existing_game_ids = {g.get("game_id") for g in ps["games"]}
+        # Find the team's games (match by team name)
+        for tn, games_list in team_games.items():
+            if pick_team.lower() in tn.lower() or tn.lower() in pick_team.lower():
+                for gid, rd, opp in games_list:
+                    if gid not in existing_game_ids:
+                        ps["games"].append({
+                            "round": rd, "pts": 0,
+                            "game_id": gid, "opponent": opp,
+                        })
+                        dnp_added += 1
+                break
+    if dnp_added:
+        print(f"  Added {dnp_added} DNP entries (0 pts)")
+
     # Series-level elimination: a team is out when their opponent wins 4 games of any series in the most recent round they appeared.
     # Build win counts per (round, team) from completed games.
     series_wins: dict[tuple[str, str], int] = {}
