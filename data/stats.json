@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-26T19:58:41.060497+00:00",
+  "last_updated": "2026-04-26T20:51:58.909854+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -2026,7 +2026,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 5,
           "game_id": "401869385",
           "opponent": "San Antonio Spurs"
         }
@@ -2090,7 +2090,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 4,
           "game_id": "401869385",
           "opponent": "San Antonio Spurs"
         }
@@ -2148,7 +2148,7 @@
         },
         {
           "round": "R1",
-          "pts": 2,
+          "pts": 9,
           "game_id": "401869385",
           "opponent": "Portland Trail Blazers"
         },
@@ -2186,7 +2186,7 @@
         },
         {
           "round": "R1",
-          "pts": 4,
+          "pts": 8,
           "game_id": "401869385",
           "opponent": "Portland Trail Blazers"
         }
@@ -2218,7 +2218,7 @@
         },
         {
           "round": "R1",
-          "pts": 6,
+          "pts": 10,
           "game_id": "401869385",
           "opponent": "Portland Trail Blazers"
         }
@@ -2264,18 +2264,18 @@
     {
       "id": "401869385",
       "round": "R1",
-      "status": "7:04 - 1st",
+      "status": "32.2 - 2nd",
       "teams": [
         {
           "name": "Portland Trail Blazers",
           "abbrev": "POR",
-          "score": "7",
+          "score": "58",
           "winner": null
         },
         {
           "name": "San Antonio Spurs",
           "abbrev": "SA",
-          "score": "12",
+          "score": "39",
           "winner": null
         }
       ]
