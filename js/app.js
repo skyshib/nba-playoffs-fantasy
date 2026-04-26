@@ -188,9 +188,23 @@
     let html = '<div class="live-games">';
     for (const game of liveGames) {
       html += '<div class="live-game-card">';
-      html += `<div class="live-game-status">${game.status || 'Live'}</div>`;
-      html += '<div class="live-game-matchup">';
+      // Series record from team_series data
       const teams = game.teams || [];
+      let seriesLine = '';
+      if (teams.length >= 2) {
+        const ts = stats?.team_series || {};
+        const t0name = teams[0].name || teams[0].abbrev || '';
+        const t1name = teams[1].name || teams[1].abbrev || '';
+        const s0 = ts[t0name] || ts[t1name];
+        if (s0 && s0.summary) {
+          seriesLine = s0.summary;
+        } else if (s0) {
+          seriesLine = `Series ${s0.wins}-${s0.losses}`;
+        }
+      }
+      const seriesHtml = seriesLine ? `<span class="live-game-series">${seriesLine}</span>` : '';
+      html += `<div class="live-game-status">${game.status || 'Live'}${seriesHtml}</div>`;
+      html += '<div class="live-game-matchup">';
       for (let i = 0; i < teams.length; i++) {
         const t = teams[i];
         const otherScore = parseInt(teams[1 - i]?.score || 0);

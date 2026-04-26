@@ -551,6 +551,14 @@ footer { text-align: center; padding: 2rem 1rem; color: var(--text-muted); font-
   font-size: 0.65rem; color: var(--live-green);
   text-transform: uppercase; letter-spacing: 0.08em;
   font-weight: 700; margin-bottom: 0.4rem; text-align: center;
+  display: flex; justify-content: center; align-items: center; gap: 0.5rem;
+}
+.live-game-series {
+  color: var(--text-muted);
+  font-size: 0.6rem;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 600;
 }
 .live-game-matchup {
   display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;
