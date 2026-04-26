@@ -562,7 +562,7 @@
       }
 
       // Update live game tracker with fresh player stats
-      renderLiveGames({ live_games: liveGames, players: currentStats?.players }, translatedLive);
+      renderLiveGames({ live_games: liveGames, players: currentStats?.players, team_series: currentStats?.team_series }, translatedLive);
 
       lastLive = fetchIds.length > 0 ? new Date() : null;
       updateIndicator(currentStats);
