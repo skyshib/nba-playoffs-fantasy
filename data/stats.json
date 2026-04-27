@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-27T02:03:48.043982+00:00",
+  "last_updated": "2026-04-27T05:00:42.068868+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1116,7 +1116,7 @@
         },
         {
           "round": "R1",
-          "pts": 4,
+          "pts": 16,
           "game_id": "401869405",
           "opponent": "Los Angeles Lakers"
         }
@@ -1148,7 +1148,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 23,
           "game_id": "401869405",
           "opponent": "Los Angeles Lakers"
         }
@@ -1180,7 +1180,7 @@
         },
         {
           "round": "R1",
-          "pts": 5,
+          "pts": 17,
           "game_id": "401869405",
           "opponent": "Los Angeles Lakers"
         }
@@ -1212,7 +1212,7 @@
         },
         {
           "round": "R1",
-          "pts": 2,
+          "pts": 20,
           "game_id": "401869405",
           "opponent": "Los Angeles Lakers"
         }
@@ -1244,7 +1244,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 9,
           "game_id": "401869405",
           "opponent": "Los Angeles Lakers"
         }
@@ -1276,7 +1276,7 @@
         },
         {
           "round": "R1",
-          "pts": 6,
+          "pts": 10,
           "game_id": "401869405",
           "opponent": "Houston Rockets"
         }
@@ -1308,7 +1308,7 @@
         },
         {
           "round": "R1",
-          "pts": 2,
+          "pts": 19,
           "game_id": "401869405",
           "opponent": "Houston Rockets"
         }
@@ -1340,7 +1340,7 @@
         },
         {
           "round": "R1",
-          "pts": 5,
+          "pts": 7,
           "game_id": "401869405",
           "opponent": "Houston Rockets"
         }
@@ -2365,30 +2365,8 @@
       ]
     }
   },
-  "active_games": [
-    "401869405"
-  ],
-  "live_games": [
-    {
-      "id": "401869405",
-      "round": "R1",
-      "status": "4:14 - 1st",
-      "teams": [
-        {
-          "name": "Houston Rockets",
-          "abbrev": "HOU",
-          "score": "14",
-          "winner": null
-        },
-        {
-          "name": "Los Angeles Lakers",
-          "abbrev": "LAL",
-          "score": "17",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
@@ -2436,15 +2414,15 @@
       "opponent": "Houston Rockets",
       "round": "R1",
       "wins": 3,
-      "losses": 0,
-      "summary": "LAL lead series 3-0"
+      "losses": 1,
+      "summary": "LAL lead series 3-1"
     },
     "Houston Rockets": {
       "opponent": "Los Angeles Lakers",
       "round": "R1",
-      "wins": 0,
+      "wins": 1,
       "losses": 3,
-      "summary": "LAL lead series 3-0"
+      "summary": "LAL lead series 3-1"
     },
     "Boston Celtics": {
       "opponent": "Philadelphia 76ers",
