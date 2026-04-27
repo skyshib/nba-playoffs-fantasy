@@ -521,15 +521,19 @@
       }
 
       // Fetch recently completed games not yet in stats.json
+      // Fetch box scores for recently-completed games. Instead of checking
+      // if ANY player has this game_id (which misses DNP players), always
+      // fetch completed games from the current day so late-arriving scores
+      // get overlaid even when other players from the same game are already
+      // committed.
       const recentlyCompleted = [];
+      const today = new Date().toISOString().slice(0, 10);
       for (const ev of data.events || []) {
         if (ESPN.isPlayIn(ev)) continue;
         const comp3 = ev.competitions?.[0];
         if (comp3?.status?.type?.state === 'post') {
-          const hasInStats = Object.values(currentStats?.players || {}).some(p =>
-            (p.games || []).some(g => g.game_id === ev.id)
-          );
-          if (!hasInStats) recentlyCompleted.push(ev.id);
+          const evDate = (ev.date || '').slice(0, 10);
+          if (evDate === today) recentlyCompleted.push(ev.id);
         }
       }
 
