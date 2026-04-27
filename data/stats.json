@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-26T23:56:48.972844+00:00",
+  "last_updated": "2026-04-27T02:03:48.043982+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1113,6 +1113,12 @@
           "pts": 24,
           "game_id": "401869400",
           "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "R1",
+          "pts": 4,
+          "game_id": "401869405",
+          "opponent": "Los Angeles Lakers"
         }
       ]
     },
@@ -1138,6 +1144,12 @@
           "round": "R1",
           "pts": 26,
           "game_id": "401869400",
+          "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869405",
           "opponent": "Los Angeles Lakers"
         }
       ]
@@ -1165,6 +1177,12 @@
           "pts": 17,
           "game_id": "401869400",
           "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869405",
+          "opponent": "Los Angeles Lakers"
         }
       ]
     },
@@ -1190,6 +1208,12 @@
           "round": "R1",
           "pts": 5,
           "game_id": "401869400",
+          "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869405",
           "opponent": "Los Angeles Lakers"
         }
       ]
@@ -1217,6 +1241,12 @@
           "pts": 0,
           "game_id": "401869400",
           "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869405",
+          "opponent": "Los Angeles Lakers"
         }
       ]
     },
@@ -1242,6 +1272,12 @@
           "round": "R1",
           "pts": 29,
           "game_id": "401869400",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869405",
           "opponent": "Houston Rockets"
         }
       ]
@@ -1269,6 +1305,12 @@
           "pts": 2,
           "game_id": "401869400",
           "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869405",
+          "opponent": "Houston Rockets"
         }
       ]
     },
@@ -1294,6 +1336,12 @@
           "round": "R1",
           "pts": 14,
           "game_id": "401869400",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869405",
           "opponent": "Houston Rockets"
         }
       ]
@@ -1324,7 +1372,7 @@
         },
         {
           "round": "R1",
-          "pts": 4,
+          "pts": 16,
           "game_id": "401869406",
           "opponent": "Boston Celtics"
         }
@@ -1388,7 +1436,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 2,
           "game_id": "401869406",
           "opponent": "Boston Celtics"
         }
@@ -1420,7 +1468,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 4,
           "game_id": "401869406",
           "opponent": "Boston Celtics"
         }
@@ -1452,7 +1500,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 2,
           "game_id": "401869406",
           "opponent": "Boston Celtics"
         }
@@ -1516,7 +1564,7 @@
         },
         {
           "round": "R1",
-          "pts": 5,
+          "pts": 30,
           "game_id": "401869406",
           "opponent": "Philadelphia 76ers"
         }
@@ -1548,7 +1596,7 @@
         },
         {
           "round": "R1",
-          "pts": 5,
+          "pts": 9,
           "game_id": "401869406",
           "opponent": "Philadelphia 76ers"
         }
@@ -1580,7 +1628,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 6,
           "game_id": "401869406",
           "opponent": "Philadelphia 76ers"
         }
@@ -1612,7 +1660,7 @@
         },
         {
           "round": "R1",
-          "pts": 18,
+          "pts": 32,
           "game_id": "401869406",
           "opponent": "Philadelphia 76ers"
         }
@@ -2318,24 +2366,24 @@
     }
   },
   "active_games": [
-    "401869406"
+    "401869405"
   ],
   "live_games": [
     {
-      "id": "401869406",
+      "id": "401869405",
       "round": "R1",
-      "status": "4:43 - 2nd",
+      "status": "4:14 - 1st",
       "teams": [
         {
-          "name": "Philadelphia 76ers",
-          "abbrev": "PHI",
-          "score": "28",
+          "name": "Houston Rockets",
+          "abbrev": "HOU",
+          "score": "14",
           "winner": null
         },
         {
-          "name": "Boston Celtics",
-          "abbrev": "BOS",
-          "score": "45",
+          "name": "Los Angeles Lakers",
+          "abbrev": "LAL",
+          "score": "17",
           "winner": null
         }
       ]
@@ -2401,16 +2449,16 @@
     "Boston Celtics": {
       "opponent": "Philadelphia 76ers",
       "round": "R1",
-      "wins": 2,
+      "wins": 3,
       "losses": 1,
-      "summary": "BOS leads series 2-1"
+      "summary": "BOS leads series 3-1"
     },
     "Philadelphia 76ers": {
       "opponent": "Boston Celtics",
       "round": "R1",
       "wins": 1,
-      "losses": 2,
-      "summary": "BOS leads series 2-1"
+      "losses": 3,
+      "summary": "BOS leads series 3-1"
     },
     "Oklahoma City Thunder": {
       "opponent": "Phoenix Suns",
