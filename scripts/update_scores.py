@@ -241,7 +241,7 @@ def main():
         if not rd: continue
         comp = ev.get("competitions", [{}])[0]
         state = comp.get("status", {}).get("type", {}).get("state", "")
-        if state not in ("post", "in"): continue
+        if state != "post": continue  # only add DNPs for completed games
         eid = ev.get("id")
         for t in comp.get("competitors", []):
             tn = t.get("team", {}).get("displayName", "")
