@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-28T05:15:11.240326+00:00",
+  "last_updated": "2026-04-28T05:23:12.832820+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -485,6 +485,12 @@
           "pts": 5,
           "game_id": "401869399",
           "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869401",
+          "opponent": "Denver Nuggets"
         }
       ]
     },
@@ -628,7 +634,7 @@
         },
         {
           "round": "R1",
-          "pts": 13,
+          "pts": 15,
           "game_id": "401869401",
           "opponent": "Denver Nuggets"
         },
@@ -668,6 +674,12 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869398",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869401",
           "opponent": "Minnesota Timberwolves"
         }
       ]
@@ -742,7 +754,7 @@
         },
         {
           "round": "R1",
-          "pts": 25,
+          "pts": 27,
           "game_id": "401869401",
           "opponent": "Minnesota Timberwolves"
         }
@@ -2539,30 +2551,8 @@
       ]
     }
   },
-  "active_games": [
-    "401869401"
-  ],
-  "live_games": [
-    {
-      "id": "401869401",
-      "round": "R1",
-      "status": "1:45 - 4th",
-      "teams": [
-        {
-          "name": "Denver Nuggets",
-          "abbrev": "DEN",
-          "score": "123",
-          "winner": null
-        },
-        {
-          "name": "Minnesota Timberwolves",
-          "abbrev": "MIN",
-          "score": "109",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
@@ -2581,16 +2571,16 @@
     "Denver Nuggets": {
       "opponent": "Minnesota Timberwolves",
       "round": "R1",
-      "wins": 1,
+      "wins": 2,
       "losses": 3,
-      "summary": "MIN leads series 3-1"
+      "summary": "MIN leads series 3-2"
     },
     "Minnesota Timberwolves": {
       "opponent": "Denver Nuggets",
       "round": "R1",
       "wins": 3,
-      "losses": 1,
-      "summary": "MIN leads series 3-1"
+      "losses": 2,
+      "summary": "MIN leads series 3-2"
     },
     "New York Knicks": {
       "opponent": "Atlanta Hawks",
