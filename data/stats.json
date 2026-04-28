@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-28T01:15:38.420976+00:00",
+  "last_updated": "2026-04-28T02:10:03.261050+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1689,6 +1689,12 @@
           "pts": 33,
           "game_id": "401869370",
           "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "R1",
+          "pts": 9,
+          "game_id": "401869373",
+          "opponent": "Oklahoma City Thunder"
         }
       ]
     },
@@ -1714,6 +1720,12 @@
           "round": "R1",
           "pts": 15,
           "game_id": "401869370",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869373",
           "opponent": "Oklahoma City Thunder"
         }
       ]
@@ -1767,6 +1779,12 @@
           "pts": 3,
           "game_id": "401869370",
           "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869373",
+          "opponent": "Oklahoma City Thunder"
         }
       ]
     },
@@ -1793,6 +1811,12 @@
           "pts": 10,
           "game_id": "401869370",
           "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869373",
+          "opponent": "Phoenix Suns"
         }
       ]
     },
@@ -1818,6 +1842,12 @@
           "round": "R1",
           "pts": 42,
           "game_id": "401869370",
+          "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869373",
           "opponent": "Phoenix Suns"
         }
       ]
@@ -1871,6 +1901,12 @@
           "pts": 13,
           "game_id": "401869370",
           "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "R1",
+          "pts": 11,
+          "game_id": "401869373",
+          "opponent": "Phoenix Suns"
         }
       ]
     },
@@ -1896,6 +1932,12 @@
           "round": "R1",
           "pts": 15,
           "game_id": "401869370",
+          "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869373",
           "opponent": "Phoenix Suns"
         }
       ]
@@ -1926,7 +1968,7 @@
         },
         {
           "round": "R1",
-          "pts": 5,
+          "pts": 10,
           "game_id": "401869415",
           "opponent": "Detroit Pistons"
         }
@@ -1990,7 +2032,7 @@
         },
         {
           "round": "R1",
-          "pts": 2,
+          "pts": 4,
           "game_id": "401869415",
           "opponent": "Detroit Pistons"
         }
@@ -2118,7 +2160,7 @@
         },
         {
           "round": "R1",
-          "pts": 10,
+          "pts": 12,
           "game_id": "401869415",
           "opponent": "Orlando Magic"
         }
@@ -2150,7 +2192,7 @@
         },
         {
           "round": "R1",
-          "pts": 16,
+          "pts": 23,
           "game_id": "401869415",
           "opponent": "Orlando Magic"
         }
@@ -2414,24 +2456,44 @@
     }
   },
   "active_games": [
-    "401869415"
+    "401869415",
+    "401869373"
   ],
   "live_games": [
     {
       "id": "401869415",
       "round": "R1",
-      "status": "55.6 - 2nd",
+      "status": "End of 3rd",
       "teams": [
         {
           "name": "Orlando Magic",
           "abbrev": "ORL",
-          "score": "51",
+          "score": "75",
           "winner": null
         },
         {
           "name": "Detroit Pistons",
           "abbrev": "DET",
-          "score": "50",
+          "score": "69",
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "401869373",
+      "round": "R1",
+      "status": "28.8 - 1st",
+      "teams": [
+        {
+          "name": "Phoenix Suns",
+          "abbrev": "PHX",
+          "score": "30",
+          "winner": null
+        },
+        {
+          "name": "Oklahoma City Thunder",
+          "abbrev": "OKC",
+          "score": "37",
           "winner": null
         }
       ]
