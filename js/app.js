@@ -521,19 +521,22 @@
       }
 
       // Fetch recently completed games not yet in stats.json
-      // Fetch box scores for recently-completed games. Instead of checking
-      // if ANY player has this game_id (which misses DNP players), always
-      // fetch completed games from the current day so late-arriving scores
-      // get overlaid even when other players from the same game are already
-      // committed.
+      // Fetch box scores for recently-completed games not yet in stats.json.
+      // Check per-game (not per-player) whether the game_id exists anywhere
+      // in committed data. This ensures DNP players still get their scores
+      // while not re-fetching games that the cron already committed.
       const recentlyCompleted = [];
-      const today = new Date().toISOString().slice(0, 10);
+      const committedGameIds = new Set();
+      for (const p of Object.values(currentStats?.players || {})) {
+        for (const g of p.games || []) {
+          if (g.game_id) committedGameIds.add(g.game_id);
+        }
+      }
       for (const ev of data.events || []) {
         if (ESPN.isPlayIn(ev)) continue;
         const comp3 = ev.competitions?.[0];
         if (comp3?.status?.type?.state === 'post') {
-          const evDate = (ev.date || '').slice(0, 10);
-          if (evDate === today) recentlyCompleted.push(ev.id);
+          if (!committedGameIds.has(ev.id)) recentlyCompleted.push(ev.id);
         }
       }
 
