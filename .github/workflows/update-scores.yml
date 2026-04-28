@@ -2,10 +2,10 @@ name: Update Playoff Scores
 
 on:
   schedule:
-    # Every 15 min during NBA playoff game windows (EDT afternoons/evenings → UTC)
-    # Weekdays + weekends, April through June
-    - cron: '*/15 16-23 * 4-6 *'   # noon–7pm EDT (afternoon games)
-    - cron: '*/15 0-6 * 4-6 *'     # 8pm–2am EDT (evening/late games)
+    # Every 15 min around the clock during playoffs. NBA games can end
+    # past 2am EDT (6am UTC) so we need continuous coverage. GitHub may
+    # skip or delay some runs but there won't be multi-hour gaps.
+    - cron: '*/15 * * 4-6 *'
   workflow_dispatch: {}  # Manual trigger
 
 permissions:
