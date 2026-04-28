@@ -1,12 +1,12 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-28T05:10:19.025212+00:00",
+  "last_updated": "2026-04-28T05:15:11.240326+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
       "team": "Toronto Raptors",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -38,7 +38,7 @@
       "name": "Jakob Poeltl",
       "team": "Toronto Raptors",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -70,7 +70,7 @@
       "name": "Collin Murray-Boyles",
       "team": "Toronto Raptors",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -102,7 +102,7 @@
       "name": "Ja'Kobe Walter",
       "team": "Toronto Raptors",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -134,7 +134,7 @@
       "name": "Garrett Temple",
       "team": "Toronto Raptors",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -166,7 +166,7 @@
       "name": "Dean Wade",
       "team": "Cleveland Cavaliers",
       "seed": 4,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -198,7 +198,7 @@
       "name": "Jarrett Allen",
       "team": "Cleveland Cavaliers",
       "seed": 4,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -230,7 +230,7 @@
       "name": "Evan Mobley",
       "team": "Cleveland Cavaliers",
       "seed": 4,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -262,7 +262,7 @@
       "name": "James Harden",
       "team": "Cleveland Cavaliers",
       "seed": 4,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -294,7 +294,7 @@
       "name": "Donovan Mitchell",
       "team": "Cleveland Cavaliers",
       "seed": 4,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -326,7 +326,7 @@
       "name": "Dennis Schroder",
       "team": "Cleveland Cavaliers",
       "seed": 4,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -358,7 +358,7 @@
       "name": "Max Strus",
       "team": "Cleveland Cavaliers",
       "seed": 4,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -390,7 +390,7 @@
       "name": "Sam Merrill",
       "team": "Cleveland Cavaliers",
       "seed": 4,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -422,7 +422,7 @@
       "name": "Rudy Gobert",
       "team": "Minnesota Timberwolves",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -460,7 +460,7 @@
       "name": "Anthony Edwards",
       "team": "Minnesota Timberwolves",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -492,7 +492,7 @@
       "name": "Kyle Anderson",
       "team": "Minnesota Timberwolves",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -530,7 +530,7 @@
       "name": "Ayo Dosunmu",
       "team": "Minnesota Timberwolves",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -568,7 +568,7 @@
       "name": "Bones Hyland",
       "team": "Minnesota Timberwolves",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -606,7 +606,7 @@
       "name": "Terrence Shannon Jr.",
       "team": "Minnesota Timberwolves",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -628,7 +628,7 @@
         },
         {
           "round": "R1",
-          "pts": 7,
+          "pts": 13,
           "game_id": "401869401",
           "opponent": "Denver Nuggets"
         },
@@ -644,7 +644,7 @@
       "name": "Aaron Gordon",
       "team": "Denver Nuggets",
       "seed": 3,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -676,7 +676,7 @@
       "name": "Cameron Johnson",
       "team": "Denver Nuggets",
       "seed": 3,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -704,7 +704,7 @@
         },
         {
           "round": "R1",
-          "pts": 16,
+          "pts": 18,
           "game_id": "401869401",
           "opponent": "Minnesota Timberwolves"
         }
@@ -714,7 +714,7 @@
       "name": "Nikola Jokic",
       "team": "Denver Nuggets",
       "seed": 3,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -742,7 +742,7 @@
         },
         {
           "round": "R1",
-          "pts": 23,
+          "pts": 25,
           "game_id": "401869401",
           "opponent": "Minnesota Timberwolves"
         }
@@ -752,7 +752,7 @@
       "name": "Jamal Murray",
       "team": "Denver Nuggets",
       "seed": 3,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -790,7 +790,7 @@
       "name": "Jonas Valanciunas",
       "team": "Denver Nuggets",
       "seed": 3,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -828,7 +828,7 @@
       "name": "Tim Hardaway Jr.",
       "team": "Denver Nuggets",
       "seed": 3,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -866,7 +866,7 @@
       "name": "Bruce Brown",
       "team": "Denver Nuggets",
       "seed": 3,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -904,7 +904,7 @@
       "name": "Julian Strawther",
       "team": "Denver Nuggets",
       "seed": 3,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -942,7 +942,7 @@
       "name": "Onyeka Okongwu",
       "team": "Atlanta Hawks",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -974,7 +974,7 @@
       "name": "Dyson Daniels",
       "team": "Atlanta Hawks",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1006,7 +1006,7 @@
       "name": "Jonathan Kuminga",
       "team": "Atlanta Hawks",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1038,7 +1038,7 @@
       "name": "Mouhamed Gueye",
       "team": "Atlanta Hawks",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1070,7 +1070,7 @@
       "name": "Buddy Hield",
       "team": "Atlanta Hawks",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1102,7 +1102,7 @@
       "name": "OG Anunoby",
       "team": "New York Knicks",
       "seed": 3,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1134,7 +1134,7 @@
       "name": "Josh Hart",
       "team": "New York Knicks",
       "seed": 3,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1166,7 +1166,7 @@
       "name": "Jabari Smith Jr.",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1198,7 +1198,7 @@
       "name": "Amen Thompson",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1230,7 +1230,7 @@
       "name": "Reed Sheppard",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1262,7 +1262,7 @@
       "name": "Tari Eason",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1294,7 +1294,7 @@
       "name": "Aaron Holiday",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1326,7 +1326,7 @@
       "name": "LeBron James",
       "team": "Los Angeles Lakers",
       "seed": 4,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1358,7 +1358,7 @@
       "name": "Deandre Ayton",
       "team": "Los Angeles Lakers",
       "seed": 4,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1390,7 +1390,7 @@
       "name": "Luke Kennard",
       "team": "Los Angeles Lakers",
       "seed": 4,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1422,7 +1422,7 @@
       "name": "Paul George",
       "team": "Philadelphia 76ers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1454,7 +1454,7 @@
       "name": "Adem Bona",
       "team": "Philadelphia 76ers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1486,7 +1486,7 @@
       "name": "Kelly Oubre Jr.",
       "team": "Philadelphia 76ers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1518,7 +1518,7 @@
       "name": "Trendon Watford",
       "team": "Philadelphia 76ers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1550,7 +1550,7 @@
       "name": "Andre Drummond",
       "team": "Philadelphia 76ers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1582,7 +1582,7 @@
       "name": "Johni Broome",
       "team": "Philadelphia 76ers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1614,7 +1614,7 @@
       "name": "Jayson Tatum",
       "team": "Boston Celtics",
       "seed": 2,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1646,7 +1646,7 @@
       "name": "Neemias Queta",
       "team": "Boston Celtics",
       "seed": 2,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1678,7 +1678,7 @@
       "name": "Derrick White",
       "team": "Boston Celtics",
       "seed": 2,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1710,7 +1710,7 @@
       "name": "Payton Pritchard",
       "team": "Boston Celtics",
       "seed": 2,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2030,7 +2030,7 @@
       "name": "Wendell Carter Jr.",
       "team": "Orlando Magic",
       "seed": 8,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2062,7 +2062,7 @@
       "name": "Jalen Suggs",
       "team": "Orlando Magic",
       "seed": 8,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2094,7 +2094,7 @@
       "name": "Jamal Cain",
       "team": "Orlando Magic",
       "seed": 8,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2126,7 +2126,7 @@
       "name": "Goga Bitadze",
       "team": "Orlando Magic",
       "seed": 8,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2158,7 +2158,7 @@
       "name": "Moritz Wagner",
       "team": "Orlando Magic",
       "seed": 8,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2190,7 +2190,7 @@
       "name": "Jett Howard",
       "team": "Orlando Magic",
       "seed": 8,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2222,7 +2222,7 @@
       "name": "Tobias Harris",
       "team": "Detroit Pistons",
       "seed": 1,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2254,7 +2254,7 @@
       "name": "Cade Cunningham",
       "team": "Detroit Pistons",
       "seed": 1,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2286,7 +2286,7 @@
       "name": "Donovan Clingan",
       "team": "Portland Trail Blazers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2318,7 +2318,7 @@
       "name": "Jrue Holiday",
       "team": "Portland Trail Blazers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2350,7 +2350,7 @@
       "name": "Robert Williams III",
       "team": "Portland Trail Blazers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2382,7 +2382,7 @@
       "name": "Vit Krejci",
       "team": "Portland Trail Blazers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2414,7 +2414,7 @@
       "name": "Victor Wembanyama",
       "team": "San Antonio Spurs",
       "seed": 2,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2446,7 +2446,7 @@
       "name": "De'Aaron Fox",
       "team": "San Antonio Spurs",
       "seed": 2,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2478,7 +2478,7 @@
       "name": "Stephon Castle",
       "team": "San Antonio Spurs",
       "seed": 2,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2510,7 +2510,7 @@
       "name": "Luke Kornet",
       "team": "San Antonio Spurs",
       "seed": 2,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2546,18 +2546,18 @@
     {
       "id": "401869401",
       "round": "R1",
-      "status": "3:33 - 4th",
+      "status": "1:45 - 4th",
       "teams": [
         {
           "name": "Denver Nuggets",
           "abbrev": "DEN",
-          "score": "119",
+          "score": "123",
           "winner": null
         },
         {
           "name": "Minnesota Timberwolves",
           "abbrev": "MIN",
-          "score": "101",
+          "score": "109",
           "winner": null
         }
       ]

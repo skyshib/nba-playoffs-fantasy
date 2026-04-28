@@ -271,10 +271,11 @@ def main():
     if dnp_added:
         print(f"  Added {dnp_added} DNP entries (0 pts)")
 
-    # Series-level elimination: a team is out when their opponent wins 4 games of any series in the most recent round they appeared.
-    # Build win counts per (round, team) from completed games.
-    series_wins: dict[tuple[str, str], int] = {}
-    series_teams_in_round: dict[str, set] = {}
+    # Series-level elimination: a team is out when their ACTUAL OPPONENT
+    # (the team they played against in this round) wins 4 games.
+    # Build matchup pairs from game competitors, then check win counts.
+    series_wins: dict[tuple[str, str], int] = {}  # (round, team) -> wins
+    series_matchups: dict[str, dict[str, str]] = {}  # team -> opponent (per round)
     for ev in events:
         if is_play_in(ev):
             continue
@@ -285,19 +286,25 @@ def main():
         state = comp.get("status", {}).get("type", {}).get("state", "")
         if state != "post":
             continue
-        for t in comp.get("competitors", []):
+        competitors = comp.get("competitors", [])
+        if len(competitors) == 2:
+            t0 = competitors[0].get("team", {}).get("displayName", "")
+            t1 = competitors[1].get("team", {}).get("displayName", "")
+            series_matchups.setdefault(t0, {})[rd] = t1
+            series_matchups.setdefault(t1, {})[rd] = t0
+        for t in competitors:
             tname = t.get("team", {}).get("displayName", "")
-            series_teams_in_round.setdefault(rd, set()).add(tname)
             if t.get("winner") is True:
                 series_wins[(rd, tname)] = series_wins.get((rd, tname), 0) + 1
-    # Team eliminated if opponent in same round has 4 wins
+
+    # Team eliminated if their actual series opponent has 4 wins
     eliminated_teams: set[str] = set()
-    for rd, teams in series_teams_in_round.items():
-        for t in teams:
-            opps = teams - {t}
-            if any(series_wins.get((rd, o), 0) >= 4 for o in opps):
-                if series_wins.get((rd, t), 0) < 4:
-                    eliminated_teams.add(t)
+    for team, rounds in series_matchups.items():
+        for rd, opponent in rounds.items():
+            opp_wins = series_wins.get((rd, opponent), 0)
+            my_wins = series_wins.get((rd, team), 0)
+            if opp_wins >= 4 and my_wins < 4:
+                eliminated_teams.add(team)
 
     for slug, p in player_stats.items():
         if p["team"] in eliminated_teams:
