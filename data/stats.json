@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-29T18:10:56.386950+00:00",
+  "last_updated": "2026-04-29T19:54:39.239046+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -2332,6 +2332,38 @@
         }
       ]
     },
+    "tobias-harris": {
+      "name": "Tobias Harris",
+      "team": "Detroit Pistons",
+      "seed": 1,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 17,
+          "game_id": "401869193",
+          "opponent": "Orlando Magic"
+        },
+        {
+          "round": "R1",
+          "pts": 16,
+          "game_id": "401869411",
+          "opponent": "Orlando Magic"
+        },
+        {
+          "round": "R1",
+          "pts": 23,
+          "game_id": "401869414",
+          "opponent": "Orlando Magic"
+        },
+        {
+          "round": "R1",
+          "pts": 20,
+          "game_id": "401869415",
+          "opponent": "Orlando Magic"
+        }
+      ]
+    },
     "cade-cunningham": {
       "name": "Cade Cunningham",
       "team": "Detroit Pistons",
@@ -2397,6 +2429,44 @@
         {
           "round": "R1",
           "pts": 10,
+          "game_id": "401869386",
+          "opponent": "San Antonio Spurs"
+        }
+      ]
+    },
+    "scoot-henderson": {
+      "name": "Scoot Henderson",
+      "team": "Portland Trail Blazers",
+      "seed": 7,
+      "eliminated": true,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 18,
+          "game_id": "401869194",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "R1",
+          "pts": 31,
+          "game_id": "401869378",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "R1",
+          "pts": 21,
+          "game_id": "401869382",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869385",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "R1",
+          "pts": 5,
           "game_id": "401869386",
           "opponent": "San Antonio Spurs"
         }
@@ -2627,82 +2697,6 @@
           "pts": 5,
           "game_id": "401869386",
           "opponent": "Portland Trail Blazers"
-        }
-      ]
-    },
-    "dylan-harper": {
-      "name": "Dylan Harper",
-      "team": "San Antonio Spurs",
-      "seed": 2,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 6,
-          "game_id": "401869194",
-          "opponent": "Portland Trail Blazers"
-        },
-        {
-          "round": "R1",
-          "pts": 10,
-          "game_id": "401869378",
-          "opponent": "Portland Trail Blazers"
-        },
-        {
-          "round": "R1",
-          "pts": 27,
-          "game_id": "401869382",
-          "opponent": "Portland Trail Blazers"
-        },
-        {
-          "round": "R1",
-          "pts": 3,
-          "game_id": "401869385",
-          "opponent": "Portland Trail Blazers"
-        },
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869386",
-          "opponent": "Portland Trail Blazers"
-        }
-      ]
-    },
-    "joel-embiid": {
-      "name": "Joel Embiid",
-      "team": "Philadelphia 76ers",
-      "seed": 7,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 26,
-          "game_id": "401869406",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 33,
-          "game_id": "401869408",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 0,
-          "game_id": "401869191",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 0,
-          "game_id": "401869396",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 0,
-          "game_id": "401869404",
-          "opponent": "Boston Celtics"
         }
       ]
     }
