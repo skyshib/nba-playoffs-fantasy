@@ -6,18 +6,18 @@
       "_synthetic": true,
       "picks": {
         "1": {
-          "player_id": "alex-caruso",
-          "name": "Alex Caruso",
-          "team": "Oklahoma City Thunder",
+          "player_id": "tobias-harris",
+          "name": "Tobias Harris",
+          "team": "Detroit Pistons",
           "seed": 1,
-          "cost": 6.21
+          "cost": 13.27
         },
         "2": {
-          "player_id": "dylan-harper",
-          "name": "Dylan Harper",
+          "player_id": "stephon-castle",
+          "name": "Stephon Castle",
           "team": "San Antonio Spurs",
           "seed": 2,
-          "cost": 11.78
+          "cost": 16.66
         },
         "3": {
           "player_id": "og-anunoby",
@@ -48,11 +48,11 @@
           "cost": 14.81
         },
         "7": {
-          "player_id": "joel-embiid",
-          "name": "Joel Embiid",
-          "team": "Philadelphia 76ers",
+          "player_id": "scoot-henderson",
+          "name": "Scoot Henderson",
+          "team": "Portland Trail Blazers",
           "seed": 7,
-          "cost": 26.87
+          "cost": 14.23
         },
         "8": {
           "player_id": "dillon-brooks",
