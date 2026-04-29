@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-29T04:03:07.003764+00:00",
+  "last_updated": "2026-04-29T06:38:06.409014+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -2332,38 +2332,6 @@
         }
       ]
     },
-    "tobias-harris": {
-      "name": "Tobias Harris",
-      "team": "Detroit Pistons",
-      "seed": 1,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869193",
-          "opponent": "Orlando Magic"
-        },
-        {
-          "round": "R1",
-          "pts": 16,
-          "game_id": "401869411",
-          "opponent": "Orlando Magic"
-        },
-        {
-          "round": "R1",
-          "pts": 23,
-          "game_id": "401869414",
-          "opponent": "Orlando Magic"
-        },
-        {
-          "round": "R1",
-          "pts": 20,
-          "game_id": "401869415",
-          "opponent": "Orlando Magic"
-        }
-      ]
-    },
     "cade-cunningham": {
       "name": "Cade Cunningham",
       "team": "Detroit Pistons",
@@ -2400,7 +2368,7 @@
       "name": "Donovan Clingan",
       "team": "Portland Trail Blazers",
       "seed": 7,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -2434,49 +2402,11 @@
         }
       ]
     },
-    "scoot-henderson": {
-      "name": "Scoot Henderson",
-      "team": "Portland Trail Blazers",
-      "seed": 7,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 18,
-          "game_id": "401869194",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "R1",
-          "pts": 31,
-          "game_id": "401869378",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "R1",
-          "pts": 21,
-          "game_id": "401869382",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "R1",
-          "pts": 0,
-          "game_id": "401869385",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "R1",
-          "pts": 5,
-          "game_id": "401869386",
-          "opponent": "San Antonio Spurs"
-        }
-      ]
-    },
     "robert-williams-iii": {
       "name": "Robert Williams III",
       "team": "Portland Trail Blazers",
       "seed": 7,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -2514,7 +2444,7 @@
       "name": "Vit Krejci",
       "team": "Portland Trail Blazers",
       "seed": 7,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -2574,7 +2504,7 @@
         },
         {
           "round": "R1",
-          "pts": 15,
+          "pts": 17,
           "game_id": "401869386",
           "opponent": "Portland Trail Blazers"
         },
@@ -2618,7 +2548,7 @@
         },
         {
           "round": "R1",
-          "pts": 10,
+          "pts": 21,
           "game_id": "401869386",
           "opponent": "Portland Trail Blazers"
         }
@@ -2699,32 +2629,86 @@
           "opponent": "Portland Trail Blazers"
         }
       ]
-    }
-  },
-  "active_games": [
-    "401869386"
-  ],
-  "live_games": [
-    {
-      "id": "401869386",
-      "round": "R1",
-      "status": "6:34 - 4th",
-      "teams": [
+    },
+    "dylan-harper": {
+      "name": "Dylan Harper",
+      "team": "San Antonio Spurs",
+      "seed": 2,
+      "eliminated": false,
+      "games": [
         {
-          "name": "San Antonio Spurs",
-          "abbrev": "SA",
-          "score": "95",
-          "winner": null
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869194",
+          "opponent": "Portland Trail Blazers"
         },
         {
-          "name": "Portland Trail Blazers",
-          "abbrev": "POR",
-          "score": "82",
-          "winner": null
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869378",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 27,
+          "game_id": "401869382",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869385",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 17,
+          "game_id": "401869386",
+          "opponent": "Portland Trail Blazers"
+        }
+      ]
+    },
+    "joel-embiid": {
+      "name": "Joel Embiid",
+      "team": "Philadelphia 76ers",
+      "seed": 7,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 26,
+          "game_id": "401869406",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 33,
+          "game_id": "401869408",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869396",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869404",
+          "opponent": "Boston Celtics"
         }
       ]
     }
-  ],
+  },
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
@@ -2827,16 +2811,16 @@
     "San Antonio Spurs": {
       "opponent": "Portland Trail Blazers",
       "round": "R1",
-      "wins": 3,
+      "wins": 4,
       "losses": 1,
-      "summary": "SA leads series 3-1"
+      "summary": "SA wins series 4-1"
     },
     "Portland Trail Blazers": {
       "opponent": "San Antonio Spurs",
       "round": "R1",
       "wins": 1,
-      "losses": 3,
-      "summary": "SA leads series 3-1"
+      "losses": 4,
+      "summary": "SA wins series 4-1"
     }
   }
 }
