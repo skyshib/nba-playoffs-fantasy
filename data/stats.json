@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-04-30T23:09:50.054915+00:00",
+  "last_updated": "2026-05-01T00:05:41.541314+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1063,6 +1063,12 @@
           "pts": 16,
           "game_id": "401869392",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869393",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -1100,6 +1106,12 @@
           "round": "R1",
           "pts": 17,
           "game_id": "401869392",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869393",
           "opponent": "New York Knicks"
         }
       ]
@@ -1139,6 +1151,12 @@
           "pts": 13,
           "game_id": "401869392",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869393",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -1176,6 +1194,12 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869392",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869393",
           "opponent": "New York Knicks"
         }
       ]
@@ -1215,6 +1239,12 @@
           "pts": 5,
           "game_id": "401869392",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869393",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -1253,6 +1283,12 @@
           "pts": 17,
           "game_id": "401869392",
           "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 21,
+          "game_id": "401869393",
+          "opponent": "Atlanta Hawks"
         }
       ]
     },
@@ -1290,6 +1326,12 @@
           "round": "R1",
           "pts": 9,
           "game_id": "401869392",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 7,
+          "game_id": "401869393",
           "opponent": "Atlanta Hawks"
         }
       ]
@@ -2881,8 +2923,30 @@
       ]
     }
   },
-  "active_games": [],
-  "live_games": [],
+  "active_games": [
+    "401869393"
+  ],
+  "live_games": [
+    {
+      "id": "401869393",
+      "round": "R1",
+      "status": "5:15 - 2nd",
+      "teams": [
+        {
+          "name": "Atlanta Hawks",
+          "abbrev": "ATL",
+          "score": "22",
+          "winner": null
+        },
+        {
+          "name": "New York Knicks",
+          "abbrev": "NY",
+          "score": "69",
+          "winner": null
+        }
+      ]
+    }
+  ],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
