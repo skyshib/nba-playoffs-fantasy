@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-01T04:09:39.412853+00:00",
+  "last_updated": "2026-05-01T04:17:22.626507+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -534,7 +534,7 @@
         },
         {
           "round": "R1",
-          "pts": 8,
+          "pts": 10,
           "game_id": "401869402",
           "opponent": "Denver Nuggets"
         }
@@ -824,7 +824,7 @@
         },
         {
           "round": "R1",
-          "pts": 26,
+          "pts": 27,
           "game_id": "401869402",
           "opponent": "Minnesota Timberwolves"
         }
@@ -3056,18 +3056,18 @@
     {
       "id": "401869402",
       "round": "R1",
-      "status": "1:41 - 4th",
+      "status": "43.4 - 4th",
       "teams": [
         {
           "name": "Minnesota Timberwolves",
           "abbrev": "MIN",
-          "score": "103",
+          "score": "108",
           "winner": null
         },
         {
           "name": "Denver Nuggets",
           "abbrev": "DEN",
-          "score": "97",
+          "score": "98",
           "winner": null
         }
       ]
