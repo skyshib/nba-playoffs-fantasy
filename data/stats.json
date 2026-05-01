@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-01T00:05:41.541314+00:00",
+  "last_updated": "2026-05-01T04:09:39.412853+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -531,6 +531,12 @@
           "pts": 3,
           "game_id": "401869401",
           "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 8,
+          "game_id": "401869402",
+          "opponent": "Denver Nuggets"
         }
       ]
     },
@@ -645,6 +651,12 @@
           "pts": 18,
           "game_id": "401869401",
           "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869402",
+          "opponent": "Denver Nuggets"
         }
       ]
     },
@@ -683,6 +695,12 @@
           "pts": 15,
           "game_id": "401869401",
           "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 1,
+          "game_id": "401869402",
+          "opponent": "Denver Nuggets"
         }
       ]
     },
@@ -714,6 +732,12 @@
           "round": "R1",
           "pts": 15,
           "game_id": "401869401",
+          "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 24,
+          "game_id": "401869402",
           "opponent": "Denver Nuggets"
         },
         {
@@ -797,6 +821,12 @@
           "pts": 18,
           "game_id": "401869401",
           "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 26,
+          "game_id": "401869402",
+          "opponent": "Minnesota Timberwolves"
         }
       ]
     },
@@ -834,6 +864,12 @@
           "round": "R1",
           "pts": 27,
           "game_id": "401869401",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 28,
+          "game_id": "401869402",
           "opponent": "Minnesota Timberwolves"
         }
       ]
@@ -873,6 +909,12 @@
           "pts": 24,
           "game_id": "401869401",
           "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 12,
+          "game_id": "401869402",
+          "opponent": "Minnesota Timberwolves"
         }
       ]
     },
@@ -910,6 +952,12 @@
           "round": "R1",
           "pts": 9,
           "game_id": "401869401",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869402",
           "opponent": "Minnesota Timberwolves"
         }
       ]
@@ -949,6 +997,12 @@
           "pts": 8,
           "game_id": "401869401",
           "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 13,
+          "game_id": "401869402",
+          "opponent": "Minnesota Timberwolves"
         }
       ]
     },
@@ -986,6 +1040,12 @@
           "round": "R1",
           "pts": 7,
           "game_id": "401869401",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 1,
+          "game_id": "401869402",
           "opponent": "Minnesota Timberwolves"
         }
       ]
@@ -1025,6 +1085,12 @@
           "pts": 0,
           "game_id": "401869401",
           "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869402",
+          "opponent": "Minnesota Timberwolves"
         }
       ]
     },
@@ -1032,7 +1098,7 @@
       "name": "Onyeka Okongwu",
       "team": "Atlanta Hawks",
       "seed": 6,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -1066,7 +1132,7 @@
         },
         {
           "round": "R1",
-          "pts": 2,
+          "pts": 4,
           "game_id": "401869393",
           "opponent": "New York Knicks"
         }
@@ -1076,7 +1142,7 @@
       "name": "Dyson Daniels",
       "team": "Atlanta Hawks",
       "seed": 6,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -1120,7 +1186,7 @@
       "name": "Jonathan Kuminga",
       "team": "Atlanta Hawks",
       "seed": 6,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -1154,7 +1220,7 @@
         },
         {
           "round": "R1",
-          "pts": 3,
+          "pts": 11,
           "game_id": "401869393",
           "opponent": "New York Knicks"
         }
@@ -1164,7 +1230,7 @@
       "name": "Mouhamed Gueye",
       "team": "Atlanta Hawks",
       "seed": 6,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -1208,7 +1274,7 @@
       "name": "Buddy Hield",
       "team": "Atlanta Hawks",
       "seed": 6,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -1242,7 +1308,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 5,
           "game_id": "401869393",
           "opponent": "New York Knicks"
         }
@@ -1286,7 +1352,7 @@
         },
         {
           "round": "R1",
-          "pts": 21,
+          "pts": 29,
           "game_id": "401869393",
           "opponent": "Atlanta Hawks"
         }
@@ -1330,7 +1396,7 @@
         },
         {
           "round": "R1",
-          "pts": 7,
+          "pts": 14,
           "game_id": "401869393",
           "opponent": "Atlanta Hawks"
         }
@@ -1675,6 +1741,12 @@
           "pts": 16,
           "game_id": "401869408",
           "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 23,
+          "game_id": "401869410",
+          "opponent": "Boston Celtics"
         }
       ]
     },
@@ -1712,6 +1784,12 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869408",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869410",
           "opponent": "Boston Celtics"
         }
       ]
@@ -1751,6 +1829,12 @@
           "pts": 4,
           "game_id": "401869408",
           "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 14,
+          "game_id": "401869410",
+          "opponent": "Boston Celtics"
         }
       ]
     },
@@ -1788,6 +1872,12 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869408",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869410",
           "opponent": "Boston Celtics"
         }
       ]
@@ -1827,6 +1917,12 @@
           "pts": 5,
           "game_id": "401869408",
           "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869410",
+          "opponent": "Boston Celtics"
         }
       ]
     },
@@ -1864,6 +1960,12 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869408",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869410",
           "opponent": "Boston Celtics"
         }
       ]
@@ -1903,6 +2005,12 @@
           "pts": 24,
           "game_id": "401869408",
           "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "R1",
+          "pts": 17,
+          "game_id": "401869410",
+          "opponent": "Philadelphia 76ers"
         }
       ]
     },
@@ -1940,6 +2048,12 @@
           "round": "R1",
           "pts": 8,
           "game_id": "401869408",
+          "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "R1",
+          "pts": 4,
+          "game_id": "401869410",
           "opponent": "Philadelphia 76ers"
         }
       ]
@@ -1979,6 +2093,12 @@
           "pts": 6,
           "game_id": "401869408",
           "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "R1",
+          "pts": 11,
+          "game_id": "401869410",
+          "opponent": "Philadelphia 76ers"
         }
       ]
     },
@@ -2016,6 +2136,12 @@
           "round": "R1",
           "pts": 12,
           "game_id": "401869408",
+          "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "R1",
+          "pts": 14,
+          "game_id": "401869410",
           "opponent": "Philadelphia 76ers"
         }
       ]
@@ -2924,24 +3050,24 @@
     }
   },
   "active_games": [
-    "401869393"
+    "401869402"
   ],
   "live_games": [
     {
-      "id": "401869393",
+      "id": "401869402",
       "round": "R1",
-      "status": "5:15 - 2nd",
+      "status": "1:41 - 4th",
       "teams": [
         {
-          "name": "Atlanta Hawks",
-          "abbrev": "ATL",
-          "score": "22",
+          "name": "Minnesota Timberwolves",
+          "abbrev": "MIN",
+          "score": "103",
           "winner": null
         },
         {
-          "name": "New York Knicks",
-          "abbrev": "NY",
-          "score": "69",
+          "name": "Denver Nuggets",
+          "abbrev": "DEN",
+          "score": "97",
           "winner": null
         }
       ]
@@ -2979,16 +3105,16 @@
     "New York Knicks": {
       "opponent": "Atlanta Hawks",
       "round": "R1",
-      "wins": 3,
+      "wins": 4,
       "losses": 2,
-      "summary": "NY leads series 3-2"
+      "summary": "NY wins series 4-2"
     },
     "Atlanta Hawks": {
       "opponent": "New York Knicks",
       "round": "R1",
       "wins": 2,
-      "losses": 3,
-      "summary": "NY leads series 3-2"
+      "losses": 4,
+      "summary": "NY wins series 4-2"
     },
     "Los Angeles Lakers": {
       "opponent": "Houston Rockets",
@@ -3008,15 +3134,15 @@
       "opponent": "Philadelphia 76ers",
       "round": "R1",
       "wins": 3,
-      "losses": 2,
-      "summary": "BOS leads series 3-2"
+      "losses": 3,
+      "summary": "Series tied 3-3"
     },
     "Philadelphia 76ers": {
       "opponent": "Boston Celtics",
       "round": "R1",
-      "wins": 2,
+      "wins": 3,
       "losses": 3,
-      "summary": "BOS leads series 3-2"
+      "summary": "Series tied 3-3"
     },
     "Oklahoma City Thunder": {
       "opponent": "Phoenix Suns",
