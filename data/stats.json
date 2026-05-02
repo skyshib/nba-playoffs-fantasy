@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-02T03:51:31.336913+00:00",
+  "last_updated": "2026-05-02T05:17:15.283307+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1502,7 +1502,7 @@
       "name": "Jabari Smith Jr.",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -1546,7 +1546,7 @@
       "name": "Amen Thompson",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -1580,7 +1580,7 @@
         },
         {
           "round": "R1",
-          "pts": 14,
+          "pts": 18,
           "game_id": "401869409",
           "opponent": "Los Angeles Lakers"
         }
@@ -1590,7 +1590,7 @@
       "name": "Reed Sheppard",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -1624,7 +1624,7 @@
         },
         {
           "round": "R1",
-          "pts": 7,
+          "pts": 10,
           "game_id": "401869409",
           "opponent": "Los Angeles Lakers"
         }
@@ -1634,7 +1634,7 @@
       "name": "Tari Eason",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -1668,7 +1668,7 @@
         },
         {
           "round": "R1",
-          "pts": 12,
+          "pts": 14,
           "game_id": "401869409",
           "opponent": "Los Angeles Lakers"
         }
@@ -1678,7 +1678,7 @@
       "name": "Aaron Holiday",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -1712,7 +1712,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 2,
           "game_id": "401869409",
           "opponent": "Los Angeles Lakers"
         }
@@ -1756,7 +1756,7 @@
         },
         {
           "round": "R1",
-          "pts": 24,
+          "pts": 28,
           "game_id": "401869409",
           "opponent": "Houston Rockets"
         }
@@ -3247,30 +3247,8 @@
       ]
     }
   },
-  "active_games": [
-    "401869409"
-  ],
-  "live_games": [
-    {
-      "id": "401869409",
-      "round": "R1",
-      "status": "8:46 - 4th",
-      "teams": [
-        {
-          "name": "Houston Rockets",
-          "abbrev": "HOU",
-          "score": "57",
-          "winner": null
-        },
-        {
-          "name": "Los Angeles Lakers",
-          "abbrev": "LAL",
-          "score": "78",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
@@ -3317,16 +3295,16 @@
     "Los Angeles Lakers": {
       "opponent": "Houston Rockets",
       "round": "R1",
-      "wins": 3,
+      "wins": 4,
       "losses": 2,
-      "summary": "LAL lead series 3-2"
+      "summary": "LAL win series 4-2"
     },
     "Houston Rockets": {
       "opponent": "Los Angeles Lakers",
       "round": "R1",
       "wins": 2,
-      "losses": 3,
-      "summary": "LAL lead series 3-2"
+      "losses": 4,
+      "summary": "LAL win series 4-2"
     },
     "Boston Celtics": {
       "opponent": "Philadelphia 76ers",
