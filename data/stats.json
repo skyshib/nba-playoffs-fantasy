@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-01T23:08:30.440594+00:00",
+  "last_updated": "2026-05-02T00:06:10.698327+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -36,6 +36,12 @@
           "round": "R1",
           "pts": 25,
           "game_id": "401869380",
+          "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869381",
           "opponent": "Cleveland Cavaliers"
         }
       ]
@@ -75,6 +81,12 @@
           "pts": 14,
           "game_id": "401869380",
           "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869381",
+          "opponent": "Cleveland Cavaliers"
         }
       ]
     },
@@ -112,6 +124,12 @@
           "round": "R1",
           "pts": 8,
           "game_id": "401869380",
+          "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869381",
           "opponent": "Cleveland Cavaliers"
         }
       ]
@@ -151,6 +169,12 @@
           "pts": 20,
           "game_id": "401869380",
           "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869381",
+          "opponent": "Cleveland Cavaliers"
         }
       ]
     },
@@ -188,6 +212,12 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869380",
+          "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869381",
           "opponent": "Cleveland Cavaliers"
         }
       ]
@@ -227,6 +257,12 @@
           "pts": 7,
           "game_id": "401869380",
           "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869381",
+          "opponent": "Toronto Raptors"
         }
       ]
     },
@@ -264,6 +300,12 @@
           "round": "R1",
           "pts": 9,
           "game_id": "401869380",
+          "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869381",
           "opponent": "Toronto Raptors"
         }
       ]
@@ -303,6 +345,12 @@
           "pts": 23,
           "game_id": "401869380",
           "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "R1",
+          "pts": 8,
+          "game_id": "401869381",
+          "opponent": "Toronto Raptors"
         }
       ]
     },
@@ -340,6 +388,12 @@
           "round": "R1",
           "pts": 23,
           "game_id": "401869380",
+          "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "R1",
+          "pts": 4,
+          "game_id": "401869381",
           "opponent": "Toronto Raptors"
         }
       ]
@@ -379,6 +433,12 @@
           "pts": 19,
           "game_id": "401869380",
           "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869381",
+          "opponent": "Toronto Raptors"
         }
       ]
     },
@@ -416,6 +476,12 @@
           "round": "R1",
           "pts": 19,
           "game_id": "401869380",
+          "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869381",
           "opponent": "Toronto Raptors"
         }
       ]
@@ -455,6 +521,12 @@
           "pts": 8,
           "game_id": "401869380",
           "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869381",
+          "opponent": "Toronto Raptors"
         }
       ]
     },
@@ -492,6 +564,12 @@
           "round": "R1",
           "pts": 9,
           "game_id": "401869380",
+          "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869381",
           "opponent": "Toronto Raptors"
         }
       ]
@@ -2455,6 +2533,12 @@
           "pts": 45,
           "game_id": "401869416",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 9,
+          "game_id": "401869417",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -2492,6 +2576,12 @@
           "round": "R1",
           "pts": 9,
           "game_id": "401869416",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 7,
+          "game_id": "401869417",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -2531,6 +2621,12 @@
           "pts": 10,
           "game_id": "401869416",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869417",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -2568,6 +2664,12 @@
           "round": "R1",
           "pts": 5,
           "game_id": "401869416",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869417",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -2607,6 +2709,12 @@
           "pts": 0,
           "game_id": "401869416",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869417",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -2644,6 +2752,12 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869416",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869417",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -2683,6 +2797,12 @@
           "pts": 0,
           "game_id": "401869416",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869417",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -2721,6 +2841,12 @@
           "pts": 23,
           "game_id": "401869416",
           "opponent": "Orlando Magic"
+        },
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869417",
+          "opponent": "Orlando Magic"
         }
       ]
     },
@@ -2758,6 +2884,12 @@
           "round": "R1",
           "pts": 45,
           "game_id": "401869416",
+          "opponent": "Orlando Magic"
+        },
+        {
+          "round": "R1",
+          "pts": 8,
+          "game_id": "401869417",
           "opponent": "Orlando Magic"
         }
       ]
@@ -3067,8 +3199,50 @@
       ]
     }
   },
-  "active_games": [],
-  "live_games": [],
+  "active_games": [
+    "401869417",
+    "401869381"
+  ],
+  "live_games": [
+    {
+      "id": "401869417",
+      "round": "R1",
+      "status": "1:05 - 2nd",
+      "teams": [
+        {
+          "name": "Orlando Magic",
+          "abbrev": "ORL",
+          "score": "59",
+          "winner": null
+        },
+        {
+          "name": "Detroit Pistons",
+          "abbrev": "DET",
+          "score": "38",
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "401869381",
+      "round": "R1",
+      "status": "2:05 - 1st",
+      "teams": [
+        {
+          "name": "Toronto Raptors",
+          "abbrev": "TOR",
+          "score": "24",
+          "winner": null
+        },
+        {
+          "name": "Cleveland Cavaliers",
+          "abbrev": "CLE",
+          "score": "30",
+          "winner": null
+        }
+      ]
+    }
+  ],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
