@@ -594,8 +594,8 @@ const Scoreboard = (() => {
         if (!arr.length) {
           html += `<tr><td class="tt-round-label">${rdLabel}</td>`;
           for (let i = 0; i < 7; i++) html += `<td class="empty">—</td>`;
-          const rt = info.perRound[rd];
-          html += `<td class="tt-round-total">${typeof rt === 'number' && rt > 0 ? fmtPts(rt) : '—'}</td></tr>`;
+          const rawPpg = info.ppg?.[rd];
+          html += `<td class="tt-round-total">${typeof rawPpg === 'number' && rawPpg > 0 ? fmtPts(rawPpg) : '—'}</td></tr>`;
           continue;
         }
         const top4 = new Set(arr.slice().sort((a, b) => b.pts - a.pts).slice(0, 4));
@@ -611,15 +611,21 @@ const Scoreboard = (() => {
             html += `<td class="empty">—</td>`;
           }
         }
-        const rt = info.perRound[rd];
-        html += `<td class="tt-round-total">${typeof rt === 'number' && rt > 0 ? fmtPts(rt) : '—'}</td></tr>`;
+        const rawPpg = info.ppg?.[rd];
+        html += `<td class="tt-round-total">${typeof rawPpg === 'number' && rawPpg > 0 ? fmtPts(rawPpg) : '—'}</td></tr>`;
       }
       html += `</tbody></table>`;
     } else {
       html += '<div class="tt-no-games">No games played yet</div>';
     }
 
-    html += `<div class="tt-total">Total: ${fmtPts(info.subtotal)}</div>`;
+    // Show multiplier math at the bottom
+    const rawTotal = Object.values(info.ppg || {}).reduce((a, v) => a + (typeof v === 'number' ? v : 0), 0);
+    if (rawTotal > 0) {
+      html += `<div class="tt-total">${fmtPts(rawTotal)} × ${info.multiplier.toFixed(1)} = ${fmtPts(info.subtotal)}</div>`;
+    } else {
+      html += `<div class="tt-total">Total: ${fmtPts(info.subtotal)}</div>`;
+    }
 
     tip.innerHTML = html;
     document.body.appendChild(tip);
