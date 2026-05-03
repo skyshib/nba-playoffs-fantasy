@@ -34,11 +34,11 @@
           "cost": 8.36
         },
         "5": {
-          "player_id": "jakobe-walter",
-          "name": "Ja'Kobe Walter",
+          "player_id": "collin-murray-boyles",
+          "name": "Collin Murray-Boyles",
           "team": "Toronto Raptors",
           "seed": 5,
-          "cost": 7.51
+          "cost": 8.49
         },
         "6": {
           "player_id": "ayo-dosunmu",
@@ -48,11 +48,11 @@
           "cost": 14.81
         },
         "7": {
-          "player_id": "vj-edgecombe",
-          "name": "VJ Edgecombe",
-          "team": "Philadelphia 76ers",
+          "player_id": "scoot-henderson",
+          "name": "Scoot Henderson",
+          "team": "Portland Trail Blazers",
           "seed": 7,
-          "cost": 15.99
+          "cost": 14.23
         },
         "8": {
           "player_id": "paolo-banchero",
