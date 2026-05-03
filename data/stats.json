@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-03T01:21:40.302919+00:00",
+  "last_updated": "2026-05-03T02:59:44.529454+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1994,7 +1994,7 @@
         },
         {
           "round": "R1",
-          "pts": 4,
+          "pts": 6,
           "game_id": "401869412",
           "opponent": "Boston Celtics"
         }
@@ -2154,7 +2154,7 @@
       "name": "Jayson Tatum",
       "team": "Boston Celtics",
       "seed": 2,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -2204,7 +2204,7 @@
       "name": "Neemias Queta",
       "team": "Boston Celtics",
       "seed": 2,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -2244,7 +2244,7 @@
         },
         {
           "round": "R1",
-          "pts": 10,
+          "pts": 17,
           "game_id": "401869412",
           "opponent": "Philadelphia 76ers"
         }
@@ -2254,7 +2254,7 @@
       "name": "Derrick White",
       "team": "Boston Celtics",
       "seed": 2,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -2294,7 +2294,7 @@
         },
         {
           "round": "R1",
-          "pts": 19,
+          "pts": 26,
           "game_id": "401869412",
           "opponent": "Philadelphia 76ers"
         }
@@ -2304,7 +2304,7 @@
       "name": "Payton Pritchard",
       "team": "Boston Celtics",
       "seed": 2,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -2344,7 +2344,7 @@
         },
         {
           "round": "R1",
-          "pts": 10,
+          "pts": 13,
           "game_id": "401869412",
           "opponent": "Philadelphia 76ers"
         }
@@ -3307,30 +3307,8 @@
       ]
     }
   },
-  "active_games": [
-    "401869412"
-  ],
-  "live_games": [
-    {
-      "id": "401869412",
-      "round": "R1",
-      "status": "29.3 - 3rd",
-      "teams": [
-        {
-          "name": "Boston Celtics",
-          "abbrev": "BOS",
-          "score": "73",
-          "winner": null
-        },
-        {
-          "name": "Philadelphia 76ers",
-          "abbrev": "PHI",
-          "score": "87",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
@@ -3392,15 +3370,15 @@
       "opponent": "Philadelphia 76ers",
       "round": "R1",
       "wins": 3,
-      "losses": 3,
-      "summary": "Series tied 3-3"
+      "losses": 4,
+      "summary": "PHI wins series 4-3"
     },
     "Philadelphia 76ers": {
       "opponent": "Boston Celtics",
       "round": "R1",
-      "wins": 3,
+      "wins": 4,
       "losses": 3,
-      "summary": "Series tied 3-3"
+      "summary": "PHI wins series 4-3"
     },
     "Oklahoma City Thunder": {
       "opponent": "Phoenix Suns",
