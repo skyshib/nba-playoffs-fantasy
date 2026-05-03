@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-03T19:18:39.959320+00:00",
+  "last_updated": "2026-05-03T20:06:08.804281+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -2647,6 +2647,12 @@
           "pts": 17,
           "game_id": "401869417",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 11,
+          "game_id": "401869418",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -2690,6 +2696,12 @@
           "round": "R1",
           "pts": 9,
           "game_id": "401869417",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869418",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -2735,6 +2747,12 @@
           "pts": 7,
           "game_id": "401869417",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869418",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -2778,6 +2796,12 @@
           "round": "R1",
           "pts": 3,
           "game_id": "401869417",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869418",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -2823,6 +2847,12 @@
           "pts": 6,
           "game_id": "401869417",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869418",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -2866,6 +2896,12 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869417",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869418",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -2911,6 +2947,12 @@
           "pts": 0,
           "game_id": "401869417",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "R1",
+          "pts": 0,
+          "game_id": "401869418",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -2955,6 +2997,12 @@
           "pts": 22,
           "game_id": "401869417",
           "opponent": "Orlando Magic"
+        },
+        {
+          "round": "R1",
+          "pts": 2,
+          "game_id": "401869418",
+          "opponent": "Orlando Magic"
         }
       ]
     },
@@ -2998,6 +3046,12 @@
           "round": "R1",
           "pts": 32,
           "game_id": "401869417",
+          "opponent": "Orlando Magic"
+        },
+        {
+          "round": "R1",
+          "pts": 5,
+          "game_id": "401869418",
           "opponent": "Orlando Magic"
         }
       ]
@@ -3307,8 +3361,30 @@
       ]
     }
   },
-  "active_games": [],
-  "live_games": [],
+  "active_games": [
+    "401869418"
+  ],
+  "live_games": [
+    {
+      "id": "401869418",
+      "round": "R1",
+      "status": "59.5 - 1st",
+      "teams": [
+        {
+          "name": "Detroit Pistons",
+          "abbrev": "DET",
+          "score": "20",
+          "winner": null
+        },
+        {
+          "name": "Orlando Magic",
+          "abbrev": "ORL",
+          "score": "22",
+          "winner": null
+        }
+      ]
+    }
+  ],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
