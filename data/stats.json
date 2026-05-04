@@ -1,12 +1,12 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-04T00:03:27.929141+00:00",
+  "last_updated": "2026-05-04T03:18:03.300668+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
       "team": "Toronto Raptors",
       "seed": 5,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -46,7 +46,7 @@
         },
         {
           "round": "R1",
-          "pts": 2,
+          "pts": 23,
           "game_id": "401869384",
           "opponent": "Cleveland Cavaliers"
         }
@@ -56,7 +56,7 @@
       "name": "Jakob Poeltl",
       "team": "Toronto Raptors",
       "seed": 5,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -96,7 +96,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 9,
           "game_id": "401869384",
           "opponent": "Cleveland Cavaliers"
         }
@@ -106,7 +106,7 @@
       "name": "Collin Murray-Boyles",
       "team": "Toronto Raptors",
       "seed": 5,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -146,7 +146,7 @@
         },
         {
           "round": "R1",
-          "pts": 2,
+          "pts": 8,
           "game_id": "401869384",
           "opponent": "Cleveland Cavaliers"
         }
@@ -156,7 +156,7 @@
       "name": "Ja'Kobe Walter",
       "team": "Toronto Raptors",
       "seed": 5,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -196,7 +196,7 @@
         },
         {
           "round": "R1",
-          "pts": 3,
+          "pts": 13,
           "game_id": "401869384",
           "opponent": "Cleveland Cavaliers"
         }
@@ -206,7 +206,7 @@
       "name": "Garrett Temple",
       "team": "Toronto Raptors",
       "seed": 5,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -296,7 +296,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 5,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
         }
@@ -346,7 +346,7 @@
         },
         {
           "round": "R1",
-          "pts": 4,
+          "pts": 22,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
         }
@@ -396,7 +396,7 @@
         },
         {
           "round": "R1",
-          "pts": 3,
+          "pts": 13,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
         }
@@ -446,7 +446,7 @@
         },
         {
           "round": "R1",
-          "pts": 5,
+          "pts": 18,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
         }
@@ -496,7 +496,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 22,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
         }
@@ -546,7 +546,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 2,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
         }
@@ -596,7 +596,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 12,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
         }
@@ -646,7 +646,7 @@
         },
         {
           "round": "R1",
-          "pts": 0,
+          "pts": 13,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
         }
@@ -3439,44 +3439,22 @@
       ]
     }
   },
-  "active_games": [
-    "401869384"
-  ],
-  "live_games": [
-    {
-      "id": "401869384",
-      "round": "R1",
-      "status": "3:40 - 1st",
-      "teams": [
-        {
-          "name": "Cleveland Cavaliers",
-          "abbrev": "CLE",
-          "score": "12",
-          "winner": null
-        },
-        {
-          "name": "Toronto Raptors",
-          "abbrev": "TOR",
-          "score": "22",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
       "round": "R1",
-      "wins": 3,
+      "wins": 4,
       "losses": 3,
-      "summary": "Series tied 3-3"
+      "summary": "CLE wins series 4-3"
     },
     "Toronto Raptors": {
       "opponent": "Cleveland Cavaliers",
       "round": "R1",
       "wins": 3,
-      "losses": 3,
-      "summary": "Series tied 3-3"
+      "losses": 4,
+      "summary": "CLE wins series 4-3"
     },
     "Denver Nuggets": {
       "opponent": "Minnesota Timberwolves",
