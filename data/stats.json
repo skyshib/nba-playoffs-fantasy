@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-04T03:18:03.300668+00:00",
+  "last_updated": "2026-05-04T04:09:10.012760+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -97,56 +97,6 @@
         {
           "round": "R1",
           "pts": 9,
-          "game_id": "401869384",
-          "opponent": "Cleveland Cavaliers"
-        }
-      ]
-    },
-    "collin-murray-boyles": {
-      "name": "Collin Murray-Boyles",
-      "team": "Toronto Raptors",
-      "seed": 5,
-      "eliminated": true,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 14,
-          "game_id": "401869187",
-          "opponent": "Cleveland Cavaliers"
-        },
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869369",
-          "opponent": "Cleveland Cavaliers"
-        },
-        {
-          "round": "R1",
-          "pts": 22,
-          "game_id": "401869375",
-          "opponent": "Cleveland Cavaliers"
-        },
-        {
-          "round": "R1",
-          "pts": 15,
-          "game_id": "401869377",
-          "opponent": "Cleveland Cavaliers"
-        },
-        {
-          "round": "R1",
-          "pts": 8,
-          "game_id": "401869380",
-          "opponent": "Cleveland Cavaliers"
-        },
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869381",
-          "opponent": "Cleveland Cavaliers"
-        },
-        {
-          "round": "R1",
-          "pts": 8,
           "game_id": "401869384",
           "opponent": "Cleveland Cavaliers"
         }
@@ -2078,6 +2028,56 @@
         }
       ]
     },
+    "vj-edgecombe": {
+      "name": "VJ Edgecombe",
+      "team": "Philadelphia 76ers",
+      "seed": 7,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 13,
+          "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 30,
+          "game_id": "401869396",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869404",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869406",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869408",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 14,
+          "game_id": "401869410",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 23,
+          "game_id": "401869412",
+          "opponent": "Boston Celtics"
+        }
+      ]
+    },
     "trendon-watford": {
       "name": "Trendon Watford",
       "team": "Philadelphia 76ers",
@@ -3167,44 +3167,6 @@
         {
           "round": "R1",
           "pts": 10,
-          "game_id": "401869386",
-          "opponent": "San Antonio Spurs"
-        }
-      ]
-    },
-    "scoot-henderson": {
-      "name": "Scoot Henderson",
-      "team": "Portland Trail Blazers",
-      "seed": 7,
-      "eliminated": true,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 18,
-          "game_id": "401869194",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "R1",
-          "pts": 31,
-          "game_id": "401869378",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "R1",
-          "pts": 21,
-          "game_id": "401869382",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "R1",
-          "pts": 0,
-          "game_id": "401869385",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "R1",
-          "pts": 5,
           "game_id": "401869386",
           "opponent": "San Antonio Spurs"
         }
