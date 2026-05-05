@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-04T23:35:51.422968+00:00",
+  "last_updated": "2026-05-05T01:19:36.296600+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1479,6 +1479,12 @@
           "pts": 29,
           "game_id": "401869393",
           "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "CSF",
+          "pts": 13,
+          "game_id": "401871159",
+          "opponent": "Philadelphia 76ers"
         }
       ]
     },
@@ -1523,6 +1529,12 @@
           "pts": 14,
           "game_id": "401869393",
           "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "CSF",
+          "pts": 5,
+          "game_id": "401871159",
+          "opponent": "Philadelphia 76ers"
         }
       ]
     },
@@ -1925,6 +1937,12 @@
           "pts": 13,
           "game_id": "401869412",
           "opponent": "Boston Celtics"
+        },
+        {
+          "round": "CSF",
+          "pts": 9,
+          "game_id": "401871159",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -1975,6 +1993,12 @@
           "pts": 0,
           "game_id": "401869412",
           "opponent": "Boston Celtics"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871159",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -2025,6 +2049,12 @@
           "pts": 6,
           "game_id": "401869412",
           "opponent": "Boston Celtics"
+        },
+        {
+          "round": "CSF",
+          "pts": 10,
+          "game_id": "401871159",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -2075,6 +2105,12 @@
           "pts": 23,
           "game_id": "401869412",
           "opponent": "Boston Celtics"
+        },
+        {
+          "round": "CSF",
+          "pts": 5,
+          "game_id": "401871159",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -2125,6 +2161,12 @@
           "pts": 0,
           "game_id": "401869412",
           "opponent": "Boston Celtics"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871159",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -2175,6 +2217,12 @@
           "pts": 0,
           "game_id": "401869412",
           "opponent": "Boston Celtics"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871159",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -2225,6 +2273,12 @@
           "pts": 0,
           "game_id": "401869412",
           "opponent": "Boston Celtics"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871159",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -3401,8 +3455,30 @@
       ]
     }
   },
-  "active_games": [],
-  "live_games": [],
+  "active_games": [
+    "401871159"
+  ],
+  "live_games": [
+    {
+      "id": "401871159",
+      "round": "CSF",
+      "status": "2:23 - 2nd",
+      "teams": [
+        {
+          "name": "New York Knicks",
+          "abbrev": "NY",
+          "score": "59",
+          "winner": null
+        },
+        {
+          "name": "Philadelphia 76ers",
+          "abbrev": "PHI",
+          "score": "45",
+          "winner": null
+        }
+      ]
+    }
+  ],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
@@ -3433,11 +3509,11 @@
       "summary": "MIN wins series 4-2"
     },
     "New York Knicks": {
-      "opponent": "Atlanta Hawks",
-      "round": "R1",
-      "wins": 4,
-      "losses": 2,
-      "summary": "NY wins series 4-2"
+      "opponent": "Philadelphia 76ers",
+      "round": "CSF",
+      "wins": 0,
+      "losses": 0,
+      "summary": ""
     },
     "Atlanta Hawks": {
       "opponent": "New York Knicks",
@@ -3468,11 +3544,11 @@
       "summary": "PHI wins series 4-3"
     },
     "Philadelphia 76ers": {
-      "opponent": "Boston Celtics",
-      "round": "R1",
-      "wins": 4,
-      "losses": 3,
-      "summary": "PHI wins series 4-3"
+      "opponent": "New York Knicks",
+      "round": "CSF",
+      "wins": 0,
+      "losses": 0,
+      "summary": ""
     },
     "Oklahoma City Thunder": {
       "opponent": "Phoenix Suns",
