@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-05T03:52:22.108375+00:00",
+  "last_updated": "2026-05-05T04:40:02.010043+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -646,7 +646,7 @@
         },
         {
           "round": "CSF",
-          "pts": 6,
+          "pts": 7,
           "game_id": "401871152",
           "opponent": "San Antonio Spurs"
         }
@@ -752,50 +752,6 @@
         }
       ]
     },
-    "ayo-dosunmu": {
-      "name": "Ayo Dosunmu",
-      "team": "Minnesota Timberwolves",
-      "seed": 6,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 14,
-          "game_id": "401869188",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 9,
-          "game_id": "401869395",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 25,
-          "game_id": "401869398",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 43,
-          "game_id": "401869399",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 18,
-          "game_id": "401869401",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 0,
-          "game_id": "401869402",
-          "opponent": "Denver Nuggets"
-        }
-      ]
-    },
     "bones-hyland": {
       "name": "Bones Hyland",
       "team": "Minnesota Timberwolves",
@@ -884,7 +840,7 @@
         },
         {
           "round": "CSF",
-          "pts": 12,
+          "pts": 16,
           "game_id": "401871152",
           "opponent": "San Antonio Spurs"
         },
@@ -1468,56 +1424,6 @@
         }
       ]
     },
-    "og-anunoby": {
-      "name": "OG Anunoby",
-      "team": "New York Knicks",
-      "seed": 3,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 18,
-          "game_id": "401869189",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 14,
-          "game_id": "401869387",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 29,
-          "game_id": "401869389",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 22,
-          "game_id": "401869391",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869392",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 29,
-          "game_id": "401869393",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "CSF",
-          "pts": 18,
-          "game_id": "401871159",
-          "opponent": "Philadelphia 76ers"
-        }
-      ]
-    },
     "josh-hart": {
       "name": "Josh Hart",
       "team": "New York Knicks",
@@ -1563,6 +1469,56 @@
         {
           "round": "CSF",
           "pts": 8,
+          "game_id": "401871159",
+          "opponent": "Philadelphia 76ers"
+        }
+      ]
+    },
+    "jalen-brunson": {
+      "name": "Jalen Brunson",
+      "team": "New York Knicks",
+      "seed": 3,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 28,
+          "game_id": "401869189",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 29,
+          "game_id": "401869387",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 26,
+          "game_id": "401869389",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 19,
+          "game_id": "401869391",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 39,
+          "game_id": "401869392",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 17,
+          "game_id": "401869393",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "CSF",
+          "pts": 35,
           "game_id": "401871159",
           "opponent": "Philadelphia 76ers"
         }
@@ -1876,45 +1832,45 @@
         }
       ]
     },
-    "luke-kennard": {
-      "name": "Luke Kennard",
+    "marcus-smart": {
+      "name": "Marcus Smart",
       "team": "Los Angeles Lakers",
       "seed": 4,
       "eliminated": false,
       "games": [
         {
           "round": "R1",
-          "pts": 27,
+          "pts": 15,
           "game_id": "401869190",
           "opponent": "Houston Rockets"
         },
         {
           "round": "R1",
-          "pts": 23,
+          "pts": 25,
           "game_id": "401869397",
           "opponent": "Houston Rockets"
         },
         {
           "round": "R1",
-          "pts": 14,
+          "pts": 21,
           "game_id": "401869400",
           "opponent": "Houston Rockets"
         },
         {
           "round": "R1",
-          "pts": 7,
+          "pts": 9,
           "game_id": "401869405",
           "opponent": "Houston Rockets"
         },
         {
           "round": "R1",
-          "pts": 1,
+          "pts": 11,
           "game_id": "401869407",
           "opponent": "Houston Rockets"
         },
         {
           "round": "R1",
-          "pts": 3,
+          "pts": 7,
           "game_id": "401869409",
           "opponent": "Houston Rockets"
         }
@@ -2077,62 +2033,6 @@
         {
           "round": "R1",
           "pts": 6,
-          "game_id": "401869412",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "CSF",
-          "pts": 12,
-          "game_id": "401871159",
-          "opponent": "New York Knicks"
-        }
-      ]
-    },
-    "vj-edgecombe": {
-      "name": "VJ Edgecombe",
-      "team": "Philadelphia 76ers",
-      "seed": 7,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 13,
-          "game_id": "401869191",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 30,
-          "game_id": "401869396",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 10,
-          "game_id": "401869404",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 6,
-          "game_id": "401869406",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 10,
-          "game_id": "401869408",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 14,
-          "game_id": "401869410",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 23,
           "game_id": "401869412",
           "opponent": "Boston Celtics"
         },
@@ -3364,7 +3264,7 @@
         },
         {
           "round": "CSF",
-          "pts": 8,
+          "pts": 11,
           "game_id": "401871152",
           "opponent": "Minnesota Timberwolves"
         },
@@ -3414,7 +3314,7 @@
         },
         {
           "round": "CSF",
-          "pts": 6,
+          "pts": 10,
           "game_id": "401871152",
           "opponent": "Minnesota Timberwolves"
         }
@@ -3458,7 +3358,7 @@
         },
         {
           "round": "CSF",
-          "pts": 15,
+          "pts": 17,
           "game_id": "401871152",
           "opponent": "Minnesota Timberwolves"
         }
@@ -3507,32 +3407,54 @@
           "opponent": "Minnesota Timberwolves"
         }
       ]
-    }
-  },
-  "active_games": [
-    "401871152"
-  ],
-  "live_games": [
-    {
-      "id": "401871152",
-      "round": "CSF",
-      "status": "6:49 - 4th",
-      "teams": [
+    },
+    "dylan-harper": {
+      "name": "Dylan Harper",
+      "team": "San Antonio Spurs",
+      "seed": 2,
+      "eliminated": false,
+      "games": [
         {
-          "name": "San Antonio Spurs",
-          "abbrev": "SA",
-          "score": "84",
-          "winner": null
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869194",
+          "opponent": "Portland Trail Blazers"
         },
         {
-          "name": "Minnesota Timberwolves",
-          "abbrev": "MIN",
-          "score": "88",
-          "winner": null
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869378",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 27,
+          "game_id": "401869382",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869385",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 17,
+          "game_id": "401869386",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "CSF",
+          "pts": 18,
+          "game_id": "401871152",
+          "opponent": "Minnesota Timberwolves"
         }
       ]
     }
-  ],
+  },
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Toronto Raptors",
@@ -3558,9 +3480,9 @@
     "Minnesota Timberwolves": {
       "opponent": "San Antonio Spurs",
       "round": "CSF",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
-      "summary": ""
+      "summary": "MIN leads series 1-0"
     },
     "New York Knicks": {
       "opponent": "Philadelphia 76ers",
@@ -3636,8 +3558,8 @@
       "opponent": "Minnesota Timberwolves",
       "round": "CSF",
       "wins": 0,
-      "losses": 0,
-      "summary": ""
+      "losses": 1,
+      "summary": "MIN leads series 1-0"
     },
     "Portland Trail Blazers": {
       "opponent": "San Antonio Spurs",
