@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-05T22:38:17.160276+00:00",
+  "last_updated": "2026-05-05T23:32:53.180947+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -249,6 +249,12 @@
           "pts": 5,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871333",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -299,6 +305,12 @@
           "pts": 22,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871333",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -349,6 +361,12 @@
           "pts": 13,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "CSF",
+          "pts": 5,
+          "game_id": "401871333",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -399,6 +417,12 @@
           "pts": 18,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "CSF",
+          "pts": 2,
+          "game_id": "401871333",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -449,6 +473,12 @@
           "pts": 22,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "CSF",
+          "pts": 7,
+          "game_id": "401871333",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -499,6 +529,12 @@
           "pts": 2,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871333",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -549,6 +585,12 @@
           "pts": 12,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871333",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -599,6 +641,12 @@
           "pts": 13,
           "game_id": "401869384",
           "opponent": "Toronto Raptors"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871333",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -3065,6 +3113,12 @@
           "pts": 30,
           "game_id": "401869418",
           "opponent": "Orlando Magic"
+        },
+        {
+          "round": "CSF",
+          "pts": 6,
+          "game_id": "401871333",
+          "opponent": "Cleveland Cavaliers"
         }
       ]
     },
@@ -3115,6 +3169,12 @@
           "pts": 32,
           "game_id": "401869418",
           "opponent": "Orlando Magic"
+        },
+        {
+          "round": "CSF",
+          "pts": 8,
+          "game_id": "401871333",
+          "opponent": "Cleveland Cavaliers"
         }
       ]
     },
@@ -3453,15 +3513,37 @@
       ]
     }
   },
-  "active_games": [],
-  "live_games": [],
+  "active_games": [
+    "401871333"
+  ],
+  "live_games": [
+    {
+      "id": "401871333",
+      "round": "CSF",
+      "status": "2:45 - 1st",
+      "teams": [
+        {
+          "name": "Detroit Pistons",
+          "abbrev": "DET",
+          "score": "30",
+          "winner": null
+        },
+        {
+          "name": "Cleveland Cavaliers",
+          "abbrev": "CLE",
+          "score": "14",
+          "winner": null
+        }
+      ]
+    }
+  ],
   "team_series": {
     "Cleveland Cavaliers": {
-      "opponent": "Toronto Raptors",
-      "round": "R1",
-      "wins": 4,
-      "losses": 3,
-      "summary": "CLE wins series 4-3"
+      "opponent": "Detroit Pistons",
+      "round": "CSF",
+      "wins": 0,
+      "losses": 0,
+      "summary": ""
     },
     "Toronto Raptors": {
       "opponent": "Cleveland Cavaliers",
@@ -3541,11 +3623,11 @@
       "summary": "OKC wins series 4-0"
     },
     "Detroit Pistons": {
-      "opponent": "Orlando Magic",
-      "round": "R1",
-      "wins": 4,
-      "losses": 3,
-      "summary": "DET wins series 4-3"
+      "opponent": "Cleveland Cavaliers",
+      "round": "CSF",
+      "wins": 0,
+      "losses": 0,
+      "summary": ""
     },
     "Orlando Magic": {
       "opponent": "Detroit Pistons",
