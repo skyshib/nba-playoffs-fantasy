@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-06T01:17:51.956555+00:00",
+  "last_updated": "2026-05-06T04:53:48.127469+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -420,7 +420,7 @@
         },
         {
           "round": "CSF",
-          "pts": 13,
+          "pts": 22,
           "game_id": "401871333",
           "opponent": "Detroit Pistons"
         }
@@ -476,7 +476,7 @@
         },
         {
           "round": "CSF",
-          "pts": 19,
+          "pts": 23,
           "game_id": "401871333",
           "opponent": "Detroit Pistons"
         }
@@ -1836,7 +1836,57 @@
         },
         {
           "round": "CSF",
+          "pts": 27,
+          "game_id": "401871326",
+          "opponent": "Oklahoma City Thunder"
+        }
+      ]
+    },
+    "rui-hachimura": {
+      "name": "Rui Hachimura",
+      "team": "Los Angeles Lakers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 14,
+          "game_id": "401869190",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 13,
+          "game_id": "401869397",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 22,
+          "game_id": "401869400",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 13,
+          "game_id": "401869405",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
           "pts": 12,
+          "game_id": "401869407",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 21,
+          "game_id": "401869409",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "CSF",
+          "pts": 18,
           "game_id": "401871326",
           "opponent": "Oklahoma City Thunder"
         }
@@ -1886,7 +1936,7 @@
         },
         {
           "round": "CSF",
-          "pts": 4,
+          "pts": 10,
           "game_id": "401871326",
           "opponent": "Oklahoma City Thunder"
         }
@@ -2612,7 +2662,7 @@
         },
         {
           "round": "CSF",
-          "pts": 9,
+          "pts": 24,
           "game_id": "401871326",
           "opponent": "Los Angeles Lakers"
         }
@@ -2650,7 +2700,7 @@
         },
         {
           "round": "CSF",
-          "pts": 8,
+          "pts": 18,
           "game_id": "401871326",
           "opponent": "Los Angeles Lakers"
         }
@@ -2685,6 +2735,12 @@
           "pts": 0,
           "game_id": "401869373",
           "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871326",
+          "opponent": "Los Angeles Lakers"
         }
       ]
     },
@@ -2720,7 +2776,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 5,
           "game_id": "401871326",
           "opponent": "Los Angeles Lakers"
         }
@@ -2758,7 +2814,7 @@
         },
         {
           "round": "CSF",
-          "pts": 4,
+          "pts": 18,
           "game_id": "401871326",
           "opponent": "Los Angeles Lakers"
         }
@@ -3164,7 +3220,7 @@
         },
         {
           "round": "CSF",
-          "pts": 16,
+          "pts": 20,
           "game_id": "401871333",
           "opponent": "Cleveland Cavaliers"
         }
@@ -3220,7 +3276,7 @@
         },
         {
           "round": "CSF",
-          "pts": 21,
+          "pts": 23,
           "game_id": "401871333",
           "opponent": "Cleveland Cavaliers"
         }
@@ -3561,57 +3617,15 @@
       ]
     }
   },
-  "active_games": [
-    "401871333",
-    "401871326"
-  ],
-  "live_games": [
-    {
-      "id": "401871333",
-      "round": "CSF",
-      "status": "6:32 - 4th",
-      "teams": [
-        {
-          "name": "Detroit Pistons",
-          "abbrev": "DET",
-          "score": "93",
-          "winner": null
-        },
-        {
-          "name": "Cleveland Cavaliers",
-          "abbrev": "CLE",
-          "score": "88",
-          "winner": null
-        }
-      ]
-    },
-    {
-      "id": "401871326",
-      "round": "CSF",
-      "status": "10:36 - 2nd",
-      "teams": [
-        {
-          "name": "Oklahoma City Thunder",
-          "abbrev": "OKC",
-          "score": "36",
-          "winner": null
-        },
-        {
-          "name": "Los Angeles Lakers",
-          "abbrev": "LAL",
-          "score": "26",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Detroit Pistons",
       "round": "CSF",
       "wins": 0,
-      "losses": 0,
-      "summary": ""
+      "losses": 1,
+      "summary": "DET leads series 1-0"
     },
     "Toronto Raptors": {
       "opponent": "Cleveland Cavaliers",
@@ -3652,8 +3666,8 @@
       "opponent": "Oklahoma City Thunder",
       "round": "CSF",
       "wins": 0,
-      "losses": 0,
-      "summary": ""
+      "losses": 1,
+      "summary": "OKC leads series 1-0"
     },
     "Houston Rockets": {
       "opponent": "Los Angeles Lakers",
@@ -3679,9 +3693,9 @@
     "Oklahoma City Thunder": {
       "opponent": "Los Angeles Lakers",
       "round": "CSF",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
-      "summary": ""
+      "summary": "OKC leads series 1-0"
     },
     "Phoenix Suns": {
       "opponent": "Oklahoma City Thunder",
@@ -3693,9 +3707,9 @@
     "Detroit Pistons": {
       "opponent": "Cleveland Cavaliers",
       "round": "CSF",
-      "wins": 0,
+      "wins": 1,
       "losses": 0,
-      "summary": ""
+      "summary": "DET leads series 1-0"
     },
     "Orlando Magic": {
       "opponent": "Detroit Pistons",
