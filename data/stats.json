@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-05T23:32:53.180947+00:00",
+  "last_updated": "2026-05-06T01:17:51.956555+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -252,7 +252,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 5,
           "game_id": "401871333",
           "opponent": "Detroit Pistons"
         }
@@ -308,7 +308,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 2,
           "game_id": "401871333",
           "opponent": "Detroit Pistons"
         }
@@ -364,7 +364,7 @@
         },
         {
           "round": "CSF",
-          "pts": 5,
+          "pts": 14,
           "game_id": "401871333",
           "opponent": "Detroit Pistons"
         }
@@ -420,7 +420,7 @@
         },
         {
           "round": "CSF",
-          "pts": 2,
+          "pts": 13,
           "game_id": "401871333",
           "opponent": "Detroit Pistons"
         }
@@ -476,7 +476,7 @@
         },
         {
           "round": "CSF",
-          "pts": 7,
+          "pts": 19,
           "game_id": "401871333",
           "opponent": "Detroit Pistons"
         }
@@ -532,7 +532,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 9,
           "game_id": "401871333",
           "opponent": "Detroit Pistons"
         }
@@ -588,7 +588,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 19,
           "game_id": "401871333",
           "opponent": "Detroit Pistons"
         }
@@ -1833,6 +1833,12 @@
           "pts": 28,
           "game_id": "401869409",
           "opponent": "Houston Rockets"
+        },
+        {
+          "round": "CSF",
+          "pts": 12,
+          "game_id": "401871326",
+          "opponent": "Oklahoma City Thunder"
         }
       ]
     },
@@ -1877,50 +1883,12 @@
           "pts": 7,
           "game_id": "401869409",
           "opponent": "Houston Rockets"
-        }
-      ]
-    },
-    "marcus-smart": {
-      "name": "Marcus Smart",
-      "team": "Los Angeles Lakers",
-      "seed": 4,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 15,
-          "game_id": "401869190",
-          "opponent": "Houston Rockets"
         },
         {
-          "round": "R1",
-          "pts": 25,
-          "game_id": "401869397",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 21,
-          "game_id": "401869400",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 9,
-          "game_id": "401869405",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 11,
-          "game_id": "401869407",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 7,
-          "game_id": "401869409",
-          "opponent": "Houston Rockets"
+          "round": "CSF",
+          "pts": 4,
+          "game_id": "401871326",
+          "opponent": "Oklahoma City Thunder"
         }
       ]
     },
@@ -2081,6 +2049,62 @@
         {
           "round": "R1",
           "pts": 6,
+          "game_id": "401869412",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "CSF",
+          "pts": 12,
+          "game_id": "401871159",
+          "opponent": "New York Knicks"
+        }
+      ]
+    },
+    "vj-edgecombe": {
+      "name": "VJ Edgecombe",
+      "team": "Philadelphia 76ers",
+      "seed": 7,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 13,
+          "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 30,
+          "game_id": "401869396",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869404",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869406",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869408",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 14,
+          "game_id": "401869410",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 23,
           "game_id": "401869412",
           "opponent": "Boston Celtics"
         },
@@ -2585,6 +2609,12 @@
           "pts": 24,
           "game_id": "401869373",
           "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "CSF",
+          "pts": 9,
+          "game_id": "401871326",
+          "opponent": "Los Angeles Lakers"
         }
       ]
     },
@@ -2617,6 +2647,12 @@
           "pts": 31,
           "game_id": "401869373",
           "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "CSF",
+          "pts": 8,
+          "game_id": "401871326",
+          "opponent": "Los Angeles Lakers"
         }
       ]
     },
@@ -2681,6 +2717,12 @@
           "pts": 14,
           "game_id": "401869373",
           "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871326",
+          "opponent": "Los Angeles Lakers"
         }
       ]
     },
@@ -2713,6 +2755,12 @@
           "pts": 22,
           "game_id": "401869373",
           "opponent": "Phoenix Suns"
+        },
+        {
+          "round": "CSF",
+          "pts": 4,
+          "game_id": "401871326",
+          "opponent": "Los Angeles Lakers"
         }
       ]
     },
@@ -3116,7 +3164,7 @@
         },
         {
           "round": "CSF",
-          "pts": 6,
+          "pts": 16,
           "game_id": "401871333",
           "opponent": "Cleveland Cavaliers"
         }
@@ -3172,7 +3220,7 @@
         },
         {
           "round": "CSF",
-          "pts": 8,
+          "pts": 21,
           "game_id": "401871333",
           "opponent": "Cleveland Cavaliers"
         }
@@ -3514,24 +3562,44 @@
     }
   },
   "active_games": [
-    "401871333"
+    "401871333",
+    "401871326"
   ],
   "live_games": [
     {
       "id": "401871333",
       "round": "CSF",
-      "status": "2:45 - 1st",
+      "status": "6:32 - 4th",
       "teams": [
         {
           "name": "Detroit Pistons",
           "abbrev": "DET",
-          "score": "30",
+          "score": "93",
           "winner": null
         },
         {
           "name": "Cleveland Cavaliers",
           "abbrev": "CLE",
-          "score": "14",
+          "score": "88",
+          "winner": null
+        }
+      ]
+    },
+    {
+      "id": "401871326",
+      "round": "CSF",
+      "status": "10:36 - 2nd",
+      "teams": [
+        {
+          "name": "Oklahoma City Thunder",
+          "abbrev": "OKC",
+          "score": "36",
+          "winner": null
+        },
+        {
+          "name": "Los Angeles Lakers",
+          "abbrev": "LAL",
+          "score": "26",
           "winner": null
         }
       ]
@@ -3581,11 +3649,11 @@
       "summary": "NY wins series 4-2"
     },
     "Los Angeles Lakers": {
-      "opponent": "Houston Rockets",
-      "round": "R1",
-      "wins": 4,
-      "losses": 2,
-      "summary": "LAL win series 4-2"
+      "opponent": "Oklahoma City Thunder",
+      "round": "CSF",
+      "wins": 0,
+      "losses": 0,
+      "summary": ""
     },
     "Houston Rockets": {
       "opponent": "Los Angeles Lakers",
@@ -3609,11 +3677,11 @@
       "summary": "NY leads series 1-0"
     },
     "Oklahoma City Thunder": {
-      "opponent": "Phoenix Suns",
-      "round": "R1",
-      "wins": 4,
+      "opponent": "Los Angeles Lakers",
+      "round": "CSF",
+      "wins": 0,
       "losses": 0,
-      "summary": "OKC wins series 4-0"
+      "summary": ""
     },
     "Phoenix Suns": {
       "opponent": "Oklahoma City Thunder",
