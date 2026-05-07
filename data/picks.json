@@ -20,18 +20,18 @@
           "cost": 11.78
         },
         "3": {
-          "player_id": "jalen-brunson",
-          "name": "Jalen Brunson",
+          "player_id": "og-anunoby",
+          "name": "OG Anunoby",
           "team": "New York Knicks",
           "seed": 3,
-          "cost": 26.04
+          "cost": 16.69
         },
         "4": {
-          "player_id": "rui-hachimura",
-          "name": "Rui Hachimura",
+          "player_id": "lebron-james",
+          "name": "LeBron James",
           "team": "Los Angeles Lakers",
           "seed": 4,
-          "cost": 11.47
+          "cost": 20.93
         },
         "5": {
           "player_id": "jakobe-walter",
