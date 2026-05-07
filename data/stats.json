@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-07T04:05:32.412082+00:00",
+  "last_updated": "2026-05-07T07:18:28.534674+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -806,7 +806,7 @@
         },
         {
           "round": "CSF",
-          "pts": 4,
+          "pts": 8,
           "game_id": "401871153",
           "opponent": "San Antonio Spurs"
         },
@@ -3681,30 +3681,8 @@
       ]
     }
   },
-  "active_games": [
-    "401871153"
-  ],
-  "live_games": [
-    {
-      "id": "401871153",
-      "round": "CSF",
-      "status": "6:56 - 4th",
-      "teams": [
-        {
-          "name": "San Antonio Spurs",
-          "abbrev": "SA",
-          "score": "118",
-          "winner": null
-        },
-        {
-          "name": "Minnesota Timberwolves",
-          "abbrev": "MIN",
-          "score": "74",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Detroit Pistons",
@@ -3731,8 +3709,8 @@
       "opponent": "San Antonio Spurs",
       "round": "CSF",
       "wins": 1,
-      "losses": 0,
-      "summary": "MIN leads series 1-0"
+      "losses": 1,
+      "summary": "Series tied 1-1"
     },
     "New York Knicks": {
       "opponent": "Philadelphia 76ers",
@@ -3807,9 +3785,9 @@
     "San Antonio Spurs": {
       "opponent": "Minnesota Timberwolves",
       "round": "CSF",
-      "wins": 0,
+      "wins": 1,
       "losses": 1,
-      "summary": "MIN leads series 1-0"
+      "summary": "Series tied 1-1"
     },
     "Portland Trail Blazers": {
       "opponent": "San Antonio Spurs",
