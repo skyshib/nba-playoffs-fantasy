@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-07T22:17:09.942174+00:00",
+  "last_updated": "2026-05-07T23:27:30.288764+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -255,6 +255,12 @@
           "pts": 5,
           "game_id": "401871333",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 3,
+          "game_id": "401871334",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -310,6 +316,12 @@
           "round": "CSF",
           "pts": 2,
           "game_id": "401871333",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 2,
+          "game_id": "401871334",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -367,6 +379,12 @@
           "pts": 14,
           "game_id": "401871333",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871334",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -422,6 +440,12 @@
           "round": "CSF",
           "pts": 22,
           "game_id": "401871333",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871334",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -479,6 +503,12 @@
           "pts": 23,
           "game_id": "401871333",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 6,
+          "game_id": "401871334",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -534,6 +564,12 @@
           "round": "CSF",
           "pts": 9,
           "game_id": "401871333",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871334",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -591,6 +627,12 @@
           "pts": 19,
           "game_id": "401871333",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871334",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -646,6 +688,12 @@
           "round": "CSF",
           "pts": 0,
           "game_id": "401871333",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871334",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -3257,6 +3305,12 @@
           "pts": 20,
           "game_id": "401871333",
           "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CSF",
+          "pts": 3,
+          "game_id": "401871334",
+          "opponent": "Cleveland Cavaliers"
         }
       ]
     },
@@ -3312,6 +3366,12 @@
           "round": "CSF",
           "pts": 23,
           "game_id": "401871333",
+          "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CSF",
+          "pts": 2,
+          "game_id": "401871334",
           "opponent": "Cleveland Cavaliers"
         }
       ]
@@ -3681,8 +3741,30 @@
       ]
     }
   },
-  "active_games": [],
-  "live_games": [],
+  "active_games": [
+    "401871334"
+  ],
+  "live_games": [
+    {
+      "id": "401871334",
+      "round": "CSF",
+      "status": "5:39 - 1st",
+      "teams": [
+        {
+          "name": "Detroit Pistons",
+          "abbrev": "DET",
+          "score": "16",
+          "winner": null
+        },
+        {
+          "name": "Cleveland Cavaliers",
+          "abbrev": "CLE",
+          "score": "11",
+          "winner": null
+        }
+      ]
+    }
+  ],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Detroit Pistons",
