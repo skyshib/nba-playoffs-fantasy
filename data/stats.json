@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-07T23:27:30.288764+00:00",
+  "last_updated": "2026-05-08T01:17:40.639188+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -258,7 +258,7 @@
         },
         {
           "round": "CSF",
-          "pts": 3,
+          "pts": 6,
           "game_id": "401871334",
           "opponent": "Detroit Pistons"
         }
@@ -320,7 +320,7 @@
         },
         {
           "round": "CSF",
-          "pts": 2,
+          "pts": 14,
           "game_id": "401871334",
           "opponent": "Detroit Pistons"
         }
@@ -382,7 +382,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 9,
           "game_id": "401871334",
           "opponent": "Detroit Pistons"
         }
@@ -444,7 +444,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 10,
           "game_id": "401871334",
           "opponent": "Detroit Pistons"
         }
@@ -506,7 +506,7 @@
         },
         {
           "round": "CSF",
-          "pts": 6,
+          "pts": 27,
           "game_id": "401871334",
           "opponent": "Detroit Pistons"
         }
@@ -568,7 +568,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 4,
           "game_id": "401871334",
           "opponent": "Detroit Pistons"
         }
@@ -630,7 +630,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 3,
           "game_id": "401871334",
           "opponent": "Detroit Pistons"
         }
@@ -3308,7 +3308,7 @@
         },
         {
           "round": "CSF",
-          "pts": 3,
+          "pts": 19,
           "game_id": "401871334",
           "opponent": "Cleveland Cavaliers"
         }
@@ -3370,7 +3370,7 @@
         },
         {
           "round": "CSF",
-          "pts": 2,
+          "pts": 13,
           "game_id": "401871334",
           "opponent": "Cleveland Cavaliers"
         }
@@ -3748,18 +3748,18 @@
     {
       "id": "401871334",
       "round": "CSF",
-      "status": "5:39 - 1st",
+      "status": "6:54 - 4th",
       "teams": [
         {
           "name": "Detroit Pistons",
           "abbrev": "DET",
-          "score": "16",
+          "score": "89",
           "winner": null
         },
         {
           "name": "Cleveland Cavaliers",
           "abbrev": "CLE",
-          "score": "11",
+          "score": "83",
           "winner": null
         }
       ]
