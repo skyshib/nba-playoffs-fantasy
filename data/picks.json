@@ -20,18 +20,18 @@
           "cost": 11.78
         },
         "3": {
-          "player_id": "og-anunoby",
-          "name": "OG Anunoby",
+          "player_id": "jalen-brunson",
+          "name": "Jalen Brunson",
           "team": "New York Knicks",
           "seed": 3,
-          "cost": 16.69
+          "cost": 26.04
         },
         "4": {
-          "player_id": "lebron-james",
-          "name": "LeBron James",
+          "player_id": "marcus-smart",
+          "name": "Marcus Smart",
           "team": "Los Angeles Lakers",
           "seed": 4,
-          "cost": 20.93
+          "cost": 9.34
         },
         "5": {
           "player_id": "jakobe-walter",
@@ -48,11 +48,11 @@
           "cost": 5.6
         },
         "7": {
-          "player_id": "vj-edgecombe",
-          "name": "VJ Edgecombe",
+          "player_id": "paul-george",
+          "name": "Paul George",
           "team": "Philadelphia 76ers",
           "seed": 7,
-          "cost": 15.99
+          "cost": 17.32
         },
         "8": {
           "player_id": "paolo-banchero",
