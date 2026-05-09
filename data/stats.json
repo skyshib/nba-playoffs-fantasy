@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-08T23:31:23.384163+00:00",
+  "last_updated": "2026-05-09T01:23:23.071366+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1662,7 +1662,7 @@
         },
         {
           "round": "CSF",
-          "pts": 6,
+          "pts": 10,
           "game_id": "401871161",
           "opponent": "Philadelphia 76ers"
         }
@@ -2062,7 +2062,7 @@
         },
         {
           "round": "CSF",
-          "pts": 13,
+          "pts": 15,
           "game_id": "401871161",
           "opponent": "New York Knicks"
         }
@@ -2198,7 +2198,7 @@
         },
         {
           "round": "CSF",
-          "pts": 2,
+          "pts": 22,
           "game_id": "401871161",
           "opponent": "New York Knicks"
         }
@@ -2266,7 +2266,7 @@
         },
         {
           "round": "CSF",
-          "pts": 6,
+          "pts": 11,
           "game_id": "401871161",
           "opponent": "New York Knicks"
         }
@@ -3838,18 +3838,18 @@
     {
       "id": "401871161",
       "round": "CSF",
-      "status": "3:54 - 1st",
+      "status": "8:53 - 4th",
       "teams": [
         {
           "name": "Philadelphia 76ers",
           "abbrev": "PHI",
-          "score": "25",
+          "score": "84",
           "winner": null
         },
         {
           "name": "New York Knicks",
           "abbrev": "NY",
-          "score": "18",
+          "score": "88",
           "winner": null
         }
       ]
