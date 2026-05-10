@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-10T21:25:55.119990+00:00",
+  "last_updated": "2026-05-10T22:10:22.461356+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -743,6 +743,68 @@
           "pts": 7,
           "game_id": "401871335",
           "opponent": "Detroit Pistons"
+        }
+      ]
+    },
+    "jaden-mcdaniels": {
+      "name": "Jaden McDaniels",
+      "team": "Minnesota Timberwolves",
+      "seed": 6,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 16,
+          "game_id": "401869188",
+          "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 14,
+          "game_id": "401869395",
+          "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 20,
+          "game_id": "401869398",
+          "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 12,
+          "game_id": "401869399",
+          "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 13,
+          "game_id": "401869401",
+          "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "R1",
+          "pts": 32,
+          "game_id": "401869402",
+          "opponent": "Denver Nuggets"
+        },
+        {
+          "round": "CSF",
+          "pts": 16,
+          "game_id": "401871152",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "CSF",
+          "pts": 12,
+          "game_id": "401871153",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "CSF",
+          "pts": 17,
+          "game_id": "401871154",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -1628,6 +1690,68 @@
         }
       ]
     },
+    "og-anunoby": {
+      "name": "OG Anunoby",
+      "team": "New York Knicks",
+      "seed": 3,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 18,
+          "game_id": "401869189",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 14,
+          "game_id": "401869387",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 29,
+          "game_id": "401869389",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 22,
+          "game_id": "401869391",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 17,
+          "game_id": "401869392",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 29,
+          "game_id": "401869393",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "CSF",
+          "pts": 18,
+          "game_id": "401871159",
+          "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "CSF",
+          "pts": 24,
+          "game_id": "401871160",
+          "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871161",
+          "opponent": "Philadelphia 76ers"
+        }
+      ]
+    },
     "josh-hart": {
       "name": "Josh Hart",
       "team": "New York Knicks",
@@ -1691,74 +1815,6 @@
         {
           "round": "CSF",
           "pts": 17,
-          "game_id": "401871162",
-          "opponent": "Philadelphia 76ers"
-        }
-      ]
-    },
-    "jalen-brunson": {
-      "name": "Jalen Brunson",
-      "team": "New York Knicks",
-      "seed": 3,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 28,
-          "game_id": "401869189",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 29,
-          "game_id": "401869387",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 26,
-          "game_id": "401869389",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 19,
-          "game_id": "401869391",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 39,
-          "game_id": "401869392",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869393",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "CSF",
-          "pts": 35,
-          "game_id": "401871159",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "CSF",
-          "pts": 26,
-          "game_id": "401871160",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "CSF",
-          "pts": 33,
-          "game_id": "401871161",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "CSF",
-          "pts": 22,
           "game_id": "401871162",
           "opponent": "Philadelphia 76ers"
         }
@@ -2046,68 +2102,6 @@
         }
       ]
     },
-    "rui-hachimura": {
-      "name": "Rui Hachimura",
-      "team": "Los Angeles Lakers",
-      "seed": 4,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 14,
-          "game_id": "401869190",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 13,
-          "game_id": "401869397",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 22,
-          "game_id": "401869400",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 13,
-          "game_id": "401869405",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 12,
-          "game_id": "401869407",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 21,
-          "game_id": "401869409",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "CSF",
-          "pts": 18,
-          "game_id": "401871326",
-          "opponent": "Oklahoma City Thunder"
-        },
-        {
-          "round": "CSF",
-          "pts": 16,
-          "game_id": "401871327",
-          "opponent": "Oklahoma City Thunder"
-        },
-        {
-          "round": "CSF",
-          "pts": 21,
-          "game_id": "401871328",
-          "opponent": "Oklahoma City Thunder"
-        }
-      ]
-    },
     "deandre-ayton": {
       "name": "Deandre Ayton",
       "team": "Los Angeles Lakers",
@@ -2165,6 +2159,68 @@
         {
           "round": "CSF",
           "pts": 10,
+          "game_id": "401871328",
+          "opponent": "Oklahoma City Thunder"
+        }
+      ]
+    },
+    "luke-kennard": {
+      "name": "Luke Kennard",
+      "team": "Los Angeles Lakers",
+      "seed": 4,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 27,
+          "game_id": "401869190",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 23,
+          "game_id": "401869397",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 14,
+          "game_id": "401869400",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 7,
+          "game_id": "401869405",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 1,
+          "game_id": "401869407",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869409",
+          "opponent": "Houston Rockets"
+        },
+        {
+          "round": "CSF",
+          "pts": 7,
+          "game_id": "401871326",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "CSF",
+          "pts": 10,
+          "game_id": "401871327",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "CSF",
+          "pts": 18,
           "game_id": "401871328",
           "opponent": "Oklahoma City Thunder"
         }
@@ -2312,7 +2368,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 7,
           "game_id": "401871162",
           "opponent": "New York Knicks"
         }
@@ -2386,7 +2442,7 @@
         },
         {
           "round": "CSF",
-          "pts": 8,
+          "pts": 10,
           "game_id": "401871162",
           "opponent": "New York Knicks"
         }
@@ -2534,7 +2590,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 2,
           "game_id": "401871162",
           "opponent": "New York Knicks"
         }
@@ -2682,7 +2738,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 5,
           "game_id": "401871162",
           "opponent": "New York Knicks"
         }
@@ -4057,62 +4113,6 @@
           "opponent": "Minnesota Timberwolves"
         }
       ]
-    },
-    "dylan-harper": {
-      "name": "Dylan Harper",
-      "team": "San Antonio Spurs",
-      "seed": 2,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 6,
-          "game_id": "401869194",
-          "opponent": "Portland Trail Blazers"
-        },
-        {
-          "round": "R1",
-          "pts": 10,
-          "game_id": "401869378",
-          "opponent": "Portland Trail Blazers"
-        },
-        {
-          "round": "R1",
-          "pts": 27,
-          "game_id": "401869382",
-          "opponent": "Portland Trail Blazers"
-        },
-        {
-          "round": "R1",
-          "pts": 3,
-          "game_id": "401869385",
-          "opponent": "Portland Trail Blazers"
-        },
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869386",
-          "opponent": "Portland Trail Blazers"
-        },
-        {
-          "round": "CSF",
-          "pts": 18,
-          "game_id": "401871152",
-          "opponent": "Minnesota Timberwolves"
-        },
-        {
-          "round": "CSF",
-          "pts": 11,
-          "game_id": "401871153",
-          "opponent": "Minnesota Timberwolves"
-        },
-        {
-          "round": "CSF",
-          "pts": 8,
-          "game_id": "401871154",
-          "opponent": "Minnesota Timberwolves"
-        }
-      ]
     }
   },
   "active_games": [
@@ -4122,18 +4122,18 @@
     {
       "id": "401871162",
       "round": "CSF",
-      "status": "3:11 - 3rd",
+      "status": "38.2 - 4th",
       "teams": [
         {
           "name": "Philadelphia 76ers",
           "abbrev": "PHI",
-          "score": "75",
+          "score": "112",
           "winner": null
         },
         {
           "name": "New York Knicks",
           "abbrev": "NY",
-          "score": "107",
+          "score": "144",
           "winner": null
         }
       ]
