@@ -264,6 +264,17 @@ const Scoreboard = (() => {
       table.className = 'synth-scoreboard';
       if (compactMode) table.classList.add('compact-mode');
 
+      // Hidden header to match main table column widths
+      const thead = document.createElement('thead');
+      thead.style.visibility = 'collapse';
+      thead.style.height = '0';
+      thead.innerHTML = `<tr>
+        <th class="col-rank"></th><th class="col-name"></th><th class="col-total"></th>
+        <th class="col-diff"></th><th class="col-remaining"></th><th class="col-ppgrem"></th>
+        <th class="col-seeds" colspan="8"></th>
+      </tr>`;
+      table.appendChild(thead);
+
       const tbody = document.createElement('tbody');
       const tr = document.createElement('tr');
 

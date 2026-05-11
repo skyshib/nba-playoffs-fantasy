@@ -182,12 +182,18 @@ main { max-width: 1600px; margin: 1.5rem auto; padding: 0 1rem; }
   overflow-x: auto;
   border-top: 1px solid rgba(251, 191, 36, 0.2);
 }
-/* Reuse the main scoreboard styling for a single synthetic row */
+/* Reuse the main scoreboard styling for a single synthetic row. */
 .synth-scoreboard {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.85rem;
 }
+.synth-scoreboard thead th.col-rank { width: 4.5rem; }
+.synth-scoreboard thead th.col-name { width: 9rem; }
+.synth-scoreboard thead th.col-total { width: 4rem; }
+.synth-scoreboard thead th.col-diff { width: 3.5rem; }
+.synth-scoreboard thead th.col-remaining { width: 3rem; }
+.synth-scoreboard thead th.col-ppgrem { width: 4rem; }
 .synth-scoreboard tbody tr {
   background: var(--bg-row);
 }
