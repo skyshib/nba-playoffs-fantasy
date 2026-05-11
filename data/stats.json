@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-11T00:08:57.818506+00:00",
+  "last_updated": "2026-05-11T00:52:44.328995+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -808,7 +808,7 @@
         },
         {
           "round": "CSF",
-          "pts": 2,
+          "pts": 6,
           "game_id": "401871155",
           "opponent": "San Antonio Spurs"
         }
@@ -876,7 +876,7 @@
         },
         {
           "round": "CSF",
-          "pts": 5,
+          "pts": 6,
           "game_id": "401871155",
           "opponent": "San Antonio Spurs"
         }
@@ -932,7 +932,7 @@
         },
         {
           "round": "CSF",
-          "pts": 11,
+          "pts": 18,
           "game_id": "401871155",
           "opponent": "San Antonio Spurs"
         },
@@ -4050,7 +4050,7 @@
         },
         {
           "round": "CSF",
-          "pts": 5,
+          "pts": 11,
           "game_id": "401871155",
           "opponent": "Minnesota Timberwolves"
         }
@@ -4112,7 +4112,7 @@
         },
         {
           "round": "CSF",
-          "pts": 7,
+          "pts": 14,
           "game_id": "401871155",
           "opponent": "Minnesota Timberwolves"
         }
@@ -4174,7 +4174,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 5,
           "game_id": "401871155",
           "opponent": "Minnesota Timberwolves"
         }
@@ -4330,18 +4330,18 @@
     {
       "id": "401871155",
       "round": "CSF",
-      "status": "2:11 - 1st",
+      "status": "Halftime",
       "teams": [
         {
           "name": "Minnesota Timberwolves",
           "abbrev": "MIN",
-          "score": "26",
+          "score": "60",
           "winner": null
         },
         {
           "name": "San Antonio Spurs",
           "abbrev": "SA",
-          "score": "21",
+          "score": "56",
           "winner": null
         }
       ]
