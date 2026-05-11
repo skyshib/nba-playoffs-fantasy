@@ -260,23 +260,12 @@ const Scoreboard = (() => {
       // Build a one-row mini-scoreboard matching the main table columns
       const body = document.createElement('div');
       body.className = 'synth-body';
-      const table = document.createElement('table');
-      table.className = 'synth-scoreboard';
-      if (compactMode) table.classList.add('compact-mode');
 
-      // Hidden header to match main table column widths
-      const thead = document.createElement('thead');
-      thead.style.visibility = 'collapse';
-      thead.style.height = '0';
-      thead.innerHTML = `<tr>
-        <th class="col-rank"></th><th class="col-name"></th><th class="col-total"></th>
-        <th class="col-diff"></th><th class="col-remaining"></th><th class="col-ppgrem"></th>
-        <th class="col-seeds" colspan="8"></th>
-      </tr>`;
-      table.appendChild(thead);
-
-      const tbody = document.createElement('tbody');
+      // Render into the MAIN scoreboard table so columns auto-align
+      const mainTable = document.getElementById('scoreboard');
+      const mainTbody = document.getElementById('scoreboard-body');
       const tr = document.createElement('tr');
+      tr.className = 'synth-row';
 
       const tdSpacer = document.createElement('td');
       tdSpacer.className = 'col-rank';
@@ -313,16 +302,23 @@ const Scoreboard = (() => {
         tr.appendChild(buildSeedCell(r, seed, { noColor: true, pickCounts: synthPickCounts, totalEntrants: synthTotalEntrants }));
       }
 
-      tbody.appendChild(tr);
-      table.appendChild(tbody);
-      body.appendChild(table);
+      // Insert as first row of main scoreboard when expanded
+      if (mainTable && mainTbody) {
+        tr.style.display = isOpen ? '' : 'none';
+        mainTbody.insertBefore(tr, mainTbody.firstChild);
+      }
+
       details.appendChild(body);
       host.appendChild(details);
+
+      // Store reference for toggle
+      details._synthRow = tr;
     }
 
     host.querySelectorAll('details').forEach(d => {
       d.addEventListener('toggle', () => {
         localStorage.setItem(d.dataset.key, d.open ? '1' : '0');
+        if (d._synthRow) d._synthRow.style.display = d.open ? '' : 'none';
       });
     });
   }
