@@ -247,7 +247,7 @@ td.col-rank { font-weight: 900; color: var(--text-muted); font-size: 1rem; }
 #scoreboard tbody tr:nth-child(2) td.col-rank { color: #c0c0c0; }
 #scoreboard tbody tr:nth-child(3) td.col-rank { color: #cd7f32; }
 
-td.col-total { font-weight: 700; font-size: 1rem; color: var(--accent-red); }
+td.col-total { font-weight: 700; font-size: 1rem; color: var(--text-primary); }
 td.col-remaining { color: var(--text-secondary); }
 
 .seed-cell {

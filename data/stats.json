@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-11T00:52:44.328995+00:00",
+  "last_updated": "2026-05-11T03:59:48.645910+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -808,7 +808,7 @@
         },
         {
           "round": "CSF",
-          "pts": 6,
+          "pts": 14,
           "game_id": "401871155",
           "opponent": "San Antonio Spurs"
         }
@@ -876,7 +876,7 @@
         },
         {
           "round": "CSF",
-          "pts": 6,
+          "pts": 11,
           "game_id": "401871155",
           "opponent": "San Antonio Spurs"
         }
@@ -932,7 +932,7 @@
         },
         {
           "round": "CSF",
-          "pts": 18,
+          "pts": 36,
           "game_id": "401871155",
           "opponent": "San Antonio Spurs"
         },
@@ -1142,7 +1142,7 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
+          "pts": 8,
           "game_id": "401871155",
           "opponent": "San Antonio Spurs"
         },
@@ -4050,7 +4050,7 @@
         },
         {
           "round": "CSF",
-          "pts": 11,
+          "pts": 24,
           "game_id": "401871155",
           "opponent": "Minnesota Timberwolves"
         }
@@ -4112,7 +4112,7 @@
         },
         {
           "round": "CSF",
-          "pts": 14,
+          "pts": 20,
           "game_id": "401871155",
           "opponent": "Minnesota Timberwolves"
         }
@@ -4174,7 +4174,7 @@
         },
         {
           "round": "CSF",
-          "pts": 5,
+          "pts": 7,
           "game_id": "401871155",
           "opponent": "Minnesota Timberwolves"
         }
@@ -4323,30 +4323,8 @@
       ]
     }
   },
-  "active_games": [
-    "401871155"
-  ],
-  "live_games": [
-    {
-      "id": "401871155",
-      "round": "CSF",
-      "status": "Halftime",
-      "teams": [
-        {
-          "name": "Minnesota Timberwolves",
-          "abbrev": "MIN",
-          "score": "60",
-          "winner": null
-        },
-        {
-          "name": "San Antonio Spurs",
-          "abbrev": "SA",
-          "score": "56",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Detroit Pistons",
@@ -4372,9 +4350,9 @@
     "Minnesota Timberwolves": {
       "opponent": "San Antonio Spurs",
       "round": "CSF",
-      "wins": 1,
+      "wins": 2,
       "losses": 2,
-      "summary": "SA leads series 2-1"
+      "summary": "Series tied 2-2"
     },
     "New York Knicks": {
       "opponent": "Philadelphia 76ers",
@@ -4450,8 +4428,8 @@
       "opponent": "Minnesota Timberwolves",
       "round": "CSF",
       "wins": 2,
-      "losses": 1,
-      "summary": "SA leads series 2-1"
+      "losses": 2,
+      "summary": "Series tied 2-2"
     },
     "Portland Trail Blazers": {
       "opponent": "San Antonio Spurs",
