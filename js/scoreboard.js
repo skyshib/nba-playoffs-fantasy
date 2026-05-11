@@ -291,10 +291,10 @@ const Scoreboard = (() => {
       tdDiff.textContent = (dv >= 0 ? '+' : '') + fmtPts(dv);
       tr.appendChild(tdDiff);
       const tdSkip2 = document.createElement('td');
-      tdSkip2.className = 'col-remaining'; tdSkip2.textContent = `${r.alive}/8`;
+      tdSkip2.className = 'col-remaining'; tdSkip2.textContent = '';
       tr.appendChild(tdSkip2);
       const tdSkip3 = document.createElement('td');
-      tdSkip3.className = 'col-ppgrem'; tdSkip3.textContent = '—';
+      tdSkip3.className = 'col-ppgrem'; tdSkip3.textContent = '';
       tr.appendChild(tdSkip3);
 
       // Seed cells — reuse the same builder (no color, no click for tooltip though)
