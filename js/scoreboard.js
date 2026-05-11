@@ -269,12 +269,12 @@ const Scoreboard = (() => {
 
       const tdSpacer = document.createElement('td');
       tdSpacer.className = 'col-rank';
-      tdSpacer.textContent = '⭐';
+      tdSpacer.textContent = '';
       tr.appendChild(tdSpacer);
 
       const tdName = document.createElement('td');
       tdName.className = 'col-name';
-      tdName.textContent = r.name;
+      tdName.textContent = '';
       tr.appendChild(tdName);
 
       const tdTotal = document.createElement('td');
