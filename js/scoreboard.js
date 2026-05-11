@@ -283,9 +283,13 @@ const Scoreboard = (() => {
       tr.appendChild(tdTotal);
 
       // Skip +/-, Alive, PPG Rem columns for synthetic (mostly meaningless)
-      const tdSkip1 = document.createElement('td');
-      tdSkip1.className = 'col-diff'; tdSkip1.textContent = '—';
-      tr.appendChild(tdSkip1);
+      const tdDiff = document.createElement('td');
+      tdDiff.className = 'col-diff';
+      const dv = r.pointsDiff;
+      if (dv > 0) tdDiff.classList.add('pos');
+      else if (dv < 0) tdDiff.classList.add('neg');
+      tdDiff.textContent = (dv >= 0 ? '+' : '') + fmtPts(dv);
+      tr.appendChild(tdDiff);
       const tdSkip2 = document.createElement('td');
       tdSkip2.className = 'col-remaining'; tdSkip2.textContent = `${r.alive}/8`;
       tr.appendChild(tdSkip2);
