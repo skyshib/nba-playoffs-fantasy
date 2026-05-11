@@ -521,22 +521,19 @@
       }
 
       // Fetch recently completed games not yet in stats.json
-      // Fetch box scores for recently-completed games not yet in stats.json.
-      // Check per-game (not per-player) whether the game_id exists anywhere
-      // in committed data. This ensures DNP players still get their scores
-      // while not re-fetching games that the cron already committed.
+      // Fetch box scores for recently-completed games. We always fetch
+      // completed games from the last 24 hours so that every player's
+      // final score stays visible even before the cron commits it.
+      // The live overlay merges these into scoring — getRoundPPG handles
+      // deduplication with committed data via game_id matching.
       const recentlyCompleted = [];
-      const committedGameIds = new Set();
-      for (const p of Object.values(currentStats?.players || {})) {
-        for (const g of p.games || []) {
-          if (g.game_id) committedGameIds.add(g.game_id);
-        }
-      }
+      const cutoff = Date.now() - 24 * 60 * 60 * 1000;
       for (const ev of data.events || []) {
         if (ESPN.isPlayIn(ev)) continue;
         const comp3 = ev.competitions?.[0];
         if (comp3?.status?.type?.state === 'post') {
-          if (!committedGameIds.has(ev.id)) recentlyCompleted.push(ev.id);
+          const evTime = new Date(ev.date || 0).getTime();
+          if (evTime > cutoff) recentlyCompleted.push(ev.id);
         }
       }
 
