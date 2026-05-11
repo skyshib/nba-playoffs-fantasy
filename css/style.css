@@ -182,11 +182,22 @@ main { max-width: 1600px; margin: 1.5rem auto; padding: 0 1rem; }
   overflow-x: auto;
   border-top: 1px solid rgba(251, 191, 36, 0.2);
 }
-/* Synthetic row rendered inside the main #scoreboard table */
-#scoreboard tbody tr.synth-row { background: rgba(251, 191, 36, 0.05); }
-#scoreboard tbody tr.synth-row td.col-total { color: var(--accent-gold); }
-#scoreboard tbody tr.synth-row td.col-name,
-#scoreboard tbody tr.synth-row td.col-rank { color: var(--accent-gold); }
+/* Synthetic table in its own container, column widths matched via JS */
+.synth-table-wrap { overflow-x: auto; }
+.synth-scoreboard {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+.synth-scoreboard tr.synth-row { background: var(--bg-row); }
+.synth-scoreboard tr.synth-row td {
+  padding: 0.4rem 0.4rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+  box-sizing: border-box;
+  overflow: hidden;
+}
 .synth-scoreboard tbody tr {
   background: var(--bg-row);
 }

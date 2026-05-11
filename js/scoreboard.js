@@ -260,10 +260,12 @@ const Scoreboard = (() => {
       // Build a one-row mini-scoreboard matching the main table columns
       const body = document.createElement('div');
       body.className = 'synth-body';
-
-      // Render into the MAIN scoreboard table so columns auto-align
-      const mainTable = document.getElementById('scoreboard');
-      const mainTbody = document.getElementById('scoreboard-body');
+      const tableWrap = document.createElement('div');
+      tableWrap.className = 'synth-table-wrap';
+      const table = document.createElement('table');
+      table.className = 'synth-scoreboard';
+      if (compactMode) table.classList.add('compact-mode');
+      const tbody = document.createElement('tbody');
       const tr = document.createElement('tr');
       tr.className = 'synth-row';
 
@@ -302,23 +304,37 @@ const Scoreboard = (() => {
         tr.appendChild(buildSeedCell(r, seed, { noColor: true, pickCounts: synthPickCounts, totalEntrants: synthTotalEntrants }));
       }
 
-      // Insert as first row of main scoreboard when expanded
-      if (mainTable && mainTbody) {
-        tr.style.display = isOpen ? '' : 'none';
-        mainTbody.insertBefore(tr, mainTbody.firstChild);
-      }
-
+      tbody.appendChild(tr);
+      table.appendChild(tbody);
+      tableWrap.appendChild(table);
+      body.appendChild(tableWrap);
       details.appendChild(body);
       host.appendChild(details);
-
-      // Store reference for toggle
-      details._synthRow = tr;
     }
+
+    // After rendering, measure the main table's column widths and apply them
+    // to the synth table so they align perfectly.
+    requestAnimationFrame(() => {
+      const mainTable = document.getElementById('scoreboard');
+      if (!mainTable) return;
+      const mainRow = mainTable.querySelector('tbody tr');
+      if (!mainRow) return;
+      const mainCells = mainRow.querySelectorAll('td');
+      host.querySelectorAll('.synth-scoreboard').forEach(st => {
+        const synthRow = st.querySelector('tr');
+        if (!synthRow) return;
+        const synthCells = synthRow.querySelectorAll('td');
+        for (let i = 0; i < Math.min(mainCells.length, synthCells.length); i++) {
+          synthCells[i].style.width = mainCells[i].offsetWidth + 'px';
+          synthCells[i].style.minWidth = mainCells[i].offsetWidth + 'px';
+          synthCells[i].style.maxWidth = mainCells[i].offsetWidth + 'px';
+        }
+      });
+    });
 
     host.querySelectorAll('details').forEach(d => {
       d.addEventListener('toggle', () => {
         localStorage.setItem(d.dataset.key, d.open ? '1' : '0');
-        if (d._synthRow) d._synthRow.style.display = d.open ? '' : 'none';
       });
     });
   }
