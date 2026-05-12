@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-12T00:11:07.231296+00:00",
+  "last_updated": "2026-05-12T03:53:55.077262+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -267,6 +267,12 @@
           "pts": 3,
           "game_id": "401871335",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871336",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -334,6 +340,12 @@
           "round": "CSF",
           "pts": 18,
           "game_id": "401871335",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 9,
+          "game_id": "401871336",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -403,6 +415,12 @@
           "pts": 13,
           "game_id": "401871335",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 17,
+          "game_id": "401871336",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -470,6 +488,12 @@
           "round": "CSF",
           "pts": 19,
           "game_id": "401871335",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 24,
+          "game_id": "401871336",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -539,6 +563,12 @@
           "pts": 35,
           "game_id": "401871335",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 43,
+          "game_id": "401871336",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -606,6 +636,12 @@
           "round": "CSF",
           "pts": 11,
           "game_id": "401871335",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 7,
+          "game_id": "401871336",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -675,6 +711,12 @@
           "pts": 7,
           "game_id": "401871335",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 5,
+          "game_id": "401871336",
+          "opponent": "Detroit Pistons"
         }
       ]
     },
@@ -742,6 +784,12 @@
           "round": "CSF",
           "pts": 7,
           "game_id": "401871335",
+          "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CSF",
+          "pts": 6,
+          "game_id": "401871336",
           "opponent": "Detroit Pistons"
         }
       ]
@@ -2073,6 +2121,12 @@
           "pts": 19,
           "game_id": "401871328",
           "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "CSF",
+          "pts": 10,
+          "game_id": "401871329",
+          "opponent": "Oklahoma City Thunder"
         }
       ]
     },
@@ -2135,6 +2189,12 @@
           "pts": 21,
           "game_id": "401871328",
           "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "CSF",
+          "pts": 4,
+          "game_id": "401871329",
+          "opponent": "Oklahoma City Thunder"
         }
       ]
     },
@@ -2196,6 +2256,12 @@
           "round": "CSF",
           "pts": 10,
           "game_id": "401871328",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "CSF",
+          "pts": 4,
+          "game_id": "401871329",
           "opponent": "Oklahoma City Thunder"
         }
       ]
@@ -3061,6 +3127,12 @@
           "pts": 18,
           "game_id": "401871328",
           "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "CSF",
+          "pts": 4,
+          "game_id": "401871329",
+          "opponent": "Los Angeles Lakers"
         }
       ]
     },
@@ -3110,6 +3182,12 @@
           "round": "CSF",
           "pts": 23,
           "game_id": "401871328",
+          "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "CSF",
+          "pts": 14,
+          "game_id": "401871329",
           "opponent": "Los Angeles Lakers"
         }
       ]
@@ -3211,6 +3289,12 @@
           "pts": 6,
           "game_id": "401871328",
           "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "CSF",
+          "pts": 9,
+          "game_id": "401871329",
+          "opponent": "Los Angeles Lakers"
         }
       ]
     },
@@ -3260,6 +3344,12 @@
           "round": "CSF",
           "pts": 24,
           "game_id": "401871328",
+          "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "CSF",
+          "pts": 8,
+          "game_id": "401871329",
           "opponent": "Los Angeles Lakers"
         }
       ]
@@ -3679,6 +3769,12 @@
           "pts": 21,
           "game_id": "401871335",
           "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CSF",
+          "pts": 16,
+          "game_id": "401871336",
+          "opponent": "Cleveland Cavaliers"
         }
       ]
     },
@@ -3746,6 +3842,12 @@
           "round": "CSF",
           "pts": 27,
           "game_id": "401871335",
+          "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CSF",
+          "pts": 19,
+          "game_id": "401871336",
           "opponent": "Cleveland Cavaliers"
         }
       ]
@@ -4317,15 +4419,37 @@
       ]
     }
   },
-  "active_games": [],
-  "live_games": [],
+  "active_games": [
+    "401871329"
+  ],
+  "live_games": [
+    {
+      "id": "401871329",
+      "round": "CSF",
+      "status": "Halftime",
+      "teams": [
+        {
+          "name": "Los Angeles Lakers",
+          "abbrev": "LAL",
+          "score": "45",
+          "winner": null
+        },
+        {
+          "name": "Oklahoma City Thunder",
+          "abbrev": "OKC",
+          "score": "49",
+          "winner": null
+        }
+      ]
+    }
+  ],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "Detroit Pistons",
       "round": "CSF",
-      "wins": 1,
+      "wins": 2,
       "losses": 2,
-      "summary": "DET leads series 2-1"
+      "summary": "Series tied 2-2"
     },
     "Toronto Raptors": {
       "opponent": "Cleveland Cavaliers",
@@ -4408,8 +4532,8 @@
       "opponent": "Cleveland Cavaliers",
       "round": "CSF",
       "wins": 2,
-      "losses": 1,
-      "summary": "DET leads series 2-1"
+      "losses": 2,
+      "summary": "Series tied 2-2"
     },
     "Orlando Magic": {
       "opponent": "Detroit Pistons",
