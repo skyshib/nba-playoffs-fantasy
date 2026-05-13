@@ -557,7 +557,18 @@
         const espnLive = await ESPN.getLivePlayerStats(fetchIds);
         if (Object.keys(espnLive).length > 0) {
           translatedLive = translateLiveStats(espnLive);
-          Scoreboard.setLiveOverrides(translatedLive);
+          // Only mark players from ACTIVE (in-progress) games as "live".
+          // Recently-completed games get their scores merged via
+          // getRoundPPG but shouldn't show green "live" styling.
+          if (activeIds.length > 0) {
+            const activeLive = await ESPN.getLivePlayerStats(activeIds);
+            const activeTranslated = translateLiveStats(activeLive);
+            Scoreboard.setLiveOverrides(activeTranslated);
+          } else {
+            Scoreboard.setLiveOverrides({});
+          }
+          // Still pass all data (active + completed) for score merging
+          // via active_games → getRoundPPG overlap detection
           Scoreboard.render();
         }
       } else {
