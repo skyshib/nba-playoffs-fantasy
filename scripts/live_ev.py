@@ -154,7 +154,8 @@ def sim_bracket(rng, bracket, series_state):
 
 
 def score_roster(roster_picks, stats_players, rng, games, cache):
-    """Score a roster using actual completed-round scores + simulated future."""
+    """Score a roster using actual completed-round scores + simulated future.
+    For eliminated players, always use their actual locked-in scores."""
     total = 0
     for s_str, pick in roster_picks.items():
         s = int(s_str)
@@ -166,6 +167,22 @@ def score_roster(roster_picks, stats_players, rng, games, cache):
         reg_ppg_val = pick.get('cost', 0)
         p_stats = stats_players.get(slug, {})
         playoff_games = p_stats.get('games', [])
+
+        # If player is eliminated, use deterministic actual scores — no simulation
+        if p_stats.get('eliminated', False):
+            m = mult(s)
+            by_rd = {}
+            for g in playoff_games:
+                by_rd.setdefault(g['round'], []).append(g['pts'])
+            key_base = f"{slug}:locked"
+            if key_base not in cache:
+                locked = 0
+                for rd_pts in by_rd.values():
+                    top = sorted(rd_pts, reverse=True)[:4]
+                    locked += (sum(top) / len(top)) * m
+                cache[key_base] = locked
+            total += cache[key_base]
+            continue
         ppg_blend, _ = blended_ppg(reg_ppg_val, playoff_games)
         sd = ppg_blend * cv(ppg_blend)
         m = mult(s)
