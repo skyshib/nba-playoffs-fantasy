@@ -6,25 +6,25 @@
       "_synthetic": true,
       "picks": {
         "1": {
-          "player_id": "tobias-harris",
-          "name": "Tobias Harris",
-          "team": "Detroit Pistons",
+          "player_id": "alex-caruso",
+          "name": "Alex Caruso",
+          "team": "Oklahoma City Thunder",
           "seed": 1,
-          "cost": 13.27
+          "cost": 6.21
         },
         "2": {
-          "player_id": "dylan-harper",
-          "name": "Dylan Harper",
+          "player_id": "stephon-castle",
+          "name": "Stephon Castle",
           "team": "San Antonio Spurs",
           "seed": 2,
-          "cost": 11.78
+          "cost": 16.66
         },
         "3": {
-          "player_id": "jalen-brunson",
-          "name": "Jalen Brunson",
+          "player_id": "og-anunoby",
+          "name": "OG Anunoby",
           "team": "New York Knicks",
           "seed": 3,
-          "cost": 26.04
+          "cost": 16.69
         },
         "4": {
           "player_id": "rui-hachimura",
@@ -41,18 +41,18 @@
           "cost": 7.51
         },
         "6": {
-          "player_id": "terrence-shannon-jr",
-          "name": "Terrence Shannon Jr.",
+          "player_id": "ayo-dosunmu",
+          "name": "Ayo Dosunmu",
           "team": "Minnesota Timberwolves",
           "seed": 6,
-          "cost": 5.6
+          "cost": 14.81
         },
         "7": {
-          "player_id": "vj-edgecombe",
-          "name": "VJ Edgecombe",
+          "player_id": "paul-george",
+          "name": "Paul George",
           "team": "Philadelphia 76ers",
           "seed": 7,
-          "cost": 15.99
+          "cost": 17.32
         },
         "8": {
           "player_id": "paolo-banchero",
