@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-20T00:04:31.890325+00:00",
+  "last_updated": "2026-05-20T04:14:32.594539+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -291,6 +291,12 @@
           "pts": 5,
           "game_id": "401871339",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CF",
+          "pts": 10,
+          "game_id": "401873341",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -383,6 +389,12 @@
           "pts": 23,
           "game_id": "401871339",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CF",
+          "pts": 10,
+          "game_id": "401873341",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -475,6 +487,12 @@
           "pts": 21,
           "game_id": "401871339",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CF",
+          "pts": 15,
+          "game_id": "401873341",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -567,6 +585,12 @@
           "pts": 9,
           "game_id": "401871339",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CF",
+          "pts": 15,
+          "game_id": "401873341",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -659,6 +683,12 @@
           "pts": 26,
           "game_id": "401871339",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CF",
+          "pts": 29,
+          "game_id": "401873341",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -751,6 +781,12 @@
           "pts": 2,
           "game_id": "401871339",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CF",
+          "pts": 3,
+          "game_id": "401873341",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -843,6 +879,12 @@
           "pts": 9,
           "game_id": "401871339",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CF",
+          "pts": 8,
+          "game_id": "401873341",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -935,6 +977,12 @@
           "pts": 23,
           "game_id": "401871339",
           "opponent": "Detroit Pistons"
+        },
+        {
+          "round": "CF",
+          "pts": 12,
+          "game_id": "401873341",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -2055,6 +2103,12 @@
           "pts": 17,
           "game_id": "401871162",
           "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "CF",
+          "pts": 13,
+          "game_id": "401873341",
+          "opponent": "Cleveland Cavaliers"
         }
       ]
     },
@@ -2123,6 +2177,12 @@
           "pts": 22,
           "game_id": "401871162",
           "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "CF",
+          "pts": 38,
+          "game_id": "401873341",
+          "opponent": "Cleveland Cavaliers"
         }
       ]
     },
@@ -4621,6 +4681,12 @@
           "pts": 0,
           "game_id": "401871161",
           "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "CF",
+          "pts": 0,
+          "game_id": "401873341",
+          "opponent": "Cleveland Cavaliers"
         }
       ]
     },
@@ -4703,11 +4769,11 @@
   "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
-      "opponent": "Detroit Pistons",
-      "round": "CSF",
-      "wins": 4,
-      "losses": 3,
-      "summary": "CLE wins series 4-3"
+      "opponent": "New York Knicks",
+      "round": "CF",
+      "wins": 0,
+      "losses": 1,
+      "summary": "NY leads series 1-0"
     },
     "Toronto Raptors": {
       "opponent": "Cleveland Cavaliers",
@@ -4731,11 +4797,11 @@
       "summary": "SA wins series 4-2"
     },
     "New York Knicks": {
-      "opponent": "Philadelphia 76ers",
-      "round": "CSF",
-      "wins": 4,
+      "opponent": "Cleveland Cavaliers",
+      "round": "CF",
+      "wins": 1,
       "losses": 0,
-      "summary": "NY wins series 4-0"
+      "summary": "NY leads series 1-0"
     },
     "Atlanta Hawks": {
       "opponent": "New York Knicks",
