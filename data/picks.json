@@ -27,11 +27,11 @@
           "cost": 26.04
         },
         "4": {
-          "player_id": "rui-hachimura",
-          "name": "Rui Hachimura",
-          "team": "Los Angeles Lakers",
+          "player_id": "donovan-mitchell",
+          "name": "Donovan Mitchell",
+          "team": "Cleveland Cavaliers",
           "seed": 4,
-          "cost": 11.47
+          "cost": 27.89
         },
         "5": {
           "player_id": "jakobe-walter",
@@ -41,25 +41,25 @@
           "cost": 7.51
         },
         "6": {
-          "player_id": "ayo-dosunmu",
-          "name": "Ayo Dosunmu",
+          "player_id": "terrence-shannon-jr",
+          "name": "Terrence Shannon Jr.",
           "team": "Minnesota Timberwolves",
           "seed": 6,
-          "cost": 14.81
+          "cost": 5.6
         },
         "7": {
-          "player_id": "kelly-oubre-jr",
-          "name": "Kelly Oubre Jr.",
+          "player_id": "vj-edgecombe",
+          "name": "VJ Edgecombe",
           "team": "Philadelphia 76ers",
           "seed": 7,
-          "cost": 14.1
+          "cost": 15.99
         },
         "8": {
-          "player_id": "paolo-banchero",
-          "name": "Paolo Banchero",
+          "player_id": "wendell-carter-jr",
+          "name": "Wendell Carter Jr.",
           "team": "Orlando Magic",
           "seed": 8,
-          "cost": 22.21
+          "cost": 11.82
         }
       }
     },

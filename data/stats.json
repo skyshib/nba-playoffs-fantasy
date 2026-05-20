@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-20T04:14:32.594539+00:00",
+  "last_updated": "2026-05-20T04:36:33.292984+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1226,86 +1226,6 @@
         }
       ]
     },
-    "ayo-dosunmu": {
-      "name": "Ayo Dosunmu",
-      "team": "Minnesota Timberwolves",
-      "seed": 6,
-      "eliminated": true,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 14,
-          "game_id": "401869188",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 9,
-          "game_id": "401869395",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 25,
-          "game_id": "401869398",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 43,
-          "game_id": "401869399",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 18,
-          "game_id": "401869401",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 0,
-          "game_id": "401869402",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "CSF",
-          "pts": 0,
-          "game_id": "401871153",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
-          "pts": 11,
-          "game_id": "401871154",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
-          "pts": 10,
-          "game_id": "401871155",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
-          "pts": 16,
-          "game_id": "401871156",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
-          "pts": 10,
-          "game_id": "401871157",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
-          "pts": 0,
-          "game_id": "401871152",
-          "opponent": "San Antonio Spurs"
-        }
-      ]
-    },
     "bones-hyland": {
       "name": "Bones Hyland",
       "team": "Minnesota Timberwolves",
@@ -2474,74 +2394,6 @@
         }
       ]
     },
-    "rui-hachimura": {
-      "name": "Rui Hachimura",
-      "team": "Los Angeles Lakers",
-      "seed": 4,
-      "eliminated": true,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 14,
-          "game_id": "401869190",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 13,
-          "game_id": "401869397",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 22,
-          "game_id": "401869400",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 13,
-          "game_id": "401869405",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 12,
-          "game_id": "401869407",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 21,
-          "game_id": "401869409",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "CSF",
-          "pts": 18,
-          "game_id": "401871326",
-          "opponent": "Oklahoma City Thunder"
-        },
-        {
-          "round": "CSF",
-          "pts": 16,
-          "game_id": "401871327",
-          "opponent": "Oklahoma City Thunder"
-        },
-        {
-          "round": "CSF",
-          "pts": 21,
-          "game_id": "401871328",
-          "opponent": "Oklahoma City Thunder"
-        },
-        {
-          "round": "CSF",
-          "pts": 25,
-          "game_id": "401871329",
-          "opponent": "Oklahoma City Thunder"
-        }
-      ]
-    },
     "deandre-ayton": {
       "name": "Deandre Ayton",
       "team": "Los Angeles Lakers",
@@ -2827,6 +2679,80 @@
         {
           "round": "CSF",
           "pts": 10,
+          "game_id": "401871162",
+          "opponent": "New York Knicks"
+        }
+      ]
+    },
+    "vj-edgecombe": {
+      "name": "VJ Edgecombe",
+      "team": "Philadelphia 76ers",
+      "seed": 7,
+      "eliminated": true,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 13,
+          "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 30,
+          "game_id": "401869396",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869404",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869406",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869408",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 14,
+          "game_id": "401869410",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 23,
+          "game_id": "401869412",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "CSF",
+          "pts": 12,
+          "game_id": "401871159",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CSF",
+          "pts": 17,
+          "game_id": "401871160",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CSF",
+          "pts": 11,
+          "game_id": "401871161",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CSF",
+          "pts": 8,
           "game_id": "401871162",
           "opponent": "New York Knicks"
         }
@@ -3657,56 +3583,6 @@
           "pts": 4,
           "game_id": "401873197",
           "opponent": "San Antonio Spurs"
-        }
-      ]
-    },
-    "paolo-banchero": {
-      "name": "Paolo Banchero",
-      "team": "Orlando Magic",
-      "seed": 8,
-      "eliminated": true,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 23,
-          "game_id": "401869193",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "R1",
-          "pts": 18,
-          "game_id": "401869411",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "R1",
-          "pts": 25,
-          "game_id": "401869414",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "R1",
-          "pts": 18,
-          "game_id": "401869415",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "R1",
-          "pts": 45,
-          "game_id": "401869416",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869417",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "R1",
-          "pts": 38,
-          "game_id": "401869418",
-          "opponent": "Detroit Pistons"
         }
       ]
     },
