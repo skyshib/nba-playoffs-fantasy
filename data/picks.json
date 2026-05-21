@@ -13,11 +13,11 @@
           "cost": 6.21
         },
         "2": {
-          "player_id": "dylan-harper",
-          "name": "Dylan Harper",
+          "player_id": "stephon-castle",
+          "name": "Stephon Castle",
           "team": "San Antonio Spurs",
           "seed": 2,
-          "cost": 11.78
+          "cost": 16.66
         },
         "3": {
           "player_id": "jalen-brunson",
@@ -48,18 +48,18 @@
           "cost": 5.6
         },
         "7": {
-          "player_id": "vj-edgecombe",
-          "name": "VJ Edgecombe",
+          "player_id": "kelly-oubre-jr",
+          "name": "Kelly Oubre Jr.",
           "team": "Philadelphia 76ers",
           "seed": 7,
-          "cost": 15.99
+          "cost": 14.1
         },
         "8": {
-          "player_id": "wendell-carter-jr",
-          "name": "Wendell Carter Jr.",
-          "team": "Orlando Magic",
+          "player_id": "oso-ighodaro",
+          "name": "Oso Ighodaro",
+          "team": "Phoenix Suns",
           "seed": 8,
-          "cost": 11.82
+          "cost": 6.48
         }
       }
     },
