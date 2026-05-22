@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-22T01:49:46.623998+00:00",
+  "last_updated": "2026-05-22T06:06:02.573288+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -612,7 +612,7 @@
         },
         {
           "round": "CF",
-          "pts": 12,
+          "pts": 18,
           "game_id": "401873342",
           "opponent": "New York Knicks"
         }
@@ -716,7 +716,7 @@
         },
         {
           "round": "CF",
-          "pts": 9,
+          "pts": 26,
           "game_id": "401873342",
           "opponent": "New York Knicks"
         }
@@ -820,7 +820,7 @@
         },
         {
           "round": "CF",
-          "pts": 2,
+          "pts": 4,
           "game_id": "401873342",
           "opponent": "New York Knicks"
         }
@@ -924,7 +924,7 @@
         },
         {
           "round": "CF",
-          "pts": 3,
+          "pts": 5,
           "game_id": "401873342",
           "opponent": "New York Knicks"
         }
@@ -1028,7 +1028,7 @@
         },
         {
           "round": "CF",
-          "pts": 2,
+          "pts": 4,
           "game_id": "401873342",
           "opponent": "New York Knicks"
         }
@@ -2080,7 +2080,7 @@
         },
         {
           "round": "CF",
-          "pts": 21,
+          "pts": 26,
           "game_id": "401873342",
           "opponent": "Cleveland Cavaliers"
         }
@@ -2160,7 +2160,7 @@
         },
         {
           "round": "CF",
-          "pts": 9,
+          "pts": 19,
           "game_id": "401873342",
           "opponent": "Cleveland Cavaliers"
         }
@@ -4465,6 +4465,12 @@
           "opponent": "Philadelphia 76ers"
         },
         {
+          "round": "CF",
+          "pts": 0,
+          "game_id": "401873342",
+          "opponent": "Cleveland Cavaliers"
+        },
+        {
           "round": "R1",
           "pts": 0,
           "game_id": "401869189",
@@ -4601,37 +4607,15 @@
       ]
     }
   },
-  "active_games": [
-    "401873342"
-  ],
-  "live_games": [
-    {
-      "id": "401873342",
-      "round": "CF",
-      "status": "4:09 - 3rd",
-      "teams": [
-        {
-          "name": "New York Knicks",
-          "abbrev": "NY",
-          "score": "71",
-          "winner": null
-        },
-        {
-          "name": "Cleveland Cavaliers",
-          "abbrev": "CLE",
-          "score": "58",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "New York Knicks",
       "round": "CF",
       "wins": 0,
-      "losses": 1,
-      "summary": "NY leads series 1-0"
+      "losses": 2,
+      "summary": "NY leads series 2-0"
     },
     "Toronto Raptors": {
       "opponent": "Cleveland Cavaliers",
@@ -4657,9 +4641,9 @@
     "New York Knicks": {
       "opponent": "Cleveland Cavaliers",
       "round": "CF",
-      "wins": 1,
+      "wins": 2,
       "losses": 0,
-      "summary": "NY leads series 1-0"
+      "summary": "NY leads series 2-0"
     },
     "Atlanta Hawks": {
       "opponent": "New York Knicks",
