@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-22T12:17:55.564950+00:00",
+  "last_updated": "2026-05-22T15:30:46.650282+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -4465,12 +4465,6 @@
           "opponent": "Philadelphia 76ers"
         },
         {
-          "round": "CF",
-          "pts": 0,
-          "game_id": "401873342",
-          "opponent": "Cleveland Cavaliers"
-        },
-        {
           "round": "R1",
           "pts": 0,
           "game_id": "401869189",
@@ -4528,6 +4522,12 @@
           "round": "CF",
           "pts": 0,
           "game_id": "401873341",
+          "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CF",
+          "pts": 0,
+          "game_id": "401873342",
           "opponent": "Cleveland Cavaliers"
         }
       ]
