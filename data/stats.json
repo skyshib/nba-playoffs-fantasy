@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-21T23:42:28.765517+00:00",
+  "last_updated": "2026-05-22T01:49:46.623998+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -297,6 +297,12 @@
           "pts": 10,
           "game_id": "401873341",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 3,
+          "game_id": "401873342",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -394,6 +400,12 @@
           "round": "CF",
           "pts": 10,
           "game_id": "401873341",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 13,
+          "game_id": "401873342",
           "opponent": "New York Knicks"
         }
       ]
@@ -493,6 +505,12 @@
           "pts": 15,
           "game_id": "401873341",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 14,
+          "game_id": "401873342",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -590,6 +608,12 @@
           "round": "CF",
           "pts": 15,
           "game_id": "401873341",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 12,
+          "game_id": "401873342",
           "opponent": "New York Knicks"
         }
       ]
@@ -689,6 +713,12 @@
           "pts": 29,
           "game_id": "401873341",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 9,
+          "game_id": "401873342",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -786,6 +816,12 @@
           "round": "CF",
           "pts": 3,
           "game_id": "401873341",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 2,
+          "game_id": "401873342",
           "opponent": "New York Knicks"
         }
       ]
@@ -885,6 +921,12 @@
           "pts": 8,
           "game_id": "401873341",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 3,
+          "game_id": "401873342",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -982,6 +1024,12 @@
           "round": "CF",
           "pts": 12,
           "game_id": "401873341",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 2,
+          "game_id": "401873342",
           "opponent": "New York Knicks"
         }
       ]
@@ -2029,6 +2077,12 @@
           "pts": 13,
           "game_id": "401873341",
           "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CF",
+          "pts": 21,
+          "game_id": "401873342",
+          "opponent": "Cleveland Cavaliers"
         }
       ]
     },
@@ -2102,6 +2156,12 @@
           "round": "CF",
           "pts": 38,
           "game_id": "401873341",
+          "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CF",
+          "pts": 9,
+          "game_id": "401873342",
           "opponent": "Cleveland Cavaliers"
         }
       ]
@@ -4541,8 +4601,30 @@
       ]
     }
   },
-  "active_games": [],
-  "live_games": [],
+  "active_games": [
+    "401873342"
+  ],
+  "live_games": [
+    {
+      "id": "401873342",
+      "round": "CF",
+      "status": "4:09 - 3rd",
+      "teams": [
+        {
+          "name": "New York Knicks",
+          "abbrev": "NY",
+          "score": "71",
+          "winner": null
+        },
+        {
+          "name": "Cleveland Cavaliers",
+          "abbrev": "CLE",
+          "score": "58",
+          "winner": null
+        }
+      ]
+    }
+  ],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "New York Knicks",
