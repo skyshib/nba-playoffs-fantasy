@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-23T01:22:43.595123+00:00",
+  "last_updated": "2026-05-23T03:29:34.923598+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -3330,7 +3330,7 @@
         },
         {
           "round": "CF",
-          "pts": 6,
+          "pts": 14,
           "game_id": "401873199",
           "opponent": "San Antonio Spurs"
         }
@@ -3404,7 +3404,7 @@
         },
         {
           "round": "CF",
-          "pts": 5,
+          "pts": 26,
           "game_id": "401873199",
           "opponent": "San Antonio Spurs"
         }
@@ -3475,6 +3475,12 @@
           "pts": 0,
           "game_id": "401871329",
           "opponent": "Los Angeles Lakers"
+        },
+        {
+          "round": "CF",
+          "pts": 0,
+          "game_id": "401873199",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -3546,7 +3552,7 @@
         },
         {
           "round": "CF",
-          "pts": 5,
+          "pts": 15,
           "game_id": "401873199",
           "opponent": "San Antonio Spurs"
         }
@@ -4212,7 +4218,7 @@
         },
         {
           "round": "CF",
-          "pts": 8,
+          "pts": 26,
           "game_id": "401873199",
           "opponent": "Oklahoma City Thunder"
         },
@@ -4298,7 +4304,7 @@
         },
         {
           "round": "CF",
-          "pts": 11,
+          "pts": 15,
           "game_id": "401873199",
           "opponent": "Oklahoma City Thunder"
         },
@@ -4402,7 +4408,7 @@
         },
         {
           "round": "CF",
-          "pts": 5,
+          "pts": 14,
           "game_id": "401873199",
           "opponent": "Oklahoma City Thunder"
         }
@@ -4494,7 +4500,7 @@
         },
         {
           "round": "CF",
-          "pts": 2,
+          "pts": 4,
           "game_id": "401873199",
           "opponent": "Oklahoma City Thunder"
         }
@@ -4655,30 +4661,8 @@
       ]
     }
   },
-  "active_games": [
-    "401873199"
-  ],
-  "live_games": [
-    {
-      "id": "401873199",
-      "round": "CF",
-      "status": "6:49 - 2nd",
-      "teams": [
-        {
-          "name": "San Antonio Spurs",
-          "abbrev": "SA",
-          "score": "42",
-          "winner": null
-        },
-        {
-          "name": "Oklahoma City Thunder",
-          "abbrev": "OKC",
-          "score": "43",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "New York Knicks",
@@ -4753,9 +4737,9 @@
     "Oklahoma City Thunder": {
       "opponent": "San Antonio Spurs",
       "round": "CF",
-      "wins": 1,
+      "wins": 2,
       "losses": 1,
-      "summary": "Series tied 1-1"
+      "summary": "OKC leads series 2-1"
     },
     "Phoenix Suns": {
       "opponent": "Oklahoma City Thunder",
@@ -4782,8 +4766,8 @@
       "opponent": "Oklahoma City Thunder",
       "round": "CF",
       "wins": 1,
-      "losses": 1,
-      "summary": "Series tied 1-1"
+      "losses": 2,
+      "summary": "OKC leads series 2-1"
     },
     "Portland Trail Blazers": {
       "opponent": "San Antonio Spurs",

@@ -22,6 +22,7 @@ from pathlib import Path
 
 
 ROUNDS = ['R1', 'CSF', 'CF', 'Finals']
+ROUND_IDX = {r: i for i, r in enumerate(ROUNDS)}
 # Series length determined by per-game simulation (no fixed distribution).
 REG_WEIGHT = 1  # 50/50 blend: playoff PPG and reg-season PPG weighted equally per game
 
@@ -105,9 +106,21 @@ def sim_bracket(rng, bracket, series_state):
     def play(t1, t2, rd):
         if not t1 or not t2:
             return t1 or t2
-        # Check if series is already decided
         s1 = series_state.get(t1, {})
         s2 = series_state.get(t2, {})
+        rd_idx = ROUND_IDX[rd]
+        s1_rd_idx = ROUND_IDX.get(s1.get('round'), -1)
+        s2_rd_idx = ROUND_IDX.get(s2.get('round'), -1)
+        # Past round — team that advanced to a later round won this series
+        if s1_rd_idx > rd_idx:
+            if t1 in games: games[t1][rd] = 7  # placeholder; score_roster uses actual data
+            if t2 in games: games[t2][rd] = 7
+            return t1
+        if s2_rd_idx > rd_idx:
+            if t1 in games: games[t1][rd] = 7
+            if t2 in games: games[t2][rd] = 7
+            return t2
+        # Current round — check if series decided or in progress
         if s1.get('round') == rd and s2.get('round') == rd:
             if s1.get('wins', 0) >= 4:
                 # t1 already won this series
@@ -153,7 +166,7 @@ def sim_bracket(rng, bracket, series_state):
     return games
 
 
-def score_roster(roster_picks, stats_players, rng, games, cache):
+def score_roster(roster_picks, stats_players, rng, games, cache, series_state):
     """Score a roster using actual completed-round scores + simulated future.
     For eliminated players, always use their actual locked-in scores."""
     total = 0
@@ -187,30 +200,41 @@ def score_roster(roster_picks, stats_players, rng, games, cache):
         sd = ppg_blend * cv(ppg_blend)
         m = mult(s)
 
+        # Determine team's current round to lock completed rounds
+        team_rd = series_state.get(team, {}).get('round')
+        team_rd_idx = ROUND_IDX.get(team_rd, -1)
+
         for rd in ROUNDS:
-            ng = tg.get(rd, 0)
-            if not ng:
-                continue
-            # Use actual scores for completed rounds
+            rd_idx = ROUND_IDX[rd]
             actual_games = [g for g in playoff_games if g.get('round') == rd]
             key = f"{slug}:{rd}"
             if key in cache:
                 avg = cache[key]
-            elif len(actual_games) >= ng:
-                # Round fully completed — use actual top-4
-                pts = [g['pts'] for g in actual_games[:ng]]
+            elif rd_idx < team_rd_idx and actual_games:
+                # Past round — fully completed, use ALL actual scores
+                pts = [g['pts'] for g in actual_games]
                 top = sorted(pts, reverse=True)[:4]
                 avg = sum(top) / len(top)
                 cache[key] = avg
             else:
-                # Partially or not yet played — simulate remaining games
-                pts = [g['pts'] for g in actual_games]
-                remaining = ng - len(pts)
-                for _ in range(remaining):
-                    pts.append(max(0, ppg_blend + rng.gauss(0, sd)))
-                top = sorted(pts, reverse=True)[:4]
-                avg = sum(top) / len(top)
-                cache[key] = avg
+                # Current or future round — use bracket sim game count
+                ng = tg.get(rd, 0)
+                if not ng:
+                    continue
+                if len(actual_games) >= ng:
+                    pts = [g['pts'] for g in actual_games[:ng]]
+                    top = sorted(pts, reverse=True)[:4]
+                    avg = sum(top) / len(top)
+                    cache[key] = avg
+                else:
+                    # Partially or not yet played — simulate remaining games
+                    pts = [g['pts'] for g in actual_games]
+                    remaining = ng - len(pts)
+                    for _ in range(remaining):
+                        pts.append(max(0, ppg_blend + rng.gauss(0, sd)))
+                    top = sorted(pts, reverse=True)[:4]
+                    avg = sum(top) / len(top)
+                    cache[key] = avg
             total += avg * m
     return total
 
@@ -276,11 +300,11 @@ def main():
         for _ in range(args.N):
             g = sim_bracket(rng, bracket, series_state)
             cache = {}
-            my = score_roster(ent['picks'], stats_players, rng, g, cache)
+            my = score_roster(ent['picks'], stats_players, rng, g, cache, series_state)
             pts_sum += my
             scores = [(my, -1)]
             for i, o in enumerate(opponents):
-                scores.append((score_roster(o['picks'], stats_players, rng, g, cache), i))
+                scores.append((score_roster(o['picks'], stats_players, rng, g, cache, series_state), i))
             scores.sort(key=lambda x: -x[0])
             r = [i for i, s in enumerate(scores) if s[1] == -1][0] + 1
             ranks[r] += 1
