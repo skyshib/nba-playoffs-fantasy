@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-23T23:56:31.229297+00:00",
+  "last_updated": "2026-05-24T03:42:09.290289+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -303,6 +303,12 @@
           "pts": 3,
           "game_id": "401873342",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 0,
+          "game_id": "401873343",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -406,6 +412,12 @@
           "round": "CF",
           "pts": 13,
           "game_id": "401873342",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 17,
+          "game_id": "401873343",
           "opponent": "New York Knicks"
         }
       ]
@@ -511,6 +523,12 @@
           "pts": 14,
           "game_id": "401873342",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 24,
+          "game_id": "401873343",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -614,6 +632,12 @@
           "round": "CF",
           "pts": 18,
           "game_id": "401873342",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 19,
+          "game_id": "401873343",
           "opponent": "New York Knicks"
         }
       ]
@@ -719,6 +743,12 @@
           "pts": 26,
           "game_id": "401873342",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 23,
+          "game_id": "401873343",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -822,6 +852,12 @@
           "round": "CF",
           "pts": 4,
           "game_id": "401873342",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 3,
+          "game_id": "401873343",
           "opponent": "New York Knicks"
         }
       ]
@@ -927,6 +963,12 @@
           "pts": 5,
           "game_id": "401873342",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 13,
+          "game_id": "401873343",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -1030,6 +1072,12 @@
           "round": "CF",
           "pts": 4,
           "game_id": "401873342",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CF",
+          "pts": 6,
+          "game_id": "401873343",
           "opponent": "New York Knicks"
         }
       ]
@@ -2083,6 +2131,12 @@
           "pts": 26,
           "game_id": "401873342",
           "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CF",
+          "pts": 12,
+          "game_id": "401873343",
+          "opponent": "Cleveland Cavaliers"
         }
       ]
     },
@@ -2162,6 +2216,12 @@
           "round": "CF",
           "pts": 19,
           "game_id": "401873342",
+          "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CF",
+          "pts": 30,
+          "game_id": "401873343",
           "opponent": "Cleveland Cavaliers"
         }
       ]
@@ -4583,6 +4643,12 @@
           "pts": 0,
           "game_id": "401873342",
           "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CF",
+          "pts": 0,
+          "game_id": "401873343",
+          "opponent": "Cleveland Cavaliers"
         }
       ]
     },
@@ -4668,8 +4734,8 @@
       "opponent": "New York Knicks",
       "round": "CF",
       "wins": 0,
-      "losses": 2,
-      "summary": "NY leads series 2-0"
+      "losses": 3,
+      "summary": "NY leads series 3-0"
     },
     "Toronto Raptors": {
       "opponent": "Cleveland Cavaliers",
@@ -4695,9 +4761,9 @@
     "New York Knicks": {
       "opponent": "Cleveland Cavaliers",
       "round": "CF",
-      "wins": 2,
+      "wins": 3,
       "losses": 0,
-      "summary": "NY leads series 2-0"
+      "summary": "NY leads series 3-0"
     },
     "Atlanta Hawks": {
       "opponent": "New York Knicks",
