@@ -20,11 +20,11 @@
           "cost": 16.66
         },
         "3": {
-          "player_id": "og-anunoby",
-          "name": "OG Anunoby",
+          "player_id": "jalen-brunson",
+          "name": "Jalen Brunson",
           "team": "New York Knicks",
           "seed": 3,
-          "cost": 16.69
+          "cost": 26.04
         },
         "4": {
           "player_id": "donovan-mitchell",
@@ -41,18 +41,18 @@
           "cost": 7.51
         },
         "6": {
-          "player_id": "ayo-dosunmu",
-          "name": "Ayo Dosunmu",
+          "player_id": "terrence-shannon-jr",
+          "name": "Terrence Shannon Jr.",
           "team": "Minnesota Timberwolves",
           "seed": 6,
-          "cost": 14.81
+          "cost": 5.6
         },
         "7": {
-          "player_id": "paul-george",
-          "name": "Paul George",
+          "player_id": "kelly-oubre-jr",
+          "name": "Kelly Oubre Jr.",
           "team": "Philadelphia 76ers",
           "seed": 7,
-          "cost": 17.32
+          "cost": 14.1
         },
         "8": {
           "player_id": "oso-ighodaro",

@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-24T06:52:33.239804+00:00",
+  "last_updated": "2026-05-24T09:21:11.832596+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1322,86 +1322,6 @@
         }
       ]
     },
-    "ayo-dosunmu": {
-      "name": "Ayo Dosunmu",
-      "team": "Minnesota Timberwolves",
-      "seed": 6,
-      "eliminated": true,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 14,
-          "game_id": "401869188",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 9,
-          "game_id": "401869395",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 25,
-          "game_id": "401869398",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 43,
-          "game_id": "401869399",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 18,
-          "game_id": "401869401",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "R1",
-          "pts": 0,
-          "game_id": "401869402",
-          "opponent": "Denver Nuggets"
-        },
-        {
-          "round": "CSF",
-          "pts": 0,
-          "game_id": "401871153",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
-          "pts": 11,
-          "game_id": "401871154",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
-          "pts": 10,
-          "game_id": "401871155",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
-          "pts": 16,
-          "game_id": "401871156",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
-          "pts": 10,
-          "game_id": "401871157",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
-          "pts": 0,
-          "game_id": "401871152",
-          "opponent": "San Antonio Spurs"
-        }
-      ]
-    },
     "bones-hyland": {
       "name": "Bones Hyland",
       "team": "Minnesota Timberwolves",
@@ -2134,92 +2054,6 @@
         }
       ]
     },
-    "og-anunoby": {
-      "name": "OG Anunoby",
-      "team": "New York Knicks",
-      "seed": 3,
-      "eliminated": false,
-      "games": [
-        {
-          "round": "R1",
-          "pts": 18,
-          "game_id": "401869189",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 14,
-          "game_id": "401869387",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 29,
-          "game_id": "401869389",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 22,
-          "game_id": "401869391",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869392",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "R1",
-          "pts": 29,
-          "game_id": "401869393",
-          "opponent": "Atlanta Hawks"
-        },
-        {
-          "round": "CSF",
-          "pts": 18,
-          "game_id": "401871159",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "CSF",
-          "pts": 24,
-          "game_id": "401871160",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "CF",
-          "pts": 13,
-          "game_id": "401873341",
-          "opponent": "Cleveland Cavaliers"
-        },
-        {
-          "round": "CF",
-          "pts": 14,
-          "game_id": "401873342",
-          "opponent": "Cleveland Cavaliers"
-        },
-        {
-          "round": "CF",
-          "pts": 21,
-          "game_id": "401873343",
-          "opponent": "Cleveland Cavaliers"
-        },
-        {
-          "round": "CSF",
-          "pts": 0,
-          "game_id": "401871161",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "CSF",
-          "pts": 0,
-          "game_id": "401871162",
-          "opponent": "Philadelphia 76ers"
-        }
-      ]
-    },
     "josh-hart": {
       "name": "Josh Hart",
       "team": "New York Knicks",
@@ -2301,6 +2135,92 @@
         {
           "round": "CF",
           "pts": 12,
+          "game_id": "401873343",
+          "opponent": "Cleveland Cavaliers"
+        }
+      ]
+    },
+    "jalen-brunson": {
+      "name": "Jalen Brunson",
+      "team": "New York Knicks",
+      "seed": 3,
+      "eliminated": false,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 28,
+          "game_id": "401869189",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 29,
+          "game_id": "401869387",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 26,
+          "game_id": "401869389",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 19,
+          "game_id": "401869391",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 39,
+          "game_id": "401869392",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "R1",
+          "pts": 17,
+          "game_id": "401869393",
+          "opponent": "Atlanta Hawks"
+        },
+        {
+          "round": "CSF",
+          "pts": 35,
+          "game_id": "401871159",
+          "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "CSF",
+          "pts": 26,
+          "game_id": "401871160",
+          "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "CSF",
+          "pts": 33,
+          "game_id": "401871161",
+          "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "CSF",
+          "pts": 22,
+          "game_id": "401871162",
+          "opponent": "Philadelphia 76ers"
+        },
+        {
+          "round": "CF",
+          "pts": 38,
+          "game_id": "401873341",
+          "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CF",
+          "pts": 19,
+          "game_id": "401873342",
+          "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CF",
+          "pts": 30,
           "game_id": "401873343",
           "opponent": "Cleveland Cavaliers"
         }
