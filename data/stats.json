@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-25T17:23:56.291422+00:00",
+  "last_updated": "2026-05-25T19:01:33.794508+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -1086,7 +1086,7 @@
       "name": "Rudy Gobert",
       "team": "Minnesota Timberwolves",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1132,12 +1132,6 @@
         },
         {
           "round": "CSF",
-          "pts": 5,
-          "game_id": "401871153",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
           "pts": 13,
           "game_id": "401871154",
           "opponent": "San Antonio Spurs"
@@ -1166,7 +1160,7 @@
       "name": "Anthony Edwards",
       "team": "Minnesota Timberwolves",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1196,12 +1190,6 @@
           "round": "CSF",
           "pts": 18,
           "game_id": "401871152",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
-          "pts": 12,
-          "game_id": "401871153",
           "opponent": "San Antonio Spurs"
         },
         {
@@ -1246,7 +1234,7 @@
       "name": "Kyle Anderson",
       "team": "Minnesota Timberwolves",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1286,12 +1274,6 @@
         },
         {
           "round": "CSF",
-          "pts": 8,
-          "game_id": "401871153",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
           "pts": 0,
           "game_id": "401871154",
           "opponent": "San Antonio Spurs"
@@ -1326,7 +1308,7 @@
       "name": "Bones Hyland",
       "team": "Minnesota Timberwolves",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1373,12 +1355,6 @@
         {
           "round": "CSF",
           "pts": 0,
-          "game_id": "401871153",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
-          "pts": 0,
           "game_id": "401871154",
           "opponent": "San Antonio Spurs"
         },
@@ -1406,7 +1382,7 @@
       "name": "Terrence Shannon Jr.",
       "team": "Minnesota Timberwolves",
       "seed": 6,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -1442,12 +1418,6 @@
           "round": "CSF",
           "pts": 16,
           "game_id": "401871152",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "CSF",
-          "pts": 12,
-          "game_id": "401871153",
           "opponent": "San Antonio Spurs"
         },
         {
@@ -2104,18 +2074,6 @@
         },
         {
           "round": "CSF",
-          "pts": 5,
-          "game_id": "401871160",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "CSF",
-          "pts": 12,
-          "game_id": "401871161",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "CSF",
           "pts": 17,
           "game_id": "401871162",
           "opponent": "Philadelphia 76ers"
@@ -2137,6 +2095,12 @@
           "pts": 12,
           "game_id": "401873343",
           "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871161",
+          "opponent": "Philadelphia 76ers"
         }
       ]
     },
@@ -2190,18 +2154,6 @@
         },
         {
           "round": "CSF",
-          "pts": 26,
-          "game_id": "401871160",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "CSF",
-          "pts": 33,
-          "game_id": "401871161",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "CSF",
           "pts": 22,
           "game_id": "401871162",
           "opponent": "Philadelphia 76ers"
@@ -2223,6 +2175,12 @@
           "pts": 30,
           "game_id": "401873343",
           "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871161",
+          "opponent": "Philadelphia 76ers"
         }
       ]
     },
@@ -2586,7 +2544,7 @@
       "name": "Paul George",
       "team": "Philadelphia 76ers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2638,20 +2596,14 @@
         },
         {
           "round": "CSF",
-          "pts": 19,
-          "game_id": "401871160",
-          "opponent": "New York Knicks"
-        },
-        {
-          "round": "CSF",
-          "pts": 15,
-          "game_id": "401871161",
-          "opponent": "New York Knicks"
-        },
-        {
-          "round": "CSF",
           "pts": 7,
           "game_id": "401871162",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871161",
           "opponent": "New York Knicks"
         }
       ]
@@ -2660,7 +2612,7 @@
       "name": "Adem Bona",
       "team": "Philadelphia 76ers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2712,20 +2664,14 @@
         },
         {
           "round": "CSF",
-          "pts": 2,
-          "game_id": "401871160",
+          "pts": 7,
+          "game_id": "401871162",
           "opponent": "New York Knicks"
         },
         {
           "round": "CSF",
           "pts": 0,
           "game_id": "401871161",
-          "opponent": "New York Knicks"
-        },
-        {
-          "round": "CSF",
-          "pts": 7,
-          "game_id": "401871162",
           "opponent": "New York Knicks"
         }
       ]
@@ -2734,7 +2680,7 @@
       "name": "Kelly Oubre Jr.",
       "team": "Philadelphia 76ers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2786,20 +2732,14 @@
         },
         {
           "round": "CSF",
-          "pts": 19,
-          "game_id": "401871160",
-          "opponent": "New York Knicks"
-        },
-        {
-          "round": "CSF",
-          "pts": 22,
-          "game_id": "401871161",
-          "opponent": "New York Knicks"
-        },
-        {
-          "round": "CSF",
           "pts": 10,
           "game_id": "401871162",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871161",
           "opponent": "New York Knicks"
         }
       ]
@@ -2808,7 +2748,7 @@
       "name": "Trendon Watford",
       "team": "Philadelphia 76ers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2860,20 +2800,14 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
-          "game_id": "401871160",
-          "opponent": "New York Knicks"
-        },
-        {
-          "round": "CSF",
-          "pts": 3,
-          "game_id": "401871161",
-          "opponent": "New York Knicks"
-        },
-        {
-          "round": "CSF",
           "pts": 2,
           "game_id": "401871162",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CSF",
+          "pts": 0,
+          "game_id": "401871161",
           "opponent": "New York Knicks"
         }
       ]
@@ -2882,7 +2816,7 @@
       "name": "Andre Drummond",
       "team": "Philadelphia 76ers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2934,20 +2868,14 @@
         },
         {
           "round": "CSF",
-          "pts": 6,
-          "game_id": "401871160",
+          "pts": 4,
+          "game_id": "401871162",
           "opponent": "New York Knicks"
         },
         {
           "round": "CSF",
           "pts": 0,
           "game_id": "401871161",
-          "opponent": "New York Knicks"
-        },
-        {
-          "round": "CSF",
-          "pts": 4,
-          "game_id": "401871162",
           "opponent": "New York Knicks"
         }
       ]
@@ -2956,7 +2884,7 @@
       "name": "Johni Broome",
       "team": "Philadelphia 76ers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -3008,20 +2936,14 @@
         },
         {
           "round": "CSF",
-          "pts": 0,
-          "game_id": "401871160",
+          "pts": 7,
+          "game_id": "401871162",
           "opponent": "New York Knicks"
         },
         {
           "round": "CSF",
           "pts": 0,
           "game_id": "401871161",
-          "opponent": "New York Knicks"
-        },
-        {
-          "round": "CSF",
-          "pts": 7,
-          "game_id": "401871162",
           "opponent": "New York Knicks"
         }
       ]
@@ -4266,12 +4188,6 @@
         },
         {
           "round": "CSF",
-          "pts": 19,
-          "game_id": "401871153",
-          "opponent": "Minnesota Timberwolves"
-        },
-        {
-          "round": "CSF",
           "pts": 39,
           "game_id": "401871154",
           "opponent": "Minnesota Timberwolves"
@@ -4370,12 +4286,6 @@
         },
         {
           "round": "CSF",
-          "pts": 16,
-          "game_id": "401871153",
-          "opponent": "Minnesota Timberwolves"
-        },
-        {
-          "round": "CSF",
           "pts": 17,
           "game_id": "401871154",
           "opponent": "Minnesota Timberwolves"
@@ -4468,12 +4378,6 @@
         },
         {
           "round": "CSF",
-          "pts": 21,
-          "game_id": "401871153",
-          "opponent": "Minnesota Timberwolves"
-        },
-        {
-          "round": "CSF",
           "pts": 13,
           "game_id": "401871154",
           "opponent": "Minnesota Timberwolves"
@@ -4562,12 +4466,6 @@
           "round": "CSF",
           "pts": 2,
           "game_id": "401871152",
-          "opponent": "Minnesota Timberwolves"
-        },
-        {
-          "round": "CSF",
-          "pts": 4,
-          "game_id": "401871153",
           "opponent": "Minnesota Timberwolves"
         },
         {
@@ -4677,12 +4575,6 @@
         {
           "round": "CSF",
           "pts": 0,
-          "game_id": "401871160",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "CSF",
-          "pts": 0,
           "game_id": "401871161",
           "opponent": "Philadelphia 76ers"
         },
@@ -4710,7 +4602,7 @@
       "name": "MarJon Beauchamp",
       "team": "Philadelphia 76ers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "CSF",
@@ -4764,12 +4656,6 @@
           "round": "CSF",
           "pts": 0,
           "game_id": "401871159",
-          "opponent": "New York Knicks"
-        },
-        {
-          "round": "CSF",
-          "pts": 0,
-          "game_id": "401871160",
           "opponent": "New York Knicks"
         },
         {
