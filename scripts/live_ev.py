@@ -181,8 +181,10 @@ def score_roster(roster_picks, stats_players, rng, games, cache, series_state):
         p_stats = stats_players.get(slug, {})
         playoff_games = p_stats.get('games', [])
 
-        # If player is eliminated, use deterministic actual scores — no simulation
-        if p_stats.get('eliminated', False):
+        # If player is eliminated (or team eliminated but player missing from stats),
+        # use deterministic actual scores — no simulation
+        team_st = series_state.get(team, {})
+        if p_stats.get('eliminated', False) or (not p_stats and team_st.get('losses', 0) >= 4):
             m = mult(s)
             by_rd = {}
             for g in playoff_games:

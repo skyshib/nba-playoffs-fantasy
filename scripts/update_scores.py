@@ -310,6 +310,21 @@ def main():
         if p["team"] in eliminated_teams:
             p["eliminated"] = True
 
+    # Add entries for picked players whose team is eliminated but who never
+    # appeared in a box score (total DNP — e.g. Steven Adams).
+    for norm_name, mapped in pick_map.items():
+        slug = mapped["slug"]
+        pick_team = mapped.get("team", "")
+        if slug not in player_stats and pick_team in eliminated_teams:
+            player_stats[slug] = {
+                "name": mapped["name"],
+                "team": pick_team,
+                "seed": mapped.get("seed"),
+                "eliminated": True,
+                "games": [],
+            }
+            print(f"  Added {mapped['name']} ({pick_team}) as eliminated (never played)")
+
     out = {
         "year": args.year,
         "last_updated": datetime.now(timezone.utc).isoformat(),

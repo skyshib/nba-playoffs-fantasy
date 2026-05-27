@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-27T14:53:07.179903+00:00",
+  "last_updated": "2026-05-27T15:01:53.107692+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -4899,6 +4899,34 @@
           "opponent": "New York Knicks"
         }
       ]
+    },
+    "steven-adams": {
+      "name": "Steven Adams",
+      "team": "Houston Rockets",
+      "seed": 5,
+      "eliminated": true,
+      "games": []
+    },
+    "caleb-love": {
+      "name": "Caleb Love",
+      "team": "Portland Trail Blazers",
+      "seed": 7,
+      "eliminated": true,
+      "games": []
+    },
+    "tristen-newton": {
+      "name": "Tristen Newton",
+      "team": "Houston Rockets",
+      "seed": 5,
+      "eliminated": true,
+      "games": []
+    },
+    "colin-castleton": {
+      "name": "Colin Castleton",
+      "team": "Orlando Magic",
+      "seed": 8,
+      "eliminated": true,
+      "games": []
     }
   },
   "active_games": [],
