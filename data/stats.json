@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-05-31T01:53:19.221941+00:00",
+  "last_updated": "2026-05-31T06:17:33.993626+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -3386,7 +3386,7 @@
       "name": "Chet Holmgren",
       "team": "Oklahoma City Thunder",
       "seed": 1,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -3484,7 +3484,7 @@
       "name": "Shai Gilgeous-Alexander",
       "team": "Oklahoma City Thunder",
       "seed": 1,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -3572,7 +3572,7 @@
         },
         {
           "round": "CF",
-          "pts": 26,
+          "pts": 35,
           "game_id": "401873203",
           "opponent": "San Antonio Spurs"
         }
@@ -3582,7 +3582,7 @@
       "name": "Jalen Williams",
       "team": "Oklahoma City Thunder",
       "seed": 1,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -3667,6 +3667,12 @@
           "pts": 0,
           "game_id": "401873201",
           "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "CF",
+          "pts": 0,
+          "game_id": "401873203",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -3674,7 +3680,7 @@
       "name": "Alex Caruso",
       "team": "Oklahoma City Thunder",
       "seed": 1,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -3762,7 +3768,7 @@
         },
         {
           "round": "CF",
-          "pts": 5,
+          "pts": 12,
           "game_id": "401873203",
           "opponent": "San Antonio Spurs"
         }
@@ -3772,7 +3778,7 @@
       "name": "Ajay Mitchell",
       "team": "Oklahoma City Thunder",
       "seed": 1,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -3856,6 +3862,12 @@
           "round": "CF",
           "pts": 0,
           "game_id": "401873202",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "CF",
+          "pts": 0,
+          "game_id": "401873203",
           "opponent": "San Antonio Spurs"
         }
       ]
@@ -4470,7 +4482,7 @@
         },
         {
           "round": "CF",
-          "pts": 12,
+          "pts": 22,
           "game_id": "401873203",
           "opponent": "Oklahoma City Thunder"
         },
@@ -4580,7 +4592,7 @@
         },
         {
           "round": "CF",
-          "pts": 10,
+          "pts": 15,
           "game_id": "401873203",
           "opponent": "Oklahoma City Thunder"
         },
@@ -4708,7 +4720,7 @@
         },
         {
           "round": "CF",
-          "pts": 12,
+          "pts": 16,
           "game_id": "401873203",
           "opponent": "Oklahoma City Thunder"
         }
@@ -5025,30 +5037,8 @@
       "games": []
     }
   },
-  "active_games": [
-    "401873203"
-  ],
-  "live_games": [
-    {
-      "id": "401873203",
-      "round": "CF",
-      "status": "6:12 - 3rd",
-      "teams": [
-        {
-          "name": "Oklahoma City Thunder",
-          "abbrev": "OKC",
-          "score": "65",
-          "winner": null
-        },
-        {
-          "name": "San Antonio Spurs",
-          "abbrev": "SA",
-          "score": "73",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "New York Knicks",
@@ -5124,8 +5114,8 @@
       "opponent": "San Antonio Spurs",
       "round": "CF",
       "wins": 3,
-      "losses": 3,
-      "summary": "Series tied 3-3"
+      "losses": 4,
+      "summary": "SA wins series 4-3"
     },
     "Phoenix Suns": {
       "opponent": "Oklahoma City Thunder",
@@ -5151,9 +5141,9 @@
     "San Antonio Spurs": {
       "opponent": "Oklahoma City Thunder",
       "round": "CF",
-      "wins": 3,
+      "wins": 4,
       "losses": 3,
-      "summary": "Series tied 3-3"
+      "summary": "SA wins series 4-3"
     },
     "Portland Trail Blazers": {
       "opponent": "San Antonio Spurs",
