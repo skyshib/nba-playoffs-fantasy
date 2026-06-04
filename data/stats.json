@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-06-04T00:00:13.060830+00:00",
+  "last_updated": "2026-06-04T04:25:50.477759+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -2191,6 +2191,12 @@
           "pts": 6,
           "game_id": "401873344",
           "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "Finals",
+          "pts": 3,
+          "game_id": "401859963",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -2283,6 +2289,12 @@
           "pts": 15,
           "game_id": "401873344",
           "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "Finals",
+          "pts": 30,
+          "game_id": "401859963",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -4487,6 +4499,12 @@
           "opponent": "Oklahoma City Thunder"
         },
         {
+          "round": "Finals",
+          "pts": 26,
+          "game_id": "401859963",
+          "opponent": "New York Knicks"
+        },
+        {
           "round": "R1",
           "pts": 0,
           "game_id": "401869382",
@@ -4595,6 +4613,12 @@
           "pts": 15,
           "game_id": "401873203",
           "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "Finals",
+          "pts": 7,
+          "game_id": "401859963",
+          "opponent": "New York Knicks"
         },
         {
           "round": "CF",
@@ -4723,6 +4747,12 @@
           "pts": 16,
           "game_id": "401873203",
           "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "Finals",
+          "pts": 17,
+          "game_id": "401859963",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -4839,6 +4869,12 @@
           "pts": 2,
           "game_id": "401873203",
           "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "Finals",
+          "pts": 0,
+          "game_id": "401859963",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -4931,6 +4967,12 @@
           "pts": 0,
           "game_id": "401873344",
           "opponent": "Cleveland Cavaliers"
+        },
+        {
+          "round": "Finals",
+          "pts": 0,
+          "game_id": "401859963",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -5069,11 +5111,11 @@
       "summary": "SA wins series 4-2"
     },
     "New York Knicks": {
-      "opponent": "Cleveland Cavaliers",
-      "round": "CF",
-      "wins": 4,
+      "opponent": "San Antonio Spurs",
+      "round": "Finals",
+      "wins": 1,
       "losses": 0,
-      "summary": "NY wins series 4-0"
+      "summary": "NY leads series 1-0"
     },
     "Atlanta Hawks": {
       "opponent": "New York Knicks",
@@ -5139,11 +5181,11 @@
       "summary": "DET wins series 4-3"
     },
     "San Antonio Spurs": {
-      "opponent": "Oklahoma City Thunder",
-      "round": "CF",
-      "wins": 4,
-      "losses": 3,
-      "summary": "SA wins series 4-3"
+      "opponent": "New York Knicks",
+      "round": "Finals",
+      "wins": 0,
+      "losses": 1,
+      "summary": "NY leads series 1-0"
     },
     "Portland Trail Blazers": {
       "opponent": "San Antonio Spurs",
