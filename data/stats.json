@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-06-06T13:39:58.076703+00:00",
+  "last_updated": "2026-06-06T15:01:27.554568+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -2314,7 +2314,7 @@
       "name": "Jabari Smith Jr.",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2326,12 +2326,6 @@
           "round": "R1",
           "pts": 18,
           "game_id": "401869397",
-          "opponent": "Los Angeles Lakers"
-        },
-        {
-          "round": "R1",
-          "pts": 24,
-          "game_id": "401869400",
           "opponent": "Los Angeles Lakers"
         },
         {
@@ -2358,7 +2352,7 @@
       "name": "Amen Thompson",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2370,12 +2364,6 @@
           "round": "R1",
           "pts": 16,
           "game_id": "401869397",
-          "opponent": "Los Angeles Lakers"
-        },
-        {
-          "round": "R1",
-          "pts": 26,
-          "game_id": "401869400",
           "opponent": "Los Angeles Lakers"
         },
         {
@@ -2402,7 +2390,7 @@
       "name": "Reed Sheppard",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2414,12 +2402,6 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869397",
-          "opponent": "Los Angeles Lakers"
-        },
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869400",
           "opponent": "Los Angeles Lakers"
         },
         {
@@ -2446,7 +2428,7 @@
       "name": "Tari Eason",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2458,12 +2440,6 @@
           "round": "R1",
           "pts": 10,
           "game_id": "401869397",
-          "opponent": "Los Angeles Lakers"
-        },
-        {
-          "round": "R1",
-          "pts": 5,
-          "game_id": "401869400",
           "opponent": "Los Angeles Lakers"
         },
         {
@@ -2490,7 +2466,7 @@
       "name": "Aaron Holiday",
       "team": "Houston Rockets",
       "seed": 5,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2502,12 +2478,6 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869397",
-          "opponent": "Los Angeles Lakers"
-        },
-        {
-          "round": "R1",
-          "pts": 0,
-          "game_id": "401869400",
           "opponent": "Los Angeles Lakers"
         },
         {
@@ -2546,12 +2516,6 @@
           "round": "R1",
           "pts": 28,
           "game_id": "401869397",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
-          "pts": 29,
-          "game_id": "401869400",
           "opponent": "Houston Rockets"
         },
         {
@@ -2618,12 +2582,6 @@
         },
         {
           "round": "R1",
-          "pts": 2,
-          "game_id": "401869400",
-          "opponent": "Houston Rockets"
-        },
-        {
-          "round": "R1",
           "pts": 19,
           "game_id": "401869405",
           "opponent": "Houston Rockets"
@@ -2682,12 +2640,6 @@
           "round": "R1",
           "pts": 19,
           "game_id": "401869396",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 18,
-          "game_id": "401869404",
           "opponent": "Boston Celtics"
         },
         {
@@ -2760,12 +2712,6 @@
         },
         {
           "round": "R1",
-          "pts": 10,
-          "game_id": "401869404",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
           "pts": 4,
           "game_id": "401869406",
           "opponent": "Boston Celtics"
@@ -2830,12 +2776,6 @@
           "round": "R1",
           "pts": 12,
           "game_id": "401869396",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 17,
-          "game_id": "401869404",
           "opponent": "Boston Celtics"
         },
         {
@@ -2908,12 +2848,6 @@
         },
         {
           "round": "R1",
-          "pts": 0,
-          "game_id": "401869404",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
           "pts": 4,
           "game_id": "401869406",
           "opponent": "Boston Celtics"
@@ -2978,12 +2912,6 @@
           "round": "R1",
           "pts": 10,
           "game_id": "401869396",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 12,
-          "game_id": "401869404",
           "opponent": "Boston Celtics"
         },
         {
@@ -3057,12 +2985,6 @@
         {
           "round": "R1",
           "pts": 0,
-          "game_id": "401869404",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 0,
           "game_id": "401869406",
           "opponent": "Boston Celtics"
         },
@@ -3130,12 +3052,6 @@
         },
         {
           "round": "R1",
-          "pts": 25,
-          "game_id": "401869404",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "R1",
           "pts": 30,
           "game_id": "401869406",
           "opponent": "Philadelphia 76ers"
@@ -3176,12 +3092,6 @@
           "round": "R1",
           "pts": 8,
           "game_id": "401869396",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "R1",
-          "pts": 6,
-          "game_id": "401869404",
           "opponent": "Philadelphia 76ers"
         },
         {
@@ -3230,12 +3140,6 @@
         },
         {
           "round": "R1",
-          "pts": 11,
-          "game_id": "401869404",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "R1",
           "pts": 6,
           "game_id": "401869406",
           "opponent": "Philadelphia 76ers"
@@ -3276,12 +3180,6 @@
           "round": "R1",
           "pts": 4,
           "game_id": "401869396",
-          "opponent": "Philadelphia 76ers"
-        },
-        {
-          "round": "R1",
-          "pts": 15,
-          "game_id": "401869404",
           "opponent": "Philadelphia 76ers"
         },
         {
@@ -4292,7 +4190,7 @@
       "name": "Donovan Clingan",
       "team": "Portland Trail Blazers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -4304,12 +4202,6 @@
           "round": "R1",
           "pts": 9,
           "game_id": "401869378",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "R1",
-          "pts": 7,
-          "game_id": "401869382",
           "opponent": "San Antonio Spurs"
         },
         {
@@ -4330,7 +4222,7 @@
       "name": "Robert Williams III",
       "team": "Portland Trail Blazers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -4342,12 +4234,6 @@
           "round": "R1",
           "pts": 11,
           "game_id": "401869378",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "R1",
-          "pts": 11,
-          "game_id": "401869382",
           "opponent": "San Antonio Spurs"
         },
         {
@@ -4368,7 +4254,7 @@
       "name": "Vit Krejci",
       "team": "Portland Trail Blazers",
       "seed": 7,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -4380,12 +4266,6 @@
           "round": "R1",
           "pts": 0,
           "game_id": "401869378",
-          "opponent": "San Antonio Spurs"
-        },
-        {
-          "round": "R1",
-          "pts": 0,
-          "game_id": "401869382",
           "opponent": "San Antonio Spurs"
         },
         {
@@ -4521,12 +4401,6 @@
           "pts": 29,
           "game_id": "401859964",
           "opponent": "New York Knicks"
-        },
-        {
-          "round": "R1",
-          "pts": 0,
-          "game_id": "401869382",
-          "opponent": "Portland Trail Blazers"
         }
       ]
     },
@@ -4546,12 +4420,6 @@
           "round": "R1",
           "pts": 17,
           "game_id": "401869378",
-          "opponent": "Portland Trail Blazers"
-        },
-        {
-          "round": "R1",
-          "pts": 18,
-          "game_id": "401869382",
           "opponent": "Portland Trail Blazers"
         },
         {
@@ -4678,12 +4546,6 @@
         },
         {
           "round": "R1",
-          "pts": 33,
-          "game_id": "401869382",
-          "opponent": "Portland Trail Blazers"
-        },
-        {
-          "round": "R1",
           "pts": 16,
           "game_id": "401869385",
           "opponent": "Portland Trail Blazers"
@@ -4802,12 +4664,6 @@
           "round": "R1",
           "pts": 10,
           "game_id": "401869378",
-          "opponent": "Portland Trail Blazers"
-        },
-        {
-          "round": "R1",
-          "pts": 14,
-          "game_id": "401869382",
           "opponent": "Portland Trail Blazers"
         },
         {
@@ -5045,12 +4901,6 @@
         {
           "round": "R1",
           "pts": 0,
-          "game_id": "401869404",
-          "opponent": "Boston Celtics"
-        },
-        {
-          "round": "R1",
-          "pts": 0,
           "game_id": "401869406",
           "opponent": "Boston Celtics"
         },
@@ -5091,27 +4941,6 @@
           "opponent": "New York Knicks"
         }
       ]
-    },
-    "steven-adams": {
-      "name": "Steven Adams",
-      "team": "Houston Rockets",
-      "seed": 5,
-      "eliminated": true,
-      "games": []
-    },
-    "caleb-love": {
-      "name": "Caleb Love",
-      "team": "Portland Trail Blazers",
-      "seed": 7,
-      "eliminated": true,
-      "games": []
-    },
-    "tristen-newton": {
-      "name": "Tristen Newton",
-      "team": "Houston Rockets",
-      "seed": 5,
-      "eliminated": true,
-      "games": []
     },
     "colin-castleton": {
       "name": "Colin Castleton",
