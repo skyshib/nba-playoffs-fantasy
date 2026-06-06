@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-06-06T01:34:39.154745+00:00",
+  "last_updated": "2026-06-06T05:41:05.775014+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -2304,7 +2304,7 @@
         },
         {
           "round": "Finals",
-          "pts": 8,
+          "pts": 20,
           "game_id": "401859964",
           "opponent": "San Antonio Spurs"
         }
@@ -4518,7 +4518,7 @@
         },
         {
           "round": "Finals",
-          "pts": 5,
+          "pts": 29,
           "game_id": "401859964",
           "opponent": "New York Knicks"
         },
@@ -4640,7 +4640,7 @@
         },
         {
           "round": "Finals",
-          "pts": 12,
+          "pts": 20,
           "game_id": "401859964",
           "opponent": "New York Knicks"
         },
@@ -4780,7 +4780,7 @@
         },
         {
           "round": "Finals",
-          "pts": 7,
+          "pts": 14,
           "game_id": "401859964",
           "opponent": "New York Knicks"
         }
@@ -5009,6 +5009,12 @@
           "pts": 0,
           "game_id": "401859963",
           "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "Finals",
+          "pts": 0,
+          "game_id": "401859964",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -5115,30 +5121,8 @@
       "games": []
     }
   },
-  "active_games": [
-    "401859964"
-  ],
-  "live_games": [
-    {
-      "id": "401859964",
-      "round": "Finals",
-      "status": "7:01 - 2nd",
-      "teams": [
-        {
-          "name": "San Antonio Spurs",
-          "abbrev": "SA",
-          "score": "42",
-          "winner": null
-        },
-        {
-          "name": "New York Knicks",
-          "abbrev": "NY",
-          "score": "39",
-          "winner": null
-        }
-      ]
-    }
-  ],
+  "active_games": [],
+  "live_games": [],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "New York Knicks",
@@ -5171,9 +5155,9 @@
     "New York Knicks": {
       "opponent": "San Antonio Spurs",
       "round": "Finals",
-      "wins": 1,
+      "wins": 2,
       "losses": 0,
-      "summary": "NY leads series 1-0"
+      "summary": "NY leads series 2-0"
     },
     "Atlanta Hawks": {
       "opponent": "New York Knicks",
@@ -5242,8 +5226,8 @@
       "opponent": "New York Knicks",
       "round": "Finals",
       "wins": 0,
-      "losses": 1,
-      "summary": "NY leads series 1-0"
+      "losses": 2,
+      "summary": "NY leads series 2-0"
     },
     "Portland Trail Blazers": {
       "opponent": "San Antonio Spurs",
