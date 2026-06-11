@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-06-10T23:07:29.178158+00:00",
+  "last_updated": "2026-06-11T00:51:36.487588+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -2209,6 +2209,12 @@
           "pts": 16,
           "game_id": "401859965",
           "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "Finals",
+          "pts": 0,
+          "game_id": "401859966",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -2318,6 +2324,12 @@
           "round": "Finals",
           "pts": 32,
           "game_id": "401859965",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "Finals",
+          "pts": 0,
+          "game_id": "401859966",
           "opponent": "San Antonio Spurs"
         }
       ]
@@ -4541,6 +4553,12 @@
           "opponent": "New York Knicks"
         },
         {
+          "round": "Finals",
+          "pts": 2,
+          "game_id": "401859966",
+          "opponent": "New York Knicks"
+        },
+        {
           "round": "R1",
           "pts": 0,
           "game_id": "401869382",
@@ -4666,6 +4684,12 @@
           "round": "Finals",
           "pts": 12,
           "game_id": "401859965",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "Finals",
+          "pts": 2,
+          "game_id": "401859966",
           "opponent": "New York Knicks"
         },
         {
@@ -4813,6 +4837,12 @@
           "pts": 23,
           "game_id": "401859965",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "Finals",
+          "pts": 0,
+          "game_id": "401859966",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -4946,6 +4976,12 @@
           "round": "Finals",
           "pts": 2,
           "game_id": "401859965",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "Finals",
+          "pts": 0,
+          "game_id": "401859966",
           "opponent": "New York Knicks"
         }
       ]
@@ -5163,8 +5199,30 @@
       "games": []
     }
   },
-  "active_games": [],
-  "live_games": [],
+  "active_games": [
+    "401859966"
+  ],
+  "live_games": [
+    {
+      "id": "401859966",
+      "round": "Finals",
+      "status": "9:52 - 1st",
+      "teams": [
+        {
+          "name": "New York Knicks",
+          "abbrev": "NY",
+          "score": "2",
+          "winner": null
+        },
+        {
+          "name": "San Antonio Spurs",
+          "abbrev": "SA",
+          "score": "7",
+          "winner": null
+        }
+      ]
+    }
+  ],
   "team_series": {
     "Cleveland Cavaliers": {
       "opponent": "New York Knicks",
