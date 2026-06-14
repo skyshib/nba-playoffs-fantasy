@@ -108,6 +108,9 @@ def main():
     ap.add_argument("--year", type=int, default=2026)
     ap.add_argument("--data-dir", default=None)
     ap.add_argument("--all-players", action="store_true")
+    ap.add_argument("--force", action="store_true",
+                    help="Write even if 0 events are fetched (overrides the "
+                         "safety guard that protects frozen final data).")
     args = ap.parse_args()
 
     data_dir = Path(args.data_dir) if args.data_dir else Path(__file__).resolve().parent.parent / "data"
@@ -116,6 +119,18 @@ def main():
 
     events = fetch_postseason(args.year)
     print(f"{len(events)} postseason events")
+
+    # Safety guard: once the playoffs are over, ESPN's scoreboard window stops
+    # returning postseason events, so a fetch yields 0. Writing that out would
+    # clobber the frozen final stats.json with an empty file. Refuse to write
+    # over existing data unless explicitly forced.
+    stats_path = data_dir / "stats.json"
+    if not events and not args.force:
+        if stats_path.exists() and json.loads(stats_path.read_text()).get("players"):
+            print("Refusing to overwrite existing stats.json with 0 fetched "
+                  "events (playoffs likely over). Use --force to override.")
+            return
+        print("0 events fetched and no existing data to protect; continuing.")
 
     player_stats: dict[str, dict] = {}
     active_games = []
@@ -333,7 +348,7 @@ def main():
         "live_games": live_games,
         "team_series": team_series,
     }
-    (data_dir / "stats.json").write_text(json.dumps(out, indent=2))
+    stats_path.write_text(json.dumps(out, indent=2))
     print(f"Wrote stats.json — {len(player_stats)} players, {len(active_games)} active")
 
 
