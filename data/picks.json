@@ -13,11 +13,11 @@
           "cost": 6.21
         },
         "2": {
-          "player_id": "victor-wembanyama",
-          "name": "Victor Wembanyama",
+          "player_id": "dylan-harper",
+          "name": "Dylan Harper",
           "team": "San Antonio Spurs",
           "seed": 2,
-          "cost": 25.0
+          "cost": 11.78
         },
         "3": {
           "player_id": "jalen-brunson",
@@ -48,18 +48,18 @@
           "cost": 5.6
         },
         "7": {
-          "player_id": "robert-williams-iii",
-          "name": "Robert Williams III",
-          "team": "Portland Trail Blazers",
+          "player_id": "vj-edgecombe",
+          "name": "VJ Edgecombe",
+          "team": "Philadelphia 76ers",
           "seed": 7,
-          "cost": 6.73
+          "cost": 15.99
         },
         "8": {
-          "player_id": "oso-ighodaro",
-          "name": "Oso Ighodaro",
-          "team": "Phoenix Suns",
+          "player_id": "wendell-carter-jr",
+          "name": "Wendell Carter Jr.",
+          "team": "Orlando Magic",
           "seed": 8,
-          "cost": 6.48
+          "cost": 11.82
         }
       }
     },

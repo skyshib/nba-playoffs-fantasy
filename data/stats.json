@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-06-14T00:05:10.140011+00:00",
+  "last_updated": "2026-06-14T05:06:42.446084+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -2215,6 +2215,12 @@
           "pts": 6,
           "game_id": "401859966",
           "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "Finals",
+          "pts": 13,
+          "game_id": "401859967",
+          "opponent": "San Antonio Spurs"
         }
       ]
     },
@@ -2330,6 +2336,12 @@
           "round": "Finals",
           "pts": 36,
           "game_id": "401859966",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "Finals",
+          "pts": 45,
+          "game_id": "401859967",
           "opponent": "San Antonio Spurs"
         }
       ]
@@ -2907,6 +2919,80 @@
         {
           "round": "CSF",
           "pts": 10,
+          "game_id": "401871162",
+          "opponent": "New York Knicks"
+        }
+      ]
+    },
+    "vj-edgecombe": {
+      "name": "VJ Edgecombe",
+      "team": "Philadelphia 76ers",
+      "seed": 7,
+      "eliminated": true,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 13,
+          "game_id": "401869191",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 30,
+          "game_id": "401869396",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869404",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869406",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869408",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 14,
+          "game_id": "401869410",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "R1",
+          "pts": 23,
+          "game_id": "401869412",
+          "opponent": "Boston Celtics"
+        },
+        {
+          "round": "CSF",
+          "pts": 12,
+          "game_id": "401871159",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CSF",
+          "pts": 17,
+          "game_id": "401871160",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CSF",
+          "pts": 11,
+          "game_id": "401871161",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "CSF",
+          "pts": 8,
           "game_id": "401871162",
           "opponent": "New York Knicks"
         }
@@ -4430,7 +4516,7 @@
       "name": "Victor Wembanyama",
       "team": "San Antonio Spurs",
       "seed": 2,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -4559,6 +4645,12 @@
           "opponent": "New York Knicks"
         },
         {
+          "round": "Finals",
+          "pts": 19,
+          "game_id": "401859967",
+          "opponent": "New York Knicks"
+        },
+        {
           "round": "R1",
           "pts": 0,
           "game_id": "401869382",
@@ -4570,7 +4662,7 @@
       "name": "De'Aaron Fox",
       "team": "San Antonio Spurs",
       "seed": 2,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -4693,6 +4785,12 @@
           "opponent": "New York Knicks"
         },
         {
+          "round": "Finals",
+          "pts": 7,
+          "game_id": "401859967",
+          "opponent": "New York Knicks"
+        },
+        {
           "round": "CF",
           "pts": 0,
           "game_id": "401873197",
@@ -4710,7 +4808,7 @@
       "name": "Stephon Castle",
       "team": "San Antonio Spurs",
       "seed": 2,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -4843,6 +4941,12 @@
           "pts": 13,
           "game_id": "401859966",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "Finals",
+          "pts": 6,
+          "game_id": "401859967",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -4850,7 +4954,7 @@
       "name": "Luke Kornet",
       "team": "San Antonio Spurs",
       "seed": 2,
-      "eliminated": false,
+      "eliminated": true,
       "games": [
         {
           "round": "R1",
@@ -4983,6 +5087,158 @@
           "pts": 0,
           "game_id": "401859966",
           "opponent": "New York Knicks"
+        },
+        {
+          "round": "Finals",
+          "pts": 0,
+          "game_id": "401859967",
+          "opponent": "New York Knicks"
+        }
+      ]
+    },
+    "dylan-harper": {
+      "name": "Dylan Harper",
+      "team": "San Antonio Spurs",
+      "seed": 2,
+      "eliminated": true,
+      "games": [
+        {
+          "round": "R1",
+          "pts": 6,
+          "game_id": "401869194",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 10,
+          "game_id": "401869378",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 27,
+          "game_id": "401869382",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 3,
+          "game_id": "401869385",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "R1",
+          "pts": 17,
+          "game_id": "401869386",
+          "opponent": "Portland Trail Blazers"
+        },
+        {
+          "round": "CSF",
+          "pts": 18,
+          "game_id": "401871152",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "CSF",
+          "pts": 11,
+          "game_id": "401871153",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "CSF",
+          "pts": 8,
+          "game_id": "401871154",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "CSF",
+          "pts": 24,
+          "game_id": "401871155",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "CSF",
+          "pts": 12,
+          "game_id": "401871156",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "CSF",
+          "pts": 15,
+          "game_id": "401871157",
+          "opponent": "Minnesota Timberwolves"
+        },
+        {
+          "round": "CF",
+          "pts": 24,
+          "game_id": "401873197",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "CF",
+          "pts": 12,
+          "game_id": "401873198",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "CF",
+          "pts": 6,
+          "game_id": "401873199",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "CF",
+          "pts": 7,
+          "game_id": "401873200",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "CF",
+          "pts": 5,
+          "game_id": "401873201",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "CF",
+          "pts": 18,
+          "game_id": "401873202",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "CF",
+          "pts": 12,
+          "game_id": "401873203",
+          "opponent": "Oklahoma City Thunder"
+        },
+        {
+          "round": "Finals",
+          "pts": 16,
+          "game_id": "401859963",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "Finals",
+          "pts": 15,
+          "game_id": "401859964",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "Finals",
+          "pts": 13,
+          "game_id": "401859965",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "Finals",
+          "pts": 21,
+          "game_id": "401859966",
+          "opponent": "New York Knicks"
+        },
+        {
+          "round": "Finals",
+          "pts": 25,
+          "game_id": "401859967",
+          "opponent": "New York Knicks"
         }
       ]
     },
@@ -5098,6 +5354,12 @@
           "round": "Finals",
           "pts": 0,
           "game_id": "401859966",
+          "opponent": "San Antonio Spurs"
+        },
+        {
+          "round": "Finals",
+          "pts": 0,
+          "game_id": "401859967",
           "opponent": "San Antonio Spurs"
         }
       ]
@@ -5239,9 +5501,9 @@
     "New York Knicks": {
       "opponent": "San Antonio Spurs",
       "round": "Finals",
-      "wins": 3,
+      "wins": 4,
       "losses": 1,
-      "summary": "NY leads series 3-1"
+      "summary": "NY wins series 4-1"
     },
     "Atlanta Hawks": {
       "opponent": "New York Knicks",
@@ -5310,8 +5572,8 @@
       "opponent": "New York Knicks",
       "round": "Finals",
       "wins": 1,
-      "losses": 3,
-      "summary": "NY leads series 3-1"
+      "losses": 4,
+      "summary": "NY wins series 4-1"
     },
     "Portland Trail Blazers": {
       "opponent": "San Antonio Spurs",
