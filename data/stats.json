@@ -1,6 +1,6 @@
 {
   "year": 2026,
-  "last_updated": "2026-06-21T11:35:33.506714+00:00",
+  "last_updated": "2026-06-21T13:26:34.208644+00:00",
   "players": {
     "rj-barrett": {
       "name": "RJ Barrett",
@@ -264,12 +264,6 @@
         },
         {
           "round": "CSF",
-          "pts": 3,
-          "game_id": "401871335",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "CSF",
           "pts": 0,
           "game_id": "401871336",
           "opponent": "Detroit Pistons"
@@ -376,12 +370,6 @@
           "round": "CSF",
           "pts": 22,
           "game_id": "401871334",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "CSF",
-          "pts": 18,
-          "game_id": "401871335",
           "opponent": "Detroit Pistons"
         },
         {
@@ -496,12 +484,6 @@
         },
         {
           "round": "CSF",
-          "pts": 13,
-          "game_id": "401871335",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "CSF",
           "pts": 17,
           "game_id": "401871336",
           "opponent": "Detroit Pistons"
@@ -608,12 +590,6 @@
           "round": "CSF",
           "pts": 10,
           "game_id": "401871334",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "CSF",
-          "pts": 19,
-          "game_id": "401871335",
           "opponent": "Detroit Pistons"
         },
         {
@@ -728,12 +704,6 @@
         },
         {
           "round": "CSF",
-          "pts": 35,
-          "game_id": "401871335",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "CSF",
           "pts": 43,
           "game_id": "401871336",
           "opponent": "Detroit Pistons"
@@ -840,12 +810,6 @@
           "round": "CSF",
           "pts": 4,
           "game_id": "401871334",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "CSF",
-          "pts": 11,
-          "game_id": "401871335",
           "opponent": "Detroit Pistons"
         },
         {
@@ -960,12 +924,6 @@
         },
         {
           "round": "CSF",
-          "pts": 7,
-          "game_id": "401871335",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "CSF",
           "pts": 5,
           "game_id": "401871336",
           "opponent": "Detroit Pistons"
@@ -1072,12 +1030,6 @@
           "round": "CSF",
           "pts": 0,
           "game_id": "401871334",
-          "opponent": "Detroit Pistons"
-        },
-        {
-          "round": "CSF",
-          "pts": 7,
-          "game_id": "401871335",
           "opponent": "Detroit Pistons"
         },
         {
@@ -2570,7 +2522,7 @@
       "name": "LeBron James",
       "team": "Los Angeles Lakers",
       "seed": 4,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2622,12 +2574,6 @@
         },
         {
           "round": "CSF",
-          "pts": 19,
-          "game_id": "401871328",
-          "opponent": "Oklahoma City Thunder"
-        },
-        {
-          "round": "CSF",
           "pts": 24,
           "game_id": "401871329",
           "opponent": "Oklahoma City Thunder"
@@ -2638,7 +2584,7 @@
       "name": "Deandre Ayton",
       "team": "Los Angeles Lakers",
       "seed": 4,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -2686,12 +2632,6 @@
           "round": "CSF",
           "pts": 3,
           "game_id": "401871327",
-          "opponent": "Oklahoma City Thunder"
-        },
-        {
-          "round": "CSF",
-          "pts": 10,
-          "game_id": "401871328",
           "opponent": "Oklahoma City Thunder"
         },
         {
@@ -3560,12 +3500,6 @@
         },
         {
           "round": "CSF",
-          "pts": 18,
-          "game_id": "401871328",
-          "opponent": "Los Angeles Lakers"
-        },
-        {
-          "round": "CSF",
           "pts": 16,
           "game_id": "401871329",
           "opponent": "Los Angeles Lakers"
@@ -3654,12 +3588,6 @@
           "round": "CSF",
           "pts": 22,
           "game_id": "401871327",
-          "opponent": "Los Angeles Lakers"
-        },
-        {
-          "round": "CSF",
-          "pts": 23,
-          "game_id": "401871328",
           "opponent": "Los Angeles Lakers"
         },
         {
@@ -3775,12 +3703,6 @@
         {
           "round": "CSF",
           "pts": 0,
-          "game_id": "401871328",
-          "opponent": "Los Angeles Lakers"
-        },
-        {
-          "round": "CSF",
-          "pts": 0,
           "game_id": "401871329",
           "opponent": "Los Angeles Lakers"
         },
@@ -3850,12 +3772,6 @@
           "round": "CSF",
           "pts": 5,
           "game_id": "401871327",
-          "opponent": "Los Angeles Lakers"
-        },
-        {
-          "round": "CSF",
-          "pts": 6,
-          "game_id": "401871328",
           "opponent": "Los Angeles Lakers"
         },
         {
@@ -3948,12 +3864,6 @@
           "round": "CSF",
           "pts": 20,
           "game_id": "401871327",
-          "opponent": "Los Angeles Lakers"
-        },
-        {
-          "round": "CSF",
-          "pts": 24,
-          "game_id": "401871328",
           "opponent": "Los Angeles Lakers"
         },
         {
@@ -4310,7 +4220,7 @@
       "name": "Cade Cunningham",
       "team": "Detroit Pistons",
       "seed": 1,
-      "eliminated": true,
+      "eliminated": false,
       "games": [
         {
           "round": "R1",
@@ -4364,12 +4274,6 @@
           "round": "CSF",
           "pts": 25,
           "game_id": "401871334",
-          "opponent": "Cleveland Cavaliers"
-        },
-        {
-          "round": "CSF",
-          "pts": 27,
-          "game_id": "401871335",
           "opponent": "Cleveland Cavaliers"
         },
         {
